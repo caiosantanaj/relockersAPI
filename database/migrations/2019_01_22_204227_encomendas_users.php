@@ -13,7 +13,14 @@ class EncomendasUsers extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('encomendas_users', function (Blueprint $table) {
+            $table->integer('idUser')->unsigned();
+            $table->foreign('idUser')->references('id')->on('users');
+
+            $table->integer('idEncomenda')->unsigned();
+            $table->foreign('idEncomenda')->references('id')->on('encomendas');
+            $table->timestamps();
+        });
     }
 
     /**
