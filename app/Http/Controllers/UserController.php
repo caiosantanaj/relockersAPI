@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Model\Estado;
 use Illuminate\Http\Request;
-use App\Http\Resources\Estado\EstadoCollection;
-use App\Http\Resources\Estado\EstadoResource;
+use App\Http\Resources\User\UserCollection;
+use App\User;
 
-class EstadoController extends Controller
+
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +16,7 @@ class EstadoController extends Controller
      */
     public function index()
     {
-        return EstadoCollection::collection(Estado::all());
+        return UserCollection::collection(User::all());
     }
 
     /**
@@ -43,21 +43,21 @@ class EstadoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Model\Estado  $estado
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Estado $estado)
+    public function show($id)
     {
-        return new EstadoResource($estado);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Model\Estado  $estado
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Estado $estado)
+    public function edit($id)
     {
         //
     }
@@ -66,10 +66,10 @@ class EstadoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Model\Estado  $estado
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Estado $estado)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -77,10 +77,10 @@ class EstadoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Model\Estado  $estado
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Estado $estado)
+    public function destroy($id)
     {
         //
     }

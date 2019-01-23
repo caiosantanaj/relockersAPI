@@ -21,7 +21,7 @@ class CreateEncomendasTable extends Migration
             $table->dateTime('data_de_entrada_no_sistema');
             $table->dateTime('data_de_entrega_pretendida');
             $table->string('tempo_limite_de_levantamento', 50);
-            $table->string('temperatura');
+            $table->float('temperatura', 3, 1);
             $table->text('obcervacoes');
             $table->string('codigo', 10);
 

@@ -1,9 +1,25 @@
 <?php
 
 use Faker\Generator as Faker;
+use App\Model\Cliente;
+use App\Model\Cacifo;
 
 $factory->define(App\Model\Encomenda::class, function (Faker $faker) {
     return [
-        //
+        'data_estimada' => $faker->dateTime($max = 'now', $timezone = 'Europe/Lisbon'),
+        'data_de_entrega' => $faker->dateTime($max = 'now', $timezone = 'Europe/Lisbon'),
+        'data_de_levantamento' => $faker->dateTime($max = 'now', $timezone = 'Europe/Lisbon'),
+        'data_de_entrada_no_sistema' => $faker->dateTime($max = 'now', $timezone = 'Europe/Lisbon'),
+        'data_de_entrega_pretendida' => $faker->dateTime($max = 'now', $timezone = 'Europe/Lisbon'),
+        'temperatura' => $faker->randomFloat($nbMaxDecimals = 1, $min = 0, $max = 12),
+        'obcervacoes' => $faker->realText($maxNbChars = 200, $indexSize = 2),
+        'codigo' => $faker->regexify('([a-zA-Z0-9_-]){5,10}'),
+        'tempo_limite_de_levantamento' => $faker->randomFloat($nbMaxDecimals = 0, $min = 1, $max = 4),
+
+        'cliente_id' => Cliente::all()->random()->id,
+        'cacifo_id' => Cacifo::all()->random()->id,
+        'cacifo_tamanho_id' => Cacifo::all()->random()->id,
+        'cacifo_estado_id' => Cacifo::all()->random()->id,
+        'cacifo_localizacao_id' => Cacifo::all()->random()->id,
     ];
 });

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Model\Tamanho;
 use Illuminate\Http\Request;
+use App\Http\Resources\Tamanho\TamanhoCollection;
+use App\Http\Resources\Tamanho\TamanhoResource;
 
 class TamanhoController extends Controller
 {
@@ -14,7 +16,7 @@ class TamanhoController extends Controller
      */
     public function index()
     {
-        //
+        return TamanhoCollection::collection(Tamanho::all());
     }
 
     /**
@@ -46,7 +48,7 @@ class TamanhoController extends Controller
      */
     public function show(Tamanho $tamanho)
     {
-        //
+        return new TamanhoResource($tamanho);
     }
 
     /**

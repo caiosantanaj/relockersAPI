@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Model\Encomenda;
 use Illuminate\Http\Request;
+use App\Http\Resources\Encomenda\EncomendaCollection;
+use function GuzzleHttp\Promise\all;
+use App\Http\Resources\Encomenda\EncomendaResource;
+use App\Model\Cliente;
 
 class EncomendaController extends Controller
 {
@@ -14,7 +18,17 @@ class EncomendaController extends Controller
      */
     public function index()
     {
-        //
+        return EncomendaCollection::collection(Encomenda::all());
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function encomendaDoCliente(Cliente $cliente)
+    {
+        return EncomendaResource::collection($cliente->encomendas);
     }
 
     /**
@@ -46,7 +60,7 @@ class EncomendaController extends Controller
      */
     public function show(Encomenda $encomenda)
     {
-        //
+        return new EncomendaResource($encomenda);
     }
 
     /**

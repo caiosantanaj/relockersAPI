@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Model\UserType;
 use Illuminate\Http\Request;
+use App\Http\Resources\UserType\UserTypeCollection;
+use App\Http\Resources\UserType\UserTypeResource;
 
 class UserTypeController extends Controller
 {
@@ -14,7 +16,7 @@ class UserTypeController extends Controller
      */
     public function index()
     {
-        //
+        return UserTypeCollection::collection(UserType::all());
     }
 
     /**
@@ -46,7 +48,7 @@ class UserTypeController extends Controller
      */
     public function show(UserType $userType)
     {
-        //
+        return new UserTypeResource($userType);
     }
 
     /**

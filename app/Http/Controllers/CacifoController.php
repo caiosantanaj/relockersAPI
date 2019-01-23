@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Model\Cacifo;
 use Illuminate\Http\Request;
+use App\Http\Resources\Cacifo\CacifoCollection;
+use App\Http\Resources\Cacifo\CacifoResource;
 
 class CacifoController extends Controller
 {
@@ -14,7 +16,7 @@ class CacifoController extends Controller
      */
     public function index()
     {
-        //
+        return CacifoCollection::collection(Cacifo::all());
     }
 
     /**
@@ -46,7 +48,7 @@ class CacifoController extends Controller
      */
     public function show(Cacifo $cacifo)
     {
-        //
+        return new CacifoResource($cacifo);
     }
 
     /**

@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Model\Localizacao;
 use Illuminate\Http\Request;
+use App\Model\Localizacao;
+use App\Http\Resources\Localizacao\LocalizacaoResource;
+use App\Http\Resources\Localizacao\LocalizacaoCollection;
 
 class LocalizacaoController extends Controller
 {
@@ -14,7 +16,7 @@ class LocalizacaoController extends Controller
      */
     public function index()
     {
-        //
+        return LocalizacaoCollection::collection(Localizacao::all());
     }
 
     /**
@@ -46,7 +48,7 @@ class LocalizacaoController extends Controller
      */
     public function show(Localizacao $localizacao)
     {
-        //
+        return new LocalizacaoResource($localizacao);
     }
 
     /**

@@ -23,13 +23,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 //CACIFO
 Route::Resource('cacifos', 'CacifoController');
 
-Route::Resource('estado', 'EstadoController');
-Route::Resource('tamanho', 'TamanhoController');
-Route::Resource('localizacao', 'LocalizacaoController');
+Route::Resource('estados', 'EstadoController');
+Route::Resource('tamanhos', 'TamanhoController');
+Route::Resource('localizacoes', 'LocalizacaoController');
 
 
 //CLIENTE
 Route::Resource('clientes', 'ClienteController');
+Route::get("clientes/{cliente}/encomendas", "EncomendaController@encomendaDoCliente");
 
 //CLIENTES -> Encomenda
 //Route::group(["prefix"=>"clientes"], function() {
@@ -42,5 +43,5 @@ Route::apiResource('encomendas', 'EncomendaController');
 //Route::get("clientes/{cliente}/encomendas", "EncomendaController@encomendaToCliente");
 
 //Utilizador
-//Route::Resource('user', 'UserController');
-Route::Resource('userType', 'UserTypeController');
+Route::Resource('users', 'UserController');
+Route::Resource('userTypes', 'UserTypeController');

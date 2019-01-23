@@ -16,7 +16,7 @@ class CreateCacifosTable extends Migration
         Schema::create('cacifos', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('numero');
-            $table->string('temperatura');
+            $table->float('temperatura', 3, 1);
             $table->string('codigo', 10);
 
             //FK
