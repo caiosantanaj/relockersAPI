@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Model\Localizacao;
-use App\Http\Resources\Localizacao\LocalizacaoResource;
 use App\Http\Resources\Localizacao\LocalizacaoCollection;
+use App\Http\Resources\Localizacao\LocalizacaoResource;
 
 class LocalizacaoController extends Controller
 {
