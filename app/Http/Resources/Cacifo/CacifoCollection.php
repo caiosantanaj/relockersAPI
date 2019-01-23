@@ -25,7 +25,7 @@ class CacifoCollection extends Resource
                 'link' => route('cacifos.show', $this->id),
                 'tamano' => route('tamanhos.show', $this->tamanho_id),
                 'estado' => route('estados.show', $this->estado_id),
-                'localizacao' => route('localizacoes.show', $this->localizacao_id),
+                'localizacao' => route('localizacaos.show', $this->localizacao_id),
             ],
         ];
     }

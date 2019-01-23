@@ -25,7 +25,7 @@ Route::Resource('cacifos', 'CacifoController');
 
 Route::Resource('estados', 'EstadoController');
 Route::Resource('tamanhos', 'TamanhoController');
-Route::Resource('localizacoes', 'LocalizacaoController');
+Route::Resource('localizacaos', 'LocalizacaoController');
 
 
 //CLIENTE

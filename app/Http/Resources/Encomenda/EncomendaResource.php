@@ -35,11 +35,7 @@ class EncomendaResource extends JsonResource
             'href' => [
                 'cliente' => route("clientes.show", $this->cliente_id),
                 'cacifo' => route("cacifos.show", $this->cacifo),
-                // 'estado' => route('estados.show', $this->cacifo_estado_id),
-                // 'tamanho' => route('tamanhos.show', $this->cacifo_tamanho_id),
-                // 'localizacao' => route('localizacoes.show', $this->cacifo_localizacao_id),
             ]
         ];
     }
-    //CategoryCollection::collection ($this->categories),
 }

@@ -6,6 +6,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Model\UserType;
+use App\Model\Encomenda;
 
 class User extends Authenticatable
 {
@@ -32,5 +33,10 @@ class User extends Authenticatable
     function userType()
     {
         return $this->belongsTo(UserType::class);
+    }
+
+    function encomendas()
+    {
+        return $this->belongsToMany(Encomenda::class);
     }
 }

@@ -20,7 +20,7 @@ class LocalizacaoCollection extends Resource
             'long' => $this->longitude,
 
             'href' => [
-                'link' => route('localizacoes.show', $this->id),
+                'link' => route('localizacaos.show', $this->id),
             ],
         ];
     }

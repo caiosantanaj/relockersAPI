@@ -7,12 +7,18 @@ use Illuminate\Http\Request;
 use App\Http\Resources\Cacifo\CacifoCollection;
 use App\Http\Resources\Cacifo\CacifoResource;
 
+/**
+ * @group Cacifo management
+ *
+ * APIs for managing cacifos
+ */
 class CacifoController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Get Cacifos
      *
-     * @return \Illuminate\Http\Response
+     * Get all "cacifos" from database
+     *
      */
     public function index()
     {

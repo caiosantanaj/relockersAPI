@@ -20,9 +20,13 @@ Welcome to the generated API reference.
 
 <!-- END_INFO -->
 
-#general
+#Cacifo management
+
+APIs for managing cacifos
 <!-- START_1407c361b7d59f39aae9eaaf2b869b76 -->
-## Display a listing of the resource.
+## Get Cacifos
+
+Get all "cacifos" from database
 
 > Example request:
 
@@ -49,7 +53,270 @@ fetch(url, {
 > Example response (200):
 
 ```json
-null
+{
+    "data": [
+        {
+            "numero": 391,
+            "temeperatura": 10.6,
+            "tamanhoId": 3,
+            "estadoId": 1,
+            "localizacaoId": 5,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/1",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/3",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/5"
+            }
+        },
+        {
+            "numero": 249,
+            "temeperatura": 4,
+            "tamanhoId": 1,
+            "estadoId": 1,
+            "localizacaoId": 2,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/2",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/1",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/2"
+            }
+        },
+        {
+            "numero": 203,
+            "temeperatura": 9.1,
+            "tamanhoId": 4,
+            "estadoId": 1,
+            "localizacaoId": 2,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/3",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/4",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/2"
+            }
+        },
+        {
+            "numero": 278,
+            "temeperatura": 3.6,
+            "tamanhoId": 1,
+            "estadoId": 1,
+            "localizacaoId": 1,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/4",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/1",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/1"
+            }
+        },
+        {
+            "numero": 382,
+            "temeperatura": 7.6,
+            "tamanhoId": 2,
+            "estadoId": 2,
+            "localizacaoId": 2,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/5",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/2",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/2"
+            }
+        },
+        {
+            "numero": 290,
+            "temeperatura": 8,
+            "tamanhoId": 1,
+            "estadoId": 1,
+            "localizacaoId": 4,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/6",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/1",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/4"
+            }
+        },
+        {
+            "numero": 5,
+            "temeperatura": 5,
+            "tamanhoId": 2,
+            "estadoId": 1,
+            "localizacaoId": 3,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/7",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/2",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/3"
+            }
+        },
+        {
+            "numero": 322,
+            "temeperatura": 10.8,
+            "tamanhoId": 1,
+            "estadoId": 2,
+            "localizacaoId": 3,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/8",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/1",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/3"
+            }
+        },
+        {
+            "numero": 499,
+            "temeperatura": 9.4,
+            "tamanhoId": 3,
+            "estadoId": 1,
+            "localizacaoId": 5,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/9",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/3",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/5"
+            }
+        },
+        {
+            "numero": 258,
+            "temeperatura": 8.6,
+            "tamanhoId": 4,
+            "estadoId": 2,
+            "localizacaoId": 3,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/10",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/4",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/3"
+            }
+        },
+        {
+            "numero": 110,
+            "temeperatura": 7.3,
+            "tamanhoId": 4,
+            "estadoId": 2,
+            "localizacaoId": 1,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/11",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/4",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/1"
+            }
+        },
+        {
+            "numero": 415,
+            "temeperatura": 8.7,
+            "tamanhoId": 3,
+            "estadoId": 1,
+            "localizacaoId": 5,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/12",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/3",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/5"
+            }
+        },
+        {
+            "numero": 162,
+            "temeperatura": 7.8,
+            "tamanhoId": 4,
+            "estadoId": 2,
+            "localizacaoId": 4,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/13",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/4",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/4"
+            }
+        },
+        {
+            "numero": 112,
+            "temeperatura": 1.5,
+            "tamanhoId": 2,
+            "estadoId": 1,
+            "localizacaoId": 2,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/14",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/2",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/2"
+            }
+        },
+        {
+            "numero": 42,
+            "temeperatura": 5.2,
+            "tamanhoId": 3,
+            "estadoId": 1,
+            "localizacaoId": 4,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/15",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/3",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/4"
+            }
+        },
+        {
+            "numero": 307,
+            "temeperatura": 2.9,
+            "tamanhoId": 2,
+            "estadoId": 2,
+            "localizacaoId": 2,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/16",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/2",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/2"
+            }
+        },
+        {
+            "numero": 371,
+            "temeperatura": 10.8,
+            "tamanhoId": 4,
+            "estadoId": 1,
+            "localizacaoId": 4,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/17",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/4",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/4"
+            }
+        },
+        {
+            "numero": 283,
+            "temeperatura": 5.8,
+            "tamanhoId": 1,
+            "estadoId": 1,
+            "localizacaoId": 1,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/18",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/1",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/1"
+            }
+        },
+        {
+            "numero": 368,
+            "temeperatura": 7.9,
+            "tamanhoId": 2,
+            "estadoId": 1,
+            "localizacaoId": 1,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/19",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/2",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/1"
+            }
+        },
+        {
+            "numero": 205,
+            "temeperatura": 10.6,
+            "tamanhoId": 2,
+            "estadoId": 1,
+            "localizacaoId": 5,
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/20",
+                "tamano": "http:\/\/localhost\/api\/tamanhos\/2",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/5"
+            }
+        }
+    ]
+}
 ```
 
 ### HTTP Request
@@ -152,397 +419,33 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (404):
+> Example response (200):
 
 ```json
 {
-    "message": "No query results for model [App\\Model\\Cacifo].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
-    "trace": [
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
+    "data": {
+        "id": 1,
+        "numero": 391,
+        "temperatura": 10.6,
+        "codigo": "QtxSgrNN4",
+        "tamanhoId": 3,
+        "estadoId": 1,
+        "localizacaoId": 5,
+        "tamanho": {
+            "id": 3,
+            "tamanho": "S"
         },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/app\/Exceptions\/Handler.php",
-            "line": 49,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
+        "estado": {
+            "id": 1,
+            "estado": "Disponivel"
         },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 58,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 684,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 659,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 625,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 614,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 62,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 272,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 256,
-            "function": "callLaravelRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 33,
-            "function": "makeApiCall",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 49,
-            "function": "__invoke",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 68,
-            "function": "resolve",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
-            "line": 54,
-            "function": "getResponse",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 196,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 57,
-            "function": "processRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 572,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 255,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 901,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 262,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 145,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 89,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 122,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
+        "localizacao": {
+            "id": 5,
+            "nome": "Abshire Course",
+            "lat": -38.450808,
+            "long": -160.152726
         }
-    ]
+    }
 }
 ```
 
@@ -577,398 +480,10 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (404):
+> Example response (200):
 
 ```json
-{
-    "message": "No query results for model [App\\Model\\Cacifo].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
-    "trace": [
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/app\/Exceptions\/Handler.php",
-            "line": 49,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 58,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 684,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 659,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 625,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 614,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 62,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 272,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 256,
-            "function": "callLaravelRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 33,
-            "function": "makeApiCall",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 49,
-            "function": "__invoke",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 68,
-            "function": "resolve",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
-            "line": 54,
-            "function": "getResponse",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 196,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 57,
-            "function": "processRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 572,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 255,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 901,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 262,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 145,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 89,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 122,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
-}
+null
 ```
 
 ### HTTP Request
@@ -1043,17 +558,18 @@ fetch(url, {
 
 <!-- END_e5063c9eb32fea8e0810d74a8a728302 -->
 
-<!-- START_df2b54722592ebe72673541bf9710348 -->
+#general
+<!-- START_ac5f293a4430cf75efc1e7194302aea4 -->
 ## Display a listing of the resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/estado" 
+curl -X GET -G "http://localhost/api/estados" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/estado");
+const url = new URL("http://localhost/api/estados");
 
 let headers = {
     "Accept": "application/json",
@@ -1068,29 +584,502 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (200):
+> Example response (500):
 
 ```json
-null
+{
+    "message": "Route [estado.show] not defined.",
+    "exception": "InvalidArgumentException",
+    "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/UrlGenerator.php",
+    "line": 389,
+    "trace": [
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/helpers.php",
+            "line": 822,
+            "function": "route",
+            "class": "Illuminate\\Routing\\UrlGenerator",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/app\/Http\/Resources\/Estado\/EstadoCollection.php",
+            "line": 20,
+            "function": "route"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Support\/HigherOrderCollectionProxy.php",
+            "line": 60,
+            "function": "toArray",
+            "class": "App\\Http\\Resources\\Estado\\EstadoCollection",
+            "type": "->"
+        },
+        {
+            "function": "Illuminate\\Support\\{closure}",
+            "class": "Illuminate\\Support\\HigherOrderCollectionProxy",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Support\/Collection.php",
+            "line": 1033,
+            "function": "array_map"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Support\/HigherOrderCollectionProxy.php",
+            "line": 61,
+            "function": "map",
+            "class": "Illuminate\\Support\\Collection",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Http\/Resources\/Json\/ResourceCollection.php",
+            "line": 59,
+            "function": "__call",
+            "class": "Illuminate\\Support\\HigherOrderCollectionProxy",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Http\/Resources\/Json\/JsonResource.php",
+            "line": 90,
+            "function": "toArray",
+            "class": "Illuminate\\Http\\Resources\\Json\\ResourceCollection",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Http\/Resources\/Json\/ResourceResponse.php",
+            "line": 39,
+            "function": "resolve",
+            "class": "Illuminate\\Http\\Resources\\Json\\JsonResource",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Http\/Resources\/Json\/JsonResource.php",
+            "line": 197,
+            "function": "toResponse",
+            "class": "Illuminate\\Http\\Resources\\Json\\ResourceResponse",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Http\/Resources\/Json\/ResourceCollection.php",
+            "line": 72,
+            "function": "toResponse",
+            "class": "Illuminate\\Http\\Resources\\Json\\JsonResource",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 735,
+            "function": "toResponse",
+            "class": "Illuminate\\Http\\Resources\\Json\\ResourceCollection",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 722,
+            "function": "toResponse",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "::"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 682,
+            "function": "prepareResponse",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 30,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/SubstituteBindings.php",
+            "line": 41,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 151,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
+            "line": 58,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 151,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 104,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 684,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 659,
+            "function": "runRouteWithinStack",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 625,
+            "function": "runRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
+            "line": 614,
+            "function": "dispatchToRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "line": 176,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 30,
+            "function": "Illuminate\\Foundation\\Http\\{closure}",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
+            "line": 57,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 151,
+            "function": "handle",
+            "class": "Fideloper\\Proxy\\TrustProxies",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
+            "line": 31,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 151,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
+            "line": 31,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 151,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
+            "line": 27,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 151,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
+            "line": 62,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 151,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
+            "line": 53,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
+            "line": 104,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "line": 151,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
+            "line": 116,
+            "function": "sendRequestThroughRouter",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
+            "line": 272,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
+            "line": 256,
+            "function": "callLaravelRoute",
+            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
+            "line": 33,
+            "function": "makeApiCall",
+            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
+            "line": 49,
+            "function": "__invoke",
+            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
+            "line": 68,
+            "function": "resolve",
+            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
+            "line": 54,
+            "function": "getResponse",
+            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
+            "type": "::"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
+            "line": 196,
+            "function": "processRoute",
+            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
+            "line": 57,
+            "function": "processRoutes",
+            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
+            "type": "->"
+        },
+        {
+            "function": "handle",
+            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "line": 29,
+            "function": "call_user_func_array"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "line": 87,
+            "function": "Illuminate\\Container\\{closure}",
+            "class": "Illuminate\\Container\\BoundMethod",
+            "type": "::"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
+            "line": 31,
+            "function": "callBoundMethod",
+            "class": "Illuminate\\Container\\BoundMethod",
+            "type": "::"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
+            "line": 572,
+            "function": "call",
+            "class": "Illuminate\\Container\\BoundMethod",
+            "type": "::"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
+            "line": 183,
+            "function": "call",
+            "class": "Illuminate\\Container\\Container",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Command\/Command.php",
+            "line": 255,
+            "function": "execute",
+            "class": "Illuminate\\Console\\Command",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
+            "line": 170,
+            "function": "run",
+            "class": "Symfony\\Component\\Console\\Command\\Command",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
+            "line": 901,
+            "function": "run",
+            "class": "Illuminate\\Console\\Command",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
+            "line": 262,
+            "function": "doRunCommand",
+            "class": "Symfony\\Component\\Console\\Application",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
+            "line": 145,
+            "function": "doRun",
+            "class": "Symfony\\Component\\Console\\Application",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
+            "line": 89,
+            "function": "run",
+            "class": "Symfony\\Component\\Console\\Application",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
+            "line": 122,
+            "function": "run",
+            "class": "Illuminate\\Console\\Application",
+            "type": "->"
+        },
+        {
+            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/artisan",
+            "line": 37,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Console\\Kernel",
+            "type": "->"
+        }
+    ]
+}
 ```
 
 ### HTTP Request
-`GET api/estado`
+`GET api/estados`
 
 
-<!-- END_df2b54722592ebe72673541bf9710348 -->
+<!-- END_ac5f293a4430cf75efc1e7194302aea4 -->
 
-<!-- START_7cfa4514b21d487a5b45c005353ca69b -->
+<!-- START_44edf080539dd457ba40420fa697c565 -->
 ## Show the form for creating a new resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/estado/create" 
+curl -X GET -G "http://localhost/api/estados/create" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/estado/create");
+const url = new URL("http://localhost/api/estados/create");
 
 let headers = {
     "Accept": "application/json",
@@ -1112,22 +1101,22 @@ null
 ```
 
 ### HTTP Request
-`GET api/estado/create`
+`GET api/estados/create`
 
 
-<!-- END_7cfa4514b21d487a5b45c005353ca69b -->
+<!-- END_44edf080539dd457ba40420fa697c565 -->
 
-<!-- START_884c0ec12c43bd834e25ffa0a8ef9abc -->
+<!-- START_12b8c44faff90c50600fdf54d6b28100 -->
 ## Store a newly created resource in storage.
 
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/estado" 
+curl -X POST "http://localhost/api/estados" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/estado");
+const url = new URL("http://localhost/api/estados");
 
 let headers = {
     "Accept": "application/json",
@@ -1144,22 +1133,22 @@ fetch(url, {
 
 
 ### HTTP Request
-`POST api/estado`
+`POST api/estados`
 
 
-<!-- END_884c0ec12c43bd834e25ffa0a8ef9abc -->
+<!-- END_12b8c44faff90c50600fdf54d6b28100 -->
 
-<!-- START_376ac7b91dabf90adb95515ac64d79b6 -->
+<!-- START_81604ca46a9d7fb8fe23c7833dcdbb8b -->
 ## Display the specified resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/estado/{estado}" 
+curl -X GET -G "http://localhost/api/estados/{estado}" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/estado/{estado}");
+const url = new URL("http://localhost/api/estados/{estado}");
 
 let headers = {
     "Accept": "application/json",
@@ -1174,417 +1163,34 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (404):
+> Example response (200):
 
 ```json
 {
-    "message": "No query results for model [App\\Model\\Estado].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
-    "trace": [
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/app\/Exceptions\/Handler.php",
-            "line": 49,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 58,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 684,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 659,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 625,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 614,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 62,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 272,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 256,
-            "function": "callLaravelRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 33,
-            "function": "makeApiCall",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 49,
-            "function": "__invoke",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 68,
-            "function": "resolve",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
-            "line": 54,
-            "function": "getResponse",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 196,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 57,
-            "function": "processRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 572,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 255,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 901,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 262,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 145,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 89,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 122,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "data": {
+        "id": 1,
+        "estado": "Disponivel"
+    }
 }
 ```
 
 ### HTTP Request
-`GET api/estado/{estado}`
+`GET api/estados/{estado}`
 
 
-<!-- END_376ac7b91dabf90adb95515ac64d79b6 -->
+<!-- END_81604ca46a9d7fb8fe23c7833dcdbb8b -->
 
-<!-- START_655b82cc6632af473463a67c55e93989 -->
+<!-- START_6e8f0dc5a3aab80778634ba1703ddbfb -->
 ## Show the form for editing the specified resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/estado/{estado}/edit" 
+curl -X GET -G "http://localhost/api/estados/{estado}/edit" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/estado/{estado}/edit");
+const url = new URL("http://localhost/api/estados/{estado}/edit");
 
 let headers = {
     "Accept": "application/json",
@@ -1599,417 +1205,29 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (404):
+> Example response (200):
 
 ```json
-{
-    "message": "No query results for model [App\\Model\\Estado].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
-    "trace": [
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/app\/Exceptions\/Handler.php",
-            "line": 49,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 58,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 684,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 659,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 625,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 614,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 62,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 272,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 256,
-            "function": "callLaravelRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 33,
-            "function": "makeApiCall",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 49,
-            "function": "__invoke",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 68,
-            "function": "resolve",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
-            "line": 54,
-            "function": "getResponse",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 196,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 57,
-            "function": "processRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 572,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 255,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 901,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 262,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 145,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 89,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 122,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
-}
+null
 ```
 
 ### HTTP Request
-`GET api/estado/{estado}/edit`
+`GET api/estados/{estado}/edit`
 
 
-<!-- END_655b82cc6632af473463a67c55e93989 -->
+<!-- END_6e8f0dc5a3aab80778634ba1703ddbfb -->
 
-<!-- START_e38f37e373f2442eed5c18faa5f18e50 -->
+<!-- START_edc8cb441d35eee921089d801017ab90 -->
 ## Update the specified resource in storage.
 
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/estado/{estado}" 
+curl -X PUT "http://localhost/api/estados/{estado}" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/estado/{estado}");
+const url = new URL("http://localhost/api/estados/{estado}");
 
 let headers = {
     "Accept": "application/json",
@@ -2026,24 +1244,24 @@ fetch(url, {
 
 
 ### HTTP Request
-`PUT api/estado/{estado}`
+`PUT api/estados/{estado}`
 
-`PATCH api/estado/{estado}`
+`PATCH api/estados/{estado}`
 
 
-<!-- END_e38f37e373f2442eed5c18faa5f18e50 -->
+<!-- END_edc8cb441d35eee921089d801017ab90 -->
 
-<!-- START_789a3b889f27e3b7e45791adc3b2b90b -->
+<!-- START_4dffc4046cb3367db34359bf4f412565 -->
 ## Remove the specified resource from storage.
 
 > Example request:
 
 ```bash
-curl -X DELETE "http://localhost/api/estado/{estado}" 
+curl -X DELETE "http://localhost/api/estados/{estado}" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/estado/{estado}");
+const url = new URL("http://localhost/api/estados/{estado}");
 
 let headers = {
     "Accept": "application/json",
@@ -2060,22 +1278,22 @@ fetch(url, {
 
 
 ### HTTP Request
-`DELETE api/estado/{estado}`
+`DELETE api/estados/{estado}`
 
 
-<!-- END_789a3b889f27e3b7e45791adc3b2b90b -->
+<!-- END_4dffc4046cb3367db34359bf4f412565 -->
 
-<!-- START_248b4e695ff0bf790be78308dfddfe95 -->
+<!-- START_910f847967dfd033adc177580aac35a2 -->
 ## Display a listing of the resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/tamanho" 
+curl -X GET -G "http://localhost/api/tamanhos" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/tamanho");
+const url = new URL("http://localhost/api/tamanhos");
 
 let headers = {
     "Accept": "application/json",
@@ -2093,26 +1311,53 @@ fetch(url, {
 > Example response (200):
 
 ```json
-null
+{
+    "data": [
+        {
+            "tamanho": "S",
+            "href": {
+                "link": "http:\/\/localhost\/api\/tamanhos\/1"
+            }
+        },
+        {
+            "tamanho": "XL",
+            "href": {
+                "link": "http:\/\/localhost\/api\/tamanhos\/2"
+            }
+        },
+        {
+            "tamanho": "S",
+            "href": {
+                "link": "http:\/\/localhost\/api\/tamanhos\/3"
+            }
+        },
+        {
+            "tamanho": "L",
+            "href": {
+                "link": "http:\/\/localhost\/api\/tamanhos\/4"
+            }
+        }
+    ]
+}
 ```
 
 ### HTTP Request
-`GET api/tamanho`
+`GET api/tamanhos`
 
 
-<!-- END_248b4e695ff0bf790be78308dfddfe95 -->
+<!-- END_910f847967dfd033adc177580aac35a2 -->
 
-<!-- START_c4ffee467b4a8aac3a1453b5bd40a7b1 -->
+<!-- START_f806f99c4ce3fce09c71e939a30648d3 -->
 ## Show the form for creating a new resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/tamanho/create" 
+curl -X GET -G "http://localhost/api/tamanhos/create" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/tamanho/create");
+const url = new URL("http://localhost/api/tamanhos/create");
 
 let headers = {
     "Accept": "application/json",
@@ -2134,22 +1379,22 @@ null
 ```
 
 ### HTTP Request
-`GET api/tamanho/create`
+`GET api/tamanhos/create`
 
 
-<!-- END_c4ffee467b4a8aac3a1453b5bd40a7b1 -->
+<!-- END_f806f99c4ce3fce09c71e939a30648d3 -->
 
-<!-- START_acaa186c99486ad30aaecf66cbe846dd -->
+<!-- START_441919fa78c2e050906d9079ed13e3ff -->
 ## Store a newly created resource in storage.
 
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/tamanho" 
+curl -X POST "http://localhost/api/tamanhos" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/tamanho");
+const url = new URL("http://localhost/api/tamanhos");
 
 let headers = {
     "Accept": "application/json",
@@ -2166,22 +1411,22 @@ fetch(url, {
 
 
 ### HTTP Request
-`POST api/tamanho`
+`POST api/tamanhos`
 
 
-<!-- END_acaa186c99486ad30aaecf66cbe846dd -->
+<!-- END_441919fa78c2e050906d9079ed13e3ff -->
 
-<!-- START_0a63ea4e8bbb2681cadcef5293e26f18 -->
+<!-- START_e549b304b29bc4a6784f985291bf7581 -->
 ## Display the specified resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/tamanho/{tamanho}" 
+curl -X GET -G "http://localhost/api/tamanhos/{tamanho}" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/tamanho/{tamanho}");
+const url = new URL("http://localhost/api/tamanhos/{tamanho}");
 
 let headers = {
     "Accept": "application/json",
@@ -2196,417 +1441,34 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (404):
+> Example response (200):
 
 ```json
 {
-    "message": "No query results for model [App\\Model\\Tamanho].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
-    "trace": [
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/app\/Exceptions\/Handler.php",
-            "line": 49,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 58,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 684,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 659,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 625,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 614,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 62,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 272,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 256,
-            "function": "callLaravelRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 33,
-            "function": "makeApiCall",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 49,
-            "function": "__invoke",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 68,
-            "function": "resolve",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
-            "line": 54,
-            "function": "getResponse",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 196,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 57,
-            "function": "processRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 572,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 255,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 901,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 262,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 145,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 89,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 122,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "data": {
+        "id": 1,
+        "tamanho": "S"
+    }
 }
 ```
 
 ### HTTP Request
-`GET api/tamanho/{tamanho}`
+`GET api/tamanhos/{tamanho}`
 
 
-<!-- END_0a63ea4e8bbb2681cadcef5293e26f18 -->
+<!-- END_e549b304b29bc4a6784f985291bf7581 -->
 
-<!-- START_2916c6ebfd4c637b40b39ce168c90e70 -->
+<!-- START_31adec954e53951294fc3e5868f6f5d5 -->
 ## Show the form for editing the specified resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/tamanho/{tamanho}/edit" 
+curl -X GET -G "http://localhost/api/tamanhos/{tamanho}/edit" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/tamanho/{tamanho}/edit");
+const url = new URL("http://localhost/api/tamanhos/{tamanho}/edit");
 
 let headers = {
     "Accept": "application/json",
@@ -2621,417 +1483,29 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (404):
+> Example response (200):
 
 ```json
-{
-    "message": "No query results for model [App\\Model\\Tamanho].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
-    "trace": [
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/app\/Exceptions\/Handler.php",
-            "line": 49,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 58,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 684,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 659,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 625,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 614,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 62,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 272,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 256,
-            "function": "callLaravelRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 33,
-            "function": "makeApiCall",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 49,
-            "function": "__invoke",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 68,
-            "function": "resolve",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
-            "line": 54,
-            "function": "getResponse",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 196,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 57,
-            "function": "processRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 572,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 255,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 901,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 262,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 145,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 89,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 122,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
-}
+null
 ```
 
 ### HTTP Request
-`GET api/tamanho/{tamanho}/edit`
+`GET api/tamanhos/{tamanho}/edit`
 
 
-<!-- END_2916c6ebfd4c637b40b39ce168c90e70 -->
+<!-- END_31adec954e53951294fc3e5868f6f5d5 -->
 
-<!-- START_ab4fd93e0cdf6e39caa640139e9163f9 -->
+<!-- START_e4fafdaa44af0c54d99e8cc84c7ad8d8 -->
 ## Update the specified resource in storage.
 
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/tamanho/{tamanho}" 
+curl -X PUT "http://localhost/api/tamanhos/{tamanho}" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/tamanho/{tamanho}");
+const url = new URL("http://localhost/api/tamanhos/{tamanho}");
 
 let headers = {
     "Accept": "application/json",
@@ -3048,24 +1522,24 @@ fetch(url, {
 
 
 ### HTTP Request
-`PUT api/tamanho/{tamanho}`
+`PUT api/tamanhos/{tamanho}`
 
-`PATCH api/tamanho/{tamanho}`
+`PATCH api/tamanhos/{tamanho}`
 
 
-<!-- END_ab4fd93e0cdf6e39caa640139e9163f9 -->
+<!-- END_e4fafdaa44af0c54d99e8cc84c7ad8d8 -->
 
-<!-- START_f605a5fac0b233d963b0c2651da97dbc -->
+<!-- START_12933aa0be5df8b051558391f02e216e -->
 ## Remove the specified resource from storage.
 
 > Example request:
 
 ```bash
-curl -X DELETE "http://localhost/api/tamanho/{tamanho}" 
+curl -X DELETE "http://localhost/api/tamanhos/{tamanho}" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/tamanho/{tamanho}");
+const url = new URL("http://localhost/api/tamanhos/{tamanho}");
 
 let headers = {
     "Accept": "application/json",
@@ -3082,22 +1556,22 @@ fetch(url, {
 
 
 ### HTTP Request
-`DELETE api/tamanho/{tamanho}`
+`DELETE api/tamanhos/{tamanho}`
 
 
-<!-- END_f605a5fac0b233d963b0c2651da97dbc -->
+<!-- END_12933aa0be5df8b051558391f02e216e -->
 
-<!-- START_581dac1cf686e1872ac410bffd11103e -->
+<!-- START_1d3824e1b446b76c2fe7ab6a2a9c6714 -->
 ## Display a listing of the resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/localizacao" 
+curl -X GET -G "http://localhost/api/localizacaos" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/localizacao");
+const url = new URL("http://localhost/api/localizacaos");
 
 let headers = {
     "Accept": "application/json",
@@ -3115,26 +1589,69 @@ fetch(url, {
 > Example response (200):
 
 ```json
-null
+{
+    "data": [
+        {
+            "nome": "Heath Wall",
+            "lat": 20.818709,
+            "long": -21.673308,
+            "href": {
+                "link": "http:\/\/localhost\/api\/localizacaos\/1"
+            }
+        },
+        {
+            "nome": "Bosco Freeway",
+            "lat": -52.058123,
+            "long": 134.444704,
+            "href": {
+                "link": "http:\/\/localhost\/api\/localizacaos\/2"
+            }
+        },
+        {
+            "nome": "Towne Centers",
+            "lat": -1.804207,
+            "long": 173.556391,
+            "href": {
+                "link": "http:\/\/localhost\/api\/localizacaos\/3"
+            }
+        },
+        {
+            "nome": "Bartoletti Grove",
+            "lat": -33.075874,
+            "long": 102.922643,
+            "href": {
+                "link": "http:\/\/localhost\/api\/localizacaos\/4"
+            }
+        },
+        {
+            "nome": "Abshire Course",
+            "lat": -38.450808,
+            "long": -160.152726,
+            "href": {
+                "link": "http:\/\/localhost\/api\/localizacaos\/5"
+            }
+        }
+    ]
+}
 ```
 
 ### HTTP Request
-`GET api/localizacao`
+`GET api/localizacaos`
 
 
-<!-- END_581dac1cf686e1872ac410bffd11103e -->
+<!-- END_1d3824e1b446b76c2fe7ab6a2a9c6714 -->
 
-<!-- START_872991d0df73cb4905b3fadeb50c291a -->
+<!-- START_c6da2e3e3c6d7dd9df3ba6dde64f040e -->
 ## Show the form for creating a new resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/localizacao/create" 
+curl -X GET -G "http://localhost/api/localizacaos/create" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/localizacao/create");
+const url = new URL("http://localhost/api/localizacaos/create");
 
 let headers = {
     "Accept": "application/json",
@@ -3156,22 +1673,22 @@ null
 ```
 
 ### HTTP Request
-`GET api/localizacao/create`
+`GET api/localizacaos/create`
 
 
-<!-- END_872991d0df73cb4905b3fadeb50c291a -->
+<!-- END_c6da2e3e3c6d7dd9df3ba6dde64f040e -->
 
-<!-- START_92c11ebfc73b9650d53426836f586561 -->
+<!-- START_82ec123977aeaeb445155a9418d2d5e0 -->
 ## Store a newly created resource in storage.
 
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/localizacao" 
+curl -X POST "http://localhost/api/localizacaos" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/localizacao");
+const url = new URL("http://localhost/api/localizacaos");
 
 let headers = {
     "Accept": "application/json",
@@ -3188,22 +1705,22 @@ fetch(url, {
 
 
 ### HTTP Request
-`POST api/localizacao`
+`POST api/localizacaos`
 
 
-<!-- END_92c11ebfc73b9650d53426836f586561 -->
+<!-- END_82ec123977aeaeb445155a9418d2d5e0 -->
 
-<!-- START_129cebd1ea67ffee34dde8bec5558398 -->
+<!-- START_66e32a4889a5adc165582adfe3fa634f -->
 ## Display the specified resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/localizacao/{localizacao}" 
+curl -X GET -G "http://localhost/api/localizacaos/{localizacao}" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/localizacao/{localizacao}");
+const url = new URL("http://localhost/api/localizacaos/{localizacao}");
 
 let headers = {
     "Accept": "application/json",
@@ -3218,417 +1735,36 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (404):
+> Example response (200):
 
 ```json
 {
-    "message": "No query results for model [App\\Model\\Localizacao].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
-    "trace": [
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/app\/Exceptions\/Handler.php",
-            "line": 49,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 58,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 684,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 659,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 625,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 614,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 62,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 272,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 256,
-            "function": "callLaravelRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 33,
-            "function": "makeApiCall",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 49,
-            "function": "__invoke",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 68,
-            "function": "resolve",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
-            "line": 54,
-            "function": "getResponse",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 196,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 57,
-            "function": "processRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 572,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 255,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 901,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 262,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 145,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 89,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 122,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "data": {
+        "id": 1,
+        "nome": "Heath Wall",
+        "lat": 20.818709,
+        "long": -21.673308
+    }
 }
 ```
 
 ### HTTP Request
-`GET api/localizacao/{localizacao}`
+`GET api/localizacaos/{localizacao}`
 
 
-<!-- END_129cebd1ea67ffee34dde8bec5558398 -->
+<!-- END_66e32a4889a5adc165582adfe3fa634f -->
 
-<!-- START_ddaccb6c5d87e2fb67d93e09953490ae -->
+<!-- START_b0ece0e434d0981659bd911bb8589332 -->
 ## Show the form for editing the specified resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/localizacao/{localizacao}/edit" 
+curl -X GET -G "http://localhost/api/localizacaos/{localizacao}/edit" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/localizacao/{localizacao}/edit");
+const url = new URL("http://localhost/api/localizacaos/{localizacao}/edit");
 
 let headers = {
     "Accept": "application/json",
@@ -3643,417 +1779,29 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (404):
+> Example response (200):
 
 ```json
-{
-    "message": "No query results for model [App\\Model\\Localizacao].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
-    "trace": [
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/app\/Exceptions\/Handler.php",
-            "line": 49,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 58,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 684,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 659,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 625,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 614,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 62,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 272,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 256,
-            "function": "callLaravelRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 33,
-            "function": "makeApiCall",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 49,
-            "function": "__invoke",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 68,
-            "function": "resolve",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
-            "line": 54,
-            "function": "getResponse",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 196,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 57,
-            "function": "processRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 572,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 255,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 901,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 262,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 145,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 89,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 122,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
-}
+null
 ```
 
 ### HTTP Request
-`GET api/localizacao/{localizacao}/edit`
+`GET api/localizacaos/{localizacao}/edit`
 
 
-<!-- END_ddaccb6c5d87e2fb67d93e09953490ae -->
+<!-- END_b0ece0e434d0981659bd911bb8589332 -->
 
-<!-- START_d7c45f98cb900708b3a039a02a475968 -->
+<!-- START_34f786553c4f147c34c5146f754faf9e -->
 ## Update the specified resource in storage.
 
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/localizacao/{localizacao}" 
+curl -X PUT "http://localhost/api/localizacaos/{localizacao}" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/localizacao/{localizacao}");
+const url = new URL("http://localhost/api/localizacaos/{localizacao}");
 
 let headers = {
     "Accept": "application/json",
@@ -4070,24 +1818,24 @@ fetch(url, {
 
 
 ### HTTP Request
-`PUT api/localizacao/{localizacao}`
+`PUT api/localizacaos/{localizacao}`
 
-`PATCH api/localizacao/{localizacao}`
+`PATCH api/localizacaos/{localizacao}`
 
 
-<!-- END_d7c45f98cb900708b3a039a02a475968 -->
+<!-- END_34f786553c4f147c34c5146f754faf9e -->
 
-<!-- START_2f3cc99459e11c88a1ddfbc7e479870d -->
+<!-- START_90f9194fa9dd72ce64f86052b1b7a874 -->
 ## Remove the specified resource from storage.
 
 > Example request:
 
 ```bash
-curl -X DELETE "http://localhost/api/localizacao/{localizacao}" 
+curl -X DELETE "http://localhost/api/localizacaos/{localizacao}" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/localizacao/{localizacao}");
+const url = new URL("http://localhost/api/localizacaos/{localizacao}");
 
 let headers = {
     "Accept": "application/json",
@@ -4104,10 +1852,10 @@ fetch(url, {
 
 
 ### HTTP Request
-`DELETE api/localizacao/{localizacao}`
+`DELETE api/localizacaos/{localizacao}`
 
 
-<!-- END_2f3cc99459e11c88a1ddfbc7e479870d -->
+<!-- END_90f9194fa9dd72ce64f86052b1b7a874 -->
 
 <!-- START_4708a91a0309f0ddbadd902f0e0f3767 -->
 ## Display a listing of the resource.
@@ -4137,7 +1885,90 @@ fetch(url, {
 > Example response (200):
 
 ```json
-null
+{
+    "data": [
+        {
+            "nome": "Charlene Corwin",
+            "email": "lcremin@hotmail.com",
+            "telefone": "934.682.3744 x279",
+            "href": {
+                "link": "http:\/\/localhost\/api\/clientes\/1"
+            }
+        },
+        {
+            "nome": "Eloy Quitzon",
+            "email": "rene.wolf@hotmail.com",
+            "telefone": "501.397.9434",
+            "href": {
+                "link": "http:\/\/localhost\/api\/clientes\/2"
+            }
+        },
+        {
+            "nome": "Melisa Armstrong",
+            "email": "ariane.kris@hotmail.com",
+            "telefone": "(740) 887-9996 x535",
+            "href": {
+                "link": "http:\/\/localhost\/api\/clientes\/3"
+            }
+        },
+        {
+            "nome": "Sophie Kuvalis",
+            "email": "talia.ullrich@hotmail.com",
+            "telefone": "302-891-9771",
+            "href": {
+                "link": "http:\/\/localhost\/api\/clientes\/4"
+            }
+        },
+        {
+            "nome": "Marlee Tillman",
+            "email": "lincoln12@yahoo.com",
+            "telefone": "+1-516-523-2664",
+            "href": {
+                "link": "http:\/\/localhost\/api\/clientes\/5"
+            }
+        },
+        {
+            "nome": "Monique Witting",
+            "email": "florida.morissette@yahoo.com",
+            "telefone": "832-570-3390",
+            "href": {
+                "link": "http:\/\/localhost\/api\/clientes\/6"
+            }
+        },
+        {
+            "nome": "Earnestine Aufderhar",
+            "email": "angie.hill@yahoo.com",
+            "telefone": "+1-942-669-3966",
+            "href": {
+                "link": "http:\/\/localhost\/api\/clientes\/7"
+            }
+        },
+        {
+            "nome": "Peggie Toy",
+            "email": "zgusikowski@hotmail.com",
+            "telefone": "1-789-205-3902 x453",
+            "href": {
+                "link": "http:\/\/localhost\/api\/clientes\/8"
+            }
+        },
+        {
+            "nome": "Robb Keeling",
+            "email": "lmarquardt@yahoo.com",
+            "telefone": "1-454-608-7274 x58324",
+            "href": {
+                "link": "http:\/\/localhost\/api\/clientes\/9"
+            }
+        },
+        {
+            "nome": "Troy Kassulke",
+            "email": "marina73@hotmail.com",
+            "telefone": "681-337-8379 x21343",
+            "href": {
+                "link": "http:\/\/localhost\/api\/clientes\/10"
+            }
+        }
+    ]
+}
 ```
 
 ### HTTP Request
@@ -4240,397 +2071,16 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (404):
+> Example response (200):
 
 ```json
 {
-    "message": "No query results for model [App\\Model\\Cliente].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
-    "trace": [
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/app\/Exceptions\/Handler.php",
-            "line": 49,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 58,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 684,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 659,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 625,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 614,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 62,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 272,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 256,
-            "function": "callLaravelRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 33,
-            "function": "makeApiCall",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 49,
-            "function": "__invoke",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 68,
-            "function": "resolve",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
-            "line": 54,
-            "function": "getResponse",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 196,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 57,
-            "function": "processRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 572,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 255,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 901,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 262,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 145,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 89,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 122,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "data": {
+        "id": 1,
+        "nome": "Charlene Corwin",
+        "email": "lcremin@hotmail.com",
+        "telefone": "934.682.3744 x279"
+    }
 }
 ```
 
@@ -4665,398 +2115,10 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (404):
+> Example response (200):
 
 ```json
-{
-    "message": "No query results for model [App\\Model\\Cliente].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
-    "trace": [
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/app\/Exceptions\/Handler.php",
-            "line": 49,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 58,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 684,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 659,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 625,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 614,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 62,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 272,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 256,
-            "function": "callLaravelRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 33,
-            "function": "makeApiCall",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 49,
-            "function": "__invoke",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 68,
-            "function": "resolve",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
-            "line": 54,
-            "function": "getResponse",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 196,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 57,
-            "function": "processRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 572,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 255,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 901,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 262,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 145,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 89,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 122,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
-}
+null
 ```
 
 ### HTTP Request
@@ -5131,6 +2193,226 @@ fetch(url, {
 
 <!-- END_6864d4bf53f3add54af093e7fd2e8864 -->
 
+<!-- START_80cdd4990301b691ea1362dc392185fe -->
+## Display a listing of the resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/clientes/{cliente}/encomendas" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/clientes/{cliente}/encomendas");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "data": [
+        {
+            "id": 8,
+            "data_estimada": "2006-01-02 20:42:37",
+            "data_de_entrega": "1986-10-07 02:39:48",
+            "data_de_levantamento": "1987-09-12 22:38:46",
+            "data_de_entrada_no_sistema": "1989-10-11 03:39:28",
+            "data_de_entrega_pretendida": "1992-01-24 04:13:36",
+            "tempo_limite_de_levantamento": "3",
+            "temperatura": 9.8,
+            "obcervacoes": "I'm mad?' said Alice. 'Why, you don't even know what to uglify is, you see, so many tea-things are put out here?' she asked. 'Yes, that's it,' said Alice. 'Then you should say \"With what porpoise?\"'.",
+            "codigo": "qLaPe39E05",
+            "cacifo": {
+                "id": 10,
+                "numero": 258,
+                "temperatura": 8.6,
+                "codigo": "Lb6Ql",
+                "tamanhoId": 4,
+                "estadoId": 2,
+                "localizacaoId": 3,
+                "tamanho": {
+                    "id": 4,
+                    "tamanho": "L"
+                },
+                "estado": {
+                    "id": 2,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 3,
+                    "nome": "Towne Centers",
+                    "lat": -1.804207,
+                    "long": 173.556391
+                }
+            },
+            "cliente": {
+                "id": 1,
+                "nome": "Charlene Corwin",
+                "email": "lcremin@hotmail.com",
+                "telefone": "934.682.3744 x279"
+            },
+            "href": {
+                "cliente": "http:\/\/localhost\/api\/clientes\/1",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/10"
+            }
+        },
+        {
+            "id": 15,
+            "data_estimada": "2004-06-07 21:53:55",
+            "data_de_entrega": "1970-11-28 11:36:59",
+            "data_de_levantamento": "1993-03-23 23:25:04",
+            "data_de_entrada_no_sistema": "1975-12-26 09:57:45",
+            "data_de_entrega_pretendida": "1973-12-07 08:16:55",
+            "tempo_limite_de_levantamento": "3",
+            "temperatura": 1.3,
+            "obcervacoes": "Alice, (she had kept a piece of bread-and-butter in the last words out loud, and the baby--the fire-irons came first; then followed a shower of saucepans, plates, and dishes. The Duchess took her.",
+            "codigo": "Ep66LL352w",
+            "cacifo": {
+                "id": 2,
+                "numero": 249,
+                "temperatura": 4,
+                "codigo": "Ai8xDDC",
+                "tamanhoId": 1,
+                "estadoId": 1,
+                "localizacaoId": 2,
+                "tamanho": {
+                    "id": 1,
+                    "tamanho": "S"
+                },
+                "estado": {
+                    "id": 1,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 2,
+                    "nome": "Bosco Freeway",
+                    "lat": -52.058123,
+                    "long": 134.444704
+                }
+            },
+            "cliente": {
+                "id": 1,
+                "nome": "Charlene Corwin",
+                "email": "lcremin@hotmail.com",
+                "telefone": "934.682.3744 x279"
+            },
+            "href": {
+                "cliente": "http:\/\/localhost\/api\/clientes\/1",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/2"
+            }
+        },
+        {
+            "id": 18,
+            "data_estimada": "1995-03-03 23:04:37",
+            "data_de_entrega": "1994-10-07 15:11:11",
+            "data_de_levantamento": "1972-05-15 11:16:30",
+            "data_de_entrada_no_sistema": "1991-03-05 13:07:01",
+            "data_de_entrega_pretendida": "1981-08-11 08:28:23",
+            "tempo_limite_de_levantamento": "4",
+            "temperatura": 0.2,
+            "obcervacoes": "March, I think I may as well say this), 'to go on with the next thing was to find that her idea of the bread-and-butter. Just at this corner--No, tie 'em together first--they don't reach half high.",
+            "codigo": "V7SBmi",
+            "cacifo": {
+                "id": 11,
+                "numero": 110,
+                "temperatura": 7.3,
+                "codigo": "K9kU9k",
+                "tamanhoId": 4,
+                "estadoId": 2,
+                "localizacaoId": 1,
+                "tamanho": {
+                    "id": 4,
+                    "tamanho": "L"
+                },
+                "estado": {
+                    "id": 2,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 1,
+                    "nome": "Heath Wall",
+                    "lat": 20.818709,
+                    "long": -21.673308
+                }
+            },
+            "cliente": {
+                "id": 1,
+                "nome": "Charlene Corwin",
+                "email": "lcremin@hotmail.com",
+                "telefone": "934.682.3744 x279"
+            },
+            "href": {
+                "cliente": "http:\/\/localhost\/api\/clientes\/1",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/11"
+            }
+        },
+        {
+            "id": 21,
+            "data_estimada": "1997-09-11 10:16:38",
+            "data_de_entrega": "1986-05-09 05:20:03",
+            "data_de_levantamento": "1984-06-17 19:33:16",
+            "data_de_entrada_no_sistema": "1997-03-30 07:37:27",
+            "data_de_entrega_pretendida": "2002-05-07 05:56:06",
+            "tempo_limite_de_levantamento": "3",
+            "temperatura": 11.3,
+            "obcervacoes": "Alice. The King looked anxiously round, to make the arches. The chief difficulty Alice found at first she would have made a snatch in the face. 'I'll put a stop to this,' she said to the Gryphon.",
+            "codigo": "1jkT2",
+            "cacifo": {
+                "id": 4,
+                "numero": 278,
+                "temperatura": 3.6,
+                "codigo": "E24aqc",
+                "tamanhoId": 1,
+                "estadoId": 1,
+                "localizacaoId": 1,
+                "tamanho": {
+                    "id": 1,
+                    "tamanho": "S"
+                },
+                "estado": {
+                    "id": 1,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 1,
+                    "nome": "Heath Wall",
+                    "lat": 20.818709,
+                    "long": -21.673308
+                }
+            },
+            "cliente": {
+                "id": 1,
+                "nome": "Charlene Corwin",
+                "email": "lcremin@hotmail.com",
+                "telefone": "934.682.3744 x279"
+            },
+            "href": {
+                "cliente": "http:\/\/localhost\/api\/clientes\/1",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/4"
+            }
+        }
+    ]
+}
+```
+
+### HTTP Request
+`GET api/clientes/{cliente}/encomendas`
+
+
+<!-- END_80cdd4990301b691ea1362dc392185fe -->
+
 <!-- START_9103cfbc8321cf197d1d8d4f7fbedeb8 -->
 ## Display a listing of the resource.
 
@@ -5159,7 +2441,385 @@ fetch(url, {
 > Example response (200):
 
 ```json
-null
+{
+    "data": [
+        {
+            "data_estimada": "1994-07-23 11:59:17",
+            "data_de_entrega": "2002-09-05 20:17:45",
+            "data_de_levantamento": "1986-04-15 04:36:41",
+            "data_de_entrada": "1998-12-12 20:09:43",
+            "data_de_entrega_pretendida": "2006-09-13 02:05:23",
+            "tempolimite_de_levantamento": "2",
+            "temperatura": 4.5,
+            "observacoes": "The executioner's argument was, that if you want to be?' it asked. 'Oh, I'm not particular as to prevent its undoing itself,) she carried it out to sea!\" But the insolence of his pocket, and pulled.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/1",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/8",
+                "cliente": "http:\/\/localhost\/api\/clientes\/9"
+            }
+        },
+        {
+            "data_estimada": "2001-03-09 12:55:53",
+            "data_de_entrega": "2018-10-18 09:29:06",
+            "data_de_levantamento": "2004-05-02 05:22:41",
+            "data_de_entrada": "2012-04-27 15:44:58",
+            "data_de_entrega_pretendida": "1975-09-10 03:16:14",
+            "tempolimite_de_levantamento": "2",
+            "temperatura": 7.9,
+            "observacoes": "Who for such dainties would not stoop? Soup of the words 'DRINK ME,' but nevertheless she uncorked it and put it right; 'not that it was her turn or not. 'Oh, PLEASE mind what you're doing!' cried.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/2",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/7",
+                "cliente": "http:\/\/localhost\/api\/clientes\/9"
+            }
+        },
+        {
+            "data_estimada": "1981-09-02 23:29:03",
+            "data_de_entrega": "1997-10-05 21:26:23",
+            "data_de_levantamento": "1987-07-20 22:36:35",
+            "data_de_entrada": "2010-02-06 18:55:46",
+            "data_de_entrega_pretendida": "1977-06-21 14:50:26",
+            "tempolimite_de_levantamento": "3",
+            "temperatura": 3.3,
+            "observacoes": "Queen put on his spectacles and looked into its nest. Alice crouched down among the trees, a little while, however, she went on in a rather offended tone, 'so I should say what you had been (Before.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/3",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/18",
+                "cliente": "http:\/\/localhost\/api\/clientes\/4"
+            }
+        },
+        {
+            "data_estimada": "1991-12-15 23:50:04",
+            "data_de_entrega": "1982-04-14 11:36:14",
+            "data_de_levantamento": "1979-04-19 05:49:07",
+            "data_de_entrada": "2001-01-19 04:46:49",
+            "data_de_entrega_pretendida": "1981-02-04 06:20:26",
+            "tempolimite_de_levantamento": "2",
+            "temperatura": 11,
+            "observacoes": "The long grass rustled at her feet as the large birds complained that they must be what he did with the Lory, who at last it unfolded its arms, took the opportunity of adding, 'You're looking for.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/4",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/2",
+                "cliente": "http:\/\/localhost\/api\/clientes\/7"
+            }
+        },
+        {
+            "data_estimada": "2013-12-04 22:40:57",
+            "data_de_entrega": "1981-05-01 17:50:41",
+            "data_de_levantamento": "1974-08-08 10:19:05",
+            "data_de_entrada": "2010-01-26 05:31:55",
+            "data_de_entrega_pretendida": "1984-02-25 01:45:40",
+            "tempolimite_de_levantamento": "2",
+            "temperatura": 0.4,
+            "observacoes": "She felt very glad that it made no mark; but he would not join the dance?\"' 'Thank you, it's a very truthful child; 'but little girls of her head to hide a smile: some of the country is, you ARE a.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/5",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/5",
+                "cliente": "http:\/\/localhost\/api\/clientes\/7"
+            }
+        },
+        {
+            "data_estimada": "1975-09-24 15:42:23",
+            "data_de_entrega": "2010-10-10 17:45:21",
+            "data_de_levantamento": "2018-01-22 05:25:14",
+            "data_de_entrada": "1992-07-08 13:35:36",
+            "data_de_entrega_pretendida": "2013-08-02 23:15:19",
+            "tempolimite_de_levantamento": "3",
+            "temperatura": 2.5,
+            "observacoes": "Majesty must cross-examine THIS witness.' 'Well, if I was, I shouldn't like THAT!' 'Oh, you foolish Alice!' she answered herself. 'How can you learn lessons in here? Why, there's hardly enough of it.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/6",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/11",
+                "cliente": "http:\/\/localhost\/api\/clientes\/2"
+            }
+        },
+        {
+            "data_estimada": "2017-10-30 21:53:56",
+            "data_de_entrega": "1981-10-16 21:59:51",
+            "data_de_levantamento": "1979-04-07 11:15:17",
+            "data_de_entrada": "2013-07-10 01:53:44",
+            "data_de_entrega_pretendida": "1993-10-05 21:01:19",
+            "tempolimite_de_levantamento": "2",
+            "temperatura": 2.5,
+            "observacoes": "King. The next witness would be four thousand miles down, I think--' (for, you see, Alice had no very clear notion how long ago anything had happened.) So she called softly after it, and behind them.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/7",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/15",
+                "cliente": "http:\/\/localhost\/api\/clientes\/9"
+            }
+        },
+        {
+            "data_estimada": "2006-01-02 20:42:37",
+            "data_de_entrega": "1986-10-07 02:39:48",
+            "data_de_levantamento": "1987-09-12 22:38:46",
+            "data_de_entrada": "1989-10-11 03:39:28",
+            "data_de_entrega_pretendida": "1992-01-24 04:13:36",
+            "tempolimite_de_levantamento": "3",
+            "temperatura": 9.8,
+            "observacoes": "I'm mad?' said Alice. 'Why, you don't even know what to uglify is, you see, so many tea-things are put out here?' she asked. 'Yes, that's it,' said Alice. 'Then you should say \"With what porpoise?\"'.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/8",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/10",
+                "cliente": "http:\/\/localhost\/api\/clientes\/1"
+            }
+        },
+        {
+            "data_estimada": "1971-09-13 00:18:24",
+            "data_de_entrega": "1998-02-14 04:08:30",
+            "data_de_levantamento": "1992-04-14 06:50:07",
+            "data_de_entrada": "1998-08-07 16:17:14",
+            "data_de_entrega_pretendida": "1974-06-08 17:01:38",
+            "tempolimite_de_levantamento": "2",
+            "temperatura": 6.9,
+            "observacoes": "They had not the right size, that it might happen any minute, 'and then,' thought Alice, as she picked up a little different. But if I'm not myself, you see.' 'I don't know what to beautify is, I.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/9",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/9",
+                "cliente": "http:\/\/localhost\/api\/clientes\/6"
+            }
+        },
+        {
+            "data_estimada": "2011-10-21 09:26:18",
+            "data_de_entrega": "1990-02-10 18:42:23",
+            "data_de_levantamento": "2005-09-02 20:53:54",
+            "data_de_entrada": "1997-04-26 16:53:00",
+            "data_de_entrega_pretendida": "1970-11-21 17:35:33",
+            "tempolimite_de_levantamento": "3",
+            "temperatura": 7.2,
+            "observacoes": "I hadn't drunk quite so much!' said Alice, who always took a great many more than Alice could not remember ever having seen in her pocket, and was just beginning to see what would happen next. The.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/10",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/20",
+                "cliente": "http:\/\/localhost\/api\/clientes\/4"
+            }
+        },
+        {
+            "data_estimada": "1970-07-03 23:48:13",
+            "data_de_entrega": "1977-11-07 11:21:20",
+            "data_de_levantamento": "2006-08-17 15:06:43",
+            "data_de_entrada": "2003-08-27 11:18:58",
+            "data_de_entrega_pretendida": "1997-09-22 01:26:26",
+            "tempolimite_de_levantamento": "1",
+            "temperatura": 7.3,
+            "observacoes": "Alice, that she had gone through that day. 'That PROVES his guilt,' said the Dormouse. 'Fourteenth of March, I think it was,' the March Hare. 'He denies it,' said the Caterpillar. Alice thought she.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/11",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/19",
+                "cliente": "http:\/\/localhost\/api\/clientes\/6"
+            }
+        },
+        {
+            "data_estimada": "1997-10-30 06:07:29",
+            "data_de_entrega": "1976-08-30 08:38:50",
+            "data_de_levantamento": "2014-04-12 07:02:24",
+            "data_de_entrada": "2014-08-13 09:36:19",
+            "data_de_entrega_pretendida": "1978-05-08 04:10:46",
+            "tempolimite_de_levantamento": "2",
+            "temperatura": 10.2,
+            "observacoes": "Mock Turtle, 'Drive on, old fellow! Don't be all day to such stuff? Be off, or I'll have you executed.' The miserable Hatter dropped his teacup instead of the shepherd boy--and the sneeze of the.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/12",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/6",
+                "cliente": "http:\/\/localhost\/api\/clientes\/6"
+            }
+        },
+        {
+            "data_estimada": "1987-08-28 19:04:24",
+            "data_de_entrega": "1981-03-26 13:17:58",
+            "data_de_levantamento": "1979-01-06 05:26:53",
+            "data_de_entrada": "2007-08-11 03:05:52",
+            "data_de_entrega_pretendida": "2003-03-19 13:07:59",
+            "tempolimite_de_levantamento": "1",
+            "temperatura": 5.4,
+            "observacoes": "Alice said; 'there's a large fan in the schoolroom, and though this was the BEST butter,' the March Hare said--' 'I didn't!' the March Hare: she thought of herself, 'I wish you would seem to.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/13",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/20",
+                "cliente": "http:\/\/localhost\/api\/clientes\/9"
+            }
+        },
+        {
+            "data_estimada": "2010-07-28 14:32:24",
+            "data_de_entrega": "1999-09-03 04:47:59",
+            "data_de_levantamento": "1979-04-04 13:22:31",
+            "data_de_entrada": "1977-09-17 07:14:49",
+            "data_de_entrega_pretendida": "1973-03-02 23:10:29",
+            "tempolimite_de_levantamento": "3",
+            "temperatura": 3.4,
+            "observacoes": "White Rabbit, who said in an undertone, 'important--unimportant--unimportant--important--' as if she was beginning to end,' said the Caterpillar angrily, rearing itself upright as it was good.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/14",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/1",
+                "cliente": "http:\/\/localhost\/api\/clientes\/7"
+            }
+        },
+        {
+            "data_estimada": "2004-06-07 21:53:55",
+            "data_de_entrega": "1970-11-28 11:36:59",
+            "data_de_levantamento": "1993-03-23 23:25:04",
+            "data_de_entrada": "1975-12-26 09:57:45",
+            "data_de_entrega_pretendida": "1973-12-07 08:16:55",
+            "tempolimite_de_levantamento": "3",
+            "temperatura": 1.3,
+            "observacoes": "Alice, (she had kept a piece of bread-and-butter in the last words out loud, and the baby--the fire-irons came first; then followed a shower of saucepans, plates, and dishes. The Duchess took her.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/15",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/2",
+                "cliente": "http:\/\/localhost\/api\/clientes\/1"
+            }
+        },
+        {
+            "data_estimada": "1984-11-05 07:47:56",
+            "data_de_entrega": "1984-06-01 16:15:09",
+            "data_de_levantamento": "2002-08-03 17:42:47",
+            "data_de_entrada": "1986-12-17 07:36:11",
+            "data_de_entrega_pretendida": "1975-11-13 19:24:40",
+            "tempolimite_de_levantamento": "2",
+            "temperatura": 6.2,
+            "observacoes": "They were just beginning to feel very queer to ME.' 'You!' said the Cat, and vanished again. Alice waited patiently until it chose to speak again. In a minute or two she stood looking at Alice for.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/16",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/3",
+                "cliente": "http:\/\/localhost\/api\/clientes\/7"
+            }
+        },
+        {
+            "data_estimada": "1975-01-20 01:23:16",
+            "data_de_entrega": "2016-06-04 20:11:46",
+            "data_de_levantamento": "1973-12-05 16:02:26",
+            "data_de_entrada": "1970-11-28 07:59:35",
+            "data_de_entrega_pretendida": "1975-09-22 19:33:26",
+            "tempolimite_de_levantamento": "2",
+            "temperatura": 1,
+            "observacoes": "Alice, who felt ready to sink into the loveliest garden you ever see you again, you dear old thing!' said the King; and as it went, 'One side of the garden: the roses growing on it except a little.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/17",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/4",
+                "cliente": "http:\/\/localhost\/api\/clientes\/10"
+            }
+        },
+        {
+            "data_estimada": "1995-03-03 23:04:37",
+            "data_de_entrega": "1994-10-07 15:11:11",
+            "data_de_levantamento": "1972-05-15 11:16:30",
+            "data_de_entrada": "1991-03-05 13:07:01",
+            "data_de_entrega_pretendida": "1981-08-11 08:28:23",
+            "tempolimite_de_levantamento": "4",
+            "temperatura": 0.2,
+            "observacoes": "March, I think I may as well say this), 'to go on with the next thing was to find that her idea of the bread-and-butter. Just at this corner--No, tie 'em together first--they don't reach half high.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/18",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/11",
+                "cliente": "http:\/\/localhost\/api\/clientes\/1"
+            }
+        },
+        {
+            "data_estimada": "1972-01-11 04:34:24",
+            "data_de_entrega": "2018-01-29 06:43:50",
+            "data_de_levantamento": "2001-06-18 14:07:12",
+            "data_de_entrada": "1993-04-11 08:19:01",
+            "data_de_entrega_pretendida": "2010-06-11 03:49:15",
+            "tempolimite_de_levantamento": "2",
+            "temperatura": 3.5,
+            "observacoes": "Alice, very much at first, the two sides of it, and found that, as nearly as she spoke; 'either you or your head must be really offended. 'We won't talk about her pet: 'Dinah's our cat. And she's.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/19",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/19",
+                "cliente": "http:\/\/localhost\/api\/clientes\/6"
+            }
+        },
+        {
+            "data_estimada": "2010-04-20 22:51:22",
+            "data_de_entrega": "1974-03-19 15:46:50",
+            "data_de_levantamento": "1997-02-23 00:33:59",
+            "data_de_entrada": "2001-12-02 10:55:26",
+            "data_de_entrega_pretendida": "2008-10-03 07:28:05",
+            "tempolimite_de_levantamento": "3",
+            "temperatura": 2.7,
+            "observacoes": "I'm mad?' said Alice. 'Nothing WHATEVER?' persisted the King. 'I can't help that,' said the one who got any advantage from the time they had a vague sort of a muchness?' 'Really, now you ask me,'.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/20",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/6",
+                "cliente": "http:\/\/localhost\/api\/clientes\/9"
+            }
+        },
+        {
+            "data_estimada": "1997-09-11 10:16:38",
+            "data_de_entrega": "1986-05-09 05:20:03",
+            "data_de_levantamento": "1984-06-17 19:33:16",
+            "data_de_entrada": "1997-03-30 07:37:27",
+            "data_de_entrega_pretendida": "2002-05-07 05:56:06",
+            "tempolimite_de_levantamento": "3",
+            "temperatura": 11.3,
+            "observacoes": "Alice. The King looked anxiously round, to make the arches. The chief difficulty Alice found at first she would have made a snatch in the face. 'I'll put a stop to this,' she said to the Gryphon.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/21",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/4",
+                "cliente": "http:\/\/localhost\/api\/clientes\/1"
+            }
+        },
+        {
+            "data_estimada": "1989-01-23 19:26:26",
+            "data_de_entrega": "1984-02-25 14:55:43",
+            "data_de_levantamento": "2017-11-24 00:06:11",
+            "data_de_entrada": "2000-11-30 07:47:50",
+            "data_de_entrega_pretendida": "2016-10-08 18:08:43",
+            "tempolimite_de_levantamento": "4",
+            "temperatura": 10.5,
+            "observacoes": "King; 'and don't look at the end of trials, \"There was some attempts at applause, which was full of tears, until there was Mystery,' the Mock Turtle. So she went in search of her skirt, upsetting.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/22",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/1",
+                "cliente": "http:\/\/localhost\/api\/clientes\/8"
+            }
+        },
+        {
+            "data_estimada": "2001-03-31 00:27:38",
+            "data_de_entrega": "1970-05-29 11:42:59",
+            "data_de_levantamento": "1999-07-16 08:42:27",
+            "data_de_entrada": "1996-01-06 01:27:10",
+            "data_de_entrega_pretendida": "1978-09-07 21:25:21",
+            "tempolimite_de_levantamento": "2",
+            "temperatura": 9.4,
+            "observacoes": "I wonder what was coming. It was all ridges and furrows; the balls were live hedgehogs, the mallets live flamingoes, and the game was in the other. 'I beg pardon, your Majesty,' said Alice in a.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/23",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/8",
+                "cliente": "http:\/\/localhost\/api\/clientes\/8"
+            }
+        },
+        {
+            "data_estimada": "1996-08-16 20:09:23",
+            "data_de_entrega": "1980-09-29 03:57:20",
+            "data_de_levantamento": "2003-02-04 18:25:51",
+            "data_de_entrada": "1971-11-27 14:14:34",
+            "data_de_entrega_pretendida": "1997-11-28 20:29:21",
+            "tempolimite_de_levantamento": "2",
+            "temperatura": 7.4,
+            "observacoes": "Alice started to her feet as the hall was very uncomfortable, and, as there was no label this time the Queen ordering off her knowledge, as there was no time she'd have everybody executed, all.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/24",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/14",
+                "cliente": "http:\/\/localhost\/api\/clientes\/6"
+            }
+        },
+        {
+            "data_estimada": "1991-11-29 17:27:00",
+            "data_de_entrega": "1995-09-18 13:55:40",
+            "data_de_levantamento": "2010-02-27 02:24:34",
+            "data_de_entrada": "1979-01-15 06:09:27",
+            "data_de_entrega_pretendida": "1971-09-22 02:53:26",
+            "tempolimite_de_levantamento": "4",
+            "temperatura": 10.9,
+            "observacoes": "Wonderland, though she looked at it again: but he could go. Alice took up the fan and a crash of broken glass. 'What a curious dream, dear, certainly: but now run in to your places!' shouted the.",
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/25",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/4",
+                "cliente": "http:\/\/localhost\/api\/clientes\/7"
+            }
+        }
+    ]
+}
 ```
 
 ### HTTP Request
@@ -5225,397 +2885,55 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (404):
+> Example response (200):
 
 ```json
 {
-    "message": "No query results for model [App\\Model\\Encomenda].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
-    "trace": [
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
+    "data": {
+        "id": 1,
+        "data_estimada": "1994-07-23 11:59:17",
+        "data_de_entrega": "2002-09-05 20:17:45",
+        "data_de_levantamento": "1986-04-15 04:36:41",
+        "data_de_entrada_no_sistema": "1998-12-12 20:09:43",
+        "data_de_entrega_pretendida": "2006-09-13 02:05:23",
+        "tempo_limite_de_levantamento": "2",
+        "temperatura": 4.5,
+        "obcervacoes": "The executioner's argument was, that if you want to be?' it asked. 'Oh, I'm not particular as to prevent its undoing itself,) she carried it out to sea!\" But the insolence of his pocket, and pulled.",
+        "codigo": "2OtJ4zx",
+        "cacifo": {
+            "id": 8,
+            "numero": 322,
+            "temperatura": 10.8,
+            "codigo": "Q22S1",
+            "tamanhoId": 1,
+            "estadoId": 2,
+            "localizacaoId": 3,
+            "tamanho": {
+                "id": 1,
+                "tamanho": "S"
+            },
+            "estado": {
+                "id": 2,
+                "estado": "Disponivel"
+            },
+            "localizacao": {
+                "id": 3,
+                "nome": "Towne Centers",
+                "lat": -1.804207,
+                "long": 173.556391
+            }
         },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/app\/Exceptions\/Handler.php",
-            "line": 49,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
+        "cliente": {
+            "id": 9,
+            "nome": "Robb Keeling",
+            "email": "lmarquardt@yahoo.com",
+            "telefone": "1-454-608-7274 x58324"
         },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 58,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 684,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 659,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 625,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 614,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 62,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 272,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 256,
-            "function": "callLaravelRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 33,
-            "function": "makeApiCall",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 49,
-            "function": "__invoke",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 68,
-            "function": "resolve",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
-            "line": 54,
-            "function": "getResponse",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 196,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 57,
-            "function": "processRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 572,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 255,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 901,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 262,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 145,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 89,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 122,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
+        "href": {
+            "cliente": "http:\/\/localhost\/api\/clientes\/9",
+            "cacifo": "http:\/\/localhost\/api\/cacifos\/8"
         }
-    ]
+    }
 }
 ```
 
@@ -5691,17 +3009,17 @@ fetch(url, {
 
 <!-- END_f69358971fad0e59f15fe1e82945c9e5 -->
 
-<!-- START_fef44b5e2c23cfc050e2a1044346009d -->
+<!-- START_fc1e4f6a697e3c48257de845299b71d5 -->
 ## Display a listing of the resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/userType" 
+curl -X GET -G "http://localhost/api/users" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/userType");
+const url = new URL("http://localhost/api/users");
 
 let headers = {
     "Accept": "application/json",
@@ -5719,26 +3037,85 @@ fetch(url, {
 > Example response (200):
 
 ```json
-null
+{
+    "data": [
+        {
+            "nome": "Kaylie Prosacco",
+            "email": "schumm.justen@hotmail.com",
+            "data_nascimento": "2012-08-14",
+            "tipoId": 1,
+            "supervisorId": 1
+        },
+        {
+            "nome": "Eileen Hansen",
+            "email": "vida.ledner@gmail.com",
+            "data_nascimento": "2000-02-15",
+            "tipoId": 1,
+            "supervisorId": 1
+        },
+        {
+            "nome": "Jessie Harvey",
+            "email": "torphy.roy@yahoo.com",
+            "data_nascimento": "1979-06-17",
+            "tipoId": 2,
+            "supervisorId": 1
+        },
+        {
+            "nome": "Jacey Kassulke",
+            "email": "ludwig.pouros@yahoo.com",
+            "data_nascimento": "1972-09-03",
+            "tipoId": 1,
+            "supervisorId": 1
+        },
+        {
+            "nome": "Mr. Norris Monahan",
+            "email": "vivianne57@hotmail.com",
+            "data_nascimento": "2012-01-01",
+            "tipoId": 1,
+            "supervisorId": 1
+        },
+        {
+            "nome": "Ariane Hansen",
+            "email": "hellen.kovacek@hotmail.com",
+            "data_nascimento": "1980-03-06",
+            "tipoId": 2,
+            "supervisorId": 1
+        },
+        {
+            "nome": "Delphine Yost II",
+            "email": "dayana29@gmail.com",
+            "data_nascimento": "2003-01-14",
+            "tipoId": 1,
+            "supervisorId": 1
+        },
+        {
+            "nome": "Alexanne Hamill",
+            "email": "pollich.jessyca@gmail.com",
+            "data_nascimento": "1994-10-15",
+            "tipoId": 2,
+            "supervisorId": 1
+        }
+    ]
+}
 ```
 
 ### HTTP Request
-`GET api/userType`
+`GET api/users`
 
 
-<!-- END_fef44b5e2c23cfc050e2a1044346009d -->
+<!-- END_fc1e4f6a697e3c48257de845299b71d5 -->
 
-<!-- START_7a36bbe6968a04251e46e1aad9b17f5b -->
+<!-- START_5dac10bb34c7618b018b0230d4a51648 -->
 ## Show the form for creating a new resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/userType/create" 
+curl -X GET -G "http://localhost/api/users/create" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/userType/create");
+const url = new URL("http://localhost/api/users/create");
 
 let headers = {
     "Accept": "application/json",
@@ -5760,22 +3137,22 @@ null
 ```
 
 ### HTTP Request
-`GET api/userType/create`
+`GET api/users/create`
 
 
-<!-- END_7a36bbe6968a04251e46e1aad9b17f5b -->
+<!-- END_5dac10bb34c7618b018b0230d4a51648 -->
 
-<!-- START_6842a6721e4ef4cd6330aecd070b4093 -->
+<!-- START_12e37982cc5398c7100e59625ebb5514 -->
 ## Store a newly created resource in storage.
 
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/userType" 
+curl -X POST "http://localhost/api/users" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/userType");
+const url = new URL("http://localhost/api/users");
 
 let headers = {
     "Accept": "application/json",
@@ -5792,22 +3169,22 @@ fetch(url, {
 
 
 ### HTTP Request
-`POST api/userType`
+`POST api/users`
 
 
-<!-- END_6842a6721e4ef4cd6330aecd070b4093 -->
+<!-- END_12e37982cc5398c7100e59625ebb5514 -->
 
-<!-- START_dcf2f1a4d992572276cf354a835809cd -->
+<!-- START_8653614346cb0e3d444d164579a0a0a2 -->
 ## Display the specified resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/userType/{userType}" 
+curl -X GET -G "http://localhost/api/users/{user}" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/userType/{userType}");
+const url = new URL("http://localhost/api/users/{user}");
 
 let headers = {
     "Accept": "application/json",
@@ -5822,417 +3199,40 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (404):
+> Example response (200):
 
 ```json
 {
-    "message": "No query results for model [App\\Model\\UserType].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
-    "trace": [
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/app\/Exceptions\/Handler.php",
-            "line": 49,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 58,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 684,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 659,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 625,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 614,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 62,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 272,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 256,
-            "function": "callLaravelRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 33,
-            "function": "makeApiCall",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 49,
-            "function": "__invoke",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 68,
-            "function": "resolve",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
-            "line": 54,
-            "function": "getResponse",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 196,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 57,
-            "function": "processRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 572,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 255,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 901,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 262,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 145,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 89,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 122,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
+    "data": {
+        "id": 1,
+        "nome": "Kaylie Prosacco",
+        "email": "schumm.justen@hotmail.com",
+        "password": "bB\"R?6s's)f)z",
+        "data_nascimento": "2012-08-14",
+        "tipoId": 1,
+        "supervisorId": 1,
+        "tipo": null
+    }
 }
 ```
 
 ### HTTP Request
-`GET api/userType/{userType}`
+`GET api/users/{user}`
 
 
-<!-- END_dcf2f1a4d992572276cf354a835809cd -->
+<!-- END_8653614346cb0e3d444d164579a0a0a2 -->
 
-<!-- START_422daed41d23301681e7a1c64e195a0e -->
+<!-- START_11ae28146a4d70ba9a0af9b65d290ad5 -->
 ## Show the form for editing the specified resource.
 
 > Example request:
 
 ```bash
-curl -X GET -G "http://localhost/api/userType/{userType}/edit" 
+curl -X GET -G "http://localhost/api/users/{user}/edit" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/userType/{userType}/edit");
+const url = new URL("http://localhost/api/users/{user}/edit");
 
 let headers = {
     "Accept": "application/json",
@@ -6247,417 +3247,29 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
-> Example response (404):
+> Example response (200):
 
 ```json
-{
-    "message": "No query results for model [App\\Model\\UserType].",
-    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
-    "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-    "line": 200,
-    "trace": [
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Exceptions\/Handler.php",
-            "line": 176,
-            "function": "prepareException",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/app\/Exceptions\/Handler.php",
-            "line": 49,
-            "function": "render",
-            "class": "Illuminate\\Foundation\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/nunomaduro\/collision\/src\/Adapters\/Laravel\/ExceptionHandler.php",
-            "line": 68,
-            "function": "render",
-            "class": "App\\Exceptions\\Handler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 83,
-            "function": "render",
-            "class": "NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 55,
-            "function": "handleException",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Middleware\/ThrottleRequests.php",
-            "line": 58,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 684,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 659,
-            "function": "runRouteWithinStack",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 625,
-            "function": "runRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Router.php",
-            "line": 614,
-            "function": "dispatchToRoute",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 176,
-            "function": "dispatch",
-            "class": "Illuminate\\Routing\\Router",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 30,
-            "function": "Illuminate\\Foundation\\Http\\{closure}",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/fideloper\/proxy\/src\/TrustProxies.php",
-            "line": 57,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Fideloper\\Proxy\\TrustProxies",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/TransformsRequest.php",
-            "line": 31,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/ValidatePostSize.php",
-            "line": 27,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Middleware\/CheckForMaintenanceMode.php",
-            "line": 62,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 151,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Pipeline.php",
-            "line": 53,
-            "function": "Illuminate\\Pipeline\\{closure}",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php",
-            "line": 104,
-            "function": "Illuminate\\Routing\\{closure}",
-            "class": "Illuminate\\Routing\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 151,
-            "function": "then",
-            "class": "Illuminate\\Pipeline\\Pipeline",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Http\/Kernel.php",
-            "line": 116,
-            "function": "sendRequestThroughRouter",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 272,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Http\\Kernel",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 256,
-            "function": "callLaravelRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseStrategies\/ResponseCallStrategy.php",
-            "line": 33,
-            "function": "makeApiCall",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 49,
-            "function": "__invoke",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseStrategies\\ResponseCallStrategy",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/ResponseResolver.php",
-            "line": 68,
-            "function": "resolve",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Tools\/Generator.php",
-            "line": 54,
-            "function": "getResponse",
-            "class": "Mpociot\\ApiDoc\\Tools\\ResponseResolver",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 196,
-            "function": "processRoute",
-            "class": "Mpociot\\ApiDoc\\Tools\\Generator",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/mpociot\/laravel-apidoc-generator\/src\/Commands\/GenerateDocumentation.php",
-            "line": 57,
-            "function": "processRoutes",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "function": "handle",
-            "class": "Mpociot\\ApiDoc\\Commands\\GenerateDocumentation",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 29,
-            "function": "call_user_func_array"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 87,
-            "function": "Illuminate\\Container\\{closure}",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/BoundMethod.php",
-            "line": 31,
-            "function": "callBoundMethod",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php",
-            "line": 572,
-            "function": "call",
-            "class": "Illuminate\\Container\\BoundMethod",
-            "type": "::"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 183,
-            "function": "call",
-            "class": "Illuminate\\Container\\Container",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Command\/Command.php",
-            "line": 255,
-            "function": "execute",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Command.php",
-            "line": 170,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Command\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 901,
-            "function": "run",
-            "class": "Illuminate\\Console\\Command",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 262,
-            "function": "doRunCommand",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/symfony\/console\/Application.php",
-            "line": 145,
-            "function": "doRun",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Console\/Application.php",
-            "line": 89,
-            "function": "run",
-            "class": "Symfony\\Component\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Console\/Kernel.php",
-            "line": 122,
-            "function": "run",
-            "class": "Illuminate\\Console\\Application",
-            "type": "->"
-        },
-        {
-            "file": "\/home\/caio\/MCMM\/htdocs\/tdi\/relockersAPI\/artisan",
-            "line": 37,
-            "function": "handle",
-            "class": "Illuminate\\Foundation\\Console\\Kernel",
-            "type": "->"
-        }
-    ]
-}
+null
 ```
 
 ### HTTP Request
-`GET api/userType/{userType}/edit`
+`GET api/users/{user}/edit`
 
 
-<!-- END_422daed41d23301681e7a1c64e195a0e -->
+<!-- END_11ae28146a4d70ba9a0af9b65d290ad5 -->
 
-<!-- START_ac5cbe5217507356430b81a53b14e03c -->
+<!-- START_48a3115be98493a3c866eb0e23347262 -->
 ## Update the specified resource in storage.
 
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/userType/{userType}" 
+curl -X PUT "http://localhost/api/users/{user}" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/userType/{userType}");
+const url = new URL("http://localhost/api/users/{user}");
 
 let headers = {
     "Accept": "application/json",
@@ -6674,24 +3286,24 @@ fetch(url, {
 
 
 ### HTTP Request
-`PUT api/userType/{userType}`
+`PUT api/users/{user}`
 
-`PATCH api/userType/{userType}`
+`PATCH api/users/{user}`
 
 
-<!-- END_ac5cbe5217507356430b81a53b14e03c -->
+<!-- END_48a3115be98493a3c866eb0e23347262 -->
 
-<!-- START_a69af93c355f5c30c802bba52edd1334 -->
+<!-- START_d2db7a9fe3abd141d5adbc367a88e969 -->
 ## Remove the specified resource from storage.
 
 > Example request:
 
 ```bash
-curl -X DELETE "http://localhost/api/userType/{userType}" 
+curl -X DELETE "http://localhost/api/users/{user}" 
 ```
 
 ```javascript
-const url = new URL("http://localhost/api/userType/{userType}");
+const url = new URL("http://localhost/api/users/{user}");
 
 let headers = {
     "Accept": "application/json",
@@ -6708,9 +3320,275 @@ fetch(url, {
 
 
 ### HTTP Request
-`DELETE api/userType/{userType}`
+`DELETE api/users/{user}`
 
 
-<!-- END_a69af93c355f5c30c802bba52edd1334 -->
+<!-- END_d2db7a9fe3abd141d5adbc367a88e969 -->
+
+<!-- START_fdbced2face3dd6a26e1020d1c51382b -->
+## Display a listing of the resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/userTypes" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/userTypes");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "data": [
+        {
+            "tipo": "Admin",
+            "href": {
+                "link": "http:\/\/localhost\/api\/userTypes\/1"
+            }
+        },
+        {
+            "tipo": "Estafeta",
+            "href": {
+                "link": "http:\/\/localhost\/api\/userTypes\/2"
+            }
+        }
+    ]
+}
+```
+
+### HTTP Request
+`GET api/userTypes`
+
+
+<!-- END_fdbced2face3dd6a26e1020d1c51382b -->
+
+<!-- START_dd7da21a55ef11eb401a69b623e2793c -->
+## Show the form for creating a new resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/userTypes/create" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/userTypes/create");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/userTypes/create`
+
+
+<!-- END_dd7da21a55ef11eb401a69b623e2793c -->
+
+<!-- START_bea86f55a0848e4f30fde3db05bd042e -->
+## Store a newly created resource in storage.
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/api/userTypes" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/userTypes");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+### HTTP Request
+`POST api/userTypes`
+
+
+<!-- END_bea86f55a0848e4f30fde3db05bd042e -->
+
+<!-- START_17504c8df8555443b0ad5983570eacde -->
+## Display the specified resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/userTypes/{userType}" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/userTypes/{userType}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "data": {
+        "id": 1,
+        "tipo": "Admin"
+    }
+}
+```
+
+### HTTP Request
+`GET api/userTypes/{userType}`
+
+
+<!-- END_17504c8df8555443b0ad5983570eacde -->
+
+<!-- START_6fdd94fba81a87f86d2590295337363f -->
+## Show the form for editing the specified resource.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/userTypes/{userType}/edit" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/userTypes/{userType}/edit");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+null
+```
+
+### HTTP Request
+`GET api/userTypes/{userType}/edit`
+
+
+<!-- END_6fdd94fba81a87f86d2590295337363f -->
+
+<!-- START_eff4784bbabb014511d40d3585bcf54d -->
+## Update the specified resource in storage.
+
+> Example request:
+
+```bash
+curl -X PUT "http://localhost/api/userTypes/{userType}" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/userTypes/{userType}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "PUT",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+### HTTP Request
+`PUT api/userTypes/{userType}`
+
+`PATCH api/userTypes/{userType}`
+
+
+<!-- END_eff4784bbabb014511d40d3585bcf54d -->
+
+<!-- START_4b69bdddb9975f5e96f14c7ac291006c -->
+## Remove the specified resource from storage.
+
+> Example request:
+
+```bash
+curl -X DELETE "http://localhost/api/userTypes/{userType}" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/userTypes/{userType}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+
+### HTTP Request
+`DELETE api/userTypes/{userType}`
+
+
+<!-- END_4b69bdddb9975f5e96f14c7ac291006c -->
 
 
