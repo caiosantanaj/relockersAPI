@@ -19,8 +19,8 @@ class UserCollection extends Resource
             'nome' => $this->nome,
             'email' => $this->email,
             'data_nascimento' => $this->data_nascimento,
-            'tipoId' => $this->tipoId,
-            'supervisorId' => $this->supervisorId,
+            'tipo_id' => $this->tipo_id,
+            'supervisor_id' => $this->supervisor_id,
         ];
     }
 }

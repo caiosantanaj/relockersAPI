@@ -30,12 +30,12 @@ class CacifoRequest extends FormRequest
             'temperatura.between' => 'A temperatura deve estar entre :min e :max.',
             'codigo.max' => 'O código tem o número máximo de caracters de :max.',
             'codigo.min' => 'O código tem o número mínimo de caracters de :min.',
-            'tamanhoId.required' => 'O cacifo precisa de um tamanho.',
-            'tamanhoId.exists' => 'O tamanhoId não é válido.',
-            'estadoId.required' => 'O cacifo precisa de um estado.',
-            'estadoId.exists' => 'O estadoId não é válida.',
-            'localizacaoId.required' => 'O cacifo precisa de uma localização.',
-            'localizacaoId.exists' => 'O localizacaoId não é válida.',
+            'tamanho_id.required' => 'O cacifo precisa de um tamanho.',
+            'tamanho_id.exists' => 'O tamanho_id não é válido.',
+            'estado_id.required' => 'O cacifo precisa de um estado.',
+            'estado_id.exists' => 'O estado_id não é válida.',
+            'localizacao_id.required' => 'O cacifo precisa de uma localização.',
+            'localizacao_id.exists' => 'O localizacao_id não é válida.',
         ];
     }
 
@@ -50,9 +50,9 @@ class CacifoRequest extends FormRequest
             'numero' => 'required|unique:cacifos|numeric|between:1,25000',
             'temperatura' => 'numeric|between:0,20',
             'codigo' => 'min:5|max:10',
-            'tamanhoId' => 'required|exists:tamanhos,id',
-            'estadoId' => 'required|exists:estados,id',
-            'localizacaoId' => 'required|exists:localizacaos,id',
+            'tamanho_id' => 'required|exists:tamanhos,id',
+            'estado_id' => 'required|exists:estados,id',
+            'localizacao_id' => 'required|exists:localizacaos,id',
         ];
     }
 }

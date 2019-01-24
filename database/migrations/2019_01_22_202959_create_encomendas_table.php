@@ -41,13 +41,13 @@ class CreateEncomendasTable extends Migration
             $table->foreign('cacifo_localizacao_id')->references('id')->on('cacifos');
 
             // $table->integer('cacifo_tamanho_id')->unsigned()->index();
-            // $table->foreign('cacifo_tamanho_id')->references('tamanhoId')->on('cacifos');
+            // $table->foreign('cacifo_tamanho_id')->references('tamanho_id')->on('cacifos');
 
             // $table->integer('cacifo_estado_id')->unsigned()->index();
-            // $table->foreign('cacifo_estado_id')->references('EstadoId')->on('cacifos');
+            // $table->foreign('cacifo_estado_id')->references('Estado_id')->on('cacifos');
 
             // $table->integer('cacifo_localizacao_id')->unsigned()->index();
-            // $table->foreign('cacifo_localizacao_id')->references('localizacaoId')->on('cacifos');
+            // $table->foreign('cacifo_localizacao_id')->references('localizacao_id')->on('cacifos');
 
             $table->timestamps();
         });

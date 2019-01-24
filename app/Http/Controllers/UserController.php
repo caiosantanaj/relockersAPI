@@ -42,15 +42,15 @@ class UserController extends Controller
     {
         try {
 
-            $request = $request->only(['nome', 'email', 'password', 'data_nascimento', 'tipoId', 'supervisorId']);
+            $request = $request->only(['nome', 'email', 'password', 'data_nascimento', 'tipo_id', 'supervisor_id']);
 
             $user = new User;
             $user->nome = $request['nome'];
             $user->email = $request['email'];
             $user->password = bcrypt($request['password']);
             $user->data_nascimento = $request['data_nascimento'];
-            $user->tipoId = $request['tipoId'];
-            $user->supervisorId = $request['supervisorId'];
+            $user->tipo_id = $request['tipo_id'];
+            $user->supervisor_id = $request['supervisor_id'];
 
             $user->save();
 

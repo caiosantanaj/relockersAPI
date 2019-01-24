@@ -22,9 +22,9 @@ class CacifoResource extends JsonResource
             'numero' => $this->numero,
             'temperatura' => (string)($this->temperatura),
             'codigo' => $this->codigo,
-            'tamanhoId' => $this->tamanhoId,
-            'estadoId' => $this->estadoId,
-            'localizacaoId' => $this->localizacaoId,
+            'tamanho_id' => $this->tamanho_id,
+            'estado_id' => $this->estado_id,
+            'localizacao_id' => $this->localizacao_id,
 
             'tamanho' => new TamanhoResource($this->tamanho),
             'estado' => new EstadoResource($this->estado),

@@ -33,9 +33,9 @@ class UserRequest extends FormRequest
             'password.required' => 'Utilizador precisa de uma password.',
             'password.min' => 'A password tem de ter no mínimo :min caracteres.',
             'password.confirmed' => 'A password precisa de ser confirmada ou a confirmação é inválida.',
-            'tipoId.required' => 'O utilizador precisa de um tipo.',
-            'tipoId.exists' => 'O tipoId não é válida.',
-            'supervisorId.exists' => 'O supervisorId não é válido.',
+            'tipo_id.required' => 'O utilizador precisa de um tipo.',
+            'tipo_id.exists' => 'O tipo_id não é válida.',
+            'supervisor_id.exists' => 'O supervisor_id não é válido.',
         ];
     }
 
@@ -51,8 +51,8 @@ class UserRequest extends FormRequest
             'email' => 'required|unique:clientes|max:150|email',
             'password' => 'required|confirmed|min:6',
             'data_nascimento' => 'date',
-            'tipoId' => 'required|exists:user_types,id',
-            'supervisorId' => 'exists:users,id',
+            'tipo_id' => 'required|exists:user_types,id',
+            'supervisor_id' => 'exists:users,id',
         ];
     }
 }

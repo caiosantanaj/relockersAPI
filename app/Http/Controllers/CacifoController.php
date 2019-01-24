@@ -51,13 +51,13 @@ class CacifoController extends Controller
             $temperatura = ($request['temperatura'] === null) ? 20 : $request['temperatura'];
             $codigo = ($request['codigo'] === null) ? "UNLOCKED" : $request['codigo'];
 
-            $request = $request->only(['numero', 'tamanhoId', 'estadoId', 'localizacaoId', 'temperatura', 'codigo']);
+            $request = $request->only(['numero', 'tamanho_id', 'estado_id', 'localizacao_id', 'temperatura', 'codigo']);
 
             $cacifo = new Cacifo;
             $cacifo->numero = $request['numero'];
-            $cacifo->tamanhoId = $request['tamanhoId'];
-            $cacifo->estadoId = $request['estadoId'];
-            $cacifo->localizacaoId = $request['localizacaoId'];
+            $cacifo->tamanho_id = $request['tamanho_id'];
+            $cacifo->estado_id = $request['estado_id'];
+            $cacifo->localizacao_id = $request['localizacao_id'];
 
             $cacifo->temperatura = $temperatura;
             $cacifo->codigo = $codigo;
