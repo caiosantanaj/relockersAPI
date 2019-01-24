@@ -12,8 +12,7 @@ $factory->define(App\Model\Encomenda::class, function (Faker $faker) {
         'data_de_entrada_no_sistema' => $faker->dateTime($max = 'now', $timezone = 'Europe/Lisbon'),
         'data_de_entrega_pretendida' => $faker->dateTime($max = 'now', $timezone = 'Europe/Lisbon'),
         'temperatura' => $faker->randomFloat($nbMaxDecimals = 1, $min = 0, $max = 12),
-        'obcervacoes' => $faker->realText($maxNbChars = 200, $indexSize = 2),
-        'codigo' => $faker->regexify('([a-zA-Z0-9_-]){5,10}'),
+        'observacoes' => $faker->realText($maxNbChars = 200, $indexSize = 2),
         'tempo_limite_de_levantamento' => $faker->randomFloat($nbMaxDecimals = 0, $min = 1, $max = 4),
 
         'cliente_id' => Cliente::all()->random()->id,

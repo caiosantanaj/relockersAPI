@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Model\Localizacao;
+use App\Http\Requests\LocalizacaoRequest;
+use Symfony\Component\HttpFoundation\Response;
 use App\Http\Resources\Localizacao\LocalizacaoCollection;
 use App\Http\Resources\Localizacao\LocalizacaoResource;
 
@@ -16,7 +18,10 @@ class LocalizacaoController extends Controller
      */
     public function index()
     {
-        return LocalizacaoCollection::collection(Localizacao::all());
+        return LocalizacaoCollection::collection(Localizacao::all())->additional([
+            'msg' => 'Success',
+            'code' => Response::HTTP_OK,
+        ]);
     }
 
     /**
@@ -35,9 +40,24 @@ class LocalizacaoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(LocalizacaoRequest $request)
     {
-        //
+        try {
+            $localizacao = new Localizacao($request->all());
+            $localizacao->save();
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+                'data' => new LocalizacaoResource($localizacao),
+            ], Response::HTTP_CREATED);
+
+        } catch (\Exception $e) {
+            return response([
+                'msg' => $e->getMessage(),
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**

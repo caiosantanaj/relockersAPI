@@ -26,9 +26,10 @@ class EncomendaResource extends JsonResource
             'data_de_entrada_no_sistema' => $this->data_de_entrada_no_sistema,
             'data_de_entrega_pretendida' => $this->data_de_entrega_pretendida,
             'tempo_limite_de_levantamento' => $this->tempo_limite_de_levantamento,
-            'temperatura' => $this->temperatura,
-            'obcervacoes' => $this->obcervacoes,
-            'codigo' => $this->codigo,
+            'temperatura' => (string)($this->temperatura),
+            'observacoes' => $this->observacoes,
+            'clienteId' => $this->cliente_id,
+            'cacifoId' => $this->cacifo_id,
             'cacifo' => new CacifoResource($this->cacifo),
             'cliente' => new ClienteResource($this->cliente),
 

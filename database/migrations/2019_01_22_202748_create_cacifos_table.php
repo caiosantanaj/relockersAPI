@@ -20,14 +20,14 @@ class CreateCacifosTable extends Migration
             $table->string('codigo', 10);
 
             //FK
-            $table->integer('tamanho_id')->unsigned()->index();
-            $table->foreign('tamanho_id')->references('id')->on('tamanhos');
+            $table->integer('tamanhoId')->unsigned()->index();
+            $table->foreign('tamanhoId')->references('id')->on('tamanhos');
 
-            $table->integer('estado_id')->unsigned()->index();
-            $table->foreign('estado_id')->references('id')->on('estados');
+            $table->integer('estadoId')->unsigned()->index();
+            $table->foreign('estadoId')->references('id')->on('estados');
 
-            $table->integer('localizacao_id')->unsigned()->index();
-            $table->foreign('localizacao_id')->references('id')->on('localizacaos');
+            $table->integer('localizacaoId')->unsigned()->index();
+            $table->foreign('localizacaoId')->references('id')->on('localizacaos');
             $table->timestamps();
         });
     }

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Resources\User\UserCollection;
 use App\User;
 use App\Http\Resources\User\UserResource;
+use App\Http\Requests\UserRequest;
+use Symfony\Component\HttpFoundation\Response;
 
 
 class UserController extends Controller
@@ -36,9 +38,34 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UserRequest $request)
     {
-        //
+        try {
+
+            $request = $request->only(['nome', 'email', 'password', 'data_nascimento', 'tipoId', 'supervisorId']);
+
+            $user = new User;
+            $user->nome = $request['nome'];
+            $user->email = $request['email'];
+            $user->password = bcrypt($request['password']);
+            $user->data_nascimento = $request['data_nascimento'];
+            $user->tipoId = $request['tipoId'];
+            $user->supervisorId = $request['supervisorId'];
+
+            $user->save();
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+                'data' => new UserResource($user),
+            ], Response::HTTP_CREATED);
+
+        } catch (\Exception $e) {
+            return response([
+                'msg' => $e->getMessage(),
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**

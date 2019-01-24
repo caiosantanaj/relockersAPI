@@ -17,7 +17,7 @@ class EstadoCollection extends Resource
         return [
             'estado' => $this->estado,
             'href' => [
-                'link' => route('estado.show', $this->id),
+                'link' => route('estados.show', $this->id),
             ],
         ];
     }

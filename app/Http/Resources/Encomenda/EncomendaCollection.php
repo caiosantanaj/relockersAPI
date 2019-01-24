@@ -21,8 +21,8 @@ class EncomendaCollection extends Resource
             'data_de_entrada' => $this->data_de_entrada_no_sistema,
             'data_de_entrega_pretendida' => $this->data_de_entrega_pretendida,
             'tempolimite_de_levantamento' => $this->tempo_limite_de_levantamento,
-            'temperatura' => $this->temperatura,
-            'observacoes' => $this->obcervacoes,
+            'temperatura' => (string)($this->temperatura),
+            'observacoes' => $this->observacoes,
             //'cliente' => $this->cliente->id,
             'href' => [
                 'link' => route('encomendas.show', $this->id),

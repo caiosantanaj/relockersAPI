@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cacifo extends Model
 {
+
+    protected $fillable = ['numero', ];
+
     //OneToMany(inverse)
     public function tamanho()
     {

@@ -16,8 +16,8 @@ class LocalizacaoCollection extends Resource
     {
         return [
             'nome' => $this->nome,
-            'lat' => $this->latitude,
-            'long' => $this->longitude,
+            'lat' => (string)($this->latitude),
+            'long' => (string)($this->longitude),
 
             'href' => [
                 'link' => route('localizacaos.show', $this->id),

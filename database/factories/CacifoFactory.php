@@ -11,8 +11,8 @@ $factory->define(App\Model\Cacifo::class, function (Faker $faker) {
         'temperatura' => $faker->randomFloat($nbMaxDecimals = 1, $min = 0, $max = 12),
         'codigo' => $faker->regexify('([a-zA-Z0-9_-]){5,10}'),
 
-        'tamanho_id' => Tamanho::all()->random()->id,
-        'estado_id' => Estado::all()->random()->id,
-        'localizacao_id' => Localizacao::all()->random()->id
+        'tamanhoId' => Tamanho::all()->random()->id,
+        'estadoId' => Estado::all()->random()->id,
+        'localizacaoId' => Localizacao::all()->random()->id
     ];
 });

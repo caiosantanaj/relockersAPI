@@ -6,6 +6,8 @@ use App\Model\Tamanho;
 use Illuminate\Http\Request;
 use App\Http\Resources\Tamanho\TamanhoCollection;
 use App\Http\Resources\Tamanho\TamanhoResource;
+use Symfony\Component\HttpFoundation\Response;
+use App\Http\Requests\TamanhoRequest;
 
 class TamanhoController extends Controller
 {
@@ -35,9 +37,24 @@ class TamanhoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(TamanhoRequest $request)
     {
-        //
+        try {
+            $tamanho = new Tamanho($request->all());
+            $tamanho->save();
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+                'data' => new TamanhoResource($tamanho),
+            ], Response::HTTP_CREATED);
+
+        } catch (\Exception $e) {
+            return response([
+                'msg' => $e->getMessage(),
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**

@@ -6,6 +6,8 @@ use App\Model\UserType;
 use Illuminate\Http\Request;
 use App\Http\Resources\UserType\UserTypeCollection;
 use App\Http\Resources\UserType\UserTypeResource;
+use App\Http\Requests\UserTypeRequest;
+use Symfony\Component\HttpFoundation\Response;
 
 class UserTypeController extends Controller
 {
@@ -35,9 +37,24 @@ class UserTypeController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UserTypeRequest $request)
     {
-        //
+        try {
+            $usertype = new UserType($request->all());
+            $usertype->save();
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+                'data' => new UserTypeResource($usertype),
+            ], Response::HTTP_CREATED);
+
+        } catch (\Exception $e) {
+            return response([
+                'msg' => $e->getMessage(),
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**

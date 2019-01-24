@@ -25,10 +25,10 @@ $factory->define(App\User::class, function (Faker $faker) {
         'password' => $faker->password, // secret
         'remember_token' => str_random(10),
 
-        'tipo' => UserType::all()->random()->id,
+        'tipoId' => UserType::all()->random()->id,
 
         //???
-        'idSupervisor' => 1
+        'supervisorId' => 1
         //User::all()->random()->idUser,
     ];
 });

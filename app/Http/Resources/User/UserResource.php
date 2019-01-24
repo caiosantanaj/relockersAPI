@@ -21,8 +21,8 @@ class UserResource extends JsonResource
             'email' => $this->email,
             'password' => $this->password,
             'data_nascimento' => $this->data_nascimento,
-            'tipoId' => $this->tipo,
-            'supervisorId' => $this->idSupervisor,
+            'tipoId' => $this->tipoId,
+            'supervisorId' => $this->supervisorId,
             'tipo' => new UserTypeResource($this->userType),
         ];
     }

@@ -22,8 +22,7 @@ class CreateEncomendasTable extends Migration
             $table->dateTime('data_de_entrega_pretendida');
             $table->string('tempo_limite_de_levantamento', 50);
             $table->float('temperatura', 3, 1);
-            $table->text('obcervacoes');
-            $table->string('codigo', 10);
+            $table->string('observacoes');
 
             //FK
             $table->integer('cliente_id')->unsigned()->index();
@@ -40,6 +39,15 @@ class CreateEncomendasTable extends Migration
 
             $table->integer('cacifo_localizacao_id')->unsigned()->index();
             $table->foreign('cacifo_localizacao_id')->references('id')->on('cacifos');
+
+            // $table->integer('cacifo_tamanho_id')->unsigned()->index();
+            // $table->foreign('cacifo_tamanho_id')->references('tamanhoId')->on('cacifos');
+
+            // $table->integer('cacifo_estado_id')->unsigned()->index();
+            // $table->foreign('cacifo_estado_id')->references('EstadoId')->on('cacifos');
+
+            // $table->integer('cacifo_localizacao_id')->unsigned()->index();
+            // $table->foreign('cacifo_localizacao_id')->references('localizacaoId')->on('cacifos');
 
             $table->timestamps();
         });

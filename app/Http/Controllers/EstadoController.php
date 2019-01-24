@@ -6,6 +6,8 @@ use App\Model\Estado;
 use Illuminate\Http\Request;
 use App\Http\Resources\Estado\EstadoCollection;
 use App\Http\Resources\Estado\EstadoResource;
+use App\Http\Requests\EstadoRequest;
+use Symfony\Component\HttpFoundation\Response;
 
 class EstadoController extends Controller
 {
@@ -41,8 +43,24 @@ class EstadoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(EstadoRequest $request)
     {
+        try {
+            $estado = new Estado($request->all());
+            $estado->save();
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+                'data' => new EstadoResource($estado),
+            ], Response::HTTP_CREATED);
+
+        } catch (\Exception $e) {
+            return response([
+                'msg' => $e->getMessage(),
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
         //
     }
 

@@ -20,11 +20,11 @@ class CacifoResource extends JsonResource
         return [
             'id' => $this->id,
             'numero' => $this->numero,
-            'temperatura' => $this->temperatura,
+            'temperatura' => (string)($this->temperatura),
             'codigo' => $this->codigo,
-            'tamanhoId' => $this->tamanho_id,
-            'estadoId' => $this->estado_id,
-            'localizacaoId' => $this->localizacao_id,
+            'tamanhoId' => $this->tamanhoId,
+            'estadoId' => $this->estadoId,
+            'localizacaoId' => $this->localizacaoId,
 
             'tamanho' => new TamanhoResource($this->tamanho),
             'estado' => new EstadoResource($this->estado),

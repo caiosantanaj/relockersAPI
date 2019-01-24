@@ -15,7 +15,7 @@ class UserTypeCollection extends Resource
     public function toArray($request)
     {
         return [
-            'tipo' => $this->descricao,
+            'tipo' => $this->tipo,
             'href' => [
                 'link' => route('userTypes.show', $this->id),
             ],

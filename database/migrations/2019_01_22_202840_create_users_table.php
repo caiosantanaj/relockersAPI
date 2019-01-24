@@ -23,11 +23,11 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
 
             //FK
-            $table->integer('tipo')->unsigned()->index();
-            $table->foreign('tipo')->references('id')->on('user_types');
+            $table->integer('tipoId')->unsigned()->index();
+            $table->foreign('tipoId')->references('id')->on('user_types');
 
-            $table->integer('idSupervisor')->unsigned()->index();
-            $table->foreign('idSupervisor')->references('id')->on('users');
+            $table->integer('supervisorId')->unsigned()->index();
+            $table->foreign('supervisorId')->references('id')->on('users');
 
 
 

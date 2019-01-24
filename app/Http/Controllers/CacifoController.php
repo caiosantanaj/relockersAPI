@@ -6,6 +6,8 @@ use App\Model\Cacifo;
 use Illuminate\Http\Request;
 use App\Http\Resources\Cacifo\CacifoCollection;
 use App\Http\Resources\Cacifo\CacifoResource;
+use App\Http\Requests\CacifoRequest;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * @group Cacifo management
@@ -41,9 +43,39 @@ class CacifoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CacifoRequest $request)
     {
-        //
+
+        try {
+
+            $temperatura = ($request['temperatura'] === null) ? 20 : $request['temperatura'];
+            $codigo = ($request['codigo'] === null) ? "UNLOCKED" : $request['codigo'];
+
+            $request = $request->only(['numero', 'tamanhoId', 'estadoId', 'localizacaoId', 'temperatura', 'codigo']);
+
+            $cacifo = new Cacifo;
+            $cacifo->numero = $request['numero'];
+            $cacifo->tamanhoId = $request['tamanhoId'];
+            $cacifo->estadoId = $request['estadoId'];
+            $cacifo->localizacaoId = $request['localizacaoId'];
+
+            $cacifo->temperatura = $temperatura;
+            $cacifo->codigo = $codigo;
+
+            $cacifo->save();
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+                'data' => new CacifoResource($cacifo),
+            ], Response::HTTP_CREATED);
+
+        } catch (\Exception $e) {
+            return response([
+                'msg' => $e->getMessage(),
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**

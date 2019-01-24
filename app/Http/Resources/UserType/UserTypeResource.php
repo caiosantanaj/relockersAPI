@@ -16,7 +16,7 @@ class UserTypeResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'tipo' => $this->descricao
+            'tipo' => $this->tipo
         ];
     }
 }

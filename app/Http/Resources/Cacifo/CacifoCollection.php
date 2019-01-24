@@ -16,16 +16,16 @@ class CacifoCollection extends Resource
     {
         return [
             'numero' => $this->numero,
-            'temeperatura' => $this->temperatura,
-            'tamanhoId' => $this->tamanho_id,
-            'estadoId' => $this->estado_id,
-            'localizacaoId' => $this->localizacao_id,
+            'temeperatura' => (string)($this->temperatura),
+            'tamanhoId' => $this->tamanhoId,
+            'estadoId' => $this->estadoId,
+            'localizacaoId' => $this->localizacaoId,
 
             'href' => [
                 'link' => route('cacifos.show', $this->id),
-                'tamano' => route('tamanhos.show', $this->tamanho_id),
-                'estado' => route('estados.show', $this->estado_id),
-                'localizacao' => route('localizacaos.show', $this->localizacao_id),
+                'tamano' => route('tamanhos.show', $this->tamanhoId),
+                'estado' => route('estados.show', $this->estadoId),
+                'localizacao' => route('localizacaos.show', $this->localizacaoId),
             ],
         ];
     }

@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Localizacao extends Model
 {
+
+    protected $fillable = ['nome', 'latitude', 'longitude'];
+
     //OneToMany
     public function cacifos()
     {

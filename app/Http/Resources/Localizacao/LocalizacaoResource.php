@@ -17,8 +17,8 @@ class LocalizacaoResource extends JsonResource
         return [
             'id' => $this->id,
             'nome' => $this->nome,
-            'lat' => $this->latitude,
-            'long' => $this->longitude,
+            'lat' => (string)($this->latitude),
+            'long' => (string)($this->longitude),
         ];
     }
 }

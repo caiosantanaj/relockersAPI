@@ -8,6 +8,8 @@ use App\Http\Resources\Encomenda\EncomendaCollection;
 use function GuzzleHttp\Promise\all;
 use App\Http\Resources\Encomenda\EncomendaResource;
 use App\Model\Cliente;
+use App\Http\Requests\EncomendaRequest;
+use Symfony\Component\HttpFoundation\Response;
 
 class EncomendaController extends Controller
 {
@@ -47,9 +49,49 @@ class EncomendaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(EncomendaRequest $request)
     {
-        //
+
+        try {
+
+            $observacoes = ($request['observacoes'] === null) ? "Nenhuma observação." : $request['observacoes'];
+
+            $request = $request->only([
+                'data_estimada', 'data_de_entrega', 'data_de_levantamento',
+                'data_de_entrada_no_sistema', 'data_de_entrega_pretendida', 'tempo_limite_de_levantamento',
+                'temperatura', 'observacoes', 'cliente_id', 'cacifo_id', 'cacifo_tamanho_id', 'cacifo_estado_id',
+                'cacifo_localizacao_id'
+            ]);
+
+            $encomenda = new Encomenda;
+            $encomenda->data_estimada = $request['data_estimada'];
+            $encomenda->data_de_entrega = $request['data_de_entrega'];
+            $encomenda->data_de_levantamento = $request['data_de_levantamento'];
+            $encomenda->data_de_entrada_no_sistema = $request['data_de_entrada_no_sistema'];
+            $encomenda->data_de_entrega_pretendida = $request['data_de_entrega_pretendida'];
+            $encomenda->tempo_limite_de_levantamento = $request['tempo_limite_de_levantamento'];
+            $encomenda->temperatura = $request['temperatura'];
+            $encomenda->observacoes = $observacoes;
+            $encomenda->cliente_id = $request['cliente_id'];
+            $encomenda->cacifo_id = $request['cacifo_id'];
+            $encomenda->cacifo_tamanho_id = $request['cacifo_tamanho_id'];
+            $encomenda->cacifo_estado_id = $request['cacifo_estado_id'];
+            $encomenda->cacifo_localizacao_id = $request['cacifo_localizacao_id'];
+
+            $encomenda->save();
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+                'data' => new EncomendaResource($encomenda),
+            ], Response::HTTP_CREATED);
+
+        } catch (\Exception $e) {
+            return response([
+                'msg' => $e->getMessage(),
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**
