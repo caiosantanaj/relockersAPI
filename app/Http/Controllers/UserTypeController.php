@@ -45,7 +45,7 @@ class UserTypeController extends Controller
 
             return response([
                 'msg' => 'Success',
-                'code' => Response::HTTP_OK,
+                'code' => Response::HTTP_CREATED,
                 'data' => new UserTypeResource($usertype),
             ], Response::HTTP_CREATED);
 

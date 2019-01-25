@@ -45,15 +45,6 @@ class EncomendaRequest extends FormRequest
             'cliente_id.required' => 'A encomenda tem de ter um cliente associado.',
             'cliente_id.exists' => 'O cliente_id não é válido.',
             'cacifo_id.exists' => 'O cacifo_id não é válido.',
-
-            'cacifo_tamanho_id.required' => 'A encomenda tem de ter um tamanho associado.',
-            'cacifo_tamanho_id.exists' => 'O cacifo_tamanho_id não é válido.',
-
-            'cacifo_estado_id.required' => 'A encomenda tem de ter um estado associado.',
-            'cacifo_estado_id.exists' => 'O cacifo_estado_id não é válido.',
-
-            'cacifo_localizacao_id.required' => 'A encomenda tem deter uma localicação associado.',
-            'cacifo_localizacao_id.exists' => 'O cacifo_localizacao_id não é válido.',
         ];
     }
 
@@ -75,11 +66,6 @@ class EncomendaRequest extends FormRequest
             'tempo_limite_de_levantamento' => 'required|between:1,12',
             'cliente_id' => 'required|exists:clientes,id',
             'cacifo_id' => 'exists:cacifos,id',
-            'cacifo_tamanho_id' => 'required|exists:cacifos,id',
-            'cacifo_estado_id' => 'required|exists:cacifos,id',
-            'cacifo_localizacao_id' => 'required|exists:cacifos,id',
-            //MUDAR OS 3 ANTERIORES QUANDO DER FIX
-            //toDo
         ];
     }
 }

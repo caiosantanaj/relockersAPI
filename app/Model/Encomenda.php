@@ -23,8 +23,8 @@ class Encomenda extends Model
         return $this->belongsTo(Cliente::class);
     }
 
-    public function utilizadores()
+    public function users()
     {
-        return $this->belongsToMany(User::class);
+        return $this->belongsToMany(User::class, 'encomenda_user', 'encomenda_id', 'user_id');
     }
 }

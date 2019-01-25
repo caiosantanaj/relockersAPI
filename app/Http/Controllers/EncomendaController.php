@@ -59,8 +59,7 @@ class EncomendaController extends Controller
             $request = $request->only([
                 'data_estimada', 'data_de_entrega', 'data_de_levantamento',
                 'data_de_entrada_no_sistema', 'data_de_entrega_pretendida', 'tempo_limite_de_levantamento',
-                'temperatura', 'observacoes', 'cliente_id', 'cacifo_id', 'cacifo_tamanho_id', 'cacifo_estado_id',
-                'cacifo_localizacao_id'
+                'temperatura', 'observacoes', 'cliente_id', 'cacifo_id',
             ]);
 
             $encomenda = new Encomenda;
@@ -74,15 +73,12 @@ class EncomendaController extends Controller
             $encomenda->observacoes = $observacoes;
             $encomenda->cliente_id = $request['cliente_id'];
             $encomenda->cacifo_id = $request['cacifo_id'];
-            $encomenda->cacifo_tamanho_id = $request['cacifo_tamanho_id'];
-            $encomenda->cacifo_estado_id = $request['cacifo_estado_id'];
-            $encomenda->cacifo_localizacao_id = $request['cacifo_localizacao_id'];
 
             $encomenda->save();
 
             return response([
                 'msg' => 'Success',
-                'code' => Response::HTTP_OK,
+                'code' => Response::HTTP_CREATED,
                 'data' => new EncomendaResource($encomenda),
             ], Response::HTTP_CREATED);
 

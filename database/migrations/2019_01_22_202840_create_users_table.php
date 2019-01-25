@@ -14,7 +14,7 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id')->unsigned();
             $table->string('nome');
             $table->date('data_nascimento');
             $table->string('email')->unique();
@@ -24,15 +24,18 @@ class CreateUsersTable extends Migration
 
             //FK
             $table->integer('tipo_id')->unsigned()->index();
-            $table->foreign('tipo_id')->references('id')->on('user_types');
-
             $table->integer('supervisor_id')->unsigned()->index();
-            $table->foreign('supervisor_id')->references('id')->on('users');
-
-
 
             $table->timestamps();
         });
+
+        //FK
+        Schema::table('users', function (Blueprint $table) {
+            //$table->foreign('id')->references('user_id')->on('encomenda_user');
+            $table->foreign('tipo_id')->references('id')->on('user_types');
+            $table->foreign('supervisor_id')->references('id')->on('users');
+        });
+
     }
 
     /**

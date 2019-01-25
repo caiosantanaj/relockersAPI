@@ -30,6 +30,7 @@ class EncomendaResource extends JsonResource
             'observacoes' => $this->observacoes,
             'cliente_id' => $this->cliente_id,
             'cacifo_id' => $this->cacifo_id,
+
             'cacifo' => new CacifoResource($this->cacifo),
             'cliente' => new ClienteResource($this->cliente),
 

@@ -5,6 +5,7 @@ use App\Model\Cliente;
 use App\Model\Cacifo;
 
 $factory->define(App\Model\Encomenda::class, function (Faker $faker) {
+
     return [
         'data_estimada' => $faker->dateTime($max = 'now', $timezone = 'Europe/Lisbon'),
         'data_de_entrega' => $faker->dateTime($max = 'now', $timezone = 'Europe/Lisbon'),
@@ -16,9 +17,6 @@ $factory->define(App\Model\Encomenda::class, function (Faker $faker) {
         'tempo_limite_de_levantamento' => $faker->randomFloat($nbMaxDecimals = 0, $min = 1, $max = 4),
 
         'cliente_id' => Cliente::all()->random()->id,
-        'cacifo_id' => Cacifo::all()->random()->id,
-        'cacifo_tamanho_id' => Cacifo::all()->random()->id,
-        'cacifo_estado_id' => Cacifo::all()->random()->id,
-        'cacifo_localizacao_id' => Cacifo::all()->random()->id,
+        'cacifo_id' => Cacifo::all()->random(),
     ];
 });

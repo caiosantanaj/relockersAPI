@@ -30,13 +30,14 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    function userType()
+    function usertype()
     {
         return $this->belongsTo(UserType::class);
     }
 
     function encomendas()
     {
-        return $this->belongsToMany(Encomenda::class);
+        return $this->belongsToMany(Encomenda::class, 'encomenda_user', 'user_id', 'encomenda_id'); 
+        // 'encomenda_user', 'user_id', 'encomenda_id'
     }
 }

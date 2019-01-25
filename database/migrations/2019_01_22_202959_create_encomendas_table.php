@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Query\Expression;
 
 class CreateEncomendasTable extends Migration
 {
@@ -14,7 +15,7 @@ class CreateEncomendasTable extends Migration
     public function up()
     {
         Schema::create('encomendas', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id')->unsigned();
             $table->dateTime('data_estimada');
             $table->dateTime('data_de_entrega');
             $table->dateTime('data_de_levantamento');
@@ -26,30 +27,16 @@ class CreateEncomendasTable extends Migration
 
             //FK
             $table->integer('cliente_id')->unsigned()->index();
-            $table->foreign('cliente_id')->references('id')->on('clientes');
-
             $table->integer('cacifo_id')->unsigned()->index();
-            $table->foreign('cacifo_id')->references('id')->on('cacifos');
-
-            $table->integer('cacifo_tamanho_id')->unsigned()->index();
-            $table->foreign('cacifo_tamanho_id')->references('id')->on('cacifos');
-
-            $table->integer('cacifo_estado_id')->unsigned()->index();
-            $table->foreign('cacifo_estado_id')->references('id')->on('cacifos');
-
-            $table->integer('cacifo_localizacao_id')->unsigned()->index();
-            $table->foreign('cacifo_localizacao_id')->references('id')->on('cacifos');
-
-            // $table->integer('cacifo_tamanho_id')->unsigned()->index();
-            // $table->foreign('cacifo_tamanho_id')->references('tamanho_id')->on('cacifos');
-
-            // $table->integer('cacifo_estado_id')->unsigned()->index();
-            // $table->foreign('cacifo_estado_id')->references('Estado_id')->on('cacifos');
-
-            // $table->integer('cacifo_localizacao_id')->unsigned()->index();
-            // $table->foreign('cacifo_localizacao_id')->references('localizacao_id')->on('cacifos');
 
             $table->timestamps();
+        });
+
+        //FK
+        Schema::table('encomendas', function (Blueprint $table) {
+            //$table->foreign('id')->references('encomenda_id')->on('encomenda_user');
+            $table->foreign('cliente_id')->references('id')->on('clientes');
+            $table->foreign('cacifo_id')->references('id')->on('cacifos');
         });
     }
 

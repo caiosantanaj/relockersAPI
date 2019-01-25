@@ -48,7 +48,7 @@ class LocalizacaoController extends Controller
 
             return response([
                 'msg' => 'Success',
-                'code' => Response::HTTP_OK,
+                'code' => Response::HTTP_CREATED,
                 'data' => new LocalizacaoResource($localizacao),
             ], Response::HTTP_CREATED);
 

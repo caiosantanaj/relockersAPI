@@ -66,7 +66,7 @@ class CacifoController extends Controller
 
             return response([
                 'msg' => 'Success',
-                'code' => Response::HTTP_OK,
+                'code' => Response::HTTP_CREATED,
                 'data' => new CacifoResource($cacifo),
             ], Response::HTTP_CREATED);
 

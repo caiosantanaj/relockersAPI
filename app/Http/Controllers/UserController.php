@@ -56,7 +56,7 @@ class UserController extends Controller
 
             return response([
                 'msg' => 'Success',
-                'code' => Response::HTTP_OK,
+                'code' => Response::HTTP_CREATED,
                 'data' => new UserResource($user),
             ], Response::HTTP_CREATED);
 

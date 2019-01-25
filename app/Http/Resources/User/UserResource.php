@@ -23,7 +23,7 @@ class UserResource extends JsonResource
             'data_nascimento' => $this->data_nascimento,
             'tipo_id' => $this->tipo_id,
             'supervisor_id' => $this->supervisor_id,
-            'tipo' => new UserTypeResource($this->userType),
+            'tipo' => new UserTypeResource($this->usertype),
         ];
     }
 }

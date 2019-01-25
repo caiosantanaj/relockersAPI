@@ -45,7 +45,7 @@ class ClienteController extends Controller
 
             return response([
                 'msg' => 'Success',
-                'code' => Response::HTTP_OK,
+                'code' => Response::HTTP_CREATED,
                 'data' => new ClienteResource($cliente),
             ], Response::HTTP_CREATED);
 

@@ -45,7 +45,7 @@ class TamanhoController extends Controller
 
             return response([
                 'msg' => 'Success',
-                'code' => Response::HTTP_OK,
+                'code' => Response::HTTP_CREATED,
                 'data' => new TamanhoResource($tamanho),
             ], Response::HTTP_CREATED);
 

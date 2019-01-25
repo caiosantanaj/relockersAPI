@@ -51,7 +51,7 @@ class EstadoController extends Controller
 
             return response([
                 'msg' => 'Success',
-                'code' => Response::HTTP_OK,
+                'code' => Response::HTTP_CREATED,
                 'data' => new EstadoResource($estado),
             ], Response::HTTP_CREATED);
 
