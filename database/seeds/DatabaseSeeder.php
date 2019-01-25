@@ -9,6 +9,7 @@ use App\Model\Cliente;
 use App\Model\Encomenda;
 use App\Model\UserType;
 use App\User;
+use Carbon\Carbon;
 
 class DatabaseSeeder extends Seeder
 {
@@ -28,5 +29,17 @@ class DatabaseSeeder extends Seeder
         factory(UserType::class, 2)->create();
         factory(User::class, 8)->create();
         factory(Encomenda::class, 25)->create();
+
+        foreach (Encomenda::all() as $encomenda) {
+            DB::table('encomenda_user')->insert(
+                [
+                    'user_id' => User::all()->random()->id,
+                    'encomenda_id' => $encomenda->id,
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now()
+                ]
+            );
+        }
+
     }
 }
