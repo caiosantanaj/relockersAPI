@@ -121,7 +121,29 @@ class EncomendaController extends Controller
      */
     public function update(Request $request, Encomenda $encomenda)
     {
-        //
+        try {
+
+            $request = $request->only([
+                'data_estimada', 'data_de_entrega', 'data_de_levantamento',
+                'data_de_entrada_no_sistema', 'data_de_entrega_pretendida', 'tempo_limite_de_levantamento',
+                'temperatura', 'observacoes', 'cliente_id', 'cacifo_id',
+            ]);
+
+
+            $encomenda->update($request);
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+                'data' => new EncomendaResource($encomenda),
+            ], Response::HTTP_OK);
+
+        } catch (\Exception $e) {
+            return response([
+                'msg' => $e->getMessage(),
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**

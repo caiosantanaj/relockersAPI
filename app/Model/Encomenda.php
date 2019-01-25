@@ -26,5 +26,6 @@ class Encomenda extends Model
     public function users()
     {
         return $this->belongsToMany(User::class, 'encomenda_user', 'encomenda_id', 'user_id');
+        //, 'encomenda_user', 'encomenda_id', 'user_id'
     }
 }

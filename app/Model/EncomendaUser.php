@@ -11,13 +11,14 @@ class EncomendaUser extends Model
         'encomenda_id', 'user_id',
     ];
 
-    public function users()
-    {
-        return $this->belongsToMany(User::class, 'encomenda_user', 'user_id', 'encomenda_id');
-    }
+    //toDo
+    // public function users()
+    // {
+    //     return $this->belongsToMany(User::class, 'encomenda_user', 'user_id', 'encomenda_id');
+    // }
 
-    public function encomendas()
-    {
-        return $this->belongsToMany(Encomenda::class, 'encomenda_user', 'encomenda_id', 'user_id');
-    }
+    // public function encomendas()
+    // {
+    //     return $this->belongsToMany(Encomenda::class, 'encomenda_user', 'encomenda_id', 'user_id');
+    // }
 }

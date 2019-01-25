@@ -109,7 +109,32 @@ class CacifoController extends Controller
      */
     public function update(Request $request, Cacifo $cacifo)
     {
-        //
+
+        try {
+
+            $request = $request->only(
+                ['numero', 'tamanho_id', 'estado_id', 'localizacao_id', 'temperatura', 'codigo']
+            );
+
+            $cacifo->update($request);
+
+            // $cacifo->codigo = $request['codigo'];
+
+            // $cacifo->save();
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+                'data' => new CacifoResource($cacifo),
+            ], Response::HTTP_OK);
+
+        } catch (\Exception $e) {
+            return response([
+                'msg' => $e->getMessage(),
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
+
     }
 
     /**

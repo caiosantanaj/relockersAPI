@@ -99,7 +99,26 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        try {
+
+            $request = $request->only(['nome', 'email', 'password', 'data_nascimento', 'tipo_id', 'supervisor_id']);
+
+            $user->password = bcrypt($request['password']);
+
+            $user->update($request);
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+                'data' => new UserResource($user),
+            ], Response::HTTP_OK);
+
+        } catch (\Exception $e) {
+            return response([
+                'msg' => $e->getMessage(),
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**

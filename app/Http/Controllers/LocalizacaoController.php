@@ -91,7 +91,23 @@ class LocalizacaoController extends Controller
      */
     public function update(Request $request, Localizacao $localizacao)
     {
-        //
+        try {
+
+            $request = $request->only(['nome', 'latitude', 'longitude']);
+
+            $localizacao->update($request);
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+                'data' => new LocalizacaoResource($localizacao),
+            ], Response::HTTP_OK);
+        } catch (\Exception $e) {
+            return response([
+                'msg' => $e->getMessage(),
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**

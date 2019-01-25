@@ -88,7 +88,23 @@ class TamanhoController extends Controller
      */
     public function update(Request $request, Tamanho $tamanho)
     {
-        //
+        try {
+
+            $request = $request->only(['tamanho']);
+
+            $tamanho->update($request);
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+                'data' => new TamanhoResource($tamanho)
+            ], Response::HTTP_OK);
+        } catch (\Exception $e) {
+            return response([
+                'msg' => $e->getMessage(),
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**

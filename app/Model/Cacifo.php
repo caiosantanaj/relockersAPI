@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Cacifo extends Model
 {
 
-    protected $fillable = ['numero', ];
+    protected $fillable = ['numero', 'tamanho_id', 'estado_id', 'localizacao_id', 'temperatura', 'codigo'];
 
     //OneToMany(inverse)
     public function tamanho()

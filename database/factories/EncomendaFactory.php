@@ -18,5 +18,6 @@ $factory->define(App\Model\Encomenda::class, function (Faker $faker) {
 
         'cliente_id' => Cliente::all()->random()->id,
         'cacifo_id' => Cacifo::all()->random(),
+
     ];
 });
