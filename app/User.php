@@ -32,7 +32,7 @@ class User extends Authenticatable
 
     function usertype()
     {
-        return $this->belongsTo(UserType::class);
+        return $this->belongsTo(UserType::class, 'tipo_id');
     }
 
     function encomendas()

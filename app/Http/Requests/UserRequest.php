@@ -51,7 +51,7 @@ class UserRequest extends FormRequest
             'email' => 'required|unique:clientes|max:150|email',
             'password' => 'required|confirmed|min:6',
             'data_nascimento' => 'date',
-            'tipo_id' => 'required|exists:user_types,id',
+            'tipo_id' => 'required|exists:usertypes,id',
             'supervisor_id' => 'exists:users,id',
         ];
     }

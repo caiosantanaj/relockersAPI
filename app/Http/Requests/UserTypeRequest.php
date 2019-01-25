@@ -37,7 +37,7 @@ class UserTypeRequest extends FormRequest
     public function rules()
     {
         return [
-            'tipo' => 'required|unique:user_types|max:250',
+            'tipo' => 'required|unique:usertypes|max:250',
         ];
     }
 }

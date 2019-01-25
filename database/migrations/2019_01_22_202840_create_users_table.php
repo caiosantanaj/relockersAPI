@@ -32,7 +32,7 @@ class CreateUsersTable extends Migration
         //FK
         Schema::table('users', function (Blueprint $table) {
             //$table->foreign('id')->references('user_id')->on('encomenda_user');
-            $table->foreign('tipo_id')->references('id')->on('user_types');
+            $table->foreign('tipo_id')->references('id')->on('usertypes');
             $table->foreign('supervisor_id')->references('id')->on('users');
         });
 

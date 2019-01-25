@@ -9,6 +9,8 @@ class UserType extends Model
 
     protected $fillable = ['tipo'];
 
+    protected $table = 'usertypes';
+
     function users()
     {
         //OneToMany
