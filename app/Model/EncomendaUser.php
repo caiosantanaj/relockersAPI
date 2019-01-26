@@ -4,21 +4,20 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 use App\User;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class EncomendaUser extends Model
 {
+    use SoftDeletes;
+
+    /**
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = ['deleted_at'];
+
     protected $fillable = [
         'encomenda_id', 'user_id',
     ];
-
-    //toDo
-    // public function users()
-    // {
-    //     return $this->belongsToMany(User::class, 'encomenda_user', 'user_id', 'encomenda_id');
-    // }
-
-    // public function encomendas()
-    // {
-    //     return $this->belongsToMany(Encomenda::class, 'encomenda_user', 'encomenda_id', 'user_id');
-    // }
 }

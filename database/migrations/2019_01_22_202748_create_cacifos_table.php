@@ -25,6 +25,7 @@ class CreateCacifosTable extends Migration
             $table->integer('localizacao_id')->unsigned()->index();
 
             $table->timestamps();
+            $table->softDeletes();
         });
 
         //FK

@@ -115,6 +115,18 @@ class TamanhoController extends Controller
      */
     public function destroy(Tamanho $tamanho)
     {
-        //
+        try {
+            $tamanho->delete();
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+            ], Response::HTTP_OK);
+        } catch (\Exception $e) {
+            return response([
+                'msg' => "$e->getMessage()",
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 }

@@ -27,6 +27,7 @@ class CreateUsersTable extends Migration
             $table->integer('supervisor_id')->unsigned()->index();
 
             $table->timestamps();
+            $table->softDeletes();
         });
 
         //FK

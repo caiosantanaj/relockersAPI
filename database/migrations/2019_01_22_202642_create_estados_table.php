@@ -16,7 +16,9 @@ class CreateEstadosTable extends Migration
         Schema::create('estados', function (Blueprint $table) {
             $table->increments('id');
             $table->string('estado', 50);
+
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

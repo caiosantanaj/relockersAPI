@@ -18,11 +18,12 @@ class CreateEncomendaUser extends Migration
             $table->integer('encomenda_id')->unsigned();
             $table->integer('user_id')->unsigned();
             $table->timestamps();
+            $table->softDeletes();
         });
 
         Schema::table('encomenda_user', function (Blueprint $table) {
-            $table->foreign('encomenda_id')->references('id')->on('encomendas');
-            $table->foreign('user_id')->unsigned()->references('id')->on('users');
+            $table->foreign('encomenda_id')->references('id')->on('encomendas')->onDelete('cascade');
+            $table->foreign('user_id')->unsigned()->references('id')->on('users')->onDelete('cascade');
         });
     }
 

@@ -18,7 +18,9 @@ class CreateLocalizacaosTable extends Migration
             $table->string('nome', 150);
             $table->float('latitude', 10, 8);
             $table->float('longitude', 11, 8);
+
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

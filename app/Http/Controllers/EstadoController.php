@@ -122,6 +122,18 @@ class EstadoController extends Controller
      */
     public function destroy(Estado $estado)
     {
-        //
+        try {
+            $estado->delete();
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+            ], Response::HTTP_OK);
+        } catch (\Exception $e) {
+            return response([
+                'msg' => "$e->getMessage()",
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 }

@@ -3,9 +3,18 @@
 namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Cacifo extends Model
 {
+    use SoftDeletes;
+
+    /**
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = ['deleted_at'];
 
     protected $fillable = ['numero', 'tamanho_id', 'estado_id', 'localizacao_id', 'temperatura', 'codigo'];
 
@@ -24,7 +33,6 @@ class Cacifo extends Model
     {
         return $this->belongsTo(Localizacao::class);
     }
-
 
     //OneToMany
     public function encomendas()

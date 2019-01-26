@@ -30,6 +30,7 @@ class CreateEncomendasTable extends Migration
             $table->integer('cacifo_id')->unsigned()->index();
 
             $table->timestamps();
+            $table->softDeletes();
         });
 
         //FK
