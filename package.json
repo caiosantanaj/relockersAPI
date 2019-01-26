@@ -1,4 +1,7 @@
 {
+    "name": "Relockers",
+    "version": "1.0.0",
+    "description": "",
     "private": true,
     "scripts": {
         "dev": "npm run development",
