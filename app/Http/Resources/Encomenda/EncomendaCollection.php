@@ -23,6 +23,8 @@ class EncomendaCollection extends Resource
             'tempolimite_de_levantamento' => $this->tempo_limite_de_levantamento,
             'temperatura' => (string)($this->temperatura),
             'observacoes' => $this->observacoes,
+            'tamanho' => $this->tamanho,
+            'localizacao' => $this->localizacao,
             //'cliente' => $this->cliente->id,
             'href' => [
                 'link' => route('encomendas.show', $this->id),

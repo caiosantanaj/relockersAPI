@@ -55,11 +55,12 @@ class EncomendaController extends Controller
         try {
 
             $observacoes = ($request['observacoes'] === null) ? "Nenhuma observação." : $request['observacoes'];
+            $temperatura = ($request['temperatura'] === null) ? "20" : $request['temperatura'];
 
             $request = $request->only([
                 'data_estimada', 'data_de_entrega', 'data_de_levantamento',
                 'data_de_entrada_no_sistema', 'data_de_entrega_pretendida', 'tempo_limite_de_levantamento',
-                'temperatura', 'observacoes', 'cliente_id', 'cacifo_id',
+                'temperatura', 'observacoes', 'cliente_id', 'cacifo_id', 'tamanho', 'localizacao'
             ]);
 
             $encomenda = new Encomenda;
@@ -69,7 +70,9 @@ class EncomendaController extends Controller
             $encomenda->data_de_entrada_no_sistema = $request['data_de_entrada_no_sistema'];
             $encomenda->data_de_entrega_pretendida = $request['data_de_entrega_pretendida'];
             $encomenda->tempo_limite_de_levantamento = $request['tempo_limite_de_levantamento'];
-            $encomenda->temperatura = $request['temperatura'];
+            $encomenda->localizacao = $request['localizacao'];
+            $encomenda->tamanho = $request['tamanho'];
+            $encomenda->temperatura = $temperatura;
             $encomenda->observacoes = $observacoes;
             $encomenda->cliente_id = $request['cliente_id'];
             $encomenda->cacifo_id = $request['cacifo_id'];
@@ -126,7 +129,7 @@ class EncomendaController extends Controller
             $request = $request->only([
                 'data_estimada', 'data_de_entrega', 'data_de_levantamento',
                 'data_de_entrada_no_sistema', 'data_de_entrega_pretendida', 'tempo_limite_de_levantamento',
-                'temperatura', 'observacoes', 'cliente_id', 'cacifo_id',
+                'temperatura', 'observacoes', 'cliente_id', 'cacifo_id', 'tamanho', 'localizacao'
             ]);
 
 

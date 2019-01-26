@@ -20,6 +20,7 @@ class UserResource extends JsonResource
             'nome' => $this->nome,
             'email' => $this->email,
             'password' => $this->password,
+            'telefone' => $this->telefone,
             'data_nascimento' => $this->data_nascimento,
             'tipo_id' => $this->tipo_id,
             'supervisor_id' => $this->supervisor_id,

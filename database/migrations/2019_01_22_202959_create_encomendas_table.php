@@ -17,17 +17,21 @@ class CreateEncomendasTable extends Migration
         Schema::create('encomendas', function (Blueprint $table) {
             $table->increments('id')->unsigned();
             $table->dateTime('data_estimada');
-            $table->dateTime('data_de_entrega');
-            $table->dateTime('data_de_levantamento');
             $table->dateTime('data_de_entrada_no_sistema');
             $table->dateTime('data_de_entrega_pretendida');
             $table->string('tempo_limite_de_levantamento', 50);
+
+
+            $table->dateTime('data_de_entrega')->nullable();
+            $table->dateTime('data_de_levantamento')->nullable();
             $table->float('temperatura', 3, 1);
             $table->string('observacoes');
+            $table->string('tamanho');
+            $table->string('localizacao');
 
             //FK
             $table->integer('cliente_id')->unsigned()->index();
-            $table->integer('cacifo_id')->unsigned()->index();
+            $table->integer('cacifo_id')->unsigned()->index()->nullable();
 
             $table->timestamps();
             $table->softDeletes();

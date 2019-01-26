@@ -36,6 +36,7 @@ class UserRequest extends FormRequest
             'tipo_id.required' => 'O utilizador precisa de um tipo.',
             'tipo_id.exists' => 'O tipo_id não é válida.',
             'supervisor_id.exists' => 'O supervisor_id não é válido.',
+            'telefone.required' => 'O utilizador precisa de um telefone',
         ];
     }
 
@@ -50,6 +51,7 @@ class UserRequest extends FormRequest
             'nome' => 'required|min:3|max:250',
             'email' => 'required|unique:clientes|max:150|email',
             'password' => 'required|confirmed|min:6',
+            'telefone' => 'required|max:13',
             'data_nascimento' => 'date',
             'tipo_id' => 'required|exists:usertypes,id',
             'supervisor_id' => 'exists:users,id',

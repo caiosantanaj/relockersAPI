@@ -42,6 +42,12 @@ class EncomendaRequest extends FormRequest
             'tempo_limite_de_levantamento.required' => 'O utilizador precisa de um tipo.',
             'tempo_limite_de_levantamento.between' => 'O tempo de levantamento deve estar compreendido entre :min e :max.',
 
+            'localizacao.required' => 'A encomenda precisa de uma localização.',
+            'localizacao.max' => 'O campo localizacão tem um máximo de :max caracteres.',
+
+            'tamanho.required' => 'A encomenda precisa de um tamanho.',
+            'tamanho.max' => 'O campo tamanho tem um máximo de :max caracteres.',
+
             'cliente_id.required' => 'A encomenda tem de ter um cliente associado.',
             'cliente_id.exists' => 'O cliente_id não é válido.',
             'cacifo_id.exists' => 'O cacifo_id não é válido.',
@@ -63,6 +69,8 @@ class EncomendaRequest extends FormRequest
             'data_de_levantamento' => 'date_format:Y-m-d H:i:s',
             'temperatura' => 'numeric|between:0,20',
             'observacoes' => 'max: 1000',
+            'localizacao' => 'required|max:150',
+            'tamanho' => 'required|max:3',
             'tempo_limite_de_levantamento' => 'required|between:1,12',
             'cliente_id' => 'required|exists:clientes,id',
             'cacifo_id' => 'exists:cacifos,id',

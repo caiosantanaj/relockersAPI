@@ -82,12 +82,13 @@ class UserController extends Controller
     {
         try {
 
-            $request = $request->only(['nome', 'email', 'password', 'data_nascimento', 'tipo_id', 'supervisor_id']);
+            $request = $request->only(['nome', 'email', 'password', 'telefone', 'data_nascimento', 'tipo_id', 'supervisor_id']);
 
             $user = new User;
             $user->nome = $request['nome'];
             $user->email = $request['email'];
             $user->password = bcrypt($request['password']);
+            $user->telefone = $request['telefone'];
             $user->data_nascimento = $request['data_nascimento'];
             $user->tipo_id = $request['tipo_id'];
             $user->supervisor_id = $request['supervisor_id'];
@@ -141,7 +142,7 @@ class UserController extends Controller
     public function update(Request $request, User $user)
     {
         try {
-            $request = $request->only(['nome', 'email', 'password', 'data_nascimento', 'tipo_id', 'supervisor_id']);
+            $request = $request->only(['nome', 'email', 'password', 'telefone', 'data_nascimento', 'tipo_id', 'supervisor_id']);
 
             $request['password'] = bcrypt($request['password']);
 

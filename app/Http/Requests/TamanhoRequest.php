@@ -37,7 +37,7 @@ class TamanhoRequest extends FormRequest
     public function rules()
     {
         return [
-            'tamanho' => 'required|unique:tamanhos|max:45'
+            'tamanho' => 'required|unique:tamanhos|max:3'
         ];
     }
 }

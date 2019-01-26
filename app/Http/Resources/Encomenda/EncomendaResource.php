@@ -28,6 +28,8 @@ class EncomendaResource extends JsonResource
             'tempo_limite_de_levantamento' => $this->tempo_limite_de_levantamento,
             'temperatura' => (string)($this->temperatura),
             'observacoes' => $this->observacoes,
+            'tamanho' => $this->tamanho,
+            'localizacao' => $this->localizacao,
             'cliente_id' => $this->cliente_id,
             'cacifo_id' => $this->cacifo_id,
 

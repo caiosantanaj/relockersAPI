@@ -18,6 +18,7 @@ use App\User;
 $factory->define(App\User::class, function (Faker $faker) {
     return [
         'nome' => $faker->name,
+        'telefone' => $faker->phoneNumber(),
         'data_nascimento' => $faker->date($format = 'Y-m-d', $max = 'now'),
         'email' => $faker->unique()->freeEmail,
         //'email_verified_at' => now(),
