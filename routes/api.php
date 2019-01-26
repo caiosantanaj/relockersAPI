@@ -30,18 +30,15 @@ Route::Resource('localizacaos', 'LocalizacaoController');
 
 //CLIENTE
 Route::Resource('clientes', 'ClienteController');
-Route::get("clientes/{cliente}/encomendas", "EncomendaController@encomendaDoCliente");
-
 //CLIENTES -> Encomenda
-//Route::group(["prefix"=>"clientes"], function() {
-//   Route::get("/{cliente}/encomendas", "EncomendaController@encomendaToCliente");
-//});
+Route::get('clientes/{cliente}/encomendas', 'EncomendaController@clientesEncomenda');
 
 //ENCOMENDA
 Route::apiResource('encomendas', 'EncomendaController');
 
-//Route::get("clientes/{cliente}/encomendas", "EncomendaController@encomendaToCliente");
-
 //Utilizador
 Route::Resource('users', 'UserController');
 Route::Resource('userTypes', 'UserTypeController');
+
+Route::get('users/{user}/encomendas', 'UserController@userEncomendas');
+Route::post('users/{user}/encomendas/{encomenda}', 'UserController@storeUserEncomendas');

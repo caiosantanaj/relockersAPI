@@ -28,7 +28,7 @@ class EncomendaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function encomendaDoCliente(Cliente $cliente)
+    public function clientesEncomenda(Cliente $cliente)
     {
         return EncomendaResource::collection($cliente->encomendas);
     }

@@ -8,6 +8,8 @@ use App\User;
 use App\Http\Resources\User\UserResource;
 use App\Http\Requests\UserRequest;
 use Symfony\Component\HttpFoundation\Response;
+use App\Http\Resources\Encomenda\EncomendaResource;
+use App\Model\Encomenda;
 
 
 class UserController extends Controller
@@ -20,6 +22,44 @@ class UserController extends Controller
     public function index()
     {
         return UserCollection::collection(User::all());
+    }
+
+    /**
+     * Devolve as encomendas de um utilizador
+     * 
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function userEncomendas(User $user)
+    {
+        return EncomendaResource::collection($user->encomendas);
+    }
+
+    /**
+     * Cria uma ligação de um utilizador com uma encomenda
+     * 
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function storeUserEncomendas(User $user, Encomenda $encomenda)
+    {
+
+        try {
+            $user->encomendas()->attach($encomenda);
+
+            return response([
+                'msg' => 'Success',
+                'code' => Response::HTTP_OK,
+            ], Response::HTTP_OK);
+
+        } catch (\Exception $e) {
+            return response([
+                'msg' => $e->getMessage(),
+                'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**
