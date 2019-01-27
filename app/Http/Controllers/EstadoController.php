@@ -9,6 +9,12 @@ use App\Http\Resources\Estado\EstadoResource;
 use App\Http\Requests\EstadoRequest;
 use Symfony\Component\HttpFoundation\Response;
 
+/**
+ * @group Estado management
+ *
+ * Endpoint para controlar a APIs dos estados
+ * 
+ */
 class EstadoController extends Controller
 {
 
@@ -18,7 +24,9 @@ class EstadoController extends Controller
     // }
 
     /**
-     * Display a listing of the resource.
+     * Get Estado
+     * 
+     * mostra todos os estados.
      *
      * @return \Illuminate\Http\Response
      */
@@ -28,17 +36,20 @@ class EstadoController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Post Estado
      *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
+     * Adiciona novo estado.
+     * 
+     * @bodyParam estado string required Estado de um cacífo.
+     * 
+     * @response{
+     *   "msg": "Success",
+     *   "code": 201,
+     *   "data": {
+     *     "id": 1,
+     *     "estado": "Disponível"
+     *   }
+     * }
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -65,7 +76,9 @@ class EstadoController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Get um estado.
+     * 
+     * Mostra um estado detalhado.
      *
      * @param  \App\Model\Estado  $estado
      * @return \Illuminate\Http\Response
@@ -76,18 +89,18 @@ class EstadoController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Model\Estado  $estado
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Estado $estado)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
+     * Update Estado.
+     * 
+     * Atualiza um estado.
+     * 
+     * @response{
+     *   "msg": "Success",
+     *   "code": 200,
+     *   "data": {
+     *     "id": 1,
+     *     "estado": "Disponível"
+     *   }
+     * }
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Model\Estado  $estado
@@ -115,7 +128,14 @@ class EstadoController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete Estado
+     * 
+     * Apaga um estado em específico.
+     * 
+     * @response {
+     *   "msg": "Seccess",
+     *   "code": 200
+     * }
      *
      * @param  \App\Model\Estado  $estado
      * @return \Illuminate\Http\Response

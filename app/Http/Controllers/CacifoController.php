@@ -12,40 +12,73 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * @group Cacifo management
  *
- * APIs for managing cacifos
+ * Endpoint para controlar a APIs dos cacifos
+ * 
  */
 class CacifoController extends Controller
 {
     /**
      * Get Cacifos
      *
-     * Get all "cacifos" from database
-     *
+     * Lista todos os cacifos.
+     * 
+     * @return \Illuminate\Http\Response
+     * 
      */
     public function index()
     {
-        return CacifoCollection::collection(Cacifo::all());
+        return CacifoCollection::collection(Cacifo::all())->additional([
+            'msg' => 'success',
+            'code' => Response::HTTP_OK
+        ]);
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Post Cacifos
      *
+     * Adiciona novo cacifos.
+     * 
+     * @bodyParam numero string required Número do cacífo.
+     * @bodyParam temperatura string required Temperatura do cacífo.
+     * @bodyParam codigo string required Código do cacífo.
+     * @bodyParam estado_id string required Estado do cacífo(id).
+     * @bodyParam tamanho_id string required Tamanho do cacífo(id).
+     * @bodyParam localizacao_id string required Localização do cacífo(id).
+     * 
+     * @response {
+     *   "msg": "Success",
+     *   "code": 201,
+     *   "data": {
+     *     "id": 21,
+     *     "numero": 1,
+     *     "temperatura": "20",
+     *     "codigo": "UNLOCK",
+     *     "tamanho_id": 4,
+     *     "estado_id": 2,
+     *     "localizacao_id": 5,
+     *     "tamanho": {
+     *       "id": 4,
+     *       "tamanho": "L"
+     *     },
+     *     "estado": {
+     *       "id": 2,
+     *       "estado": "Disponivel"
+     *     },
+     *     "localizacao": {
+     *       "id": 5,
+     *       "nome": "Borer Avenue",
+     *       "lat": "87.823365",
+     *       "long": "101.362484"
+     *     }
+     *   }
+     * }
+     * 
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
      */
     public function store(CacifoRequest $request)
     {
-
         try {
 
             $temperatura = ($request['temperatura'] === null) ? 20 : $request['temperatura'];
@@ -79,7 +112,9 @@ class CacifoController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Get um cacifo.
+     * 
+     * Mostra um cacifo detalhado. 
      *
      * @param  \App\Model\Cacifo  $cacifo
      * @return \Illuminate\Http\Response
@@ -90,19 +125,44 @@ class CacifoController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Update Cacifos
      *
-     * @param  \App\Model\Cacifo  $cacifo
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Cacifo $cacifo)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
+     * Faz update a um cacifos.
+     * 
+     * @bodyParam numero string Número do cacífo.
+     * @bodyParam temperatura string Temperatura do cacífo.
+     * @bodyParam codigo string Código do cacífo.
+     * @bodyParam estado_id string Estado do cacífo(id).
+     * @bodyParam tamanho_id string Tamanho do cacífo(id).
+     * @bodyParam localizacao_id string Localização do cacífo(id).
+     * 
+     * @response {
+     *   "msg": "Success",
+     *   "code": 200,
+     *   "data": {
+     *     "id": 21,
+     *     "numero": 1,
+     *     "temperatura": "20",
+     *     "codigo": "UNLOCK",
+     *     "tamanho_id": 4,
+     *     "estado_id": 2,
+     *     "localizacao_id": 5,
+     *     "tamanho": {
+     *       "id": 4,
+     *       "tamanho": "L"
+     *     },
+     *     "estado": {
+     *       "id": 2,
+     *       "estado": "Disponivel"
+     *     },
+     *     "localizacao": {
+     *       "id": 5,
+     *       "nome": "Borer Avenue",
+     *       "lat": "87.823365",
+     *       "long": "101.362484"
+     *     }
+     *   }
+     * }
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Model\Cacifo  $cacifo
      * @return \Illuminate\Http\Response
@@ -117,10 +177,6 @@ class CacifoController extends Controller
             );
 
             $cacifo->update($request);
-
-            // $cacifo->codigo = $request['codigo'];
-
-            // $cacifo->save();
 
             return response([
                 'msg' => 'Success',
@@ -138,7 +194,13 @@ class CacifoController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete Cacifo.
+     * Apaga um cacifo em específico.
+     * 
+     * @response {
+     *   "msg": "Seccess",
+     *   "code": 200
+     * }
      *
      * @param  \App\Model\Cacifo  $cacifo
      * @return \Illuminate\Http\Response

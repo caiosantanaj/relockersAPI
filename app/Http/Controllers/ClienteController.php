@@ -9,12 +9,21 @@ use App\Http\Resources\Cliente\ClienteResource;
 use App\Http\Requests\ClienteRequest;
 use Symfony\Component\HttpFoundation\Response;
 
+/**
+ * @group Cliente management
+ *
+ * Endpoint para controlar a APIs dos clientes
+ * 
+ */
 class ClienteController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Get Clientes
+     * 
+     * Lista todos os clientes.
      *
      * @return \Illuminate\Http\Response
+     * 
      */
     public function index()
     {
@@ -22,20 +31,28 @@ class ClienteController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Post Cliente
      *
+     * Adiciona novo cliente.
+     * 
+     * @bodyParam nome string required Número do cacífo.
+     * @bodyParam email string required Temperatura do cacífo.
+     * @bodyParam telefone string required Código do cacífo.
+     * 
+     * @response{
+     *   "msg": "Success",
+     *   "code": 201,
+     *   "data": {
+     *     "id": 11,
+     *     "nome": "João Rocha",
+     *     "email": "jrocha@gmail.com",
+     *     "telefone": "911111111"
+     *   }
+     * }
+     * 
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
      */
     public function store(ClienteRequest $request)
     {
@@ -55,11 +72,12 @@ class ClienteController extends Controller
                 'code' => Response::HTTP_INTERNAL_SERVER_ERROR,
             ], Response::HTTP_INTERNAL_SERVER_ERROR);
         }
-        //
     }
 
     /**
-     * Display the specified resource.
+     * Get um cliente.
+     * 
+     * Mostra um cliente detalhado.
      *
      * @param  \App\Model\Cliente  $cliente
      * @return \Illuminate\Http\Response
@@ -70,18 +88,20 @@ class ClienteController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Model\Cliente  $cliente
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Cliente $cliente)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
+     * Update Cliente.
+     * 
+     * Atualiza um cliente.
+     * 
+     * @response {
+     *   "msg": "Success",
+     *   "code": 200,
+     *   "data": {
+     *     "id": 1,
+     *     "nome": "Elian Hill",
+     *     "email": "jackson32@yahoo.com",
+     *     "telefone": "(315) 972-8175 x7324"
+     *   }
+     * }
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Model\Cliente  $cliente
@@ -109,7 +129,14 @@ class ClienteController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete Cleinte
+     * 
+     * Apaga um cliente em específico.
+     * 
+     * @response {
+     *   "msg": "Seccess",
+     *   "code": 200
+     * }
      *
      * @param  \App\Model\Cliente  $cliente
      * @return \Illuminate\Http\Response
