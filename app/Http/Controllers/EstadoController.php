@@ -10,7 +10,7 @@ use App\Http\Requests\EstadoRequest;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * @group Estado management
+ * @group Estados management
  *
  * Endpoint para controlar a APIs dos estados
  * 
@@ -38,17 +38,14 @@ class EstadoController extends Controller
     /**
      * Post Estado
      *
-     * Adiciona novo estado.
+     * Adiciona um novo estado.
      * 
      * @bodyParam estado string required Estado de um cacífo.
      * 
      * @response{
      *   "msg": "Success",
      *   "code": 201,
-     *   "data": {
-     *     "id": 1,
-     *     "estado": "Disponível"
-     *   }
+     *   "data": {"properties": "estadoObject"}
      * }
      *
      * @param  \Illuminate\Http\Request  $request
@@ -93,13 +90,12 @@ class EstadoController extends Controller
      * 
      * Atualiza um estado.
      * 
+     * @bodyParam estado string required Nome do estado.
+     * 
      * @response{
      *   "msg": "Success",
      *   "code": 200,
-     *   "data": {
-     *     "id": 1,
-     *     "estado": "Disponível"
-     *   }
+     *   "data": {"properties": "estadoObject"}
      * }
      *
      * @param  \Illuminate\Http\Request  $request
@@ -130,7 +126,7 @@ class EstadoController extends Controller
     /**
      * Delete Estado
      * 
-     * Apaga um estado em específico.
+     * Apaga um estado.
      * 
      * @response {
      *   "msg": "Seccess",

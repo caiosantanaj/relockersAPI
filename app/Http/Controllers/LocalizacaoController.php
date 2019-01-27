@@ -9,10 +9,18 @@ use Symfony\Component\HttpFoundation\Response;
 use App\Http\Resources\Localizacao\LocalizacaoCollection;
 use App\Http\Resources\Localizacao\LocalizacaoResource;
 
+/**
+ * @group Localizacaos management
+ *
+ * Endpoint para controlar a APIs as localizacoes
+ * 
+ */
 class LocalizacaoController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Get Localizacao.
+     * 
+     * Mostra todas as localizações.
      *
      * @return \Illuminate\Http\Response
      */
@@ -25,17 +33,19 @@ class LocalizacaoController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Post Localizacao
      *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
+     * Adiciona uma nova localizacao.
+     * 
+     * @bodyParam nome string required Nome da localização.
+     * @bodyParam lat float required Latitude da localização.
+     * @bodyParam long float required Longitude da localização.
+     * 
+     * @response{
+     *   "msg": "Success",
+     *   "code": 201,
+     *   "data": {"properties": "localizacaoObject"}
+     * }
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -61,7 +71,9 @@ class LocalizacaoController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Get uma localizacao.
+     * 
+     * Mostra uma localização detalhada.
      *
      * @param  \App\Model\Localizacao  $localizacao
      * @return \Illuminate\Http\Response
@@ -72,18 +84,19 @@ class LocalizacaoController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Model\Localizacao  $localizacao
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Localizacao $localizacao)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
+     * Update Localizacao.
+     * 
+     * Atualiza uma localizacao.
+     * 
+     * @bodyParam nome string Nome da localização.
+     * @bodyParam latitude string Latitude da localização.
+     * @bodyParam longitude string Longitude da localização.
+     * 
+     * @response{
+     *   "msg": "Success",
+     *   "code": 200,
+     *   "data": {"properties": "localizacaoObject"}
+     * }
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Model\Localizacao  $localizacao
@@ -111,7 +124,14 @@ class LocalizacaoController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete Localizacao
+     * 
+     * Apaga uma localizacao.
+     * 
+     * @response {
+     *   "msg": "Seccess",
+     *   "code": 200
+     * }
      *
      * @param  \App\Model\Localizacao  $localizacao
      * @return \Illuminate\Http\Response

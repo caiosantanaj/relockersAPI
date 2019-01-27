@@ -20,7 +20,7 @@ Bem-vindo a documentação do ReLockersAPI.
 
 <!-- END_INFO -->
 
-#Cacifo management
+#Cacifos management
 
 Endpoint para controlar a APIs dos cacifos
 <!-- START_1407c361b7d59f39aae9eaaf2b869b76 -->
@@ -343,17 +343,17 @@ fetch(url, {
 <!-- START_ce745d4812b8c094f4bb33924ab2466a -->
 ## Post Cacifos
 
-Adiciona novo cacifos.
+Adiciona um novo cacifos.
 
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/cacifos"     -d "numero"="x0TrXZN9NBW4y7Nj" \
-    -d "temperatura"="jVJiL3z53BxVfKhn" \
-    -d "codigo"="gDXcAE232oy2FYAs" \
-    -d "estado_id"="Wazy2D80bpeaVuB2" \
-    -d "tamanho_id"="sz8SW0wf0zLJ9AUY" \
-    -d "localizacao_id"="JCOtdmYwlWWDS8Mn" 
+curl -X POST "http://localhost/api/cacifos"     -d "numero"="wd5F3LyMP3Ccl3mm" \
+    -d "temperatura"="NLtJ4IwcDqFqXjka" \
+    -d "codigo"="Hjaug5ziovO1RgXf" \
+    -d "estado_id"="7jy85STdZOjZgPNX" \
+    -d "tamanho_id"="i138p9znnYaL1r1K" \
+    -d "localizacao_id"="aCMTZVoYqhEg3QvX" 
 ```
 
 ```javascript
@@ -365,12 +365,12 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "numero": "x0TrXZN9NBW4y7Nj",
-    "temperatura": "jVJiL3z53BxVfKhn",
-    "codigo": "gDXcAE232oy2FYAs",
-    "estado_id": "Wazy2D80bpeaVuB2",
-    "tamanho_id": "sz8SW0wf0zLJ9AUY",
-    "localizacao_id": "JCOtdmYwlWWDS8Mn",
+    "numero": "wd5F3LyMP3Ccl3mm",
+    "temperatura": "NLtJ4IwcDqFqXjka",
+    "codigo": "Hjaug5ziovO1RgXf",
+    "estado_id": "7jy85STdZOjZgPNX",
+    "tamanho_id": "i138p9znnYaL1r1K",
+    "localizacao_id": "aCMTZVoYqhEg3QvX",
 })
 
 fetch(url, {
@@ -389,27 +389,7 @@ fetch(url, {
     "msg": "Success",
     "code": 201,
     "data": {
-        "id": 21,
-        "numero": 1,
-        "temperatura": "20",
-        "codigo": "UNLOCK",
-        "tamanho_id": 4,
-        "estado_id": 2,
-        "localizacao_id": 5,
-        "tamanho": {
-            "id": 4,
-            "tamanho": "L"
-        },
-        "estado": {
-            "id": 2,
-            "estado": "Disponivel"
-        },
-        "localizacao": {
-            "id": 5,
-            "nome": "Borer Avenue",
-            "lat": "87.823365",
-            "long": "101.362484"
-        }
+        "properties": "cacifoObject"
     }
 }
 ```
@@ -501,12 +481,12 @@ Faz update a um cacifos.
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/cacifos/{cacifo}"     -d "numero"="oQp6ZzmHKLM4s2mb" \
-    -d "temperatura"="b4fQJDZgpZTLkysb" \
-    -d "codigo"="8J0OjZtN4uwv3UWb" \
-    -d "estado_id"="Y6Q81nxkeFNhzz5K" \
-    -d "tamanho_id"="KS1LSixXnqzXFGwM" \
-    -d "localizacao_id"="RQd8nzqEpnLdKpMf" 
+curl -X PUT "http://localhost/api/cacifos/{cacifo}"     -d "numero"="kJc4zSR5kPUGjYoV" \
+    -d "temperatura"="N60r7jFevS1d7A9A" \
+    -d "codigo"="f3qu8RBGGjLrH8Rs" \
+    -d "estado_id"="iPGFx9049cov7YTd" \
+    -d "tamanho_id"="0n5Ka1aXCYHDCQTj" \
+    -d "localizacao_id"="0rKAMrRYWw068fjk" 
 ```
 
 ```javascript
@@ -518,12 +498,12 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "numero": "oQp6ZzmHKLM4s2mb",
-    "temperatura": "b4fQJDZgpZTLkysb",
-    "codigo": "8J0OjZtN4uwv3UWb",
-    "estado_id": "Y6Q81nxkeFNhzz5K",
-    "tamanho_id": "KS1LSixXnqzXFGwM",
-    "localizacao_id": "RQd8nzqEpnLdKpMf",
+    "numero": "kJc4zSR5kPUGjYoV",
+    "temperatura": "N60r7jFevS1d7A9A",
+    "codigo": "f3qu8RBGGjLrH8Rs",
+    "estado_id": "iPGFx9049cov7YTd",
+    "tamanho_id": "0n5Ka1aXCYHDCQTj",
+    "localizacao_id": "0rKAMrRYWw068fjk",
 })
 
 fetch(url, {
@@ -542,27 +522,7 @@ fetch(url, {
     "msg": "Success",
     "code": 200,
     "data": {
-        "id": 21,
-        "numero": 1,
-        "temperatura": "20",
-        "codigo": "UNLOCK",
-        "tamanho_id": 4,
-        "estado_id": 2,
-        "localizacao_id": 5,
-        "tamanho": {
-            "id": 4,
-            "tamanho": "L"
-        },
-        "estado": {
-            "id": 2,
-            "estado": "Disponivel"
-        },
-        "localizacao": {
-            "id": 5,
-            "nome": "Borer Avenue",
-            "lat": "87.823365",
-            "long": "101.362484"
-        }
+        "properties": "cacifoObject"
     }
 }
 ```
@@ -588,7 +548,7 @@ Parameter | Type | Status | Description
 <!-- START_e5063c9eb32fea8e0810d74a8a728302 -->
 ## Delete Cacifo.
 
-Apaga um cacifo em específico.
+Apaga um cacifo.
 
 > Example request:
 
@@ -627,7 +587,7 @@ fetch(url, {
 
 <!-- END_e5063c9eb32fea8e0810d74a8a728302 -->
 
-#Cliente management
+#Clientes management
 
 Endpoint para controlar a APIs dos clientes
 <!-- START_4708a91a0309f0ddbadd902f0e0f3767 -->
@@ -763,14 +723,14 @@ fetch(url, {
 <!-- START_c7130feb7007e7ce36b8fbc7584cbe58 -->
 ## Post Cliente
 
-Adiciona novo cliente.
+Adiciona um novo cliente.
 
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/clientes"     -d "nome"="0IW3Hzd3vjJKxxdn" \
-    -d "email"="Z2ZVjGkW1rMOo100" \
-    -d "telefone"="0MGzWVTqohuQo8l9" 
+curl -X POST "http://localhost/api/clientes"     -d "nome"="Ag8IDS7Sh4ftzfGu" \
+    -d "email"="f5GC7qlgdinPfEon" \
+    -d "telefone"="uMBxuW33butDx7Nl" 
 ```
 
 ```javascript
@@ -782,9 +742,9 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "nome": "0IW3Hzd3vjJKxxdn",
-    "email": "Z2ZVjGkW1rMOo100",
-    "telefone": "0MGzWVTqohuQo8l9",
+    "nome": "Ag8IDS7Sh4ftzfGu",
+    "email": "f5GC7qlgdinPfEon",
+    "telefone": "uMBxuW33butDx7Nl",
 })
 
 fetch(url, {
@@ -803,10 +763,7 @@ fetch(url, {
     "msg": "Success",
     "code": 201,
     "data": {
-        "id": 11,
-        "nome": "João Rocha",
-        "email": "jrocha@gmail.com",
-        "telefone": "911111111"
+        "properties": "clienteObject"
     }
 }
 ```
@@ -878,7 +835,9 @@ Atualiza um cliente.
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/clientes/{cliente}" 
+curl -X PUT "http://localhost/api/clientes/{cliente}"     -d "nome"="QWepIL411B2Or12W" \
+    -d "email"="C29cZY1GljHXCyCe" \
+    -d "telefone"="zpYFKUeL4xEUp2gr" 
 ```
 
 ```javascript
@@ -889,9 +848,16 @@ let headers = {
     "Content-Type": "application/json",
 }
 
+let body = JSON.stringify({
+    "nome": "QWepIL411B2Or12W",
+    "email": "C29cZY1GljHXCyCe",
+    "telefone": "zpYFKUeL4xEUp2gr",
+})
+
 fetch(url, {
     method: "PUT",
     headers: headers,
+    body: body
 })
     .then(response => response.json())
     .then(json => console.log(json));
@@ -904,10 +870,7 @@ fetch(url, {
     "msg": "Success",
     "code": 200,
     "data": {
-        "id": 1,
-        "nome": "Elian Hill",
-        "email": "jackson32@yahoo.com",
-        "telefone": "(315) 972-8175 x7324"
+        "properties": "clienteObject"
     }
 }
 ```
@@ -917,13 +880,20 @@ fetch(url, {
 
 `PATCH api/clientes/{cliente}`
 
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    nome | string |  optional  | Nome do cliente.
+    email | string |  optional  | E-mail do cliente.
+    telefone | string |  optional  | Telefone do cliente.
 
 <!-- END_84238590a7a12d110fd20345273abb25 -->
 
 <!-- START_6864d4bf53f3add54af093e7fd2e8864 -->
 ## Delete Cleinte
 
-Apaga um cliente em específico.
+Apaga um cliente.
 
 > Example request:
 
@@ -962,832 +932,13 @@ fetch(url, {
 
 <!-- END_6864d4bf53f3add54af093e7fd2e8864 -->
 
-#Estado management
+#Encomendas management
 
-Endpoint para controlar a APIs dos estados
-<!-- START_ac5f293a4430cf75efc1e7194302aea4 -->
-## Get Estado
-
-mostra todos os estados.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/estados" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/estados");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-{
-    "data": [
-        {
-            "estado": "Indisponivel",
-            "href": {
-                "link": "http:\/\/localhost\/api\/estados\/1"
-            }
-        },
-        {
-            "estado": "Disponivel",
-            "href": {
-                "link": "http:\/\/localhost\/api\/estados\/2"
-            }
-        }
-    ]
-}
-```
-
-### HTTP Request
-`GET api/estados`
-
-
-<!-- END_ac5f293a4430cf75efc1e7194302aea4 -->
-
-<!-- START_12b8c44faff90c50600fdf54d6b28100 -->
-## Post Estado
-
-Adiciona novo estado.
-
-> Example request:
-
-```bash
-curl -X POST "http://localhost/api/estados"     -d "estado"="uTjq6xbKQZ2wUrW4" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/estados");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-let body = JSON.stringify({
-    "estado": "uTjq6xbKQZ2wUrW4",
-})
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-    body: body
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-{
-    "msg": "Success",
-    "code": 201,
-    "data": {
-        "id": 1,
-        "estado": "Disponível"
-    }
-}
-```
-
-### HTTP Request
-`POST api/estados`
-
-#### Body Parameters
-
-Parameter | Type | Status | Description
---------- | ------- | ------- | ------- | -----------
-    estado | string |  required  | Estado de um cacífo.
-
-<!-- END_12b8c44faff90c50600fdf54d6b28100 -->
-
-<!-- START_81604ca46a9d7fb8fe23c7833dcdbb8b -->
-## Get um estado.
-
-Mostra um estado detalhado.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/estados/{estado}" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/estados/{estado}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-{
-    "data": {
-        "id": 1,
-        "estado": "Indisponivel"
-    }
-}
-```
-
-### HTTP Request
-`GET api/estados/{estado}`
-
-
-<!-- END_81604ca46a9d7fb8fe23c7833dcdbb8b -->
-
-<!-- START_edc8cb441d35eee921089d801017ab90 -->
-## Update Estado.
-
-Atualiza um estado.
-
-> Example request:
-
-```bash
-curl -X PUT "http://localhost/api/estados/{estado}" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/estados/{estado}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "PUT",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-{
-    "msg": "Success",
-    "code": 200,
-    "data": {
-        "id": 1,
-        "estado": "Disponível"
-    }
-}
-```
-
-### HTTP Request
-`PUT api/estados/{estado}`
-
-`PATCH api/estados/{estado}`
-
-
-<!-- END_edc8cb441d35eee921089d801017ab90 -->
-
-<!-- START_4dffc4046cb3367db34359bf4f412565 -->
-## Delete Estado
-
-Apaga um estado em específico.
-
-> Example request:
-
-```bash
-curl -X DELETE "http://localhost/api/estados/{estado}" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/estados/{estado}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "DELETE",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-{
-    "msg": "Seccess",
-    "code": 200
-}
-```
-
-### HTTP Request
-`DELETE api/estados/{estado}`
-
-
-<!-- END_4dffc4046cb3367db34359bf4f412565 -->
-
-#general
-<!-- START_910f847967dfd033adc177580aac35a2 -->
-## Display a listing of the resource.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/tamanhos" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/tamanhos");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-{
-    "data": [
-        {
-            "tamanho": "M",
-            "href": {
-                "link": "http:\/\/localhost\/api\/tamanhos\/1"
-            }
-        },
-        {
-            "tamanho": "L",
-            "href": {
-                "link": "http:\/\/localhost\/api\/tamanhos\/2"
-            }
-        },
-        {
-            "tamanho": "S",
-            "href": {
-                "link": "http:\/\/localhost\/api\/tamanhos\/3"
-            }
-        },
-        {
-            "tamanho": "L",
-            "href": {
-                "link": "http:\/\/localhost\/api\/tamanhos\/4"
-            }
-        }
-    ]
-}
-```
-
-### HTTP Request
-`GET api/tamanhos`
-
-
-<!-- END_910f847967dfd033adc177580aac35a2 -->
-
-<!-- START_f806f99c4ce3fce09c71e939a30648d3 -->
-## Show the form for creating a new resource.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/tamanhos/create" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/tamanhos/create");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-null
-```
-
-### HTTP Request
-`GET api/tamanhos/create`
-
-
-<!-- END_f806f99c4ce3fce09c71e939a30648d3 -->
-
-<!-- START_441919fa78c2e050906d9079ed13e3ff -->
-## Store a newly created resource in storage.
-
-> Example request:
-
-```bash
-curl -X POST "http://localhost/api/tamanhos" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/tamanhos");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`POST api/tamanhos`
-
-
-<!-- END_441919fa78c2e050906d9079ed13e3ff -->
-
-<!-- START_e549b304b29bc4a6784f985291bf7581 -->
-## Display the specified resource.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/tamanhos/{tamanho}" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/tamanhos/{tamanho}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-{
-    "data": {
-        "id": 1,
-        "tamanho": "M"
-    }
-}
-```
-
-### HTTP Request
-`GET api/tamanhos/{tamanho}`
-
-
-<!-- END_e549b304b29bc4a6784f985291bf7581 -->
-
-<!-- START_31adec954e53951294fc3e5868f6f5d5 -->
-## Show the form for editing the specified resource.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/tamanhos/{tamanho}/edit" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/tamanhos/{tamanho}/edit");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-null
-```
-
-### HTTP Request
-`GET api/tamanhos/{tamanho}/edit`
-
-
-<!-- END_31adec954e53951294fc3e5868f6f5d5 -->
-
-<!-- START_e4fafdaa44af0c54d99e8cc84c7ad8d8 -->
-## Update the specified resource in storage.
-
-> Example request:
-
-```bash
-curl -X PUT "http://localhost/api/tamanhos/{tamanho}" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/tamanhos/{tamanho}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "PUT",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`PUT api/tamanhos/{tamanho}`
-
-`PATCH api/tamanhos/{tamanho}`
-
-
-<!-- END_e4fafdaa44af0c54d99e8cc84c7ad8d8 -->
-
-<!-- START_12933aa0be5df8b051558391f02e216e -->
-## Remove the specified resource from storage.
-
-> Example request:
-
-```bash
-curl -X DELETE "http://localhost/api/tamanhos/{tamanho}" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/tamanhos/{tamanho}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "DELETE",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`DELETE api/tamanhos/{tamanho}`
-
-
-<!-- END_12933aa0be5df8b051558391f02e216e -->
-
-<!-- START_1d3824e1b446b76c2fe7ab6a2a9c6714 -->
-## Display a listing of the resource.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/localizacaos" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/localizacaos");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-{
-    "data": [
-        {
-            "nome": "Carmela Crest",
-            "lat": "-4.20848",
-            "long": "129.669745",
-            "href": {
-                "link": "http:\/\/localhost\/api\/localizacaos\/1"
-            }
-        },
-        {
-            "nome": "Skiles Corner",
-            "lat": "39.303428",
-            "long": "-161.500752",
-            "href": {
-                "link": "http:\/\/localhost\/api\/localizacaos\/2"
-            }
-        },
-        {
-            "nome": "Destinee Extensions",
-            "lat": "-57.348573",
-            "long": "-70.074383",
-            "href": {
-                "link": "http:\/\/localhost\/api\/localizacaos\/3"
-            }
-        },
-        {
-            "nome": "Pfannerstill Wells",
-            "lat": "73.959645",
-            "long": "81.453814",
-            "href": {
-                "link": "http:\/\/localhost\/api\/localizacaos\/4"
-            }
-        },
-        {
-            "nome": "Borer Avenue",
-            "lat": "87.823365",
-            "long": "101.362484",
-            "href": {
-                "link": "http:\/\/localhost\/api\/localizacaos\/5"
-            }
-        }
-    ],
-    "msg": "Success",
-    "code": 200
-}
-```
-
-### HTTP Request
-`GET api/localizacaos`
-
-
-<!-- END_1d3824e1b446b76c2fe7ab6a2a9c6714 -->
-
-<!-- START_c6da2e3e3c6d7dd9df3ba6dde64f040e -->
-## Show the form for creating a new resource.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/localizacaos/create" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/localizacaos/create");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-null
-```
-
-### HTTP Request
-`GET api/localizacaos/create`
-
-
-<!-- END_c6da2e3e3c6d7dd9df3ba6dde64f040e -->
-
-<!-- START_82ec123977aeaeb445155a9418d2d5e0 -->
-## Store a newly created resource in storage.
-
-> Example request:
-
-```bash
-curl -X POST "http://localhost/api/localizacaos" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/localizacaos");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`POST api/localizacaos`
-
-
-<!-- END_82ec123977aeaeb445155a9418d2d5e0 -->
-
-<!-- START_66e32a4889a5adc165582adfe3fa634f -->
-## Display the specified resource.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/localizacaos/{localizacao}" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/localizacaos/{localizacao}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-{
-    "data": {
-        "id": 1,
-        "nome": "Carmela Crest",
-        "lat": "-4.20848",
-        "long": "129.669745"
-    }
-}
-```
-
-### HTTP Request
-`GET api/localizacaos/{localizacao}`
-
-
-<!-- END_66e32a4889a5adc165582adfe3fa634f -->
-
-<!-- START_b0ece0e434d0981659bd911bb8589332 -->
-## Show the form for editing the specified resource.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/localizacaos/{localizacao}/edit" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/localizacaos/{localizacao}/edit");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-null
-```
-
-### HTTP Request
-`GET api/localizacaos/{localizacao}/edit`
-
-
-<!-- END_b0ece0e434d0981659bd911bb8589332 -->
-
-<!-- START_34f786553c4f147c34c5146f754faf9e -->
-## Update the specified resource in storage.
-
-> Example request:
-
-```bash
-curl -X PUT "http://localhost/api/localizacaos/{localizacao}" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/localizacaos/{localizacao}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "PUT",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`PUT api/localizacaos/{localizacao}`
-
-`PATCH api/localizacaos/{localizacao}`
-
-
-<!-- END_34f786553c4f147c34c5146f754faf9e -->
-
-<!-- START_90f9194fa9dd72ce64f86052b1b7a874 -->
-## Remove the specified resource from storage.
-
-> Example request:
-
-```bash
-curl -X DELETE "http://localhost/api/localizacaos/{localizacao}" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/localizacaos/{localizacao}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "DELETE",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`DELETE api/localizacaos/{localizacao}`
-
-
-<!-- END_90f9194fa9dd72ce64f86052b1b7a874 -->
-
+Endpoint para controlar a APIs das encomendas
 <!-- START_80cdd4990301b691ea1362dc392185fe -->
-## Display a listing of the resource.
+## Get Encomendas of a cliente
+
+Devolve as encomendas de um cliente.
 
 > Example request:
 
@@ -2115,7 +1266,9 @@ fetch(url, {
 <!-- END_80cdd4990301b691ea1362dc392185fe -->
 
 <!-- START_9103cfbc8321cf197d1d8d4f7fbedeb8 -->
-## Display a listing of the resource.
+## Get Encomendas
+
+Lista todas as encomendas.
 
 > Example request:
 
@@ -2580,12 +1733,25 @@ fetch(url, {
 <!-- END_9103cfbc8321cf197d1d8d4f7fbedeb8 -->
 
 <!-- START_351b13c152e13c47fcf0347d4daf989b -->
-## Store a newly created resource in storage.
+## Post Encomenda
+
+Adiciona uma nova encomenda.
 
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/encomendas" 
+curl -X POST "http://localhost/api/encomendas"     -d "data_estimada"="CKYGPmgqpzwegMBE" \
+    -d "data_de_entrega"="zN921RvExtJZWkUY" \
+    -d "data_de_levantamento"="bNH9nYT1MNdAy23G" \
+    -d "data_de_entrada_no_sistema"="xRK3iB4dd1RuAgKC" \
+    -d "data_de_entrega_pretendida"="DPHW6Xs033iDf7OY" \
+    -d "tempo_limite_de_levantamento"="g6ZZR8KTsICoVloE" \
+    -d "temperatura"="1753656.4096" \
+    -d "observacoes"="5pslz9LnTagl8sIo" \
+    -d "tamanho"="crBIcbiGQyvWmvwg" \
+    -d "localizacao"="sOEOkZWTV3YXtRRz" \
+    -d "cliente_id"="7UeD1wOcRzO67ffQ" \
+    -d "cacifo_id"="ryHVEjUIPS29azgG" 
 ```
 
 ```javascript
@@ -2596,23 +1762,68 @@ let headers = {
     "Content-Type": "application/json",
 }
 
+let body = JSON.stringify({
+    "data_estimada": "CKYGPmgqpzwegMBE",
+    "data_de_entrega": "zN921RvExtJZWkUY",
+    "data_de_levantamento": "bNH9nYT1MNdAy23G",
+    "data_de_entrada_no_sistema": "xRK3iB4dd1RuAgKC",
+    "data_de_entrega_pretendida": "DPHW6Xs033iDf7OY",
+    "tempo_limite_de_levantamento": "g6ZZR8KTsICoVloE",
+    "temperatura": "1753656.4096",
+    "observacoes": "5pslz9LnTagl8sIo",
+    "tamanho": "crBIcbiGQyvWmvwg",
+    "localizacao": "sOEOkZWTV3YXtRRz",
+    "cliente_id": "7UeD1wOcRzO67ffQ",
+    "cacifo_id": "ryHVEjUIPS29azgG",
+})
+
 fetch(url, {
     method: "POST",
     headers: headers,
+    body: body
 })
     .then(response => response.json())
     .then(json => console.log(json));
 ```
 
+> Example response (200):
+
+```json
+{
+    "msg": "Success",
+    "code": 201,
+    "data": {
+        "properties": "encomendaObject"
+    }
+}
+```
 
 ### HTTP Request
 `POST api/encomendas`
 
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    data_estimada | date |  required  | Data estimada da entrega da encomenda..
+    data_de_entrega | date |  optional  | optional Data de entrega da encomenda.
+    data_de_levantamento | date |  optional  | optional Data de levantamento da encomenda.
+    data_de_entrada_no_sistema | date |  required  | Data em que a encomenda foi registada no sistema.
+    data_de_entrega_pretendida | date |  required  | Data em que o cliente pretende a entrega.
+    tempo_limite_de_levantamento | date |  required  | Tempo limite para o levantamento de certa encomenda.
+    temperatura | float |  optional  | optional Temperatura de uma encomenda. Caso seja nulo o valor default será: 20.
+    observacoes | string |  optional  | optional Observações de uma encomenda. Caso seja nula o valor default será: "Nenhuma observação.".
+    tamanho | string |  required  | Tamanho de uma encomenda.
+    localizacao | string |  required  | Localização de entrega pretendida.
+    cliente_id | string |  required  | Id do cliente que possui a encomenda.
+    cacifo_id | string |  optional  | optional Id do cacifo de onde a encomenda vai ser colocada.
 
 <!-- END_351b13c152e13c47fcf0347d4daf989b -->
 
 <!-- START_e262c7297ef3120caf36a82783e68f06 -->
-## Display the specified resource.
+## Get a Encomenda.
+
+Mostra uma encomenda detalhada.
 
 > Example request:
 
@@ -2698,12 +1909,25 @@ fetch(url, {
 <!-- END_e262c7297ef3120caf36a82783e68f06 -->
 
 <!-- START_21b58c957ec03c5fd31f65ab1b836751 -->
-## Update the specified resource in storage.
+## Update Encomenda
+
+Atualiza uma encomenda.
 
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/encomendas/{encomenda}" 
+curl -X PUT "http://localhost/api/encomendas/{encomenda}"     -d "data_estimada"="OgDazamDjAYFeMeE" \
+    -d "data_de_entrega"="B6PTjhAywgGYbhVR" \
+    -d "data_de_levantamento"="6vfCZHsfzmPdYfrj" \
+    -d "data_de_entrada_no_sistema"="BHacqSH096UtVeo6" \
+    -d "data_de_entrega_pretendida"="1Lez2VmEHxwDKQYU" \
+    -d "tempo_limite_de_levantamento"="MK5B9hiCyTDxQU4R" \
+    -d "temperatura"="391091" \
+    -d "observacoes"="bWvvPDttxsZdJYUR" \
+    -d "tamanho"="aZCHtHH1H3hnQQRB" \
+    -d "localizacao"="vOE6qvqq4z7wdFCz" \
+    -d "cliente_id"="F4HdcAF6osGPMiAk" \
+    -d "cacifo_id"="ooYUv5JhwFBqNadh" 
 ```
 
 ```javascript
@@ -2714,25 +1938,70 @@ let headers = {
     "Content-Type": "application/json",
 }
 
+let body = JSON.stringify({
+    "data_estimada": "OgDazamDjAYFeMeE",
+    "data_de_entrega": "B6PTjhAywgGYbhVR",
+    "data_de_levantamento": "6vfCZHsfzmPdYfrj",
+    "data_de_entrada_no_sistema": "BHacqSH096UtVeo6",
+    "data_de_entrega_pretendida": "1Lez2VmEHxwDKQYU",
+    "tempo_limite_de_levantamento": "MK5B9hiCyTDxQU4R",
+    "temperatura": "391091",
+    "observacoes": "bWvvPDttxsZdJYUR",
+    "tamanho": "aZCHtHH1H3hnQQRB",
+    "localizacao": "vOE6qvqq4z7wdFCz",
+    "cliente_id": "F4HdcAF6osGPMiAk",
+    "cacifo_id": "ooYUv5JhwFBqNadh",
+})
+
 fetch(url, {
     method: "PUT",
     headers: headers,
+    body: body
 })
     .then(response => response.json())
     .then(json => console.log(json));
 ```
 
+> Example response (200):
+
+```json
+{
+    "msg": "Success",
+    "code": 200,
+    "data": {
+        "properties": "encomendaObject"
+    }
+}
+```
 
 ### HTTP Request
 `PUT api/encomendas/{encomenda}`
 
 `PATCH api/encomendas/{encomenda}`
 
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    data_estimada | date |  optional  | optional Data estimada da entrega da encomenda..
+    data_de_entrega | date |  optional  | optional Data de entrega da encomenda.
+    data_de_levantamento | date |  optional  | optional Data de levantamento da encomenda.
+    data_de_entrada_no_sistema | date |  optional  | optional Data em que a encomenda foi registada no sistema.
+    data_de_entrega_pretendida | date |  optional  | optional Data em que o cliente pretende a entrega.
+    tempo_limite_de_levantamento | date |  optional  | optional Tempo limite para o levantamento de certa encomenda.
+    temperatura | float |  optional  | optional Temperatura de uma encomenda. Caso seja nulo o valor default será: 20.
+    observacoes | string |  optional  | optional Observações de uma encomenda. Caso seja nula o valor default será: "Nenhuma observação.".
+    tamanho | string |  optional  | optional Tamanho de uma encomenda.
+    localizacao | string |  optional  | optional Localização de entrega pretendida.
+    cliente_id | string |  optional  | optional Id do cliente que possui a encomenda.
+    cacifo_id | string |  optional  | optional Id do cacifo de onde a encomenda vai ser colocada.
 
 <!-- END_21b58c957ec03c5fd31f65ab1b836751 -->
 
 <!-- START_f69358971fad0e59f15fe1e82945c9e5 -->
-## Remove the specified resource from storage.
+## Delete Encomenda
+
+Apaga uma encomenda.
 
 > Example request:
 
@@ -2756,6 +2025,14 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
+> Example response (200):
+
+```json
+{
+    "msg": "Seccess",
+    "code": 200
+}
+```
 
 ### HTTP Request
 `DELETE api/encomendas/{encomenda}`
@@ -2763,8 +2040,1089 @@ fetch(url, {
 
 <!-- END_f69358971fad0e59f15fe1e82945c9e5 -->
 
+#Estados management
+
+Endpoint para controlar a APIs dos estados
+<!-- START_ac5f293a4430cf75efc1e7194302aea4 -->
+## Get Estado
+
+mostra todos os estados.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/estados" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/estados");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "data": [
+        {
+            "estado": "Indisponivel",
+            "href": {
+                "link": "http:\/\/localhost\/api\/estados\/1"
+            }
+        },
+        {
+            "estado": "Disponivel",
+            "href": {
+                "link": "http:\/\/localhost\/api\/estados\/2"
+            }
+        }
+    ]
+}
+```
+
+### HTTP Request
+`GET api/estados`
+
+
+<!-- END_ac5f293a4430cf75efc1e7194302aea4 -->
+
+<!-- START_12b8c44faff90c50600fdf54d6b28100 -->
+## Post Estado
+
+Adiciona um novo estado.
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/api/estados"     -d "estado"="p6Pkph5xHBHsZ9ph" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/estados");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+let body = JSON.stringify({
+    "estado": "p6Pkph5xHBHsZ9ph",
+})
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "msg": "Success",
+    "code": 201,
+    "data": {
+        "properties": "estadoObject"
+    }
+}
+```
+
+### HTTP Request
+`POST api/estados`
+
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    estado | string |  required  | Estado de um cacífo.
+
+<!-- END_12b8c44faff90c50600fdf54d6b28100 -->
+
+<!-- START_81604ca46a9d7fb8fe23c7833dcdbb8b -->
+## Get um estado.
+
+Mostra um estado detalhado.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/estados/{estado}" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/estados/{estado}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "data": {
+        "id": 1,
+        "estado": "Indisponivel"
+    }
+}
+```
+
+### HTTP Request
+`GET api/estados/{estado}`
+
+
+<!-- END_81604ca46a9d7fb8fe23c7833dcdbb8b -->
+
+<!-- START_edc8cb441d35eee921089d801017ab90 -->
+## Update Estado.
+
+Atualiza um estado.
+
+> Example request:
+
+```bash
+curl -X PUT "http://localhost/api/estados/{estado}"     -d "estado"="5TEMNKMfH6tPhgJ3" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/estados/{estado}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+let body = JSON.stringify({
+    "estado": "5TEMNKMfH6tPhgJ3",
+})
+
+fetch(url, {
+    method: "PUT",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "msg": "Success",
+    "code": 200,
+    "data": {
+        "properties": "estadoObject"
+    }
+}
+```
+
+### HTTP Request
+`PUT api/estados/{estado}`
+
+`PATCH api/estados/{estado}`
+
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    estado | string |  required  | Nome do estado.
+
+<!-- END_edc8cb441d35eee921089d801017ab90 -->
+
+<!-- START_4dffc4046cb3367db34359bf4f412565 -->
+## Delete Estado
+
+Apaga um estado.
+
+> Example request:
+
+```bash
+curl -X DELETE "http://localhost/api/estados/{estado}" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/estados/{estado}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "msg": "Seccess",
+    "code": 200
+}
+```
+
+### HTTP Request
+`DELETE api/estados/{estado}`
+
+
+<!-- END_4dffc4046cb3367db34359bf4f412565 -->
+
+#Localizacaos management
+
+Endpoint para controlar a APIs as localizacoes
+<!-- START_1d3824e1b446b76c2fe7ab6a2a9c6714 -->
+## Get Localizacao.
+
+Mostra todas as localizações.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/localizacaos" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/localizacaos");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "data": [
+        {
+            "nome": "Carmela Crest",
+            "lat": "-4.20848",
+            "long": "129.669745",
+            "href": {
+                "link": "http:\/\/localhost\/api\/localizacaos\/1"
+            }
+        },
+        {
+            "nome": "Skiles Corner",
+            "lat": "39.303428",
+            "long": "-161.500752",
+            "href": {
+                "link": "http:\/\/localhost\/api\/localizacaos\/2"
+            }
+        },
+        {
+            "nome": "Destinee Extensions",
+            "lat": "-57.348573",
+            "long": "-70.074383",
+            "href": {
+                "link": "http:\/\/localhost\/api\/localizacaos\/3"
+            }
+        },
+        {
+            "nome": "Pfannerstill Wells",
+            "lat": "73.959645",
+            "long": "81.453814",
+            "href": {
+                "link": "http:\/\/localhost\/api\/localizacaos\/4"
+            }
+        },
+        {
+            "nome": "Borer Avenue",
+            "lat": "87.823365",
+            "long": "101.362484",
+            "href": {
+                "link": "http:\/\/localhost\/api\/localizacaos\/5"
+            }
+        }
+    ],
+    "msg": "Success",
+    "code": 200
+}
+```
+
+### HTTP Request
+`GET api/localizacaos`
+
+
+<!-- END_1d3824e1b446b76c2fe7ab6a2a9c6714 -->
+
+<!-- START_82ec123977aeaeb445155a9418d2d5e0 -->
+## Post Localizacao
+
+Adiciona uma nova localizacao.
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/api/localizacaos"     -d "nome"="DfWadwJSCsBEEKqH" \
+    -d "lat"="34143.54" \
+    -d "long"="21063288.91" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/localizacaos");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+let body = JSON.stringify({
+    "nome": "DfWadwJSCsBEEKqH",
+    "lat": "34143.54",
+    "long": "21063288.91",
+})
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "msg": "Success",
+    "code": 201,
+    "data": {
+        "properties": "localizacaoObject"
+    }
+}
+```
+
+### HTTP Request
+`POST api/localizacaos`
+
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    nome | string |  required  | Nome da localização.
+    lat | float |  required  | Latitude da localização.
+    long | float |  required  | Longitude da localização.
+
+<!-- END_82ec123977aeaeb445155a9418d2d5e0 -->
+
+<!-- START_66e32a4889a5adc165582adfe3fa634f -->
+## Get uma localizacao.
+
+Mostra uma localização detalhada.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/localizacaos/{localizacao}" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/localizacaos/{localizacao}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "data": {
+        "id": 1,
+        "nome": "Carmela Crest",
+        "lat": "-4.20848",
+        "long": "129.669745"
+    }
+}
+```
+
+### HTTP Request
+`GET api/localizacaos/{localizacao}`
+
+
+<!-- END_66e32a4889a5adc165582adfe3fa634f -->
+
+<!-- START_34f786553c4f147c34c5146f754faf9e -->
+## Update Localizacao.
+
+Atualiza uma localizacao.
+
+> Example request:
+
+```bash
+curl -X PUT "http://localhost/api/localizacaos/{localizacao}"     -d "nome"="C8i5LUsoC9aYZaGE" \
+    -d "latitude"="ZzFxtdo9OSqkbF9p" \
+    -d "longitude"="CkK5Fkn1pMFUGTcT" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/localizacaos/{localizacao}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+let body = JSON.stringify({
+    "nome": "C8i5LUsoC9aYZaGE",
+    "latitude": "ZzFxtdo9OSqkbF9p",
+    "longitude": "CkK5Fkn1pMFUGTcT",
+})
+
+fetch(url, {
+    method: "PUT",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "msg": "Success",
+    "code": 200,
+    "data": {
+        "properties": "localizacaoObject"
+    }
+}
+```
+
+### HTTP Request
+`PUT api/localizacaos/{localizacao}`
+
+`PATCH api/localizacaos/{localizacao}`
+
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    nome | string |  optional  | Nome da localização.
+    latitude | string |  optional  | Latitude da localização.
+    longitude | string |  optional  | Longitude da localização.
+
+<!-- END_34f786553c4f147c34c5146f754faf9e -->
+
+<!-- START_90f9194fa9dd72ce64f86052b1b7a874 -->
+## Delete Localizacao
+
+Apaga uma localizacao.
+
+> Example request:
+
+```bash
+curl -X DELETE "http://localhost/api/localizacaos/{localizacao}" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/localizacaos/{localizacao}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "msg": "Seccess",
+    "code": 200
+}
+```
+
+### HTTP Request
+`DELETE api/localizacaos/{localizacao}`
+
+
+<!-- END_90f9194fa9dd72ce64f86052b1b7a874 -->
+
+#Tamanhos management
+
+Endpoint para controlar a APIs os tamanhos
+<!-- START_910f847967dfd033adc177580aac35a2 -->
+## Get Tamanho
+
+Mostra todos os tamanhos.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/tamanhos" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/tamanhos");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "data": [
+        {
+            "tamanho": "M",
+            "href": {
+                "link": "http:\/\/localhost\/api\/tamanhos\/1"
+            }
+        },
+        {
+            "tamanho": "L",
+            "href": {
+                "link": "http:\/\/localhost\/api\/tamanhos\/2"
+            }
+        },
+        {
+            "tamanho": "S",
+            "href": {
+                "link": "http:\/\/localhost\/api\/tamanhos\/3"
+            }
+        },
+        {
+            "tamanho": "L",
+            "href": {
+                "link": "http:\/\/localhost\/api\/tamanhos\/4"
+            }
+        }
+    ]
+}
+```
+
+### HTTP Request
+`GET api/tamanhos`
+
+
+<!-- END_910f847967dfd033adc177580aac35a2 -->
+
+<!-- START_441919fa78c2e050906d9079ed13e3ff -->
+## Post Tamanho
+
+Adiciona um novo tamanho.
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/api/tamanhos"     -d "tamanho"="Db0JX5CO1Xjcgmuf" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/tamanhos");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+let body = JSON.stringify({
+    "tamanho": "Db0JX5CO1Xjcgmuf",
+})
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "msg": "Success",
+    "code": 201,
+    "data": {
+        "properties": "tamanhoObject"
+    }
+}
+```
+
+### HTTP Request
+`POST api/tamanhos`
+
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    tamanho | string |  required  | Tamanho de um cacífo.
+
+<!-- END_441919fa78c2e050906d9079ed13e3ff -->
+
+<!-- START_e549b304b29bc4a6784f985291bf7581 -->
+## Get um tamanho.
+
+Mostra um tamanho detalhado.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/tamanhos/{tamanho}" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/tamanhos/{tamanho}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "data": {
+        "id": 1,
+        "tamanho": "M"
+    }
+}
+```
+
+### HTTP Request
+`GET api/tamanhos/{tamanho}`
+
+
+<!-- END_e549b304b29bc4a6784f985291bf7581 -->
+
+<!-- START_e4fafdaa44af0c54d99e8cc84c7ad8d8 -->
+## Update Tamanho.
+
+Atualiza um tamanho.
+
+> Example request:
+
+```bash
+curl -X PUT "http://localhost/api/tamanhos/{tamanho}"     -d "tamanho"="KNjcDcXljLqu6Qmv" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/tamanhos/{tamanho}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+let body = JSON.stringify({
+    "tamanho": "KNjcDcXljLqu6Qmv",
+})
+
+fetch(url, {
+    method: "PUT",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "msg": "Success",
+    "code": 200,
+    "data": {
+        "properties": "tamanhoObject"
+    }
+}
+```
+
+### HTTP Request
+`PUT api/tamanhos/{tamanho}`
+
+`PATCH api/tamanhos/{tamanho}`
+
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    tamanho | string |  required  | Tamanho do cacifo.
+
+<!-- END_e4fafdaa44af0c54d99e8cc84c7ad8d8 -->
+
+<!-- START_12933aa0be5df8b051558391f02e216e -->
+## Delete tamanho
+
+Apaga um tamanho.
+
+> Example request:
+
+```bash
+curl -X DELETE "http://localhost/api/tamanhos/{tamanho}" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/tamanhos/{tamanho}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "msg": "Seccess",
+    "code": 200
+}
+```
+
+### HTTP Request
+`DELETE api/tamanhos/{tamanho}`
+
+
+<!-- END_12933aa0be5df8b051558391f02e216e -->
+
+#UserTypes management
+
+Endpoint para controlar a APIs o tipo de um utilizador.
+<!-- START_fdbced2face3dd6a26e1020d1c51382b -->
+## Get UserType.
+
+Mostra todos os tipos de utilizadores.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/userTypes" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/userTypes");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "data": [
+        {
+            "tipo": "Admin",
+            "href": {
+                "link": "http:\/\/localhost\/api\/userTypes\/1"
+            }
+        },
+        {
+            "tipo": "Estafeta",
+            "href": {
+                "link": "http:\/\/localhost\/api\/userTypes\/2"
+            }
+        }
+    ]
+}
+```
+
+### HTTP Request
+`GET api/userTypes`
+
+
+<!-- END_fdbced2face3dd6a26e1020d1c51382b -->
+
+<!-- START_bea86f55a0848e4f30fde3db05bd042e -->
+## Post UserType
+
+Adiciona um novo tipo de utilizador.
+
+> Example request:
+
+```bash
+curl -X POST "http://localhost/api/userTypes"     -d "tipo"="6RtS0DCdP0jT81Mc" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/userTypes");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+let body = JSON.stringify({
+    "tipo": "6RtS0DCdP0jT81Mc",
+})
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "msg": "Success",
+    "code": 201,
+    "data": {
+        "properties": "userTypeObject"
+    }
+}
+```
+
+### HTTP Request
+`POST api/userTypes`
+
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    tipo | string |  required  | Tipo de um utilizador.
+
+<!-- END_bea86f55a0848e4f30fde3db05bd042e -->
+
+<!-- START_17504c8df8555443b0ad5983570eacde -->
+## Get um userType.
+
+Mostra um tipo de utilizador detalhado.
+
+> Example request:
+
+```bash
+curl -X GET -G "http://localhost/api/userTypes/{userType}" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/userTypes/{userType}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "data": {
+        "id": 1,
+        "tipo": "Admin"
+    }
+}
+```
+
+### HTTP Request
+`GET api/userTypes/{userType}`
+
+
+<!-- END_17504c8df8555443b0ad5983570eacde -->
+
+<!-- START_eff4784bbabb014511d40d3585bcf54d -->
+## Update UserType.
+
+Atualiza uma localizacao.
+
+> Example request:
+
+```bash
+curl -X PUT "http://localhost/api/userTypes/{userType}"     -d "tipo"="6vAkkXIEuGfBwMXI" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/userTypes/{userType}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+let body = JSON.stringify({
+    "tipo": "6vAkkXIEuGfBwMXI",
+})
+
+fetch(url, {
+    method: "PUT",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "msg": "Success",
+    "code": 200,
+    "data": {
+        "properties": "userTypeObject"
+    }
+}
+```
+
+### HTTP Request
+`PUT api/userTypes/{userType}`
+
+`PATCH api/userTypes/{userType}`
+
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    tipo | string |  required  | Tipo de utilizador.
+
+<!-- END_eff4784bbabb014511d40d3585bcf54d -->
+
+<!-- START_4b69bdddb9975f5e96f14c7ac291006c -->
+## Delete UserType
+
+Apaga um tipo de utilizador.
+
+> Example request:
+
+```bash
+curl -X DELETE "http://localhost/api/userTypes/{userType}" 
+```
+
+```javascript
+const url = new URL("http://localhost/api/userTypes/{userType}");
+
+let headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+}
+
+fetch(url, {
+    method: "DELETE",
+    headers: headers,
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+
+> Example response (200):
+
+```json
+{
+    "msg": "Seccess",
+    "code": 200
+}
+```
+
+### HTTP Request
+`DELETE api/userTypes/{userType}`
+
+
+<!-- END_4b69bdddb9975f5e96f14c7ac291006c -->
+
+#Users management
+
+Endpoint para controlar a APIs dos users
 <!-- START_fc1e4f6a697e3c48257de845299b71d5 -->
-## Display a listing of the resource.
+## Get Users
+
+Lista todos os utilizadores.
 
 > Example request:
 
@@ -2867,50 +3225,21 @@ fetch(url, {
 
 <!-- END_fc1e4f6a697e3c48257de845299b71d5 -->
 
-<!-- START_5dac10bb34c7618b018b0230d4a51648 -->
-## Show the form for creating a new resource.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/users/create" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/users/create");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-null
-```
-
-### HTTP Request
-`GET api/users/create`
-
-
-<!-- END_5dac10bb34c7618b018b0230d4a51648 -->
-
 <!-- START_12e37982cc5398c7100e59625ebb5514 -->
-## Store a newly created resource in storage.
+## Post User
+
+Adiciona um novo utilizador.
 
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/users" 
+curl -X POST "http://localhost/api/users"     -d "nome"="2XuGILURh6igBr2q" \
+    -d "email"="GUe97XXzLPmCzeHO" \
+    -d "password"="x13X1YEYg9qcoZzr" \
+    -d "telefone"="Uq9tdLAEhu8LLO23" \
+    -d "data_nascimento"="3q6pV2QNXiZZBbqV" \
+    -d "tipo_id"="sWZtHR5dRZeu8GWU" \
+    -d "supervisor_id"="eTt4JIU5NNsNyTEb" 
 ```
 
 ```javascript
@@ -2921,23 +3250,58 @@ let headers = {
     "Content-Type": "application/json",
 }
 
+let body = JSON.stringify({
+    "nome": "2XuGILURh6igBr2q",
+    "email": "GUe97XXzLPmCzeHO",
+    "password": "x13X1YEYg9qcoZzr",
+    "telefone": "Uq9tdLAEhu8LLO23",
+    "data_nascimento": "3q6pV2QNXiZZBbqV",
+    "tipo_id": "sWZtHR5dRZeu8GWU",
+    "supervisor_id": "eTt4JIU5NNsNyTEb",
+})
+
 fetch(url, {
     method: "POST",
     headers: headers,
+    body: body
 })
     .then(response => response.json())
     .then(json => console.log(json));
 ```
 
+> Example response (200):
+
+```json
+{
+    "msg": "Success",
+    "code": 201,
+    "data": {
+        "properties": "userObject"
+    }
+}
+```
 
 ### HTTP Request
 `POST api/users`
 
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    nome | string |  required  | Nome do utilizador.
+    email | string |  required  | E-mail do ttilizador.
+    password | string |  required  | Password do utilizador.
+    telefone | string |  required  | Telefone do utilizador.
+    data_nascimento | required |  optional  | Data de nascimento do utilizador.
+    tipo_id | string |  required  | Tipo do utilizador.
+    supervisor_id | string |  required  | Supervisor do utilizador.
 
 <!-- END_12e37982cc5398c7100e59625ebb5514 -->
 
 <!-- START_8653614346cb0e3d444d164579a0a0a2 -->
-## Display the specified resource.
+## Get a User.
+
+Mostra um utilizador detalhado.
 
 > Example request:
 
@@ -2988,50 +3352,21 @@ fetch(url, {
 
 <!-- END_8653614346cb0e3d444d164579a0a0a2 -->
 
-<!-- START_11ae28146a4d70ba9a0af9b65d290ad5 -->
-## Show the form for editing the specified resource.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/users/{user}/edit" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/users/{user}/edit");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-null
-```
-
-### HTTP Request
-`GET api/users/{user}/edit`
-
-
-<!-- END_11ae28146a4d70ba9a0af9b65d290ad5 -->
-
 <!-- START_48a3115be98493a3c866eb0e23347262 -->
-## Update the specified resource in storage.
+## Update User
+
+Atualiza um novo utilizador.
 
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/users/{user}" 
+curl -X PUT "http://localhost/api/users/{user}"     -d "nome"="1jsKOQPaTS1x5g2C" \
+    -d "email"="5eMjXxiVWM7prwlW" \
+    -d "password"="df55ItVgRTQeftRh" \
+    -d "telefone"="r8i2hrdoxTcUFuEL" \
+    -d "data_nascimento"="pkGQmmZ6svaHhvil" \
+    -d "tipo_id"="3xpIJRrHY6Na4cjh" \
+    -d "supervisor_id"="3x8R3mTQQ5mvcunf" 
 ```
 
 ```javascript
@@ -3042,25 +3377,60 @@ let headers = {
     "Content-Type": "application/json",
 }
 
+let body = JSON.stringify({
+    "nome": "1jsKOQPaTS1x5g2C",
+    "email": "5eMjXxiVWM7prwlW",
+    "password": "df55ItVgRTQeftRh",
+    "telefone": "r8i2hrdoxTcUFuEL",
+    "data_nascimento": "pkGQmmZ6svaHhvil",
+    "tipo_id": "3xpIJRrHY6Na4cjh",
+    "supervisor_id": "3x8R3mTQQ5mvcunf",
+})
+
 fetch(url, {
     method: "PUT",
     headers: headers,
+    body: body
 })
     .then(response => response.json())
     .then(json => console.log(json));
 ```
 
+> Example response (200):
+
+```json
+{
+    "msg": "Success",
+    "code": 200,
+    "data": {
+        "properties": "userObject"
+    }
+}
+```
 
 ### HTTP Request
 `PUT api/users/{user}`
 
 `PATCH api/users/{user}`
 
+#### Body Parameters
+
+Parameter | Type | Status | Description
+--------- | ------- | ------- | ------- | -----------
+    nome | string |  optional  | Nome do utilizador.
+    email | string |  optional  | E-mail do ttilizador.
+    password | string |  required  | Password do utilizador.
+    telefone | string |  optional  | Telefone do utilizador.
+    data_nascimento | Data |  optional  | de nascimento do utilizador.
+    tipo_id | string |  optional  | Tipo do utilizador.
+    supervisor_id | string |  optional  | Supervisor do utilizador.
 
 <!-- END_48a3115be98493a3c866eb0e23347262 -->
 
 <!-- START_d2db7a9fe3abd141d5adbc367a88e969 -->
-## Remove the specified resource from storage.
+## Delete User
+
+Apaga um utilizador.
 
 > Example request:
 
@@ -3084,6 +3454,14 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
+> Example response (200):
+
+```json
+{
+    "msg": "Seccess",
+    "code": 200
+}
+```
 
 ### HTTP Request
 `DELETE api/users/{user}`
@@ -3091,276 +3469,10 @@ fetch(url, {
 
 <!-- END_d2db7a9fe3abd141d5adbc367a88e969 -->
 
-<!-- START_fdbced2face3dd6a26e1020d1c51382b -->
-## Display a listing of the resource.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/userTypes" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/userTypes");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-{
-    "data": [
-        {
-            "tipo": "Admin",
-            "href": {
-                "link": "http:\/\/localhost\/api\/userTypes\/1"
-            }
-        },
-        {
-            "tipo": "Estafeta",
-            "href": {
-                "link": "http:\/\/localhost\/api\/userTypes\/2"
-            }
-        }
-    ]
-}
-```
-
-### HTTP Request
-`GET api/userTypes`
-
-
-<!-- END_fdbced2face3dd6a26e1020d1c51382b -->
-
-<!-- START_dd7da21a55ef11eb401a69b623e2793c -->
-## Show the form for creating a new resource.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/userTypes/create" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/userTypes/create");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-null
-```
-
-### HTTP Request
-`GET api/userTypes/create`
-
-
-<!-- END_dd7da21a55ef11eb401a69b623e2793c -->
-
-<!-- START_bea86f55a0848e4f30fde3db05bd042e -->
-## Store a newly created resource in storage.
-
-> Example request:
-
-```bash
-curl -X POST "http://localhost/api/userTypes" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/userTypes");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "POST",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`POST api/userTypes`
-
-
-<!-- END_bea86f55a0848e4f30fde3db05bd042e -->
-
-<!-- START_17504c8df8555443b0ad5983570eacde -->
-## Display the specified resource.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/userTypes/{userType}" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/userTypes/{userType}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-{
-    "data": {
-        "id": 1,
-        "tipo": "Admin"
-    }
-}
-```
-
-### HTTP Request
-`GET api/userTypes/{userType}`
-
-
-<!-- END_17504c8df8555443b0ad5983570eacde -->
-
-<!-- START_6fdd94fba81a87f86d2590295337363f -->
-## Show the form for editing the specified resource.
-
-> Example request:
-
-```bash
-curl -X GET -G "http://localhost/api/userTypes/{userType}/edit" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/userTypes/{userType}/edit");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "GET",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-> Example response (200):
-
-```json
-null
-```
-
-### HTTP Request
-`GET api/userTypes/{userType}/edit`
-
-
-<!-- END_6fdd94fba81a87f86d2590295337363f -->
-
-<!-- START_eff4784bbabb014511d40d3585bcf54d -->
-## Update the specified resource in storage.
-
-> Example request:
-
-```bash
-curl -X PUT "http://localhost/api/userTypes/{userType}" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/userTypes/{userType}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "PUT",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`PUT api/userTypes/{userType}`
-
-`PATCH api/userTypes/{userType}`
-
-
-<!-- END_eff4784bbabb014511d40d3585bcf54d -->
-
-<!-- START_4b69bdddb9975f5e96f14c7ac291006c -->
-## Remove the specified resource from storage.
-
-> Example request:
-
-```bash
-curl -X DELETE "http://localhost/api/userTypes/{userType}" 
-```
-
-```javascript
-const url = new URL("http://localhost/api/userTypes/{userType}");
-
-let headers = {
-    "Accept": "application/json",
-    "Content-Type": "application/json",
-}
-
-fetch(url, {
-    method: "DELETE",
-    headers: headers,
-})
-    .then(response => response.json())
-    .then(json => console.log(json));
-```
-
-
-### HTTP Request
-`DELETE api/userTypes/{userType}`
-
-
-<!-- END_4b69bdddb9975f5e96f14c7ac291006c -->
-
 <!-- START_1be1183aa2a90a7a8dbfb818f3c7fe00 -->
-## Devolve as encomendas de um utilizador
+## Get Encomendas of a User
 
-Display a listing of the resource.
+Devolve as encomendas de um utilizador.
 
 > Example request:
 
@@ -3544,9 +3656,9 @@ fetch(url, {
 <!-- END_1be1183aa2a90a7a8dbfb818f3c7fe00 -->
 
 <!-- START_cbfcfe03d00111bbf229efeaa22c46c4 -->
-## Cria uma ligação de um utilizador com uma encomenda
+## Create encomenda of user
 
-Display a listing of the resource.
+Cria uma ligação de um utilizador com uma encomenda.
 
 > Example request:
 
@@ -3570,6 +3682,14 @@ fetch(url, {
     .then(json => console.log(json));
 ```
 
+> Example response (200):
+
+```json
+{
+    "msg": "Seccess",
+    "code": 200
+}
+```
 
 ### HTTP Request
 `POST api/users/{user}/encomendas/{encomenda}`

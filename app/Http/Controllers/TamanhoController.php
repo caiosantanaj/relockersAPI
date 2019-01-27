@@ -9,10 +9,18 @@ use App\Http\Resources\Tamanho\TamanhoResource;
 use Symfony\Component\HttpFoundation\Response;
 use App\Http\Requests\TamanhoRequest;
 
+/**
+ * @group Tamanhos management
+ *
+ * Endpoint para controlar a APIs os tamanhos
+ * 
+ */
 class TamanhoController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Get Tamanho
+     * 
+     * Mostra todos os tamanhos.
      *
      * @return \Illuminate\Http\Response
      */
@@ -22,17 +30,17 @@ class TamanhoController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Post Tamanho
      *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
+     * Adiciona um novo tamanho.
+     * 
+     * @bodyParam tamanho string required Tamanho de um cacífo.
+     * 
+     * @response{
+     *   "msg": "Success",
+     *   "code": 201,
+     *   "data": {"properties": "tamanhoObject"}
+     * }
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -58,7 +66,9 @@ class TamanhoController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Get um tamanho.
+     * 
+     * Mostra um tamanho detalhado.
      *
      * @param  \App\Model\Tamanho  $tamanho
      * @return \Illuminate\Http\Response
@@ -69,18 +79,17 @@ class TamanhoController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Model\Tamanho  $tamanho
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Tamanho $tamanho)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
+     * Update Tamanho.
+     * 
+     * Atualiza um tamanho.
+     * 
+     * @bodyParam tamanho string required Tamanho do cacifo.
+     * 
+     * @response{
+     *   "msg": "Success",
+     *   "code": 200,
+     *   "data": {"properties": "tamanhoObject"}
+     * }
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Model\Tamanho  $tamanho
@@ -108,7 +117,14 @@ class TamanhoController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete tamanho
+     * 
+     * Apaga um tamanho.
+     * 
+     * @response {
+     *   "msg": "Seccess",
+     *   "code": 200
+     * }
      *
      * @param  \App\Model\Tamanho  $tamanho
      * @return \Illuminate\Http\Response

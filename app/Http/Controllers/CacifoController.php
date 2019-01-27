@@ -10,7 +10,7 @@ use App\Http\Requests\CacifoRequest;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * @group Cacifo management
+ * @group Cacifos management
  *
  * Endpoint para controlar a APIs dos cacifos
  * 
@@ -36,7 +36,7 @@ class CacifoController extends Controller
     /**
      * Post Cacifos
      *
-     * Adiciona novo cacifos.
+     * Adiciona um novo cacifos.
      * 
      * @bodyParam numero string required Número do cacífo.
      * @bodyParam temperatura string required Temperatura do cacífo.
@@ -48,29 +48,7 @@ class CacifoController extends Controller
      * @response {
      *   "msg": "Success",
      *   "code": 201,
-     *   "data": {
-     *     "id": 21,
-     *     "numero": 1,
-     *     "temperatura": "20",
-     *     "codigo": "UNLOCK",
-     *     "tamanho_id": 4,
-     *     "estado_id": 2,
-     *     "localizacao_id": 5,
-     *     "tamanho": {
-     *       "id": 4,
-     *       "tamanho": "L"
-     *     },
-     *     "estado": {
-     *       "id": 2,
-     *       "estado": "Disponivel"
-     *     },
-     *     "localizacao": {
-     *       "id": 5,
-     *       "nome": "Borer Avenue",
-     *       "lat": "87.823365",
-     *       "long": "101.362484"
-     *     }
-     *   }
+     *   "data": {"properties": "cacifoObject"}
      * }
      * 
      * @param  \Illuminate\Http\Request $request
@@ -139,29 +117,7 @@ class CacifoController extends Controller
      * @response {
      *   "msg": "Success",
      *   "code": 200,
-     *   "data": {
-     *     "id": 21,
-     *     "numero": 1,
-     *     "temperatura": "20",
-     *     "codigo": "UNLOCK",
-     *     "tamanho_id": 4,
-     *     "estado_id": 2,
-     *     "localizacao_id": 5,
-     *     "tamanho": {
-     *       "id": 4,
-     *       "tamanho": "L"
-     *     },
-     *     "estado": {
-     *       "id": 2,
-     *       "estado": "Disponivel"
-     *     },
-     *     "localizacao": {
-     *       "id": 5,
-     *       "nome": "Borer Avenue",
-     *       "lat": "87.823365",
-     *       "long": "101.362484"
-     *     }
-     *   }
+     *   "data": {"properties": "cacifoObject"}
      * }
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Model\Cacifo  $cacifo
@@ -195,7 +151,7 @@ class CacifoController extends Controller
 
     /**
      * Delete Cacifo.
-     * Apaga um cacifo em específico.
+     * Apaga um cacifo.
      * 
      * @response {
      *   "msg": "Seccess",

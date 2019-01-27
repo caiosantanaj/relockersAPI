@@ -11,10 +11,18 @@ use App\Model\Cliente;
 use App\Http\Requests\EncomendaRequest;
 use Symfony\Component\HttpFoundation\Response;
 
+/**
+ * @group Encomendas management
+ *
+ * Endpoint para controlar a APIs das encomendas
+ * 
+ */
 class EncomendaController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Get Encomendas
+     * 
+     * Lista todas as encomendas.
      *
      * @return \Illuminate\Http\Response
      */
@@ -24,7 +32,9 @@ class EncomendaController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
+     * Get Encomendas of a cliente
+     * 
+     * Devolve as encomendas de um cliente.
      *
      * @return \Illuminate\Http\Response
      */
@@ -34,17 +44,28 @@ class EncomendaController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Post Encomenda
      *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
+     * Adiciona uma nova encomenda.
+     * 
+     * @bodyParam data_estimada date required Data estimada da entrega da encomenda..
+     * @bodyParam data_de_entrega date optional Data de entrega da encomenda.
+     * @bodyParam data_de_levantamento date optional Data de levantamento da encomenda.
+     * @bodyParam data_de_entrada_no_sistema date required Data em que a encomenda foi registada no sistema.
+     * @bodyParam data_de_entrega_pretendida date required Data em que o cliente pretende a entrega.
+     * @bodyParam tempo_limite_de_levantamento date required Tempo limite para o levantamento de certa encomenda.
+     * @bodyParam temperatura float optional Temperatura de uma encomenda. Caso seja nulo o valor default será: 20.
+     * @bodyParam observacoes string optional Observações de uma encomenda. Caso seja nula o valor default será: "Nenhuma observação.".
+     * @bodyParam tamanho string required Tamanho de uma encomenda.
+     * @bodyParam localizacao string required Localização de entrega pretendida.
+     * @bodyParam cliente_id string required Id do cliente que possui a encomenda.
+     * @bodyParam cacifo_id string optional Id do cacifo de onde a encomenda vai ser colocada.
+     * 
+     * @response{
+     *   "msg": "Success",
+     *   "code": 201,
+     *   "data": {"properties": "encomendaObject"}
+     * }
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -94,7 +115,9 @@ class EncomendaController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Get a Encomenda.
+     * 
+     * Mostra uma encomenda detalhada.
      *
      * @param  \App\Model\Encomenda  $encomenda
      * @return \Illuminate\Http\Response
@@ -105,18 +128,28 @@ class EncomendaController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Update Encomenda
      *
-     * @param  \App\Model\Encomenda  $encomenda
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Encomenda $encomenda)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
+     * Atualiza uma encomenda.
+     
+     * @bodyParam data_estimada date optional Data estimada da entrega da encomenda..
+     * @bodyParam data_de_entrega date optional Data de entrega da encomenda.
+     * @bodyParam data_de_levantamento date optional Data de levantamento da encomenda.
+     * @bodyParam data_de_entrada_no_sistema date optional Data em que a encomenda foi registada no sistema.
+     * @bodyParam data_de_entrega_pretendida date optional Data em que o cliente pretende a entrega.
+     * @bodyParam tempo_limite_de_levantamento date optional Tempo limite para o levantamento de certa encomenda.
+     * @bodyParam temperatura float optional Temperatura de uma encomenda. Caso seja nulo o valor default será: 20.
+     * @bodyParam observacoes string optional Observações de uma encomenda. Caso seja nula o valor default será: "Nenhuma observação.".
+     * @bodyParam tamanho string optional Tamanho de uma encomenda.
+     * @bodyParam localizacao string optional Localização de entrega pretendida.
+     * @bodyParam cliente_id string optional Id do cliente que possui a encomenda.
+     * @bodyParam cacifo_id string optional Id do cacifo de onde a encomenda vai ser colocada.
+     * 
+     * @response{
+     *   "msg": "Success",
+     *   "code": 200,
+     *   "data": {"properties": "encomendaObject"}
+     * }
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Model\Encomenda  $encomenda
@@ -150,7 +183,14 @@ class EncomendaController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete Encomenda
+     * 
+     * Apaga uma encomenda.
+     * 
+     * @response {
+     *   "msg": "Seccess",
+     *   "code": 200
+     * }
      *
      * @param  \App\Model\Encomenda  $encomenda
      * @return \Illuminate\Http\Response

@@ -10,7 +10,7 @@ use App\Http\Requests\ClienteRequest;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * @group Cliente management
+ * @group Clientes management
  *
  * Endpoint para controlar a APIs dos clientes
  * 
@@ -33,7 +33,7 @@ class ClienteController extends Controller
     /**
      * Post Cliente
      *
-     * Adiciona novo cliente.
+     * Adiciona um novo cliente.
      * 
      * @bodyParam nome string required Número do cacífo.
      * @bodyParam email string required Temperatura do cacífo.
@@ -42,12 +42,7 @@ class ClienteController extends Controller
      * @response{
      *   "msg": "Success",
      *   "code": 201,
-     *   "data": {
-     *     "id": 11,
-     *     "nome": "João Rocha",
-     *     "email": "jrocha@gmail.com",
-     *     "telefone": "911111111"
-     *   }
+     *   "data": {"properties": "clienteObject"}
      * }
      * 
      * @param  \Illuminate\Http\Request $request
@@ -92,15 +87,14 @@ class ClienteController extends Controller
      * 
      * Atualiza um cliente.
      * 
+     * @bodyParam nome string Nome do cliente.
+     * @bodyParam email string E-mail do cliente.
+     * @bodyParam telefone string Telefone do cliente.
+     * 
      * @response {
      *   "msg": "Success",
      *   "code": 200,
-     *   "data": {
-     *     "id": 1,
-     *     "nome": "Elian Hill",
-     *     "email": "jackson32@yahoo.com",
-     *     "telefone": "(315) 972-8175 x7324"
-     *   }
+     *   "data": {"properties": "clienteObject"}
      * }
      *
      * @param  \Illuminate\Http\Request  $request
@@ -131,7 +125,7 @@ class ClienteController extends Controller
     /**
      * Delete Cleinte
      * 
-     * Apaga um cliente em específico.
+     * Apaga um cliente.
      * 
      * @response {
      *   "msg": "Seccess",

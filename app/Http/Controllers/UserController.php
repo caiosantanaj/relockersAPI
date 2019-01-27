@@ -11,11 +11,18 @@ use Symfony\Component\HttpFoundation\Response;
 use App\Http\Resources\Encomenda\EncomendaResource;
 use App\Model\Encomenda;
 
-
+/**
+ * @group Users management
+ *
+ * Endpoint para controlar a APIs dos users
+ * 
+ */
 class UserController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Get Users
+     * 
+     * Lista todos os utilizadores.
      *
      * @return \Illuminate\Http\Response
      */
@@ -25,9 +32,9 @@ class UserController extends Controller
     }
 
     /**
-     * Devolve as encomendas de um utilizador
+     * Get Encomendas of a User
      * 
-     * Display a listing of the resource.
+     * Devolve as encomendas de um utilizador.
      *
      * @return \Illuminate\Http\Response
      */
@@ -37,9 +44,14 @@ class UserController extends Controller
     }
 
     /**
-     * Cria uma ligação de um utilizador com uma encomenda
+     * Create encomenda of user
      * 
-     * Display a listing of the resource.
+     * Cria uma ligação de um utilizador com uma encomenda.
+     * 
+     * @response {
+     *   "msg": "Seccess",
+     *   "code": 200
+     * }
      *
      * @return \Illuminate\Http\Response
      */
@@ -63,17 +75,23 @@ class UserController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Post User
      *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
+     * Adiciona um novo utilizador.
+     * 
+     * @bodyParam nome string required Nome do utilizador.
+     * @bodyParam email string required E-mail do ttilizador.
+     * @bodyParam password string required Password do utilizador.
+     * @bodyParam telefone string required Telefone do utilizador.
+     * @bodyParam data_nascimento required Data de nascimento do utilizador.
+     * @bodyParam tipo_id string required Tipo do utilizador.
+     * @bodyParam supervisor_id string required Supervisor do utilizador.
+     * 
+     * @response{
+     *   "msg": "Success",
+     *   "code": 201,
+     *   "data": {"properties": "userObject"}
+     * }
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -110,7 +128,9 @@ class UserController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Get a User.
+     * 
+     * Mostra um utilizador detalhado.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -122,18 +142,23 @@ class UserController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Update User
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
+     * Atualiza um novo utilizador.
+     * 
+     * @bodyParam nome string Nome do utilizador.
+     * @bodyParam email string E-mail do ttilizador.
+     * @bodyParam password string required Password do utilizador.
+     * @bodyParam telefone string Telefone do utilizador.
+     * @bodyParam data_nascimento Data de nascimento do utilizador.
+     * @bodyParam tipo_id string Tipo do utilizador.
+     * @bodyParam supervisor_id string Supervisor do utilizador.
+     * 
+     * @response{
+     *   "msg": "Success",
+     *   "code": 200,
+     *   "data": {"properties": "userObject"}
+     * }
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -163,7 +188,14 @@ class UserController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete User
+     * 
+     * Apaga um utilizador.
+     * 
+     * @response {
+     *   "msg": "Seccess",
+     *   "code": 200
+     * }
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

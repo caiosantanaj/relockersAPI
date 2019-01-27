@@ -9,10 +9,18 @@ use App\Http\Resources\UserType\UserTypeResource;
 use App\Http\Requests\UserTypeRequest;
 use Symfony\Component\HttpFoundation\Response;
 
+/**
+ * @group UserTypes management
+ *
+ * Endpoint para controlar a APIs o tipo de um utilizador.
+ * 
+ */
 class UserTypeController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Get UserType.
+     * 
+     * Mostra todos os tipos de utilizadores.
      *
      * @return \Illuminate\Http\Response
      */
@@ -22,17 +30,17 @@ class UserTypeController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Post UserType
      *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
+     * Adiciona um novo tipo de utilizador.
+     * 
+     * @bodyParam tipo string required Tipo de um utilizador.
+     * 
+     * @response{
+     *   "msg": "Success",
+     *   "code": 201,
+     *   "data": {"properties": "userTypeObject"}
+     * }
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -58,7 +66,9 @@ class UserTypeController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Get um userType.
+     * 
+     * Mostra um tipo de utilizador detalhado.
      *
      * @param  \App\Model\UserType  $userType
      * @return \Illuminate\Http\Response
@@ -69,18 +79,17 @@ class UserTypeController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Model\UserType  $userType
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(UserType $userType)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
+     * Update UserType.
+     * 
+     * Atualiza uma localizacao.
+     * 
+     * @bodyParam tipo string required Tipo de utilizador.
+     * 
+     * @response{
+     *   "msg": "Success",
+     *   "code": 200,
+     *   "data": {"properties": "userTypeObject"}
+     * }
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Model\UserType  $userType
@@ -107,7 +116,14 @@ class UserTypeController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete UserType
+     * 
+     * Apaga um tipo de utilizador.
+     * 
+     * @response {
+     *   "msg": "Seccess",
+     *   "code": 200
+     * }
      *
      * @param  \App\Model\UserType  $userType
      * @return \Illuminate\Http\Response
