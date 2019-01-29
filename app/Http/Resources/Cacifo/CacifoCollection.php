@@ -16,7 +16,7 @@ class CacifoCollection extends Resource
     {
         return [
             'numero' => $this->numero,
-            'temeperatura' => (string)($this->temperatura),
+            'temperatura' => (string)($this->temperatura),
             'tamanho_id' => $this->tamanho_id,
             'estado_id' => $this->estado_id,
             'localizacao_id' => $this->localizacao_id,
