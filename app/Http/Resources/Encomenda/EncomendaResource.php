@@ -7,6 +7,7 @@ use App\Http\Resources\Tamanho\TamanhoCollection;
 use App\Http\Resources\Cacifo\CacifoCollection;
 use App\Http\Resources\Cacifo\CacifoResource;
 use App\Http\Resources\Cliente\ClienteResource;
+use App\Http\Resources\User\UserResource;
 
 class EncomendaResource extends JsonResource
 {
@@ -35,6 +36,10 @@ class EncomendaResource extends JsonResource
 
             'cacifo' => new CacifoResource($this->cacifo),
             'cliente' => new ClienteResource($this->cliente),
+            //toDo
+            // 'estafeta' => $this->whenPivotLoaded('encomenda_user', function () {
+            //     return $this->users->id;
+            // }),
 
             'href' => [
                 'cliente' => route("clientes.show", $this->cliente_id),

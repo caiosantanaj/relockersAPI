@@ -18,6 +18,6 @@ class EncomendaUser extends Model
     protected $dates = ['deleted_at'];
 
     protected $fillable = [
-        'encomenda_id', 'user_id',
+        'encomenda_id', 'user_id', 'user_type',
     ];
 }

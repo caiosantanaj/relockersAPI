@@ -17,6 +17,8 @@ class CreateEncomendaUser extends Migration
             // $table->increments('id');
             $table->integer('encomenda_id')->unsigned();
             $table->integer('user_id')->unsigned();
+            $table->integer('user_type')->unsigned();
+
             $table->timestamps();
             $table->softDeletes();
         });

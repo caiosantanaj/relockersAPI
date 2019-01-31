@@ -28,7 +28,8 @@ class EncomendaController extends Controller
      */
     public function index()
     {
-        return EncomendaCollection::collection(Encomenda::all());
+        return Encomenda::with('users', 'cacifo', 'cliente')->get();
+        //return EncomendaCollection::collection(Encomenda::all());
     }
 
     /**
@@ -124,6 +125,8 @@ class EncomendaController extends Controller
      */
     public function show(Encomenda $encomenda)
     {
+        return Encomenda::whereId($encomenda->id)->with('users')->get();
+        //return $encomenda->users;
         return new EncomendaResource($encomenda);
     }
 

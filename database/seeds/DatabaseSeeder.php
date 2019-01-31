@@ -31,10 +31,12 @@ class DatabaseSeeder extends Seeder
         factory(Encomenda::class, 25)->create();
 
         foreach (Encomenda::all() as $encomenda) {
+            $user = User::all()->random();
             DB::table('encomenda_user')->insert(
                 [
-                    'user_id' => User::all()->random()->id,
+                    'user_id' => $user->id,
                     'encomenda_id' => $encomenda->id,
+                    'user_type' => $user->tipo_id,
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now()
                 ]

@@ -4,6 +4,7 @@ namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use App\User;
 
 class Encomenda extends Model
 {
@@ -14,7 +15,7 @@ class Encomenda extends Model
      *
      * @var array
      */
-    protected $dates = ['deleted_at'];
+    protected $hidden = ['deleted_at'];
 
     protected $fillable = [
         'data_estimada', 'data_de_entrega', 'data_de_entrada_no_sistema',
