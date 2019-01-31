@@ -14,7 +14,7 @@ class Estado extends Model
      *
      * @var array
      */
-    protected $dates = ['deleted_at'];
+    protected $hidden = ['deleted_at', 'created_at', 'deleted_at'];
 
     protected $fillable = ['estado'];
 

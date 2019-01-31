@@ -15,7 +15,7 @@ class Encomenda extends Model
      *
      * @var array
      */
-    protected $hidden = ['deleted_at'];
+    protected $hidden = ['deleted_at', 'created_at', 'updated_at'];
 
     protected $fillable = [
         'data_estimada', 'data_de_entrega', 'data_de_entrada_no_sistema',

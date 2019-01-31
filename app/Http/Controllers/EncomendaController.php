@@ -125,9 +125,8 @@ class EncomendaController extends Controller
      */
     public function show(Encomenda $encomenda)
     {
-        return Encomenda::whereId($encomenda->id)->with('users')->get();
-        //return $encomenda->users;
-        return new EncomendaResource($encomenda);
+        return Encomenda::whereId($encomenda->id)->with('users', 'cacifo', 'cliente')->get();
+        //return new EncomendaResource($encomenda);
     }
 
     /**

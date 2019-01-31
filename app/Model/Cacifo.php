@@ -14,7 +14,7 @@ class Cacifo extends Model
      *
      * @var array
      */
-    protected $dates = ['deleted_at'];
+    protected $hidden = ['deleted_at', 'created_at', 'deleted_at'];
 
     protected $fillable = ['numero', 'tamanho_id', 'estado_id', 'localizacao_id', 'temperatura', 'codigo'];
 
