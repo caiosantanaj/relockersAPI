@@ -3,6 +3,8 @@
 namespace App\Http\Resources\Encomenda;
 
 use Illuminate\Http\Resources\Json\Resource;
+use App\Http\Resources\Cacifo\CacifoResource;
+use App\Http\Resources\Cliente\ClienteResource;
 
 class EncomendaCollection extends Resource
 {
@@ -15,6 +17,7 @@ class EncomendaCollection extends Resource
     public function toArray($request)
     {
         return [
+            'id' => $this->id,
             'data_estimada' => $this->data_estimada,
             'data_de_entrega' => $this->data_de_entrega,
             'data_de_levantamento' => $this->data_de_levantamento,
@@ -26,6 +29,10 @@ class EncomendaCollection extends Resource
             'tamanho' => $this->tamanho,
             'localizacao' => $this->localizacao,
             //'cliente' => $this->cliente->id,
+
+            'cacifo' => new CacifoResource($this->cacifo),
+            'cliente' => new ClienteResource($this->cliente),
+
             'href' => [
                 'link' => route('encomendas.show', $this->id),
                 'cacifo' => route("cacifos.show", $this->cacifo),
