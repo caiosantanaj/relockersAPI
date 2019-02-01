@@ -40,7 +40,10 @@ class UserController extends Controller
      */
     public function userEncomendas(User $user)
     {
-        return EncomendaResource::collection($user->encomendas);
+        return EncomendaResource::collection($user->encomendas)->additional([
+            'msg' => 'success',
+            'code' => Response::HTTP_OK
+        ]);;
     }
 
     /**

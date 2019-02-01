@@ -18,6 +18,7 @@ class Cacifo extends Model
 
     protected $fillable = ['numero', 'tamanho_id', 'estado_id', 'localizacao_id', 'temperatura', 'codigo'];
 
+
     //OneToMany(inverse)
     public function tamanho()
     {

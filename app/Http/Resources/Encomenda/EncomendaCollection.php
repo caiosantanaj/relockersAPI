@@ -28,8 +28,12 @@ class EncomendaCollection extends Resource
             'observacoes' => $this->observacoes,
             'tamanho' => $this->tamanho,
             'localizacao' => $this->localizacao,
-            //'cliente' => $this->cliente->id,
+            // 'estafeta' => $this->whenPivotLoaded('encomenda_user', function () {
+            //     return $this->pivot->id;
+            // }),
 
+            'cliente' => $this->cliente->id,
+            'estafeta' => $this->users,
             'cacifo' => new CacifoResource($this->cacifo),
             'cliente' => new ClienteResource($this->cliente),
 

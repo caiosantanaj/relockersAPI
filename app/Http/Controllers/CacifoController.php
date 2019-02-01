@@ -27,6 +27,7 @@ class CacifoController extends Controller
      */
     public function index()
     {
+        // return Cacifo::with('tamanho', 'estado', 'localizacao')->get();
         return CacifoCollection::collection(Cacifo::all())->additional([
             'msg' => 'success',
             'code' => Response::HTTP_OK

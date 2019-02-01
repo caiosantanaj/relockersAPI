@@ -34,8 +34,10 @@ class EncomendaResource extends JsonResource
             'cliente_id' => $this->cliente_id,
             'cacifo_id' => $this->cacifo_id,
 
+            'cliente' => $this->cliente->id,
             'cacifo' => new CacifoResource($this->cacifo),
             'cliente' => new ClienteResource($this->cliente),
+            'estafeta' => $this->users,
             //toDo
             // 'estafeta' => $this->whenPivotLoaded('encomenda_user', function () {
             //     return $this->users->id;

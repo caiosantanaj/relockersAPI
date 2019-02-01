@@ -26,7 +26,10 @@ class UserTypeController extends Controller
      */
     public function index()
     {
-        return UserTypeCollection::collection(UserType::all());
+        return UserTypeCollection::collection(UserType::all())->additional([
+            'msg' => 'success',
+            'code' => Response::HTTP_OK
+        ]);;
     }
 
     /**

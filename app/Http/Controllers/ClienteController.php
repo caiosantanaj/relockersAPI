@@ -27,7 +27,10 @@ class ClienteController extends Controller
      */
     public function index()
     {
-        return ClienteCollection::collection(Cliente::all());
+        return ClienteCollection::collection(Cliente::all())->additional([
+            'msg' => 'success',
+            'code' => Response::HTTP_OK
+        ]);;
     }
 
     /**

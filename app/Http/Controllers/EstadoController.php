@@ -32,7 +32,10 @@ class EstadoController extends Controller
      */
     public function index()
     {
-        return EstadoCollection::collection(Estado::all());
+        return EstadoCollection::collection(Estado::all())->additional([
+            'msg' => 'success',
+            'code' => Response::HTTP_OK
+        ]);;
     }
 
     /**

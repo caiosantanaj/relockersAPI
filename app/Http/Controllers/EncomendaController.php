@@ -28,8 +28,11 @@ class EncomendaController extends Controller
      */
     public function index()
     {
-        return Encomenda::with('users', 'cacifo', 'cliente')->get();
-        //return EncomendaCollection::collection(Encomenda::all());
+        //return Encomenda::with('users', 'cacifo', 'cliente')->get();
+        return EncomendaCollection::collection(Encomenda::all())->additional([
+            'msg' => 'success',
+            'code' => Response::HTTP_OK
+        ]);;
     }
 
     /**
@@ -41,7 +44,10 @@ class EncomendaController extends Controller
      */
     public function clientesEncomenda(Cliente $cliente)
     {
-        return EncomendaResource::collection($cliente->encomendas);
+        return EncomendaResource::collection($cliente->encomendas)->additional([
+            'msg' => 'success',
+            'code' => Response::HTTP_OK
+        ]);;
     }
 
     /**
@@ -125,8 +131,8 @@ class EncomendaController extends Controller
      */
     public function show(Encomenda $encomenda)
     {
-        return Encomenda::whereId($encomenda->id)->with('users', 'cacifo', 'cliente')->get();
-        //return new EncomendaResource($encomenda);
+        //return Encomenda::whereId($encomenda->id)->with('users', 'cacifo', 'cliente')->get();
+        return new EncomendaResource($encomenda);
     }
 
     /**
