@@ -16,10 +16,11 @@ class CreateEncomendasTable extends Migration
     {
         Schema::create('encomendas', function (Blueprint $table) {
             $table->increments('id')->unsigned();
+            $table->integer('numero_encomenda')->unsigned()->unique();
             $table->dateTime('data_estimada');
             $table->dateTime('data_de_entrada_no_sistema');
             $table->dateTime('data_de_entrega_pretendida');
-            $table->string('tempo_limite_de_levantamento', 50);
+            $table->dateTime('tempo_limite_de_levantamento');
 
 
             $table->dateTime('data_de_entrega')->nullable();

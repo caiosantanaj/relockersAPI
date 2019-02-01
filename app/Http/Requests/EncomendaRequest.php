@@ -24,6 +24,9 @@ class EncomendaRequest extends FormRequest
     public function messages()
     {
         return [
+            'numero_encomenda.required' => 'A encomenda precisa de um número.',
+            'numero_encomenda.required' => 'Uma encomenda com este número já existe.',
+            'numero_encomenda.min' => 'A encomenda tem um valor mínimo de :min.',
 
             'data_de_entrada_no_sistema.required' => 'A encomenda precisa de uma data de entrada no sistema.',
             'data_de_entrada_no_sistema.date_format' => 'Formato da data é inválido. (Y-m-d H:i:s)',
@@ -40,7 +43,7 @@ class EncomendaRequest extends FormRequest
             'observacoes.max' => 'O campo observações tem um limite de :max caracteres',
 
             'tempo_limite_de_levantamento.required' => 'O utilizador precisa de um tipo.',
-            'tempo_limite_de_levantamento.between' => 'O tempo de levantamento deve estar compreendido entre :min e :max.',
+            'tempo_limite_de_levantamento.date_format' => 'Formato d tempo limite de levantamento é inválido. (Y-m-d H:i:s)',
 
             'localizacao.required' => 'A encomenda precisa de uma localização.',
             'localizacao.max' => 'O campo localizacão tem um máximo de :max caracteres.',
@@ -62,6 +65,7 @@ class EncomendaRequest extends FormRequest
     public function rules()
     {
         return [
+            'numero_encomenda' => 'required|unique:encomendas|integer|min:1',
             'data_de_entrada_no_sistema' => 'required|date_format:Y-m-d H:i:s',
             'data_estimada' => 'required|date_format:Y-m-d H:i:s',
             'data_de_entrega_pretendida' => 'required|date_format:Y-m-d H:i:s',
@@ -71,7 +75,7 @@ class EncomendaRequest extends FormRequest
             'observacoes' => 'max: 1000',
             'localizacao' => 'required|max:150',
             'tamanho' => 'required|max:3',
-            'tempo_limite_de_levantamento' => 'required|between:1,12',
+            'tempo_limite_de_levantamento' => 'required|date_format:Y-m-d H:i:s',
             'cliente_id' => 'required|exists:clientes,id',
             'cacifo_id' => 'exists:cacifos,id',
         ];

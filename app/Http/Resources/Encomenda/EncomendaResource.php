@@ -21,6 +21,7 @@ class EncomendaResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'numero_encomenda' => $this->numero_encomenda,
             'data_estimada' => $this->data_estimada,
             'data_de_entrega' => $this->data_de_entrega,
             'data_de_levantamento' => $this->data_de_levantamento,
