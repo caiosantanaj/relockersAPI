@@ -54,6 +54,9 @@ class EncomendaRequest extends FormRequest
             'cliente_id.required' => 'A encomenda tem de ter um cliente associado.',
             'cliente_id.exists' => 'O cliente_id não é válido.',
             'cacifo_id.exists' => 'O cacifo_id não é válido.',
+
+            'estado_encomenda.required' => 'A encomenda precisa de ter um estado associado',
+            'estado_encomenda.boolean' => 'O estado da encomenda é um valor booleano'
         ];
     }
 
@@ -66,18 +69,19 @@ class EncomendaRequest extends FormRequest
     {
         return [
             'numero_encomenda' => 'required|unique:encomendas|integer|min:1',
-            'data_de_entrada_no_sistema' => 'required|date_format:Y-m-d H:i:s',
             'data_estimada' => 'required|date_format:Y-m-d H:i:s',
+            'data_de_entrada_no_sistema' => 'required|date_format:Y-m-d H:i:s',
             'data_de_entrega_pretendida' => 'required|date_format:Y-m-d H:i:s',
             'data_de_entrega' => 'date_format:Y-m-d H:i:s',
             'data_de_levantamento' => 'date_format:Y-m-d H:i:s',
+            'tempo_limite_de_levantamento' => 'required|date_format:Y-m-d H:i:s',
+            'tamanho' => 'required|max:3',
+            'localizacao' => 'required|max:150',
+            'estado_encomenda' => 'required|boolean',
             'temperatura' => 'numeric|between:0,20',
             'observacoes' => 'max: 1000',
-            'localizacao' => 'required|max:150',
-            'tamanho' => 'required|max:3',
-            'tempo_limite_de_levantamento' => 'required|date_format:Y-m-d H:i:s',
-            'cliente_id' => 'required|exists:clientes,id',
             'cacifo_id' => 'exists:cacifos,id',
+            'cliente_id' => 'required|exists:clientes,id',
         ];
     }
 }
