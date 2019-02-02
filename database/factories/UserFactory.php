@@ -22,6 +22,7 @@ $factory->define(App\User::class, function (Faker $faker) {
         'data_nascimento' => $faker->date($format = 'Y-m-d', $max = 'now'),
         'email' => $faker->unique()->freeEmail,
         //'email_verified_at' => now(),
+        'local_de_trabalho' => "TDIStore",
 
         'password' => $faker->password, // secret
         'remember_token' => str_random(10),

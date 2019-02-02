@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->string('telefone');
             $table->date('data_nascimento')->nullable();
+            $table->string('local_de_trabalho');
 
             //FK
             $table->integer('tipo_id')->unsigned()->index();
