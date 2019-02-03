@@ -27,6 +27,9 @@ Route::Resource('estados', 'EstadoController');
 Route::Resource('tamanhos', 'TamanhoController');
 Route::Resource('localizacaos', 'LocalizacaoController');
 
+Route::group(['prefix' => 'cacifo'], function () {
+    Route::apiResource('/{cacifo}/log', 'LogCacifoController');
+});
 
 //CLIENTE
 Route::Resource('clientes', 'ClienteController');

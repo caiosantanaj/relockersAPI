@@ -25,16 +25,16 @@ class EncomendaRequest extends FormRequest
     {
         return [
             'numero_encomenda.required' => 'A encomenda precisa de um número.',
-            'numero_encomenda.required' => 'Uma encomenda com este número já existe.',
+            'numero_encomenda.unique' => 'Uma encomenda com este número já existe.',
             'numero_encomenda.min' => 'A encomenda tem um valor mínimo de :min.',
 
             'data_de_entrada_no_sistema.required' => 'A encomenda precisa de uma data de entrada no sistema.',
             'data_de_entrada_no_sistema.date_format' => 'Formato da data é inválido. (Y-m-d H:i:s)',
 
-            'data_estimada.required' => 'A encomenda precisa ter uma estimativa da data de entrega',
+            'data_estimada.required' => 'A encomenda precisa ter uma estimativa da data de entrega.',
             'data_estimada.date_format' => 'Formato da data é inválido. (Y-m-d H:i:s)',
 
-            'data_de_entrega_pretendida.required' => 'A encomenda precisa ter uma data de entrega',
+            'data_de_entrega_pretendida.required' => 'A encomenda precisa ter uma data de entrega.',
             'data_de_entrega_pretendida.date_format' => 'Formato da data é inválido. (Y-m-d H:i:s)',
 
             'data_de_entrega.date_format' => 'Formato da data é inválido. (Y-m-d H:i:s)',
@@ -53,10 +53,11 @@ class EncomendaRequest extends FormRequest
 
             'cliente_id.required' => 'A encomenda tem de ter um cliente associado.',
             'cliente_id.exists' => 'O cliente_id não é válido.',
+
             'cacifo_id.exists' => 'O cacifo_id não é válido.',
 
-            'estado_encomenda.required' => 'A encomenda precisa de ter um estado associado',
-            'estado_encomenda.boolean' => 'O estado da encomenda é um valor booleano'
+            'estado_encomenda.required' => 'A encomenda precisa de ter um estado associado.',
+            'estado_encomenda.boolean' => 'O estado da encomenda é um valor booleano.'
         ];
     }
 

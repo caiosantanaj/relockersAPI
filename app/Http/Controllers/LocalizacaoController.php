@@ -40,6 +40,8 @@ class LocalizacaoController extends Controller
      * @bodyParam nome string required Nome da localização.
      * @bodyParam lat float required Latitude da localização.
      * @bodyParam long float required Longitude da localização.
+     * @bodyParam codigo_postal string required Código-postal da localização.
+     * @bodyParam cidade string required Cidade da localização.
      * 
      * @response{
      *   "msg": "Success",
@@ -91,6 +93,8 @@ class LocalizacaoController extends Controller
      * @bodyParam nome string Nome da localização.
      * @bodyParam latitude string Latitude da localização.
      * @bodyParam longitude string Longitude da localização.
+     * @bodyParam codigo_postal string required Código-postal da localização.
+     * @bodyParam cidade string required Cidade da localização.
      * 
      * @response{
      *   "msg": "Success",
@@ -106,7 +110,7 @@ class LocalizacaoController extends Controller
     {
         try {
 
-            $request = $request->only(['nome', 'latitude', 'longitude']);
+            $request = $request->only(['nome', 'latitude', 'longitude', 'codigo_postal', 'cidade']);
 
             $localizacao->update($request);
 

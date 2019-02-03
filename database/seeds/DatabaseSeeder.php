@@ -10,6 +10,7 @@ use App\Model\Encomenda;
 use App\Model\UserType;
 use App\User;
 use Carbon\Carbon;
+use App\Model\LogCacifo;
 
 class DatabaseSeeder extends Seeder
 {
@@ -29,6 +30,7 @@ class DatabaseSeeder extends Seeder
         factory(UserType::class, 2)->create();
         factory(User::class, 8)->create();
         factory(Encomenda::class, 25)->create();
+        factory(LogCacifo::class, 20)->create();
 
         foreach (Encomenda::all() as $encomenda) {
             $user = User::all()->random();

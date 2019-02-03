@@ -27,13 +27,18 @@ class CacifoRequest extends FormRequest
             'numero.required' => 'O cacifo precisa de um número.',
             'numero.between' => 'O número tem de estar entre :min e :max.',
             'numero.unique' => 'Um cacifo com este número já existe.',
+
             'temperatura.between' => 'A temperatura deve estar entre :min e :max.',
+
             'codigo.max' => 'O código tem o número máximo de caracters de :max.',
             'codigo.min' => 'O código tem o número mínimo de caracters de :min.',
+
             'tamanho_id.required' => 'O cacifo precisa de um tamanho.',
             'tamanho_id.exists' => 'O tamanho_id não é válido.',
+
             'estado_id.required' => 'O cacifo precisa de um estado.',
             'estado_id.exists' => 'O estado_id não é válida.',
+
             'localizacao_id.required' => 'O cacifo precisa de uma localização.',
             'localizacao_id.exists' => 'O localizacao_id não é válida.',
         ];

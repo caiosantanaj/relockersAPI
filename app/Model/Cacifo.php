@@ -40,4 +40,9 @@ class Cacifo extends Model
     {
         return $this->hasMany(Encomenda::class);
     }
+
+    public function cacifoLogs()
+    {
+        return $this->hasMany(LogCacifo::class);
+    }
 }

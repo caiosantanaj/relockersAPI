@@ -16,7 +16,7 @@ class Localizacao extends Model
      */
     protected $hidden = ['deleted_at', 'created_at', 'deleted_at'];
 
-    protected $fillable = ['nome', 'latitude', 'longitude'];
+    protected $fillable = ['nome', 'latitude', 'longitude', 'codigo_postal', 'cidade'];
 
     //OneToMany
     public function cacifos()

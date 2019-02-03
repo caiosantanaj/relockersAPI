@@ -24,13 +24,13 @@ class UserRequest extends FormRequest
     public function messages()
     {
         return [
-            'nome.required' => 'O utilizador precisa de um \"nome\"',
+            'nome.required' => 'O utilizador precisa de um \"nome\".',
             'nome.max' => 'O nome não pode ter mais de :max caracteres.',
             'nome.min' => 'O nome não pode ter menos de :min caracteres.',
 
-            'email.required' => 'O Utilizador precisa de um e-mail',
-            'email.unique' => 'O email :email já esxiste na tabela',
-            'email.email' => 'O email é inválido',
+            'email.required' => 'O Utilizador precisa de um e-mail.',
+            'email.unique' => 'O email :email já esxiste na tabela.',
+            'email.email' => 'O email é inválido.',
 
             'password.required' => 'Utilizador precisa de uma password.',
             'password.min' => 'A password tem de ter no mínimo :min caracteres.',

@@ -24,7 +24,7 @@ class UserTypeRequest extends FormRequest
     public function messages()
     {
         return [
-            'tipo.required' => 'É preciso um campo \"tipo\"',
+            'tipo.required' => 'É preciso um campo \"tipo\".',
             'tipo.unique' => 'Este tipo já existe na tabela.',
         ];
     }

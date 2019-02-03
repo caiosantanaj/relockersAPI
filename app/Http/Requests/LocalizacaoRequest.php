@@ -26,8 +26,21 @@ class LocalizacaoRequest extends FormRequest
         return [
             'nome.required' => 'A localização precisa de um nome.',
             'nome.unique' => 'O nome da localização já existe.',
-            'latitude.required' => 'A localização precisa de uma latitude',
-            'longitude.required' => 'A localização precisa de uma longitude',
+            'nome.string' => 'O campo "nome" é do tipo string.',
+
+            'latitude.required' => 'A localização precisa de uma latitude.',
+            'latitude.numeric' => 'O campo "localizacao" é do tipo float.',
+
+
+            'longitude.required' => 'A localização precisa de uma longitude.',
+            'longitude.numeric' => 'O campo "localizacao" é do tipo float.',
+
+            'codigo_postal.required' => 'A localização precisa de um código postal.',
+            'codigo_postal.string' => 'O campo "codigo_postal" é do tipo string.',
+
+            'cidade.required' => 'A localização precisa de uma cidade.',
+            'cidade.string' => 'O campo "cidade" é do tipo string.',
+
         ];
     }
 
@@ -39,9 +52,11 @@ class LocalizacaoRequest extends FormRequest
     public function rules()
     {
         return [
-            'nome' => 'required|unique:localizacaos|max:150',
+            'nome' => 'required|string|unique:localizacaos|max:150',
             'latitude' => 'required|numeric|between:-90,90',
             'longitude' => 'required|numeric|between:-180,180',
+            'codigo_postal' => 'required|string',
+            'cidade' => 'required|string',
         ];
     }
 }
