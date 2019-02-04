@@ -85,6 +85,7 @@ class UserController extends Controller
      * @bodyParam nome string required Nome do utilizador.
      * @bodyParam email string required E-mail do ttilizador.
      * @bodyParam password string required Password do utilizador.
+     * @bodyParam password_confirmation string required Confirmação da password.
      * @bodyParam telefone string required Telefone do utilizador.
      * @bodyParam data_nascimento required Data de nascimento do utilizador.
      * @bodyParam local_de_trabalho required Local de trabalho do utilizador
