@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Http\Exceptions\HttpResponseException;
 
 class EstadoRequest extends FormRequest
 {
@@ -39,5 +41,19 @@ class EstadoRequest extends FormRequest
         return [
             'estado' => 'required|unique:estados|max:45'
         ];
+    }
+
+    protected function failedValidation(Validator $validator)
+    {
+        throw new HttpResponseException(
+            response()->json(
+                [
+                    'status' => 422,
+                    'data' => $validator->errors(),
+                    'msg' => 'Erro de validação.'
+                ],
+                422
+            )
+        );
     }
 }

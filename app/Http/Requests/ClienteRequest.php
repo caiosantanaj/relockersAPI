@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Http\Exceptions\HttpResponseException;
 
 class ClienteRequest extends FormRequest
 {
@@ -44,5 +46,19 @@ class ClienteRequest extends FormRequest
             'email' => 'required|unique:clientes|max:150|email',
             'telefone' => 'required|max:13',
         ];
+    }
+
+    protected function failedValidation(Validator $validator)
+    {
+        throw new HttpResponseException(
+            response()->json(
+                [
+                    'status' => 422,
+                    'data' => $validator->errors(),
+                    'msg' => 'Erro de validação.'
+                ],
+                422
+            )
+        );
     }
 }

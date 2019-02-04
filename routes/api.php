@@ -37,7 +37,7 @@ Route::Resource('clientes', 'ClienteController');
 Route::get('clientes/{cliente}/encomendas', 'EncomendaController@clientesEncomenda');
 
 //ENCOMENDA
-Route::apiResource('encomendas', 'EncomendaController');
+Route::Resource('encomendas', 'EncomendaController');
 
 //Utilizador
 Route::Resource('users', 'UserController');

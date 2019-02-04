@@ -84,24 +84,28 @@ class EncomendaController extends Controller
      */
     public function store(EncomendaRequest $request)
     {
-
+        return $request;
         try {
 
             $observacoes = ($request['observacoes'] === null) ? "Nenhuma observação." : $request['observacoes'];
             $temperatura = ($request['temperatura'] === null) ? "20" : $request['temperatura'];
+            $data_de_entrega = ($request['data_de_entrega'] === null) ? null : $request['data_de_entrega'];
+            $data_de_levantamento = ($request['data_de_levantamento'] === null) ? null : $request['data_de_levantamento'];
+            $cacifo_id = ($request['cacifo_id'] === null) ? null : $request['cacifo_id'];
+            $cliente_id = ($request['cliente_id'] === null) ? null : $request['cliente_id'];
 
-            $request = $request->only([
-                'numero_encomenda', 'data_estimada', 'data_de_entrega', 'data_de_levantamento',
-                'data_de_entrada_no_sistema', 'data_de_entrega_pretendida', 'tempo_limite_de_levantamento',
-                'temperatura', 'estado_encomenda', 'observacoes', 'cliente_id', 'cacifo_id', 'tamanho', 'localizacao'
-            ]);
+            // $request = $request->only([
+            //     'numero_encomenda', 'data_estimada', 'data_de_entrega', 'data_de_levantamento',
+            //     'data_de_entrada_no_sistema', 'data_de_entrega_pretendida', 'tempo_limite_de_levantamento',
+            //     'temperatura', 'estado_encomenda', 'observacoes', 'cacifo_id', 'cliente_id', 'tamanho', 'localizacao'
+            // ]);
 
             $encomenda = new Encomenda;
             //$encomenda->numero_encomenda = ++$n_encomenda;
             $encomenda->numero_encomenda = $request['numero_encomenda'];
             $encomenda->data_estimada = $request['data_estimada'];
-            $encomenda->data_de_entrega = $request['data_de_entrega'];
-            $encomenda->data_de_levantamento = $request['data_de_levantamento'];
+            $encomenda->data_de_entrega = $data_de_entrega;
+            $encomenda->data_de_levantamento = $data_de_levantamento;
             $encomenda->data_de_entrada_no_sistema = $request['data_de_entrada_no_sistema'];
             $encomenda->data_de_entrega_pretendida = $request['data_de_entrega_pretendida'];
             $encomenda->tempo_limite_de_levantamento = $request['tempo_limite_de_levantamento'];
@@ -110,8 +114,8 @@ class EncomendaController extends Controller
             $encomenda->estado_encomenda = $request['estado_encomenda'];
             $encomenda->temperatura = $temperatura;
             $encomenda->observacoes = $observacoes;
-            $encomenda->cliente_id = $request['cliente_id'];
-            $encomenda->cacifo_id = $request['cacifo_id'];
+            $encomenda->cliente_id = $cliente_id;
+            $encomenda->cacifo_id = $cacifo_id;
 
             $encomenda->save();
 

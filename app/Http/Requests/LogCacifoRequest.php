@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Http\Exceptions\HttpResponseException;
 
 class LogCacifoRequest extends FormRequest
 {
@@ -68,5 +70,19 @@ class LogCacifoRequest extends FormRequest
             'cliente_nome' => 'exists:clientes,nome',
             'cacifo_id' => 'exists:cacifos,id',
         ];
+    }
+
+    protected function failedValidation(Validator $validator)
+    {
+        throw new HttpResponseException(
+            response()->json(
+                [
+                    'status' => 422,
+                    'data' => $validator->errors(),
+                    'msg' => 'Erro de validação.'
+                ],
+                422
+            )
+        );
     }
 }

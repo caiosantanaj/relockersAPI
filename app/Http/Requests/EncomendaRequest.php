@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Http\Exceptions\HttpResponseException;
 
 class EncomendaRequest extends FormRequest
 {
@@ -82,7 +84,22 @@ class EncomendaRequest extends FormRequest
             'temperatura' => 'numeric|between:0,20',
             'observacoes' => 'max: 1000',
             'cacifo_id' => 'exists:cacifos,id',
-            'cliente_id' => 'required|exists:clientes,id',
+            //'cliente_id' => 'required|exists:clientes,id',
+            'cliente_id' => 'exists:clientes,id',
         ];
+    }
+
+    protected function failedValidation(Validator $validator)
+    {
+        throw new HttpResponseException(
+            response()->json(
+                [
+                    'status' => 422,
+                    'data' => $validator->errors(),
+                    'msg' => 'Erro de validação.'
+                ],
+                422
+            )
+        );
     }
 }

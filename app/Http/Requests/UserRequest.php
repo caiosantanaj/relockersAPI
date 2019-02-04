@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Http\Exceptions\HttpResponseException;
 
 class UserRequest extends FormRequest
 {
@@ -66,5 +68,19 @@ class UserRequest extends FormRequest
             'tipo_id' => 'required|exists:usertypes,id',
             'supervisor_id' => 'exists:users,id',
         ];
+    }
+
+    protected function failedValidation(Validator $validator)
+    {
+        throw new HttpResponseException(
+            response()->json(
+                [
+                    'status' => 422,
+                    'data' => $validator->errors(),
+                    'msg' => 'Erro de validação.'
+                ],
+                422
+            )
+        );
     }
 }

@@ -33,7 +33,7 @@ class CreateEncomendasTable extends Migration
             $table->string('localizacao');
 
             //FK
-            $table->integer('cliente_id')->unsigned()->index();
+            $table->integer('cliente_id')->unsigned()->index()->nullable();
             $table->integer('cacifo_id')->unsigned()->index()->nullable();
 
             $table->timestamps();

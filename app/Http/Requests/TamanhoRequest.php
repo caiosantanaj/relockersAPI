@@ -3,6 +3,9 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Http\Exceptions\HttpResponseException;
+
 
 class TamanhoRequest extends FormRequest
 {
@@ -26,6 +29,7 @@ class TamanhoRequest extends FormRequest
         return [
             'tamanho.required' => 'É preciso ser enviado um campo \"tamanho\"',
             'tamanho.unique' => 'O tamanho já existe.',
+            'tamanho.max' => 'O "tamnho" tem um máximo de :max caracteres.',
         ];
     }
 
@@ -39,5 +43,19 @@ class TamanhoRequest extends FormRequest
         return [
             'tamanho' => 'required|unique:tamanhos|max:3'
         ];
+    }
+
+    protected function failedValidation(Validator $validator)
+    {
+        throw new HttpResponseException(
+            response()->json(
+                [
+                    'status' => 422,
+                    'data' => $validator->errors(),
+                    'msg' => 'Erro de validação.'
+                ],
+                422
+            )
+        );
     }
 }
