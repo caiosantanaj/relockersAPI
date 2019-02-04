@@ -30,6 +30,8 @@ Route::Resource('localizacaos', 'LocalizacaoController');
 Route::group(['prefix' => 'cacifo'], function () {
     Route::apiResource('/{cacifo}/log', 'LogCacifoController');
 });
+//Encomenda num cacifo
+// Route::get('cacifos/{cacifo}/encomenda', 'CacifoController@encomendaCacifo');
 
 //CLIENTE
 Route::Resource('clientes', 'ClienteController');

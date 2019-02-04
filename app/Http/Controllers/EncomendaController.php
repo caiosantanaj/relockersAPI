@@ -84,7 +84,7 @@ class EncomendaController extends Controller
      */
     public function store(EncomendaRequest $request)
     {
-        return $request;
+
         try {
 
             $observacoes = ($request['observacoes'] === null) ? "Nenhuma observação." : $request['observacoes'];
@@ -94,11 +94,11 @@ class EncomendaController extends Controller
             $cacifo_id = ($request['cacifo_id'] === null) ? null : $request['cacifo_id'];
             $cliente_id = ($request['cliente_id'] === null) ? null : $request['cliente_id'];
 
-            // $request = $request->only([
-            //     'numero_encomenda', 'data_estimada', 'data_de_entrega', 'data_de_levantamento',
-            //     'data_de_entrada_no_sistema', 'data_de_entrega_pretendida', 'tempo_limite_de_levantamento',
-            //     'temperatura', 'estado_encomenda', 'observacoes', 'cacifo_id', 'cliente_id', 'tamanho', 'localizacao'
-            // ]);
+            $request = $request->only([
+                'numero_encomenda', 'data_estimada', 'data_de_entrega', 'data_de_levantamento',
+                'data_de_entrada_no_sistema', 'data_de_entrega_pretendida', 'tempo_limite_de_levantamento',
+                'temperatura', 'estado_encomenda', 'observacoes', 'cacifo_id', 'cliente_id', 'tamanho', 'localizacao'
+            ]);
 
             $encomenda = new Encomenda;
             //$encomenda->numero_encomenda = ++$n_encomenda;

@@ -34,15 +34,17 @@ class EncomendaCollection extends Resource
             //     return $this->pivot->id;
             // }),
 
-            'cliente' => $this->cliente->id,
+            //'person' => $this->person !== null ? $this->person : '',
+
+            'cliente_id' => $this->cliente == null ? '' : $this->cliente->id,
             'estafeta' => $this->users,
-            'cacifo' => new CacifoResource($this->cacifo),
-            'cliente' => new ClienteResource($this->cliente),
+            'cacifo' => $this->cacifo == null ? '' : new CacifoResource($this->cacifo),
+            'cliente' => $this->cliente == null ? '' : new ClienteResource($this->cliente),
 
             'href' => [
                 'link' => route('encomendas.show', $this->id),
-                'cacifo' => route("cacifos.show", $this->cacifo),
-                'cliente' => route("clientes.show", $this->cliente),
+                'cacifo' => $this->cacifo == null ? '' : route("cacifos.show", $this->cacifo),
+                'cliente' => $this->cliente == null ? '' : route("clientes.show", $this->cliente),
             ]
         ];
     }
