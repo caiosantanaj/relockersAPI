@@ -14,7 +14,7 @@ use App\Model\Encomenda;
 /**
  * @group Users management
  *
- * Endpoint para controlar a APIs dos users
+ * Endpoint para controlar os users
  * 
  */
 class UserController extends Controller

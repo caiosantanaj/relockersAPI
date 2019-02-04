@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * @group UserTypes management
  *
- * Endpoint para controlar a APIs o tipo de um utilizador.
+ * Endpoint para controlar o tipo de um utilizador.
  * 
  */
 class UserTypeController extends Controller

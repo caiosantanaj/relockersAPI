@@ -12,7 +12,7 @@ use App\Http\Requests\TamanhoRequest;
 /**
  * @group Tamanhos management
  *
- * Endpoint para controlar a APIs os tamanhos
+ * Endpoint para controlar os tamanhos
  * 
  */
 class TamanhoController extends Controller

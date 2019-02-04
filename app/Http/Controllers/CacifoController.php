@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * @group Cacifos management
  *
- * Endpoint para controlar a APIs dos cacifos
+ * Endpoint para controlar os cacifos
  * 
  */
 class CacifoController extends Controller

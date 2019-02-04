@@ -8,6 +8,12 @@ use App\Model\Cacifo;
 use App\Http\Resources\LogCacifo\LogCacifoResource;
 use Symfony\Component\HttpFoundation\Response;
 
+/**
+ * @group Log management
+ *
+ * Endpoint para controlar os logs
+ * 
+ */
 class LogCacifoController extends Controller
 {
     /**

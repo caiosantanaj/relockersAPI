@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * @group Estados management
  *
- * Endpoint para controlar a APIs dos estados
+ * Endpoint para controlar os estados
  * 
  */
 class EstadoController extends Controller

@@ -12,7 +12,7 @@ use App\Http\Resources\Localizacao\LocalizacaoResource;
 /**
  * @group Localizacaos management
  *
- * Endpoint para controlar a APIs as localizacoes
+ * Endpoint para controlar as localizacoes
  * 
  */
 class LocalizacaoController extends Controller

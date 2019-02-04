@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * @group Clientes management
  *
- * Endpoint para controlar a APIs dos clientes
+ * Endpoint para controlar os clientes
  * 
  */
 class ClienteController extends Controller

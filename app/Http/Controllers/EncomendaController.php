@@ -14,11 +14,14 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * @group Encomendas management
  *
- * Endpoint para controlar a APIs das encomendas
+ * Endpoint para controlar as encomendas
  * 
  */
 class EncomendaController extends Controller
 {
+
+    protected $n_encomenda = 0;
+
     /**
      * Get Encomendas
      * 
@@ -94,6 +97,7 @@ class EncomendaController extends Controller
             ]);
 
             $encomenda = new Encomenda;
+            //$encomenda->numero_encomenda = ++$n_encomenda;
             $encomenda->numero_encomenda = $request['numero_encomenda'];
             $encomenda->data_estimada = $request['data_estimada'];
             $encomenda->data_de_entrega = $request['data_de_entrega'];
