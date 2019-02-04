@@ -34,7 +34,7 @@ Route::group(['prefix' => 'cacifo'], function () {
 //CLIENTE
 Route::Resource('clientes', 'ClienteController');
 //CLIENTES -> Encomenda
-Route::get('clientes/{cliente}/encomendas', 'EncomendaController@clientesEncomenda');
+Route::get('cliente/{cliente}/encomendas', 'EncomendaController@clientesEncomenda');
 
 //ENCOMENDA
 Route::Resource('encomendas', 'EncomendaController');
