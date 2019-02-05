@@ -22,7 +22,6 @@ class EncomendaResource extends JsonResource
         return [
             'id' => $this->id,
             'numero_encomenda' => $this->numero_encomenda,
-            'data_estimada' => $this->data_estimada,
             'data_de_entrega' => $this->data_de_entrega,
             'data_de_levantamento' => $this->data_de_levantamento,
             'data_de_entrada_no_sistema' => $this->data_de_entrada_no_sistema,
@@ -32,7 +31,6 @@ class EncomendaResource extends JsonResource
             'temperatura' => (string)($this->temperatura),
             'observacoes' => $this->observacoes,
             'tamanho' => $this->tamanho,
-            'localizacao' => $this->localizacao,
             'cliente_id' => $this->cliente_id,
             'cacifo_id' => $this->cacifo_id,
             'cliente_id' => $this->cliente == null ? '' : $this->cliente->id,
