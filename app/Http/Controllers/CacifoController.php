@@ -34,6 +34,16 @@ class CacifoController extends Controller
         ]);
     }
 
+    public function encomendaCacifo(Cacifo $cacifo)
+    {
+        //toDo
+        // return $cacifo->encomendas;
+        // return CacifoResource::collection($cacifo->encomendas)->additional([
+        //     'msg' => 'success',
+        //     'code' => Response::HTTP_OK
+        // ]);;
+    }
+
     /**
      * Post Cacifos
      *

@@ -88,6 +88,7 @@ class UserController extends Controller
      * @bodyParam password_confirmation string required Confirmação da password.
      * @bodyParam telefone string required Telefone do utilizador.
      * @bodyParam data_nascimento required Data de nascimento do utilizador.
+     * @bodyParam img_url string Link para a foto do utilizador.
      * @bodyParam local_de_trabalho required Local de trabalho do utilizador
      * @bodyParam tipo_id string required Tipo do utilizador.
      * @bodyParam supervisor_id string required Supervisor do utilizador.
@@ -105,7 +106,10 @@ class UserController extends Controller
     {
         try {
 
-            $request = $request->only(['nome', 'email', 'password', 'telefone', 'data_nascimento', 'local_de_trabalho', 'tipo_id', 'supervisor_id']);
+            $request = $request->only([
+                'nome', 'email', 'password', 'telefone', 'data_nascimento',
+                'local_de_trabalho', 'tipo_id', 'supervisor_id', 'img_url'
+            ]);
 
             $user = new User;
             $user->nome = $request['nome'];
@@ -114,6 +118,7 @@ class UserController extends Controller
             $user->telefone = $request['telefone'];
             $user->data_nascimento = $request['data_nascimento'];
             $user->local_de_trabalho = $request['local_de_trabalho'];
+            $user->img_url = $request['img_url'];
             $user->tipo_id = $request['tipo_id'];
             $user->supervisor_id = $request['supervisor_id'];
 
@@ -157,6 +162,7 @@ class UserController extends Controller
      * @bodyParam password string required Password do utilizador.
      * @bodyParam telefone string Telefone do utilizador.
      * @bodyParam data_nascimento Data de nascimento do utilizador.
+     * @bodyParam img_url string Link para a foto do utilizador.
      * @bodyParam tipo_id string Tipo do utilizador.
      * @bodyParam supervisor_id string Supervisor do utilizador.
      * 
@@ -173,7 +179,10 @@ class UserController extends Controller
     public function update(Request $request, User $user)
     {
         try {
-            $request = $request->only(['nome', 'email', 'password', 'telefone', 'data_nascimento', 'tipo_id', 'supervisor_id']);
+            $request = $request->only([
+                'nome', 'email', 'password', 'telefone', 'data_nascimento',
+                'tipo_id', 'supervisor_id', 'img_url'
+            ]);
 
             $request['password'] = bcrypt($request['password']);
 

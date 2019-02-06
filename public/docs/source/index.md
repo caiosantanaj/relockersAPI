@@ -57,134 +57,164 @@ fetch(url, {
     "data": [
         {
             "id": 1,
-            "numero": 185,
-            "temperatura": "5.4",
+            "numero": 7,
+            "temperatura": "9.4",
             "tamanho_id": 1,
             "estado_id": 2,
-            "localizacao_id": 4,
+            "localizacao_id": 2,
             "tamanho": {
                 "id": 1,
-                "tamanho": "L"
+                "tamanho": "M"
             },
             "estado": {
                 "id": 2,
                 "estado": "Disponivel"
             },
             "localizacao": {
-                "id": 4,
-                "nome": "Jillian Drive",
-                "lat": "-87.531133",
-                "long": "-118.261583",
-                "codigo_postal": "6190-268",
-                "cidade": "Bartellview"
+                "id": 2,
+                "nome": "Consuelo Greens",
+                "lat": "60.28329",
+                "lng": "88.144685",
+                "codigo_postal": "6443-878",
+                "cidade": "Port Janetfurt"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/cacifos\/1",
                 "tamanho": "http:\/\/localhost\/api\/tamanhos\/1",
                 "estado": "http:\/\/localhost\/api\/estados\/2",
-                "localizacao": "http:\/\/localhost\/api\/localizacaos\/4"
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/2"
             }
         },
         {
             "id": 2,
-            "numero": 446,
-            "temperatura": "10.6",
-            "tamanho_id": 3,
-            "estado_id": 2,
-            "localizacao_id": 3,
-            "tamanho": {
-                "id": 3,
-                "tamanho": "XL"
-            },
-            "estado": {
-                "id": 2,
-                "estado": "Disponivel"
-            },
-            "localizacao": {
-                "id": 3,
-                "nome": "Spinka Court",
-                "lat": "-27.810836",
-                "long": "167.365849",
-                "codigo_postal": "5151-775",
-                "cidade": "West Kennedystad"
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/cacifos\/2",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/3",
-                "estado": "http:\/\/localhost\/api\/estados\/2",
-                "localizacao": "http:\/\/localhost\/api\/localizacaos\/3"
-            }
-        },
-        {
-            "id": 3,
-            "numero": 342,
-            "temperatura": "6.3",
-            "tamanho_id": 2,
-            "estado_id": 2,
+            "numero": 422,
+            "temperatura": "4",
+            "tamanho_id": 1,
+            "estado_id": 1,
             "localizacao_id": 1,
             "tamanho": {
-                "id": 2,
-                "tamanho": "XL"
+                "id": 1,
+                "tamanho": "M"
             },
             "estado": {
-                "id": 2,
+                "id": 1,
                 "estado": "Disponivel"
             },
             "localizacao": {
                 "id": 1,
-                "nome": "Koepp Mews",
-                "lat": "63.732159",
-                "long": "94.351739",
-                "codigo_postal": "9716-814",
-                "cidade": "Mayebury"
+                "nome": "Quigley View",
+                "lat": "-15.107306",
+                "lng": "25.399467",
+                "codigo_postal": "2525-638",
+                "cidade": "South Justenberg"
             },
             "href": {
-                "link": "http:\/\/localhost\/api\/cacifos\/3",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/2",
-                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "link": "http:\/\/localhost\/api\/cacifos\/2",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/1",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
                 "localizacao": "http:\/\/localhost\/api\/localizacaos\/1"
             }
         },
         {
-            "id": 4,
-            "numero": 70,
-            "temperatura": "9.1",
-            "tamanho_id": 2,
+            "id": 3,
+            "numero": 74,
+            "temperatura": "1.8",
+            "tamanho_id": 4,
             "estado_id": 1,
-            "localizacao_id": 1,
+            "localizacao_id": 4,
             "tamanho": {
-                "id": 2,
-                "tamanho": "XL"
+                "id": 4,
+                "tamanho": "S"
             },
             "estado": {
                 "id": 1,
                 "estado": "Disponivel"
             },
             "localizacao": {
+                "id": 4,
+                "nome": "Huel Green",
+                "lat": "64.660128",
+                "lng": "139.431751",
+                "codigo_postal": "2501-870",
+                "cidade": "Marquardtton"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/3",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/4",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/4"
+            }
+        },
+        {
+            "id": 4,
+            "numero": 302,
+            "temperatura": "8.8",
+            "tamanho_id": 1,
+            "estado_id": 2,
+            "localizacao_id": 1,
+            "tamanho": {
                 "id": 1,
-                "nome": "Koepp Mews",
-                "lat": "63.732159",
-                "long": "94.351739",
-                "codigo_postal": "9716-814",
-                "cidade": "Mayebury"
+                "tamanho": "M"
+            },
+            "estado": {
+                "id": 2,
+                "estado": "Disponivel"
+            },
+            "localizacao": {
+                "id": 1,
+                "nome": "Quigley View",
+                "lat": "-15.107306",
+                "lng": "25.399467",
+                "codigo_postal": "2525-638",
+                "cidade": "South Justenberg"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/cacifos\/4",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/2",
-                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/1",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
                 "localizacao": "http:\/\/localhost\/api\/localizacaos\/1"
             }
         },
         {
             "id": 5,
-            "numero": 138,
-            "temperatura": "5.5",
-            "tamanho_id": 1,
+            "numero": 219,
+            "temperatura": "4.9",
+            "tamanho_id": 4,
+            "estado_id": 2,
+            "localizacao_id": 5,
+            "tamanho": {
+                "id": 4,
+                "tamanho": "S"
+            },
+            "estado": {
+                "id": 2,
+                "estado": "Disponivel"
+            },
+            "localizacao": {
+                "id": 5,
+                "nome": "Bailey Summit",
+                "lat": "57.856973",
+                "lng": "-134.133893",
+                "codigo_postal": "4098-292",
+                "cidade": "McGlynnfort"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/5",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/4",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/5"
+            }
+        },
+        {
+            "id": 6,
+            "numero": 339,
+            "temperatura": "8.8",
+            "tamanho_id": 3,
             "estado_id": 2,
             "localizacao_id": 4,
             "tamanho": {
-                "id": 1,
-                "tamanho": "L"
+                "id": 3,
+                "tamanho": "M"
             },
             "estado": {
                 "id": 2,
@@ -192,179 +222,29 @@ fetch(url, {
             },
             "localizacao": {
                 "id": 4,
-                "nome": "Jillian Drive",
-                "lat": "-87.531133",
-                "long": "-118.261583",
-                "codigo_postal": "6190-268",
-                "cidade": "Bartellview"
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/cacifos\/5",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/1",
-                "estado": "http:\/\/localhost\/api\/estados\/2",
-                "localizacao": "http:\/\/localhost\/api\/localizacaos\/4"
-            }
-        },
-        {
-            "id": 6,
-            "numero": 492,
-            "temperatura": "0.4",
-            "tamanho_id": 4,
-            "estado_id": 1,
-            "localizacao_id": 4,
-            "tamanho": {
-                "id": 4,
-                "tamanho": "M"
-            },
-            "estado": {
-                "id": 1,
-                "estado": "Disponivel"
-            },
-            "localizacao": {
-                "id": 4,
-                "nome": "Jillian Drive",
-                "lat": "-87.531133",
-                "long": "-118.261583",
-                "codigo_postal": "6190-268",
-                "cidade": "Bartellview"
+                "nome": "Huel Green",
+                "lat": "64.660128",
+                "lng": "139.431751",
+                "codigo_postal": "2501-870",
+                "cidade": "Marquardtton"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/cacifos\/6",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/4",
-                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/3",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
                 "localizacao": "http:\/\/localhost\/api\/localizacaos\/4"
             }
         },
         {
             "id": 7,
-            "numero": 134,
-            "temperatura": "10",
-            "tamanho_id": 4,
-            "estado_id": 1,
-            "localizacao_id": 5,
-            "tamanho": {
-                "id": 4,
-                "tamanho": "M"
-            },
-            "estado": {
-                "id": 1,
-                "estado": "Disponivel"
-            },
-            "localizacao": {
-                "id": 5,
-                "nome": "Yundt Brooks",
-                "lat": "16.344016",
-                "long": "-152.390071",
-                "codigo_postal": "4875-698",
-                "cidade": "Port Hettieburgh"
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/cacifos\/7",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/4",
-                "estado": "http:\/\/localhost\/api\/estados\/1",
-                "localizacao": "http:\/\/localhost\/api\/localizacaos\/5"
-            }
-        },
-        {
-            "id": 8,
-            "numero": 76,
-            "temperatura": "11.5",
-            "tamanho_id": 3,
-            "estado_id": 1,
-            "localizacao_id": 1,
-            "tamanho": {
-                "id": 3,
-                "tamanho": "XL"
-            },
-            "estado": {
-                "id": 1,
-                "estado": "Disponivel"
-            },
-            "localizacao": {
-                "id": 1,
-                "nome": "Koepp Mews",
-                "lat": "63.732159",
-                "long": "94.351739",
-                "codigo_postal": "9716-814",
-                "cidade": "Mayebury"
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/cacifos\/8",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/3",
-                "estado": "http:\/\/localhost\/api\/estados\/1",
-                "localizacao": "http:\/\/localhost\/api\/localizacaos\/1"
-            }
-        },
-        {
-            "id": 9,
-            "numero": 306,
-            "temperatura": "1.1",
+            "numero": 37,
+            "temperatura": "8.6",
             "tamanho_id": 2,
-            "estado_id": 1,
-            "localizacao_id": 2,
-            "tamanho": {
-                "id": 2,
-                "tamanho": "XL"
-            },
-            "estado": {
-                "id": 1,
-                "estado": "Disponivel"
-            },
-            "localizacao": {
-                "id": 2,
-                "nome": "Clemmie Village",
-                "lat": "-77.233379",
-                "long": "59.094078",
-                "codigo_postal": "7185-244",
-                "cidade": "Feilborough"
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/cacifos\/9",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/2",
-                "estado": "http:\/\/localhost\/api\/estados\/1",
-                "localizacao": "http:\/\/localhost\/api\/localizacaos\/2"
-            }
-        },
-        {
-            "id": 10,
-            "numero": 152,
-            "temperatura": "10.1",
-            "tamanho_id": 4,
-            "estado_id": 2,
-            "localizacao_id": 4,
-            "tamanho": {
-                "id": 4,
-                "tamanho": "M"
-            },
-            "estado": {
-                "id": 2,
-                "estado": "Disponivel"
-            },
-            "localizacao": {
-                "id": 4,
-                "nome": "Jillian Drive",
-                "lat": "-87.531133",
-                "long": "-118.261583",
-                "codigo_postal": "6190-268",
-                "cidade": "Bartellview"
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/cacifos\/10",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/4",
-                "estado": "http:\/\/localhost\/api\/estados\/2",
-                "localizacao": "http:\/\/localhost\/api\/localizacaos\/4"
-            }
-        },
-        {
-            "id": 11,
-            "numero": 378,
-            "temperatura": "5.9",
-            "tamanho_id": 4,
             "estado_id": 1,
             "localizacao_id": 3,
             "tamanho": {
-                "id": 4,
-                "tamanho": "M"
+                "id": 2,
+                "tamanho": "XL"
             },
             "estado": {
                 "id": 1,
@@ -372,148 +252,298 @@ fetch(url, {
             },
             "localizacao": {
                 "id": 3,
-                "nome": "Spinka Court",
-                "lat": "-27.810836",
-                "long": "167.365849",
-                "codigo_postal": "5151-775",
-                "cidade": "West Kennedystad"
+                "nome": "Schuppe Station",
+                "lat": "-46.04705",
+                "lng": "45.218119",
+                "codigo_postal": "2974-667",
+                "cidade": "Kunzeland"
             },
             "href": {
-                "link": "http:\/\/localhost\/api\/cacifos\/11",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/4",
+                "link": "http:\/\/localhost\/api\/cacifos\/7",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/2",
                 "estado": "http:\/\/localhost\/api\/estados\/1",
                 "localizacao": "http:\/\/localhost\/api\/localizacaos\/3"
             }
         },
         {
-            "id": 12,
-            "numero": 175,
-            "temperatura": "0.4",
-            "tamanho_id": 3,
-            "estado_id": 1,
-            "localizacao_id": 4,
-            "tamanho": {
-                "id": 3,
-                "tamanho": "XL"
-            },
-            "estado": {
-                "id": 1,
-                "estado": "Disponivel"
-            },
-            "localizacao": {
-                "id": 4,
-                "nome": "Jillian Drive",
-                "lat": "-87.531133",
-                "long": "-118.261583",
-                "codigo_postal": "6190-268",
-                "cidade": "Bartellview"
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/cacifos\/12",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/3",
-                "estado": "http:\/\/localhost\/api\/estados\/1",
-                "localizacao": "http:\/\/localhost\/api\/localizacaos\/4"
-            }
-        },
-        {
-            "id": 13,
-            "numero": 340,
-            "temperatura": "5.9",
-            "tamanho_id": 4,
-            "estado_id": 1,
+            "id": 8,
+            "numero": 354,
+            "temperatura": "1.7",
+            "tamanho_id": 1,
+            "estado_id": 2,
             "localizacao_id": 5,
             "tamanho": {
-                "id": 4,
+                "id": 1,
                 "tamanho": "M"
             },
             "estado": {
-                "id": 1,
+                "id": 2,
                 "estado": "Disponivel"
             },
             "localizacao": {
                 "id": 5,
-                "nome": "Yundt Brooks",
-                "lat": "16.344016",
-                "long": "-152.390071",
-                "codigo_postal": "4875-698",
-                "cidade": "Port Hettieburgh"
+                "nome": "Bailey Summit",
+                "lat": "57.856973",
+                "lng": "-134.133893",
+                "codigo_postal": "4098-292",
+                "cidade": "McGlynnfort"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/8",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/1",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/5"
+            }
+        },
+        {
+            "id": 9,
+            "numero": 22,
+            "temperatura": "0.4",
+            "tamanho_id": 1,
+            "estado_id": 2,
+            "localizacao_id": 2,
+            "tamanho": {
+                "id": 1,
+                "tamanho": "M"
+            },
+            "estado": {
+                "id": 2,
+                "estado": "Disponivel"
+            },
+            "localizacao": {
+                "id": 2,
+                "nome": "Consuelo Greens",
+                "lat": "60.28329",
+                "lng": "88.144685",
+                "codigo_postal": "6443-878",
+                "cidade": "Port Janetfurt"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/9",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/1",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/2"
+            }
+        },
+        {
+            "id": 10,
+            "numero": 246,
+            "temperatura": "4.5",
+            "tamanho_id": 1,
+            "estado_id": 2,
+            "localizacao_id": 1,
+            "tamanho": {
+                "id": 1,
+                "tamanho": "M"
+            },
+            "estado": {
+                "id": 2,
+                "estado": "Disponivel"
+            },
+            "localizacao": {
+                "id": 1,
+                "nome": "Quigley View",
+                "lat": "-15.107306",
+                "lng": "25.399467",
+                "codigo_postal": "2525-638",
+                "cidade": "South Justenberg"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/10",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/1",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/1"
+            }
+        },
+        {
+            "id": 11,
+            "numero": 287,
+            "temperatura": "6.9",
+            "tamanho_id": 3,
+            "estado_id": 2,
+            "localizacao_id": 5,
+            "tamanho": {
+                "id": 3,
+                "tamanho": "M"
+            },
+            "estado": {
+                "id": 2,
+                "estado": "Disponivel"
+            },
+            "localizacao": {
+                "id": 5,
+                "nome": "Bailey Summit",
+                "lat": "57.856973",
+                "lng": "-134.133893",
+                "codigo_postal": "4098-292",
+                "cidade": "McGlynnfort"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/11",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/3",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/5"
+            }
+        },
+        {
+            "id": 12,
+            "numero": 155,
+            "temperatura": "5",
+            "tamanho_id": 4,
+            "estado_id": 2,
+            "localizacao_id": 1,
+            "tamanho": {
+                "id": 4,
+                "tamanho": "S"
+            },
+            "estado": {
+                "id": 2,
+                "estado": "Disponivel"
+            },
+            "localizacao": {
+                "id": 1,
+                "nome": "Quigley View",
+                "lat": "-15.107306",
+                "lng": "25.399467",
+                "codigo_postal": "2525-638",
+                "cidade": "South Justenberg"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/12",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/4",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/1"
+            }
+        },
+        {
+            "id": 13,
+            "numero": 162,
+            "temperatura": "7.6",
+            "tamanho_id": 3,
+            "estado_id": 2,
+            "localizacao_id": 5,
+            "tamanho": {
+                "id": 3,
+                "tamanho": "M"
+            },
+            "estado": {
+                "id": 2,
+                "estado": "Disponivel"
+            },
+            "localizacao": {
+                "id": 5,
+                "nome": "Bailey Summit",
+                "lat": "57.856973",
+                "lng": "-134.133893",
+                "codigo_postal": "4098-292",
+                "cidade": "McGlynnfort"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/cacifos\/13",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/4",
-                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/3",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
                 "localizacao": "http:\/\/localhost\/api\/localizacaos\/5"
             }
         },
         {
             "id": 14,
-            "numero": 489,
-            "temperatura": "0",
-            "tamanho_id": 2,
-            "estado_id": 1,
-            "localizacao_id": 5,
+            "numero": 80,
+            "temperatura": "4",
+            "tamanho_id": 4,
+            "estado_id": 2,
+            "localizacao_id": 1,
             "tamanho": {
-                "id": 2,
-                "tamanho": "XL"
+                "id": 4,
+                "tamanho": "S"
             },
             "estado": {
-                "id": 1,
+                "id": 2,
                 "estado": "Disponivel"
             },
             "localizacao": {
-                "id": 5,
-                "nome": "Yundt Brooks",
-                "lat": "16.344016",
-                "long": "-152.390071",
-                "codigo_postal": "4875-698",
-                "cidade": "Port Hettieburgh"
+                "id": 1,
+                "nome": "Quigley View",
+                "lat": "-15.107306",
+                "lng": "25.399467",
+                "codigo_postal": "2525-638",
+                "cidade": "South Justenberg"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/cacifos\/14",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/2",
-                "estado": "http:\/\/localhost\/api\/estados\/1",
-                "localizacao": "http:\/\/localhost\/api\/localizacaos\/5"
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/4",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/1"
             }
         },
         {
             "id": 15,
-            "numero": 380,
-            "temperatura": "1.9",
+            "numero": 144,
+            "temperatura": "4.6",
             "tamanho_id": 2,
-            "estado_id": 1,
-            "localizacao_id": 5,
+            "estado_id": 2,
+            "localizacao_id": 4,
             "tamanho": {
                 "id": 2,
                 "tamanho": "XL"
             },
             "estado": {
-                "id": 1,
+                "id": 2,
                 "estado": "Disponivel"
             },
             "localizacao": {
-                "id": 5,
-                "nome": "Yundt Brooks",
-                "lat": "16.344016",
-                "long": "-152.390071",
-                "codigo_postal": "4875-698",
-                "cidade": "Port Hettieburgh"
+                "id": 4,
+                "nome": "Huel Green",
+                "lat": "64.660128",
+                "lng": "139.431751",
+                "codigo_postal": "2501-870",
+                "cidade": "Marquardtton"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/cacifos\/15",
                 "tamanho": "http:\/\/localhost\/api\/tamanhos\/2",
-                "estado": "http:\/\/localhost\/api\/estados\/1",
-                "localizacao": "http:\/\/localhost\/api\/localizacaos\/5"
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/4"
             }
         },
         {
             "id": 16,
-            "numero": 389,
-            "temperatura": "7.2",
+            "numero": 422,
+            "temperatura": "10.7",
             "tamanho_id": 3,
-            "estado_id": 1,
-            "localizacao_id": 5,
+            "estado_id": 2,
+            "localizacao_id": 1,
             "tamanho": {
                 "id": 3,
+                "tamanho": "M"
+            },
+            "estado": {
+                "id": 2,
+                "estado": "Disponivel"
+            },
+            "localizacao": {
+                "id": 1,
+                "nome": "Quigley View",
+                "lat": "-15.107306",
+                "lng": "25.399467",
+                "codigo_postal": "2525-638",
+                "cidade": "South Justenberg"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/16",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/3",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/1"
+            }
+        },
+        {
+            "id": 17,
+            "numero": 492,
+            "temperatura": "6.6",
+            "tamanho_id": 2,
+            "estado_id": 1,
+            "localizacao_id": 3,
+            "tamanho": {
+                "id": 2,
                 "tamanho": "XL"
             },
             "estado": {
@@ -521,89 +551,29 @@ fetch(url, {
                 "estado": "Disponivel"
             },
             "localizacao": {
-                "id": 5,
-                "nome": "Yundt Brooks",
-                "lat": "16.344016",
-                "long": "-152.390071",
-                "codigo_postal": "4875-698",
-                "cidade": "Port Hettieburgh"
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/cacifos\/16",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/3",
-                "estado": "http:\/\/localhost\/api\/estados\/1",
-                "localizacao": "http:\/\/localhost\/api\/localizacaos\/5"
-            }
-        },
-        {
-            "id": 17,
-            "numero": 268,
-            "temperatura": "9.3",
-            "tamanho_id": 3,
-            "estado_id": 2,
-            "localizacao_id": 2,
-            "tamanho": {
                 "id": 3,
-                "tamanho": "XL"
-            },
-            "estado": {
-                "id": 2,
-                "estado": "Disponivel"
-            },
-            "localizacao": {
-                "id": 2,
-                "nome": "Clemmie Village",
-                "lat": "-77.233379",
-                "long": "59.094078",
-                "codigo_postal": "7185-244",
-                "cidade": "Feilborough"
+                "nome": "Schuppe Station",
+                "lat": "-46.04705",
+                "lng": "45.218119",
+                "codigo_postal": "2974-667",
+                "cidade": "Kunzeland"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/cacifos\/17",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/3",
-                "estado": "http:\/\/localhost\/api\/estados\/2",
-                "localizacao": "http:\/\/localhost\/api\/localizacaos\/2"
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/2",
+                "estado": "http:\/\/localhost\/api\/estados\/1",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/3"
             }
         },
         {
             "id": 18,
-            "numero": 463,
-            "temperatura": "8.1",
-            "tamanho_id": 3,
-            "estado_id": 2,
-            "localizacao_id": 5,
-            "tamanho": {
-                "id": 3,
-                "tamanho": "XL"
-            },
-            "estado": {
-                "id": 2,
-                "estado": "Disponivel"
-            },
-            "localizacao": {
-                "id": 5,
-                "nome": "Yundt Brooks",
-                "lat": "16.344016",
-                "long": "-152.390071",
-                "codigo_postal": "4875-698",
-                "cidade": "Port Hettieburgh"
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/cacifos\/18",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/3",
-                "estado": "http:\/\/localhost\/api\/estados\/2",
-                "localizacao": "http:\/\/localhost\/api\/localizacaos\/5"
-            }
-        },
-        {
-            "id": 19,
-            "numero": 287,
-            "temperatura": "0.8",
-            "tamanho_id": 4,
+            "numero": 134,
+            "temperatura": "8",
+            "tamanho_id": 1,
             "estado_id": 1,
             "localizacao_id": 4,
             "tamanho": {
-                "id": 4,
+                "id": 1,
                 "tamanho": "M"
             },
             "estado": {
@@ -612,47 +582,77 @@ fetch(url, {
             },
             "localizacao": {
                 "id": 4,
-                "nome": "Jillian Drive",
-                "lat": "-87.531133",
-                "long": "-118.261583",
-                "codigo_postal": "6190-268",
-                "cidade": "Bartellview"
+                "nome": "Huel Green",
+                "lat": "64.660128",
+                "lng": "139.431751",
+                "codigo_postal": "2501-870",
+                "cidade": "Marquardtton"
             },
             "href": {
-                "link": "http:\/\/localhost\/api\/cacifos\/19",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/4",
+                "link": "http:\/\/localhost\/api\/cacifos\/18",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/1",
                 "estado": "http:\/\/localhost\/api\/estados\/1",
                 "localizacao": "http:\/\/localhost\/api\/localizacaos\/4"
             }
         },
         {
-            "id": 20,
-            "numero": 197,
+            "id": 19,
+            "numero": 326,
             "temperatura": "10.7",
-            "tamanho_id": 1,
-            "estado_id": 1,
+            "tamanho_id": 4,
+            "estado_id": 2,
             "localizacao_id": 2,
             "tamanho": {
-                "id": 1,
-                "tamanho": "L"
+                "id": 4,
+                "tamanho": "S"
             },
             "estado": {
-                "id": 1,
+                "id": 2,
                 "estado": "Disponivel"
             },
             "localizacao": {
                 "id": 2,
-                "nome": "Clemmie Village",
-                "lat": "-77.233379",
-                "long": "59.094078",
-                "codigo_postal": "7185-244",
-                "cidade": "Feilborough"
+                "nome": "Consuelo Greens",
+                "lat": "60.28329",
+                "lng": "88.144685",
+                "codigo_postal": "6443-878",
+                "cidade": "Port Janetfurt"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/cacifos\/19",
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/4",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/2"
+            }
+        },
+        {
+            "id": 20,
+            "numero": 194,
+            "temperatura": "0.5",
+            "tamanho_id": 3,
+            "estado_id": 2,
+            "localizacao_id": 4,
+            "tamanho": {
+                "id": 3,
+                "tamanho": "M"
+            },
+            "estado": {
+                "id": 2,
+                "estado": "Disponivel"
+            },
+            "localizacao": {
+                "id": 4,
+                "nome": "Huel Green",
+                "lat": "64.660128",
+                "lng": "139.431751",
+                "codigo_postal": "2501-870",
+                "cidade": "Marquardtton"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/cacifos\/20",
-                "tamanho": "http:\/\/localhost\/api\/tamanhos\/1",
-                "estado": "http:\/\/localhost\/api\/estados\/1",
-                "localizacao": "http:\/\/localhost\/api\/localizacaos\/2"
+                "tamanho": "http:\/\/localhost\/api\/tamanhos\/3",
+                "estado": "http:\/\/localhost\/api\/estados\/2",
+                "localizacao": "http:\/\/localhost\/api\/localizacaos\/4"
             }
         }
     ],
@@ -675,12 +675,12 @@ Adiciona um novo cacifos.
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/cacifos"     -d "numero"="wtVa0EKIbhIiqkHr" \
-    -d "temperatura"="mJglZQplqjwmgX85" \
-    -d "codigo"="CCzv3rAECKvenlvE" \
-    -d "estado_id"="lOIzVzgOHHLRSAgP" \
-    -d "tamanho_id"="TZG1T000qZsEYIU2" \
-    -d "localizacao_id"="4YHNKKTbqCtuaQmC" 
+curl -X POST "http://localhost/api/cacifos"     -d "numero"="43Vl0mxp268IfYt6" \
+    -d "temperatura"="aeUWuyJfUPRscV8R" \
+    -d "codigo"="WOkiKw8Vs1kikiL7" \
+    -d "estado_id"="ztwTfDUh2hgQSlRy" \
+    -d "tamanho_id"="qBfiKHdNUrnPHMNg" \
+    -d "localizacao_id"="GdNpFZWi5myVfs7T" 
 ```
 
 ```javascript
@@ -692,12 +692,12 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "numero": "wtVa0EKIbhIiqkHr",
-    "temperatura": "mJglZQplqjwmgX85",
-    "codigo": "CCzv3rAECKvenlvE",
-    "estado_id": "lOIzVzgOHHLRSAgP",
-    "tamanho_id": "TZG1T000qZsEYIU2",
-    "localizacao_id": "4YHNKKTbqCtuaQmC",
+    "numero": "43Vl0mxp268IfYt6",
+    "temperatura": "aeUWuyJfUPRscV8R",
+    "codigo": "WOkiKw8Vs1kikiL7",
+    "estado_id": "ztwTfDUh2hgQSlRy",
+    "tamanho_id": "qBfiKHdNUrnPHMNg",
+    "localizacao_id": "GdNpFZWi5myVfs7T",
 })
 
 fetch(url, {
@@ -770,27 +770,27 @@ fetch(url, {
 {
     "data": {
         "id": 1,
-        "numero": 185,
-        "temperatura": "5.4",
-        "codigo": "Hnig2",
+        "numero": 7,
+        "temperatura": "9.4",
+        "codigo": "Zbouy",
         "tamanho_id": 1,
         "estado_id": 2,
-        "localizacao_id": 4,
+        "localizacao_id": 2,
         "tamanho": {
             "id": 1,
-            "tamanho": "L"
+            "tamanho": "M"
         },
         "estado": {
             "id": 2,
             "estado": "Disponivel"
         },
         "localizacao": {
-            "id": 4,
-            "nome": "Jillian Drive",
-            "lat": "-87.531133",
-            "long": "-118.261583",
-            "codigo_postal": "6190-268",
-            "cidade": "Bartellview"
+            "id": 2,
+            "nome": "Consuelo Greens",
+            "lat": "60.28329",
+            "lng": "88.144685",
+            "codigo_postal": "6443-878",
+            "cidade": "Port Janetfurt"
         }
     }
 }
@@ -810,12 +810,12 @@ Faz update a um cacifos.
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/cacifos/{cacifo}"     -d "numero"="FnDrdiXHSdoNh3Jo" \
-    -d "temperatura"="zFbsBrk27vGaWDdo" \
-    -d "codigo"="YwuL9kIx96tRttS1" \
-    -d "estado_id"="qtWEY5ANEtBxfwEU" \
-    -d "tamanho_id"="taUIDV6t3Bls4iT0" \
-    -d "localizacao_id"="cXH21woD9OfersY6" 
+curl -X PUT "http://localhost/api/cacifos/{cacifo}"     -d "numero"="gSL9vQR5it2ylXik" \
+    -d "temperatura"="DY2WfNPwI36dtQlj" \
+    -d "codigo"="urzVDT5Jc9J6cQra" \
+    -d "estado_id"="gO6kCOOFfghCJlgX" \
+    -d "tamanho_id"="gahuvT2zs19pKwwX" \
+    -d "localizacao_id"="ifMBI1CXuamtJ303" 
 ```
 
 ```javascript
@@ -827,12 +827,12 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "numero": "FnDrdiXHSdoNh3Jo",
-    "temperatura": "zFbsBrk27vGaWDdo",
-    "codigo": "YwuL9kIx96tRttS1",
-    "estado_id": "qtWEY5ANEtBxfwEU",
-    "tamanho_id": "taUIDV6t3Bls4iT0",
-    "localizacao_id": "cXH21woD9OfersY6",
+    "numero": "gSL9vQR5it2ylXik",
+    "temperatura": "DY2WfNPwI36dtQlj",
+    "codigo": "urzVDT5Jc9J6cQra",
+    "estado_id": "gO6kCOOFfghCJlgX",
+    "tamanho_id": "gahuvT2zs19pKwwX",
+    "localizacao_id": "ifMBI1CXuamtJ303",
 })
 
 fetch(url, {
@@ -952,81 +952,81 @@ fetch(url, {
 {
     "data": [
         {
-            "nome": "Colten Murazik",
-            "email": "ila.zulauf@yahoo.com",
-            "telefone": "+1 (742) 299-0224",
+            "nome": "Miss Makayla Armstrong",
+            "email": "emie.lind@gmail.com",
+            "telefone": "1-327-930-5597 x12559",
             "href": {
                 "link": "http:\/\/localhost\/api\/clientes\/1"
             }
         },
         {
-            "nome": "Blanca Langosh",
-            "email": "catharine79@hotmail.com",
-            "telefone": "240.765.3383",
+            "nome": "Dan Schoen",
+            "email": "america31@hotmail.com",
+            "telefone": "932-213-1955",
             "href": {
                 "link": "http:\/\/localhost\/api\/clientes\/2"
             }
         },
         {
-            "nome": "Roselyn Feil",
-            "email": "fritsch.estella@hotmail.com",
-            "telefone": "(968) 577-6627 x08509",
+            "nome": "Ruby Harris",
+            "email": "haley.caitlyn@gmail.com",
+            "telefone": "517-219-2699",
             "href": {
                 "link": "http:\/\/localhost\/api\/clientes\/3"
             }
         },
         {
-            "nome": "Mr. Anthony McClure IV",
-            "email": "balistreri.liam@yahoo.com",
-            "telefone": "831-892-9556",
+            "nome": "Lon Kunze",
+            "email": "stiedemann.arno@yahoo.com",
+            "telefone": "727-940-7502",
             "href": {
                 "link": "http:\/\/localhost\/api\/clientes\/4"
             }
         },
         {
-            "nome": "Kayli Kessler",
-            "email": "huel.edyth@hotmail.com",
-            "telefone": "(312) 889-5261 x12095",
+            "nome": "Briana Wehner",
+            "email": "wayne.rohan@yahoo.com",
+            "telefone": "204.515.6221 x510",
             "href": {
                 "link": "http:\/\/localhost\/api\/clientes\/5"
             }
         },
         {
-            "nome": "Jarred Grimes",
-            "email": "ashly.funk@hotmail.com",
-            "telefone": "1-270-309-3280 x1950",
+            "nome": "Dr. Concepcion Kub",
+            "email": "jamir53@yahoo.com",
+            "telefone": "+1-331-546-1911",
             "href": {
                 "link": "http:\/\/localhost\/api\/clientes\/6"
             }
         },
         {
-            "nome": "Johnnie Marquardt",
-            "email": "hand.nelson@hotmail.com",
-            "telefone": "+1 (503) 789-7718",
+            "nome": "Kenya Boyle",
+            "email": "aufderhar.dorris@yahoo.com",
+            "telefone": "687-315-1910 x3614",
             "href": {
                 "link": "http:\/\/localhost\/api\/clientes\/7"
             }
         },
         {
-            "nome": "Jarvis Senger III",
-            "email": "marquis.strosin@gmail.com",
-            "telefone": "+1-948-786-3340",
+            "nome": "Dr. Hosea Walker",
+            "email": "mcclure.monte@gmail.com",
+            "telefone": "+1-383-580-1383",
             "href": {
                 "link": "http:\/\/localhost\/api\/clientes\/8"
             }
         },
         {
-            "nome": "Sophia DuBuque V",
-            "email": "adams.bria@yahoo.com",
-            "telefone": "(587) 916-4443",
+            "nome": "Mr. Elton Parker",
+            "email": "julius.durgan@gmail.com",
+            "telefone": "(474) 745-8921 x07532",
             "href": {
                 "link": "http:\/\/localhost\/api\/clientes\/9"
             }
         },
         {
-            "nome": "Cortez Oberbrunner",
-            "email": "beer.izaiah@yahoo.com",
-            "telefone": "(585) 852-7106 x491",
+            "nome": "Howard Kessler",
+            "email": "abe83@gmail.com",
+            "telefone": "+1-274-312-4465",
             "href": {
                 "link": "http:\/\/localhost\/api\/clientes\/10"
             }
@@ -1051,9 +1051,9 @@ Adiciona um novo cliente.
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/clientes"     -d "nome"="qUmGOCXLbACe4Crz" \
-    -d "email"="G67xnPZi5wRXYrbB" \
-    -d "telefone"="D4FWpumwLaedPIbJ" 
+curl -X POST "http://localhost/api/clientes"     -d "nome"="6Jvvf2v4yJfEY4qn" \
+    -d "email"="fsp0KGF9ljl1vVih" \
+    -d "telefone"="xLxHrL9yHOrp7I1f" 
 ```
 
 ```javascript
@@ -1065,9 +1065,9 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "nome": "qUmGOCXLbACe4Crz",
-    "email": "G67xnPZi5wRXYrbB",
-    "telefone": "D4FWpumwLaedPIbJ",
+    "nome": "6Jvvf2v4yJfEY4qn",
+    "email": "fsp0KGF9ljl1vVih",
+    "telefone": "xLxHrL9yHOrp7I1f",
 })
 
 fetch(url, {
@@ -1137,9 +1137,9 @@ fetch(url, {
 {
     "data": {
         "id": 1,
-        "nome": "Colten Murazik",
-        "email": "ila.zulauf@yahoo.com",
-        "telefone": "+1 (742) 299-0224"
+        "nome": "Miss Makayla Armstrong",
+        "email": "emie.lind@gmail.com",
+        "telefone": "1-327-930-5597 x12559"
     }
 }
 ```
@@ -1158,9 +1158,9 @@ Atualiza um cliente.
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/clientes/{cliente}"     -d "nome"="iDGH6wnD4A84Yg0n" \
-    -d "email"="8MyE3uBdQgTxaZrG" \
-    -d "telefone"="iMDb75nUJk0Zo8eO" 
+curl -X PUT "http://localhost/api/clientes/{cliente}"     -d "nome"="PyGvFZFmSjF35uxN" \
+    -d "email"="81lRhl2FAApTWE1H" \
+    -d "telefone"="PWYdQ9u8IgUTfR4L" 
 ```
 
 ```javascript
@@ -1172,9 +1172,9 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "nome": "iDGH6wnD4A84Yg0n",
-    "email": "8MyE3uBdQgTxaZrG",
-    "telefone": "iMDb75nUJk0Zo8eO",
+    "nome": "PyGvFZFmSjF35uxN",
+    "email": "81lRhl2FAApTWE1H",
+    "telefone": "PWYdQ9u8IgUTfR4L",
 })
 
 fetch(url, {
@@ -1291,37 +1291,45 @@ fetch(url, {
 {
     "data": [
         {
-            "id": 8,
-            "numero_encomenda": 304,
-            "data_estimada": "1972-12-09 17:21:47",
-            "data_de_entrega": "1991-10-06 06:49:21",
-            "data_de_levantamento": "1971-03-05 07:25:07",
-            "data_de_entrada_no_sistema": "1999-06-07 15:01:32",
-            "data_de_entrega_pretendida": "1972-02-24 11:51:15",
-            "tempo_limite_de_levantamento": "1999-02-25 08:31:41",
-            "estado_encomenda": 0,
-            "temperatura": "7",
-            "observacoes": "Hatter. 'Nor I,' said the Cat. 'Do you play croquet with the next witness.' And he got up and straightening itself out again, and that's very like having a game of croquet she was shrinking rapidly.",
-            "tamanho": "S",
-            "localizacao": "Christiana Keys",
+            "id": 4,
+            "data_de_entrega": "2012-07-12 01:40:14",
+            "data_de_levantamento": "2012-08-18 19:04:19",
+            "data_de_entrada_no_sistema": "2008-08-21 09:21:10",
+            "data_de_entrega_pretendida": "1996-05-30 13:32:48",
+            "tempo_limite_de_levantamento": "2018-01-29 22:12:14",
+            "estado_encomenda": 1,
+            "temperatura": "2.5",
+            "observacoes": "While the Duchess said in a dreamy sort of people live about here?' 'In THAT direction,' the Cat went on, 'if you don't know what \"it\" means well enough, when I was going off into a butterfly, I.",
+            "tamanho": "L",
             "cliente_id": 1,
-            "cacifo_id": 10,
-            "cliente": {
-                "id": 1,
-                "nome": "Colten Murazik",
-                "email": "ila.zulauf@yahoo.com",
-                "telefone": "+1 (742) 299-0224"
-            },
-            "cacifo": {
-                "id": 10,
-                "numero": 152,
-                "temperatura": "10.1",
-                "codigo": "LT9QtVhla",
-                "tamanho_id": 4,
-                "estado_id": 2,
-                "localizacao_id": 4,
-                "tamanho": {
+            "cacifo_id": 16,
+            "estafeta": [
+                {
                     "id": 4,
+                    "nome": "Moses Wiegand",
+                    "email": "keanu.christiansen@hotmail.com",
+                    "telefone": "230-326-5987 x54763",
+                    "data_nascimento": "1983-04-04",
+                    "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?46198",
+                    "tipo_id": 1,
+                    "supervisor_id": 1,
+                    "pivot": {
+                        "encomenda_id": 4,
+                        "user_id": 4
+                    }
+                }
+            ],
+            "cacifo": {
+                "id": 16,
+                "numero": 422,
+                "temperatura": "10.7",
+                "codigo": "WWCrki",
+                "tamanho_id": 3,
+                "estado_id": 2,
+                "localizacao_id": 1,
+                "tamanho": {
+                    "id": 3,
                     "tamanho": "M"
                 },
                 "estado": {
@@ -1329,101 +1337,89 @@ fetch(url, {
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 4,
-                    "nome": "Jillian Drive",
-                    "lat": "-87.531133",
-                    "long": "-118.261583",
-                    "codigo_postal": "6190-268",
-                    "cidade": "Bartellview"
+                    "id": 1,
+                    "nome": "Quigley View",
+                    "lat": "-15.107306",
+                    "lng": "25.399467",
+                    "codigo_postal": "2525-638",
+                    "cidade": "South Justenberg"
                 }
             },
+            "cliente": {
+                "id": 1,
+                "nome": "Miss Makayla Armstrong",
+                "email": "emie.lind@gmail.com",
+                "telefone": "1-327-930-5597 x12559"
+            },
+            "href": {
+                "cliente": "http:\/\/localhost\/api\/clientes\/1",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/16"
+            }
+        },
+        {
+            "id": 20,
+            "data_de_entrega": "1998-09-16 01:38:07",
+            "data_de_levantamento": "1988-03-03 17:03:52",
+            "data_de_entrada_no_sistema": "1982-11-15 01:20:14",
+            "data_de_entrega_pretendida": "2000-07-11 02:01:04",
+            "tempo_limite_de_levantamento": "2003-11-12 04:43:41",
+            "estado_encomenda": 0,
+            "temperatura": "4.7",
+            "observacoes": "Father William replied to his son, 'I feared it might be hungry, in which case it would like the right word) '--but I shall only look up in great fear lest she should meet the real Mary Ann, and be.",
+            "tamanho": "XL",
+            "cliente_id": 1,
+            "cacifo_id": 8,
             "estafeta": [
                 {
                     "id": 3,
-                    "nome": "Carey Borer II",
-                    "email": "kolson@gmail.com",
-                    "telefone": "(675) 748-0997 x5822",
-                    "data_nascimento": "1978-03-09",
+                    "nome": "Dr. Otto Conn",
+                    "email": "khaag@gmail.com",
+                    "telefone": "(736) 618-4189",
+                    "data_nascimento": "1991-10-08",
                     "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?42179",
                     "tipo_id": 2,
                     "supervisor_id": 1,
                     "pivot": {
-                        "encomenda_id": 8,
+                        "encomenda_id": 20,
                         "user_id": 3
                     }
                 }
             ],
-            "href": {
-                "cliente": "http:\/\/localhost\/api\/clientes\/1",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/10"
-            }
-        },
-        {
-            "id": 19,
-            "numero_encomenda": 636,
-            "data_estimada": "2018-08-27 18:05:35",
-            "data_de_entrega": "2008-07-14 07:16:38",
-            "data_de_levantamento": "2016-06-11 12:30:33",
-            "data_de_entrada_no_sistema": "1989-12-04 05:51:31",
-            "data_de_entrega_pretendida": "1980-04-17 14:26:21",
-            "tempo_limite_de_levantamento": "2000-02-20 03:26:57",
-            "estado_encomenda": 0,
-            "temperatura": "1.8",
-            "observacoes": "Mock Turtle said: 'advance twice, set to work throwing everything within her reach at the March Hare, 'that \"I like what I say,' the Mock Turtle sighed deeply, and began, in rather a complaining.",
-            "tamanho": "XL",
-            "localizacao": "Fritsch Spurs",
-            "cliente_id": 1,
-            "cacifo_id": 1,
-            "cliente": {
-                "id": 1,
-                "nome": "Colten Murazik",
-                "email": "ila.zulauf@yahoo.com",
-                "telefone": "+1 (742) 299-0224"
-            },
             "cacifo": {
-                "id": 1,
-                "numero": 185,
-                "temperatura": "5.4",
-                "codigo": "Hnig2",
+                "id": 8,
+                "numero": 354,
+                "temperatura": "1.7",
+                "codigo": "bem9G",
                 "tamanho_id": 1,
                 "estado_id": 2,
-                "localizacao_id": 4,
+                "localizacao_id": 5,
                 "tamanho": {
                     "id": 1,
-                    "tamanho": "L"
+                    "tamanho": "M"
                 },
                 "estado": {
                     "id": 2,
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 4,
-                    "nome": "Jillian Drive",
-                    "lat": "-87.531133",
-                    "long": "-118.261583",
-                    "codigo_postal": "6190-268",
-                    "cidade": "Bartellview"
+                    "id": 5,
+                    "nome": "Bailey Summit",
+                    "lat": "57.856973",
+                    "lng": "-134.133893",
+                    "codigo_postal": "4098-292",
+                    "cidade": "McGlynnfort"
                 }
             },
-            "estafeta": [
-                {
-                    "id": 2,
-                    "nome": "Alba West",
-                    "email": "jdicki@yahoo.com",
-                    "telefone": "(847) 622-8427",
-                    "data_nascimento": "2011-08-30",
-                    "local_de_trabalho": "TDIStore",
-                    "tipo_id": 2,
-                    "supervisor_id": 1,
-                    "pivot": {
-                        "encomenda_id": 19,
-                        "user_id": 2
-                    }
-                }
-            ],
+            "cliente": {
+                "id": 1,
+                "nome": "Miss Makayla Armstrong",
+                "email": "emie.lind@gmail.com",
+                "telefone": "1-327-930-5597 x12559"
+            },
             "href": {
                 "cliente": "http:\/\/localhost\/api\/clientes\/1",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/1"
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/8"
             }
         }
     ],
@@ -1472,100 +1468,92 @@ fetch(url, {
     "data": [
         {
             "id": 1,
-            "numero_encomenda": 843,
-            "data_estimada": "2005-09-10 13:32:21",
-            "data_de_entrega": "2017-07-12 12:41:57",
-            "data_de_levantamento": "1976-02-18 20:10:26",
-            "data_de_entrada": "1981-08-20 03:09:05",
-            "data_de_entrega_pretendida": "1999-05-13 13:13:07",
-            "tempo_limite_de_levantamento": "1978-04-17 19:15:52",
-            "estado_encomenda": 0,
-            "temperatura": "9",
-            "observacoes": "I like being that person, I'll come up: if not, I'll stay down here till I'm somebody else\"--but, oh dear!' cried Alice, jumping up in spite of all the first really clever thing the King said to.",
+            "data_de_entrega": "1972-01-15 15:08:37",
+            "data_de_levantamento": "1975-04-25 03:13:05",
+            "data_de_entrada_no_sistema": "1970-10-07 05:06:11",
+            "data_de_entrega_pretendida": "2002-01-26 15:29:01",
+            "tempo_limite_de_levantamento": "1987-01-03 20:25:36",
+            "estado_encomenda": 1,
+            "temperatura": "7.8",
+            "observacoes": "An obstacle that came between Him, and ourselves, and it. Don't let him know she liked them best, For this must be growing small again.' She got up and said, 'It WAS a narrow escape!' said Alice.",
             "tamanho": "S",
-            "localizacao": "Melisa Fort",
-            "cliente": {
-                "id": 4,
-                "nome": "Mr. Anthony McClure IV",
-                "email": "balistreri.liam@yahoo.com",
-                "telefone": "831-892-9556"
-            },
+            "cliente_id": 9,
             "estafeta": [
                 {
-                    "id": 4,
-                    "nome": "Jackson Russel I",
-                    "email": "hackett.barton@hotmail.com",
-                    "telefone": "468-744-7469",
-                    "data_nascimento": "1998-10-23",
+                    "id": 3,
+                    "nome": "Dr. Otto Conn",
+                    "email": "khaag@gmail.com",
+                    "telefone": "(736) 618-4189",
+                    "data_nascimento": "1991-10-08",
                     "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?42179",
                     "tipo_id": 2,
                     "supervisor_id": 1,
                     "pivot": {
                         "encomenda_id": 1,
-                        "user_id": 4
+                        "user_id": 3
                     }
                 }
             ],
             "cacifo": {
-                "id": 12,
-                "numero": 175,
-                "temperatura": "0.4",
-                "codigo": "kZxUceP0Vi",
-                "tamanho_id": 3,
-                "estado_id": 1,
-                "localizacao_id": 4,
+                "id": 5,
+                "numero": 219,
+                "temperatura": "4.9",
+                "codigo": "ggNPk_",
+                "tamanho_id": 4,
+                "estado_id": 2,
+                "localizacao_id": 5,
                 "tamanho": {
-                    "id": 3,
-                    "tamanho": "XL"
+                    "id": 4,
+                    "tamanho": "S"
                 },
                 "estado": {
-                    "id": 1,
+                    "id": 2,
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 4,
-                    "nome": "Jillian Drive",
-                    "lat": "-87.531133",
-                    "long": "-118.261583",
-                    "codigo_postal": "6190-268",
-                    "cidade": "Bartellview"
+                    "id": 5,
+                    "nome": "Bailey Summit",
+                    "lat": "57.856973",
+                    "lng": "-134.133893",
+                    "codigo_postal": "4098-292",
+                    "cidade": "McGlynnfort"
                 }
+            },
+            "cliente": {
+                "id": 9,
+                "nome": "Mr. Elton Parker",
+                "email": "julius.durgan@gmail.com",
+                "telefone": "(474) 745-8921 x07532"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/encomendas\/1",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/12",
-                "cliente": "http:\/\/localhost\/api\/clientes\/4"
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/5",
+                "cliente": "http:\/\/localhost\/api\/clientes\/9"
             }
         },
         {
             "id": 2,
-            "numero_encomenda": 934,
-            "data_estimada": "1973-02-12 03:04:52",
-            "data_de_entrega": "2012-04-17 08:23:15",
-            "data_de_levantamento": "1974-08-12 18:54:17",
-            "data_de_entrada": "1971-01-18 02:25:53",
-            "data_de_entrega_pretendida": "1976-04-19 11:42:35",
-            "tempo_limite_de_levantamento": "2016-02-26 09:12:57",
-            "estado_encomenda": 1,
-            "temperatura": "2.4",
-            "observacoes": "I can go back and see after some executions I have to whisper a hint to Time, and round goes the clock in a pleased tone. 'Pray don't trouble yourself to say than his first speech. 'You should learn.",
-            "tamanho": "M",
-            "localizacao": "Schinner Heights",
-            "cliente": {
-                "id": 9,
-                "nome": "Sophia DuBuque V",
-                "email": "adams.bria@yahoo.com",
-                "telefone": "(587) 916-4443"
-            },
+            "data_de_entrega": "1998-03-10 15:55:47",
+            "data_de_levantamento": "2010-04-06 10:15:59",
+            "data_de_entrada_no_sistema": "1972-11-29 18:48:38",
+            "data_de_entrega_pretendida": "1974-04-18 19:57:52",
+            "tempo_limite_de_levantamento": "1974-07-03 22:57:56",
+            "estado_encomenda": 0,
+            "temperatura": "4.7",
+            "observacoes": "Duchess: 'flamingoes and mustard both bite. And the Eaglet bent down its head to keep herself from being run over; and the party were placed along the passage into the teapot. 'At any rate I'll.",
+            "tamanho": "XL",
+            "cliente_id": 6,
             "estafeta": [
                 {
                     "id": 5,
-                    "nome": "Giovanny Pollich Sr.",
-                    "email": "koepp.tobin@hotmail.com",
-                    "telefone": "1-578-581-4024 x51078",
-                    "data_nascimento": "2000-03-27",
+                    "nome": "Terrence Bruen",
+                    "email": "bauch.lucio@gmail.com",
+                    "telefone": "1-824-825-6999",
+                    "data_nascimento": "1989-09-30",
                     "local_de_trabalho": "TDIStore",
-                    "tipo_id": 1,
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?69970",
+                    "tipo_id": 2,
                     "supervisor_id": 1,
                     "pivot": {
                         "encomenda_id": 2,
@@ -1574,199 +1562,196 @@ fetch(url, {
                 }
             ],
             "cacifo": {
-                "id": 16,
-                "numero": 389,
-                "temperatura": "7.2",
-                "codigo": "oKnUDg",
-                "tamanho_id": 3,
-                "estado_id": 1,
-                "localizacao_id": 5,
+                "id": 12,
+                "numero": 155,
+                "temperatura": "5",
+                "codigo": "DlzYf",
+                "tamanho_id": 4,
+                "estado_id": 2,
+                "localizacao_id": 1,
                 "tamanho": {
-                    "id": 3,
-                    "tamanho": "XL"
+                    "id": 4,
+                    "tamanho": "S"
                 },
                 "estado": {
-                    "id": 1,
+                    "id": 2,
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 5,
-                    "nome": "Yundt Brooks",
-                    "lat": "16.344016",
-                    "long": "-152.390071",
-                    "codigo_postal": "4875-698",
-                    "cidade": "Port Hettieburgh"
+                    "id": 1,
+                    "nome": "Quigley View",
+                    "lat": "-15.107306",
+                    "lng": "25.399467",
+                    "codigo_postal": "2525-638",
+                    "cidade": "South Justenberg"
                 }
+            },
+            "cliente": {
+                "id": 6,
+                "nome": "Dr. Concepcion Kub",
+                "email": "jamir53@yahoo.com",
+                "telefone": "+1-331-546-1911"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/encomendas\/2",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/16",
-                "cliente": "http:\/\/localhost\/api\/clientes\/9"
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/12",
+                "cliente": "http:\/\/localhost\/api\/clientes\/6"
             }
         },
         {
             "id": 3,
-            "numero_encomenda": 285,
-            "data_estimada": "1970-03-04 10:31:54",
-            "data_de_entrega": "1971-12-04 09:41:10",
-            "data_de_levantamento": "2004-02-20 11:30:06",
-            "data_de_entrada": "1975-12-23 21:19:27",
-            "data_de_entrega_pretendida": "1980-11-13 12:39:58",
-            "tempo_limite_de_levantamento": "2007-03-10 17:40:27",
+            "data_de_entrega": "1977-05-20 20:16:52",
+            "data_de_levantamento": "2018-03-18 19:32:06",
+            "data_de_entrada_no_sistema": "1978-01-27 21:04:16",
+            "data_de_entrega_pretendida": "1977-12-05 00:05:13",
+            "tempo_limite_de_levantamento": "1974-01-04 10:08:52",
             "estado_encomenda": 0,
-            "temperatura": "7.9",
-            "observacoes": "Hatter. 'Stolen!' the King hastily said, and went on again: 'Twenty-four hours, I THINK; or is it I can't see you?' She was a bright idea came into Alice's shoulder as he spoke, and added with a.",
-            "tamanho": "S",
-            "localizacao": "Garry Shoals",
-            "cliente": {
-                "id": 7,
-                "nome": "Johnnie Marquardt",
-                "email": "hand.nelson@hotmail.com",
-                "telefone": "+1 (503) 789-7718"
-            },
+            "temperatura": "4.5",
+            "observacoes": "Rabbit in a long, low hall, which was immediately suppressed by the end of your nose-- What made you so awfully clever?' 'I have answered three questions, and that he had taken advantage of the.",
+            "tamanho": "XL",
+            "cliente_id": 10,
             "estafeta": [
                 {
-                    "id": 3,
-                    "nome": "Carey Borer II",
-                    "email": "kolson@gmail.com",
-                    "telefone": "(675) 748-0997 x5822",
-                    "data_nascimento": "1978-03-09",
+                    "id": 2,
+                    "nome": "Dr. Randal Sipes",
+                    "email": "daren03@yahoo.com",
+                    "telefone": "568.365.0304 x913",
+                    "data_nascimento": "2017-12-01",
                     "local_de_trabalho": "TDIStore",
-                    "tipo_id": 2,
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?36511",
+                    "tipo_id": 1,
                     "supervisor_id": 1,
                     "pivot": {
                         "encomenda_id": 3,
-                        "user_id": 3
-                    }
-                }
-            ],
-            "cacifo": {
-                "id": 9,
-                "numero": 306,
-                "temperatura": "1.1",
-                "codigo": "oRVhp",
-                "tamanho_id": 2,
-                "estado_id": 1,
-                "localizacao_id": 2,
-                "tamanho": {
-                    "id": 2,
-                    "tamanho": "XL"
-                },
-                "estado": {
-                    "id": 1,
-                    "estado": "Disponivel"
-                },
-                "localizacao": {
-                    "id": 2,
-                    "nome": "Clemmie Village",
-                    "lat": "-77.233379",
-                    "long": "59.094078",
-                    "codigo_postal": "7185-244",
-                    "cidade": "Feilborough"
-                }
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/3",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/9",
-                "cliente": "http:\/\/localhost\/api\/clientes\/7"
-            }
-        },
-        {
-            "id": 4,
-            "numero_encomenda": 326,
-            "data_estimada": "2010-06-15 02:07:58",
-            "data_de_entrega": "1979-04-24 11:06:07",
-            "data_de_levantamento": "2004-04-14 05:24:43",
-            "data_de_entrada": "2017-05-03 13:55:03",
-            "data_de_entrega_pretendida": "2005-12-23 01:19:32",
-            "tempo_limite_de_levantamento": "2011-01-21 08:37:13",
-            "estado_encomenda": 1,
-            "temperatura": "4.3",
-            "observacoes": "She stretched herself up and saying, 'Thank you, sir, for your interesting story,' but she had this fit) An obstacle that came between Him, and ourselves, and it. Don't let me hear the very tones of.",
-            "tamanho": "S",
-            "localizacao": "Rosenbaum Street",
-            "cliente": {
-                "id": 10,
-                "nome": "Cortez Oberbrunner",
-                "email": "beer.izaiah@yahoo.com",
-                "telefone": "(585) 852-7106 x491"
-            },
-            "estafeta": [
-                {
-                    "id": 2,
-                    "nome": "Alba West",
-                    "email": "jdicki@yahoo.com",
-                    "telefone": "(847) 622-8427",
-                    "data_nascimento": "2011-08-30",
-                    "local_de_trabalho": "TDIStore",
-                    "tipo_id": 2,
-                    "supervisor_id": 1,
-                    "pivot": {
-                        "encomenda_id": 4,
                         "user_id": 2
                     }
                 }
             ],
             "cacifo": {
-                "id": 14,
-                "numero": 489,
-                "temperatura": "0",
-                "codigo": "PpGlnLf",
-                "tamanho_id": 2,
-                "estado_id": 1,
-                "localizacao_id": 5,
+                "id": 9,
+                "numero": 22,
+                "temperatura": "0.4",
+                "codigo": "Ku3D3XkM8M",
+                "tamanho_id": 1,
+                "estado_id": 2,
+                "localizacao_id": 2,
                 "tamanho": {
-                    "id": 2,
-                    "tamanho": "XL"
+                    "id": 1,
+                    "tamanho": "M"
                 },
                 "estado": {
-                    "id": 1,
+                    "id": 2,
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 5,
-                    "nome": "Yundt Brooks",
-                    "lat": "16.344016",
-                    "long": "-152.390071",
-                    "codigo_postal": "4875-698",
-                    "cidade": "Port Hettieburgh"
+                    "id": 2,
+                    "nome": "Consuelo Greens",
+                    "lat": "60.28329",
+                    "lng": "88.144685",
+                    "codigo_postal": "6443-878",
+                    "cidade": "Port Janetfurt"
                 }
             },
+            "cliente": {
+                "id": 10,
+                "nome": "Howard Kessler",
+                "email": "abe83@gmail.com",
+                "telefone": "+1-274-312-4465"
+            },
             "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/4",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/14",
+                "link": "http:\/\/localhost\/api\/encomendas\/3",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/9",
                 "cliente": "http:\/\/localhost\/api\/clientes\/10"
             }
         },
         {
-            "id": 5,
-            "numero_encomenda": 419,
-            "data_estimada": "2003-09-01 14:40:20",
-            "data_de_entrega": "1978-12-27 11:16:16",
-            "data_de_levantamento": "1983-02-15 06:05:49",
-            "data_de_entrada": "2004-12-11 05:28:31",
-            "data_de_entrega_pretendida": "2007-05-10 10:48:47",
-            "tempo_limite_de_levantamento": "1973-10-11 14:04:17",
+            "id": 4,
+            "data_de_entrega": "2012-07-12 01:40:14",
+            "data_de_levantamento": "2012-08-18 19:04:19",
+            "data_de_entrada_no_sistema": "2008-08-21 09:21:10",
+            "data_de_entrega_pretendida": "1996-05-30 13:32:48",
+            "tempo_limite_de_levantamento": "2018-01-29 22:12:14",
             "estado_encomenda": 1,
-            "temperatura": "11.6",
-            "observacoes": "Alice think it would make with the tea,' the Hatter grumbled: 'you shouldn't have put it in a voice outside, and stopped to listen. 'Mary Ann! Mary Ann!' said the Gryphon. 'I've forgotten the.",
+            "temperatura": "2.5",
+            "observacoes": "While the Duchess said in a dreamy sort of people live about here?' 'In THAT direction,' the Cat went on, 'if you don't know what \"it\" means well enough, when I was going off into a butterfly, I.",
             "tamanho": "L",
-            "localizacao": "Leone Highway",
-            "cliente": {
-                "id": 4,
-                "nome": "Mr. Anthony McClure IV",
-                "email": "balistreri.liam@yahoo.com",
-                "telefone": "831-892-9556"
+            "cliente_id": 1,
+            "estafeta": [
+                {
+                    "id": 4,
+                    "nome": "Moses Wiegand",
+                    "email": "keanu.christiansen@hotmail.com",
+                    "telefone": "230-326-5987 x54763",
+                    "data_nascimento": "1983-04-04",
+                    "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?46198",
+                    "tipo_id": 1,
+                    "supervisor_id": 1,
+                    "pivot": {
+                        "encomenda_id": 4,
+                        "user_id": 4
+                    }
+                }
+            ],
+            "cacifo": {
+                "id": 16,
+                "numero": 422,
+                "temperatura": "10.7",
+                "codigo": "WWCrki",
+                "tamanho_id": 3,
+                "estado_id": 2,
+                "localizacao_id": 1,
+                "tamanho": {
+                    "id": 3,
+                    "tamanho": "M"
+                },
+                "estado": {
+                    "id": 2,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 1,
+                    "nome": "Quigley View",
+                    "lat": "-15.107306",
+                    "lng": "25.399467",
+                    "codigo_postal": "2525-638",
+                    "cidade": "South Justenberg"
+                }
             },
+            "cliente": {
+                "id": 1,
+                "nome": "Miss Makayla Armstrong",
+                "email": "emie.lind@gmail.com",
+                "telefone": "1-327-930-5597 x12559"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/4",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/16",
+                "cliente": "http:\/\/localhost\/api\/clientes\/1"
+            }
+        },
+        {
+            "id": 5,
+            "data_de_entrega": "1978-09-20 08:50:52",
+            "data_de_levantamento": "2004-06-02 09:59:11",
+            "data_de_entrada_no_sistema": "2013-04-02 15:57:01",
+            "data_de_entrega_pretendida": "1991-03-11 11:10:37",
+            "tempo_limite_de_levantamento": "1986-11-30 00:10:00",
+            "estado_encomenda": 0,
+            "temperatura": "7",
+            "observacoes": "YET,' she said to herself 'It's the Cheshire Cat: now I shall be late!' (when she thought it over here,' said the Dodo solemnly, rising to its feet, ran round the court was in the shade: however.",
+            "tamanho": "M",
+            "cliente_id": 9,
             "estafeta": [
                 {
                     "id": 8,
-                    "nome": "Rahul Welch",
-                    "email": "lesch.emiliano@gmail.com",
-                    "telefone": "(315) 237-6911 x338",
-                    "data_nascimento": "2014-07-04",
+                    "nome": "Neoma Lesch",
+                    "email": "nicklaus12@hotmail.com",
+                    "telefone": "+1 (340) 939-3293",
+                    "data_nascimento": "1997-03-25",
                     "local_de_trabalho": "TDIStore",
-                    "tipo_id": 1,
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?21223",
+                    "tipo_id": 2,
                     "supervisor_id": 1,
                     "pivot": {
                         "encomenda_id": 5,
@@ -1775,82 +1760,81 @@ fetch(url, {
                 }
             ],
             "cacifo": {
-                "id": 19,
-                "numero": 287,
-                "temperatura": "0.8",
-                "codigo": "eB-T7VzYH",
+                "id": 12,
+                "numero": 155,
+                "temperatura": "5",
+                "codigo": "DlzYf",
                 "tamanho_id": 4,
-                "estado_id": 1,
-                "localizacao_id": 4,
+                "estado_id": 2,
+                "localizacao_id": 1,
                 "tamanho": {
                     "id": 4,
-                    "tamanho": "M"
+                    "tamanho": "S"
                 },
                 "estado": {
-                    "id": 1,
+                    "id": 2,
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 4,
-                    "nome": "Jillian Drive",
-                    "lat": "-87.531133",
-                    "long": "-118.261583",
-                    "codigo_postal": "6190-268",
-                    "cidade": "Bartellview"
+                    "id": 1,
+                    "nome": "Quigley View",
+                    "lat": "-15.107306",
+                    "lng": "25.399467",
+                    "codigo_postal": "2525-638",
+                    "cidade": "South Justenberg"
                 }
+            },
+            "cliente": {
+                "id": 9,
+                "nome": "Mr. Elton Parker",
+                "email": "julius.durgan@gmail.com",
+                "telefone": "(474) 745-8921 x07532"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/encomendas\/5",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/19",
-                "cliente": "http:\/\/localhost\/api\/clientes\/4"
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/12",
+                "cliente": "http:\/\/localhost\/api\/clientes\/9"
             }
         },
         {
             "id": 6,
-            "numero_encomenda": 224,
-            "data_estimada": "2017-05-09 05:13:47",
-            "data_de_entrega": "2005-09-19 19:28:31",
-            "data_de_levantamento": "1999-03-08 09:52:37",
-            "data_de_entrada": "2012-04-30 04:26:21",
-            "data_de_entrega_pretendida": "1991-03-28 17:15:44",
-            "tempo_limite_de_levantamento": "2014-05-06 18:35:56",
+            "data_de_entrega": "1983-10-17 04:58:34",
+            "data_de_levantamento": "2017-03-27 20:27:30",
+            "data_de_entrada_no_sistema": "2014-05-07 06:05:10",
+            "data_de_entrega_pretendida": "1974-05-01 23:59:07",
+            "tempo_limite_de_levantamento": "1989-03-06 09:09:28",
             "estado_encomenda": 0,
-            "temperatura": "5",
-            "observacoes": "March Hare. Alice was very fond of pretending to be no doubt that it would feel with all speed back to the little door into that lovely garden. I think you'd better leave off,' said the Gryphon.",
-            "tamanho": "M",
-            "localizacao": "Christa Stream",
-            "cliente": {
-                "id": 2,
-                "nome": "Blanca Langosh",
-                "email": "catharine79@hotmail.com",
-                "telefone": "240.765.3383"
-            },
+            "temperatura": "0.2",
+            "observacoes": "She had not gone (We know it was certainly too much frightened to say \"HOW DOTH THE LITTLE BUSY BEE,\" but it had finished this short speech, they all spoke at once, and ran the faster, while more.",
+            "tamanho": "L",
+            "cliente_id": 3,
             "estafeta": [
                 {
-                    "id": 6,
-                    "nome": "Tristin Hyatt",
-                    "email": "luigi69@gmail.com",
-                    "telefone": "+1-671-642-7240",
-                    "data_nascimento": "1989-06-20",
+                    "id": 1,
+                    "nome": "Gudrun Kris",
+                    "email": "rhett.witting@yahoo.com",
+                    "telefone": "887-667-9111 x942",
+                    "data_nascimento": "2001-06-30",
                     "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?21521",
                     "tipo_id": 2,
                     "supervisor_id": 1,
                     "pivot": {
                         "encomenda_id": 6,
-                        "user_id": 6
+                        "user_id": 1
                     }
                 }
             ],
             "cacifo": {
-                "id": 17,
-                "numero": 268,
-                "temperatura": "9.3",
-                "codigo": "X9XjY5RjG8",
-                "tamanho_id": 3,
+                "id": 15,
+                "numero": 144,
+                "temperatura": "4.6",
+                "codigo": "DX8ei78R",
+                "tamanho_id": 2,
                 "estado_id": 2,
-                "localizacao_id": 2,
+                "localizacao_id": 4,
                 "tamanho": {
-                    "id": 3,
+                    "id": 2,
                     "tamanho": "XL"
                 },
                 "estado": {
@@ -1858,48 +1842,47 @@ fetch(url, {
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 2,
-                    "nome": "Clemmie Village",
-                    "lat": "-77.233379",
-                    "long": "59.094078",
-                    "codigo_postal": "7185-244",
-                    "cidade": "Feilborough"
+                    "id": 4,
+                    "nome": "Huel Green",
+                    "lat": "64.660128",
+                    "lng": "139.431751",
+                    "codigo_postal": "2501-870",
+                    "cidade": "Marquardtton"
                 }
+            },
+            "cliente": {
+                "id": 3,
+                "nome": "Ruby Harris",
+                "email": "haley.caitlyn@gmail.com",
+                "telefone": "517-219-2699"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/encomendas\/6",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/17",
-                "cliente": "http:\/\/localhost\/api\/clientes\/2"
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/15",
+                "cliente": "http:\/\/localhost\/api\/clientes\/3"
             }
         },
         {
             "id": 7,
-            "numero_encomenda": 291,
-            "data_estimada": "1979-09-09 14:53:30",
-            "data_de_entrega": "1989-04-06 23:08:14",
-            "data_de_levantamento": "1972-06-04 04:44:06",
-            "data_de_entrada": "2001-12-20 09:53:09",
-            "data_de_entrega_pretendida": "2004-03-20 13:40:20",
-            "tempo_limite_de_levantamento": "1973-06-04 16:37:11",
+            "data_de_entrega": "1989-10-24 20:17:03",
+            "data_de_levantamento": "1993-02-05 03:25:25",
+            "data_de_entrada_no_sistema": "1995-11-19 23:30:26",
+            "data_de_entrega_pretendida": "1975-07-06 20:18:50",
+            "tempo_limite_de_levantamento": "1983-08-19 22:57:39",
             "estado_encomenda": 0,
-            "temperatura": "9.2",
-            "observacoes": "Mock Turtle yawned and shut his eyes.--'Tell her about the temper of your flamingo. Shall I try the thing yourself, some winter day, I will tell you his history,' As they walked off together. Alice.",
-            "tamanho": "M",
-            "localizacao": "Elvis Mills",
-            "cliente": {
-                "id": 9,
-                "nome": "Sophia DuBuque V",
-                "email": "adams.bria@yahoo.com",
-                "telefone": "(587) 916-4443"
-            },
+            "temperatura": "10.1",
+            "observacoes": "Alice loudly. 'The idea of having the sentence first!' 'Hold your tongue!' added the Hatter, 'or you'll be asleep again before it's done.' 'Once upon a heap of sticks and dry leaves, and the whole.",
+            "tamanho": "L",
+            "cliente_id": 3,
             "estafeta": [
                 {
                     "id": 6,
-                    "nome": "Tristin Hyatt",
-                    "email": "luigi69@gmail.com",
-                    "telefone": "+1-671-642-7240",
-                    "data_nascimento": "1989-06-20",
+                    "nome": "Mrs. Mariane Rogahn",
+                    "email": "libbie.adams@yahoo.com",
+                    "telefone": "393-555-4146",
+                    "data_nascimento": "2007-12-02",
                     "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?26826",
                     "tipo_id": 2,
                     "supervisor_id": 1,
                     "pivot": {
@@ -1909,82 +1892,81 @@ fetch(url, {
                 }
             ],
             "cacifo": {
-                "id": 16,
-                "numero": 389,
-                "temperatura": "7.2",
-                "codigo": "oKnUDg",
-                "tamanho_id": 3,
+                "id": 2,
+                "numero": 422,
+                "temperatura": "4",
+                "codigo": "LaY_34W",
+                "tamanho_id": 1,
                 "estado_id": 1,
-                "localizacao_id": 5,
+                "localizacao_id": 1,
                 "tamanho": {
-                    "id": 3,
-                    "tamanho": "XL"
+                    "id": 1,
+                    "tamanho": "M"
                 },
                 "estado": {
                     "id": 1,
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 5,
-                    "nome": "Yundt Brooks",
-                    "lat": "16.344016",
-                    "long": "-152.390071",
-                    "codigo_postal": "4875-698",
-                    "cidade": "Port Hettieburgh"
+                    "id": 1,
+                    "nome": "Quigley View",
+                    "lat": "-15.107306",
+                    "lng": "25.399467",
+                    "codigo_postal": "2525-638",
+                    "cidade": "South Justenberg"
                 }
+            },
+            "cliente": {
+                "id": 3,
+                "nome": "Ruby Harris",
+                "email": "haley.caitlyn@gmail.com",
+                "telefone": "517-219-2699"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/encomendas\/7",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/16",
-                "cliente": "http:\/\/localhost\/api\/clientes\/9"
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/2",
+                "cliente": "http:\/\/localhost\/api\/clientes\/3"
             }
         },
         {
             "id": 8,
-            "numero_encomenda": 304,
-            "data_estimada": "1972-12-09 17:21:47",
-            "data_de_entrega": "1991-10-06 06:49:21",
-            "data_de_levantamento": "1971-03-05 07:25:07",
-            "data_de_entrada": "1999-06-07 15:01:32",
-            "data_de_entrega_pretendida": "1972-02-24 11:51:15",
-            "tempo_limite_de_levantamento": "1999-02-25 08:31:41",
+            "data_de_entrega": "1979-11-03 01:41:30",
+            "data_de_levantamento": "1974-06-09 02:57:05",
+            "data_de_entrada_no_sistema": "1997-10-01 22:12:15",
+            "data_de_entrega_pretendida": "2011-12-24 07:30:37",
+            "tempo_limite_de_levantamento": "2014-06-04 11:38:32",
             "estado_encomenda": 0,
-            "temperatura": "7",
-            "observacoes": "Hatter. 'Nor I,' said the Cat. 'Do you play croquet with the next witness.' And he got up and straightening itself out again, and that's very like having a game of croquet she was shrinking rapidly.",
-            "tamanho": "S",
-            "localizacao": "Christiana Keys",
-            "cliente": {
-                "id": 1,
-                "nome": "Colten Murazik",
-                "email": "ila.zulauf@yahoo.com",
-                "telefone": "+1 (742) 299-0224"
-            },
+            "temperatura": "10.1",
+            "observacoes": "Queen said to the Mock Turtle, capering wildly about. 'Change lobsters again!' yelled the Gryphon said, in a minute, trying to touch her. 'Poor little thing!' said the Cat, as soon as she ran; but.",
+            "tamanho": "XL",
+            "cliente_id": 6,
             "estafeta": [
                 {
-                    "id": 3,
-                    "nome": "Carey Borer II",
-                    "email": "kolson@gmail.com",
-                    "telefone": "(675) 748-0997 x5822",
-                    "data_nascimento": "1978-03-09",
+                    "id": 1,
+                    "nome": "Gudrun Kris",
+                    "email": "rhett.witting@yahoo.com",
+                    "telefone": "887-667-9111 x942",
+                    "data_nascimento": "2001-06-30",
                     "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?21521",
                     "tipo_id": 2,
                     "supervisor_id": 1,
                     "pivot": {
                         "encomenda_id": 8,
-                        "user_id": 3
+                        "user_id": 1
                     }
                 }
             ],
             "cacifo": {
-                "id": 10,
-                "numero": 152,
-                "temperatura": "10.1",
-                "codigo": "LT9QtVhla",
-                "tamanho_id": 4,
+                "id": 11,
+                "numero": 287,
+                "temperatura": "6.9",
+                "codigo": "mp8umRVJp",
+                "tamanho_id": 3,
                 "estado_id": 2,
-                "localizacao_id": 4,
+                "localizacao_id": 5,
                 "tamanho": {
-                    "id": 4,
+                    "id": 3,
                     "tamanho": "M"
                 },
                 "estado": {
@@ -1992,116 +1974,114 @@ fetch(url, {
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 4,
-                    "nome": "Jillian Drive",
-                    "lat": "-87.531133",
-                    "long": "-118.261583",
-                    "codigo_postal": "6190-268",
-                    "cidade": "Bartellview"
+                    "id": 5,
+                    "nome": "Bailey Summit",
+                    "lat": "57.856973",
+                    "lng": "-134.133893",
+                    "codigo_postal": "4098-292",
+                    "cidade": "McGlynnfort"
                 }
+            },
+            "cliente": {
+                "id": 6,
+                "nome": "Dr. Concepcion Kub",
+                "email": "jamir53@yahoo.com",
+                "telefone": "+1-331-546-1911"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/encomendas\/8",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/10",
-                "cliente": "http:\/\/localhost\/api\/clientes\/1"
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/11",
+                "cliente": "http:\/\/localhost\/api\/clientes\/6"
             }
         },
         {
             "id": 9,
-            "numero_encomenda": 801,
-            "data_estimada": "2015-12-14 07:20:38",
-            "data_de_entrega": "2003-04-04 17:24:51",
-            "data_de_levantamento": "2012-07-30 21:44:47",
-            "data_de_entrada": "2008-06-13 16:52:00",
-            "data_de_entrega_pretendida": "1990-04-24 01:24:39",
-            "tempo_limite_de_levantamento": "2012-08-19 14:24:04",
+            "data_de_entrega": "2011-03-07 18:40:04",
+            "data_de_levantamento": "1980-07-14 23:58:47",
+            "data_de_entrada_no_sistema": "1995-01-02 20:59:46",
+            "data_de_entrega_pretendida": "2006-11-06 18:25:03",
+            "tempo_limite_de_levantamento": "2007-02-21 12:54:08",
             "estado_encomenda": 0,
-            "temperatura": "3.6",
-            "observacoes": "Alice could see it quite plainly through the neighbouring pool--she could hear the name 'Alice!' CHAPTER XII. Alice's Evidence 'Here!' cried Alice, with a kind of serpent, that's all the time he was.",
-            "tamanho": "M",
-            "localizacao": "Crona Route",
-            "cliente": {
-                "id": 9,
-                "nome": "Sophia DuBuque V",
-                "email": "adams.bria@yahoo.com",
-                "telefone": "(587) 916-4443"
-            },
+            "temperatura": "3.5",
+            "observacoes": "White Rabbit read:-- 'They told me he was going off into a sort of mixed flavour of cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered toast,) she very seldom followed it), and.",
+            "tamanho": "XL",
+            "cliente_id": 6,
             "estafeta": [
                 {
-                    "id": 1,
-                    "nome": "Lottie Hahn DDS",
-                    "email": "rollin87@yahoo.com",
-                    "telefone": "718-521-3209",
-                    "data_nascimento": "1977-06-04",
+                    "id": 4,
+                    "nome": "Moses Wiegand",
+                    "email": "keanu.christiansen@hotmail.com",
+                    "telefone": "230-326-5987 x54763",
+                    "data_nascimento": "1983-04-04",
                     "local_de_trabalho": "TDIStore",
-                    "tipo_id": 2,
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?46198",
+                    "tipo_id": 1,
                     "supervisor_id": 1,
                     "pivot": {
                         "encomenda_id": 9,
-                        "user_id": 1
+                        "user_id": 4
                     }
                 }
             ],
             "cacifo": {
-                "id": 5,
-                "numero": 138,
-                "temperatura": "5.5",
-                "codigo": "iM3nFv0",
-                "tamanho_id": 1,
+                "id": 19,
+                "numero": 326,
+                "temperatura": "10.7",
+                "codigo": "CM6_xnCc",
+                "tamanho_id": 4,
                 "estado_id": 2,
-                "localizacao_id": 4,
+                "localizacao_id": 2,
                 "tamanho": {
-                    "id": 1,
-                    "tamanho": "L"
+                    "id": 4,
+                    "tamanho": "S"
                 },
                 "estado": {
                     "id": 2,
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 4,
-                    "nome": "Jillian Drive",
-                    "lat": "-87.531133",
-                    "long": "-118.261583",
-                    "codigo_postal": "6190-268",
-                    "cidade": "Bartellview"
+                    "id": 2,
+                    "nome": "Consuelo Greens",
+                    "lat": "60.28329",
+                    "lng": "88.144685",
+                    "codigo_postal": "6443-878",
+                    "cidade": "Port Janetfurt"
                 }
+            },
+            "cliente": {
+                "id": 6,
+                "nome": "Dr. Concepcion Kub",
+                "email": "jamir53@yahoo.com",
+                "telefone": "+1-331-546-1911"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/encomendas\/9",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/5",
-                "cliente": "http:\/\/localhost\/api\/clientes\/9"
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/19",
+                "cliente": "http:\/\/localhost\/api\/clientes\/6"
             }
         },
         {
             "id": 10,
-            "numero_encomenda": 996,
-            "data_estimada": "1989-07-31 06:28:01",
-            "data_de_entrega": "1995-05-28 13:43:09",
-            "data_de_levantamento": "2017-07-03 16:27:43",
-            "data_de_entrada": "1978-04-06 00:02:47",
-            "data_de_entrega_pretendida": "1973-03-22 15:50:33",
-            "tempo_limite_de_levantamento": "1978-01-20 13:35:46",
+            "data_de_entrega": "1999-01-10 05:21:08",
+            "data_de_levantamento": "2008-01-08 11:48:26",
+            "data_de_entrada_no_sistema": "1988-08-31 18:31:14",
+            "data_de_entrega_pretendida": "1975-06-25 12:57:40",
+            "tempo_limite_de_levantamento": "2009-05-18 21:43:18",
             "estado_encomenda": 0,
-            "temperatura": "0.6",
-            "observacoes": "They're dreadfully fond of pretending to be managed? I suppose it were white, but there were a Duck and a large caterpillar, that was linked into hers began to say anything. 'Why,' said the Hatter.",
-            "tamanho": "M",
-            "localizacao": "Jenifer Stream",
-            "cliente": {
-                "id": 7,
-                "nome": "Johnnie Marquardt",
-                "email": "hand.nelson@hotmail.com",
-                "telefone": "+1 (503) 789-7718"
-            },
+            "temperatura": "0.1",
+            "observacoes": "Hatter trembled so, that he had to pinch it to her to speak good English); 'now I'm opening out like the Mock Turtle went on all the rest, Between yourself and me.' 'That's the first question, you.",
+            "tamanho": "S",
+            "cliente_id": 8,
             "estafeta": [
                 {
                     "id": 7,
-                    "nome": "Dr. Mark Parisian",
-                    "email": "herzog.gwendolyn@hotmail.com",
-                    "telefone": "1-586-977-5911 x67461",
-                    "data_nascimento": "1980-03-04",
+                    "nome": "Ms. Jaida Monahan DDS",
+                    "email": "okuhic@gmail.com",
+                    "telefone": "475.606.4085 x2150",
+                    "data_nascimento": "1979-03-05",
                     "local_de_trabalho": "TDIStore",
-                    "tipo_id": 2,
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?10136",
+                    "tipo_id": 1,
                     "supervisor_id": 1,
                     "pivot": {
                         "encomenda_id": 10,
@@ -2110,686 +2090,82 @@ fetch(url, {
                 }
             ],
             "cacifo": {
-                "id": 16,
-                "numero": 389,
-                "temperatura": "7.2",
-                "codigo": "oKnUDg",
+                "id": 6,
+                "numero": 339,
+                "temperatura": "8.8",
+                "codigo": "Kt__OZKKBy",
                 "tamanho_id": 3,
-                "estado_id": 1,
-                "localizacao_id": 5,
+                "estado_id": 2,
+                "localizacao_id": 4,
                 "tamanho": {
                     "id": 3,
-                    "tamanho": "XL"
+                    "tamanho": "M"
                 },
                 "estado": {
-                    "id": 1,
+                    "id": 2,
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 5,
-                    "nome": "Yundt Brooks",
-                    "lat": "16.344016",
-                    "long": "-152.390071",
-                    "codigo_postal": "4875-698",
-                    "cidade": "Port Hettieburgh"
+                    "id": 4,
+                    "nome": "Huel Green",
+                    "lat": "64.660128",
+                    "lng": "139.431751",
+                    "codigo_postal": "2501-870",
+                    "cidade": "Marquardtton"
                 }
+            },
+            "cliente": {
+                "id": 8,
+                "nome": "Dr. Hosea Walker",
+                "email": "mcclure.monte@gmail.com",
+                "telefone": "+1-383-580-1383"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/encomendas\/10",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/16",
-                "cliente": "http:\/\/localhost\/api\/clientes\/7"
-            }
-        },
-        {
-            "id": 11,
-            "numero_encomenda": 461,
-            "data_estimada": "1991-12-21 20:54:29",
-            "data_de_entrega": "1994-06-13 09:45:20",
-            "data_de_levantamento": "1973-10-21 10:58:39",
-            "data_de_entrada": "1973-11-05 01:12:23",
-            "data_de_entrega_pretendida": "1994-03-20 21:17:42",
-            "tempo_limite_de_levantamento": "1989-04-21 06:50:16",
-            "estado_encomenda": 1,
-            "temperatura": "9.4",
-            "observacoes": "I fancied that kind of serpent, that's all I can remember feeling a little different. But if I'm not the same, the next verse.' 'But about his toes?' the Mock Turtle. 'Very much indeed,' said Alice.",
-            "tamanho": "S",
-            "localizacao": "Osborne Points",
-            "cliente": {
-                "id": 2,
-                "nome": "Blanca Langosh",
-                "email": "catharine79@hotmail.com",
-                "telefone": "240.765.3383"
-            },
-            "estafeta": [
-                {
-                    "id": 3,
-                    "nome": "Carey Borer II",
-                    "email": "kolson@gmail.com",
-                    "telefone": "(675) 748-0997 x5822",
-                    "data_nascimento": "1978-03-09",
-                    "local_de_trabalho": "TDIStore",
-                    "tipo_id": 2,
-                    "supervisor_id": 1,
-                    "pivot": {
-                        "encomenda_id": 11,
-                        "user_id": 3
-                    }
-                }
-            ],
-            "cacifo": {
-                "id": 15,
-                "numero": 380,
-                "temperatura": "1.9",
-                "codigo": "0lZRd",
-                "tamanho_id": 2,
-                "estado_id": 1,
-                "localizacao_id": 5,
-                "tamanho": {
-                    "id": 2,
-                    "tamanho": "XL"
-                },
-                "estado": {
-                    "id": 1,
-                    "estado": "Disponivel"
-                },
-                "localizacao": {
-                    "id": 5,
-                    "nome": "Yundt Brooks",
-                    "lat": "16.344016",
-                    "long": "-152.390071",
-                    "codigo_postal": "4875-698",
-                    "cidade": "Port Hettieburgh"
-                }
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/11",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/15",
-                "cliente": "http:\/\/localhost\/api\/clientes\/2"
-            }
-        },
-        {
-            "id": 12,
-            "numero_encomenda": 675,
-            "data_estimada": "1974-08-26 15:26:56",
-            "data_de_entrega": "1982-02-17 13:05:10",
-            "data_de_levantamento": "1972-07-08 11:14:36",
-            "data_de_entrada": "1989-11-10 14:48:58",
-            "data_de_entrega_pretendida": "2017-04-23 17:37:24",
-            "tempo_limite_de_levantamento": "2006-03-27 01:42:14",
-            "estado_encomenda": 1,
-            "temperatura": "4.5",
-            "observacoes": "She'll get me executed, as sure as ferrets are ferrets! Where CAN I have dropped them, I wonder?' As she said to itself in a deep voice, 'What are you getting on now, my dear?' it continued, turning.",
-            "tamanho": "S",
-            "localizacao": "Kassulke Wall",
-            "cliente": {
-                "id": 5,
-                "nome": "Kayli Kessler",
-                "email": "huel.edyth@hotmail.com",
-                "telefone": "(312) 889-5261 x12095"
-            },
-            "estafeta": [
-                {
-                    "id": 8,
-                    "nome": "Rahul Welch",
-                    "email": "lesch.emiliano@gmail.com",
-                    "telefone": "(315) 237-6911 x338",
-                    "data_nascimento": "2014-07-04",
-                    "local_de_trabalho": "TDIStore",
-                    "tipo_id": 1,
-                    "supervisor_id": 1,
-                    "pivot": {
-                        "encomenda_id": 12,
-                        "user_id": 8
-                    }
-                }
-            ],
-            "cacifo": {
-                "id": 15,
-                "numero": 380,
-                "temperatura": "1.9",
-                "codigo": "0lZRd",
-                "tamanho_id": 2,
-                "estado_id": 1,
-                "localizacao_id": 5,
-                "tamanho": {
-                    "id": 2,
-                    "tamanho": "XL"
-                },
-                "estado": {
-                    "id": 1,
-                    "estado": "Disponivel"
-                },
-                "localizacao": {
-                    "id": 5,
-                    "nome": "Yundt Brooks",
-                    "lat": "16.344016",
-                    "long": "-152.390071",
-                    "codigo_postal": "4875-698",
-                    "cidade": "Port Hettieburgh"
-                }
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/12",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/15",
-                "cliente": "http:\/\/localhost\/api\/clientes\/5"
-            }
-        },
-        {
-            "id": 13,
-            "numero_encomenda": 450,
-            "data_estimada": "2017-02-11 08:27:54",
-            "data_de_entrega": "2005-12-14 04:19:45",
-            "data_de_levantamento": "1991-09-06 23:47:15",
-            "data_de_entrada": "1987-10-30 15:13:52",
-            "data_de_entrega_pretendida": "1970-11-05 04:01:11",
-            "tempo_limite_de_levantamento": "1984-08-20 01:39:58",
-            "estado_encomenda": 0,
-            "temperatura": "3.1",
-            "observacoes": "The first thing she heard a little scream, half of them--and it belongs to a mouse, you know. Come on!' 'Everybody says \"come on!\" here,' thought Alice, 'as all the things between whiles.' 'Then you.",
-            "tamanho": "S",
-            "localizacao": "Hintz Hill",
-            "cliente": {
-                "id": 9,
-                "nome": "Sophia DuBuque V",
-                "email": "adams.bria@yahoo.com",
-                "telefone": "(587) 916-4443"
-            },
-            "estafeta": [
-                {
-                    "id": 6,
-                    "nome": "Tristin Hyatt",
-                    "email": "luigi69@gmail.com",
-                    "telefone": "+1-671-642-7240",
-                    "data_nascimento": "1989-06-20",
-                    "local_de_trabalho": "TDIStore",
-                    "tipo_id": 2,
-                    "supervisor_id": 1,
-                    "pivot": {
-                        "encomenda_id": 13,
-                        "user_id": 6
-                    }
-                }
-            ],
-            "cacifo": {
-                "id": 2,
-                "numero": 446,
-                "temperatura": "10.6",
-                "codigo": "C8SYb3J9",
-                "tamanho_id": 3,
-                "estado_id": 2,
-                "localizacao_id": 3,
-                "tamanho": {
-                    "id": 3,
-                    "tamanho": "XL"
-                },
-                "estado": {
-                    "id": 2,
-                    "estado": "Disponivel"
-                },
-                "localizacao": {
-                    "id": 3,
-                    "nome": "Spinka Court",
-                    "lat": "-27.810836",
-                    "long": "167.365849",
-                    "codigo_postal": "5151-775",
-                    "cidade": "West Kennedystad"
-                }
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/13",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/2",
-                "cliente": "http:\/\/localhost\/api\/clientes\/9"
-            }
-        },
-        {
-            "id": 14,
-            "numero_encomenda": 388,
-            "data_estimada": "2012-02-04 11:22:37",
-            "data_de_entrega": "2011-06-30 00:28:14",
-            "data_de_levantamento": "1984-03-14 02:27:27",
-            "data_de_entrada": "1998-01-01 06:16:54",
-            "data_de_entrega_pretendida": "1992-11-15 04:40:00",
-            "tempo_limite_de_levantamento": "2004-10-29 01:39:34",
-            "estado_encomenda": 0,
-            "temperatura": "8.9",
-            "observacoes": "Duchess, digging her sharp little chin into Alice's shoulder as she spoke, but no result seemed to think about stopping herself before she had not got into it), and sometimes shorter, until she made.",
-            "tamanho": "M",
-            "localizacao": "Sigmund Plains",
-            "cliente": {
-                "id": 6,
-                "nome": "Jarred Grimes",
-                "email": "ashly.funk@hotmail.com",
-                "telefone": "1-270-309-3280 x1950"
-            },
-            "estafeta": [
-                {
-                    "id": 1,
-                    "nome": "Lottie Hahn DDS",
-                    "email": "rollin87@yahoo.com",
-                    "telefone": "718-521-3209",
-                    "data_nascimento": "1977-06-04",
-                    "local_de_trabalho": "TDIStore",
-                    "tipo_id": 2,
-                    "supervisor_id": 1,
-                    "pivot": {
-                        "encomenda_id": 14,
-                        "user_id": 1
-                    }
-                }
-            ],
-            "cacifo": {
-                "id": 20,
-                "numero": 197,
-                "temperatura": "10.7",
-                "codigo": "5lRkyW",
-                "tamanho_id": 1,
-                "estado_id": 1,
-                "localizacao_id": 2,
-                "tamanho": {
-                    "id": 1,
-                    "tamanho": "L"
-                },
-                "estado": {
-                    "id": 1,
-                    "estado": "Disponivel"
-                },
-                "localizacao": {
-                    "id": 2,
-                    "nome": "Clemmie Village",
-                    "lat": "-77.233379",
-                    "long": "59.094078",
-                    "codigo_postal": "7185-244",
-                    "cidade": "Feilborough"
-                }
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/14",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/20",
-                "cliente": "http:\/\/localhost\/api\/clientes\/6"
-            }
-        },
-        {
-            "id": 15,
-            "numero_encomenda": 252,
-            "data_estimada": "2016-01-22 05:51:38",
-            "data_de_entrega": "1998-04-05 17:47:40",
-            "data_de_levantamento": "1974-11-15 02:15:47",
-            "data_de_entrada": "1995-01-08 09:07:32",
-            "data_de_entrega_pretendida": "2009-09-16 14:42:52",
-            "tempo_limite_de_levantamento": "1978-05-04 22:11:15",
-            "estado_encomenda": 1,
-            "temperatura": "6.2",
-            "observacoes": "After a while she was talking. Alice could hear the very middle of one! There ought to have been changed for Mabel! I'll try and say \"Who am I to do anything but sit with its wings. 'Serpent!'.",
-            "tamanho": "XL",
-            "localizacao": "Mayer Drive",
-            "cliente": {
-                "id": 8,
-                "nome": "Jarvis Senger III",
-                "email": "marquis.strosin@gmail.com",
-                "telefone": "+1-948-786-3340"
-            },
-            "estafeta": [
-                {
-                    "id": 7,
-                    "nome": "Dr. Mark Parisian",
-                    "email": "herzog.gwendolyn@hotmail.com",
-                    "telefone": "1-586-977-5911 x67461",
-                    "data_nascimento": "1980-03-04",
-                    "local_de_trabalho": "TDIStore",
-                    "tipo_id": 2,
-                    "supervisor_id": 1,
-                    "pivot": {
-                        "encomenda_id": 15,
-                        "user_id": 7
-                    }
-                }
-            ],
-            "cacifo": {
-                "id": 3,
-                "numero": 342,
-                "temperatura": "6.3",
-                "codigo": "Oz-hok_xSi",
-                "tamanho_id": 2,
-                "estado_id": 2,
-                "localizacao_id": 1,
-                "tamanho": {
-                    "id": 2,
-                    "tamanho": "XL"
-                },
-                "estado": {
-                    "id": 2,
-                    "estado": "Disponivel"
-                },
-                "localizacao": {
-                    "id": 1,
-                    "nome": "Koepp Mews",
-                    "lat": "63.732159",
-                    "long": "94.351739",
-                    "codigo_postal": "9716-814",
-                    "cidade": "Mayebury"
-                }
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/15",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/3",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/6",
                 "cliente": "http:\/\/localhost\/api\/clientes\/8"
             }
         },
         {
-            "id": 16,
-            "numero_encomenda": 901,
-            "data_estimada": "1989-01-06 21:16:51",
-            "data_de_entrega": "2007-04-27 03:57:55",
-            "data_de_levantamento": "1988-03-18 00:58:17",
-            "data_de_entrada": "1975-05-02 08:10:15",
-            "data_de_entrega_pretendida": "1995-01-03 14:07:57",
-            "tempo_limite_de_levantamento": "2011-11-02 20:53:32",
+            "id": 11,
+            "data_de_entrega": "2014-10-18 07:52:51",
+            "data_de_levantamento": "1970-09-08 10:20:14",
+            "data_de_entrada_no_sistema": "1979-02-01 14:44:30",
+            "data_de_entrega_pretendida": "1996-11-07 16:46:35",
+            "tempo_limite_de_levantamento": "2010-11-22 19:41:02",
             "estado_encomenda": 1,
-            "temperatura": "2.8",
-            "observacoes": "The Footman seemed to rise like a frog; and both the hedgehogs were out of the teacups as the March Hare. 'Then it ought to have changed since her swim in the distance. 'And yet what a dear little.",
+            "temperatura": "5.5",
+            "observacoes": "I was, I shouldn't like THAT!' 'Oh, you can't take LESS,' said the Mock Turtle. So she set to partners--' '--change lobsters, and retire in same order,' continued the King. Here one of the window.",
             "tamanho": "L",
-            "localizacao": "Eldon Street",
-            "cliente": {
-                "id": 3,
-                "nome": "Roselyn Feil",
-                "email": "fritsch.estella@hotmail.com",
-                "telefone": "(968) 577-6627 x08509"
-            },
+            "cliente_id": 5,
             "estafeta": [
                 {
-                    "id": 5,
-                    "nome": "Giovanny Pollich Sr.",
-                    "email": "koepp.tobin@hotmail.com",
-                    "telefone": "1-578-581-4024 x51078",
-                    "data_nascimento": "2000-03-27",
+                    "id": 2,
+                    "nome": "Dr. Randal Sipes",
+                    "email": "daren03@yahoo.com",
+                    "telefone": "568.365.0304 x913",
+                    "data_nascimento": "2017-12-01",
                     "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?36511",
                     "tipo_id": 1,
                     "supervisor_id": 1,
                     "pivot": {
-                        "encomenda_id": 16,
-                        "user_id": 5
-                    }
-                }
-            ],
-            "cacifo": {
-                "id": 20,
-                "numero": 197,
-                "temperatura": "10.7",
-                "codigo": "5lRkyW",
-                "tamanho_id": 1,
-                "estado_id": 1,
-                "localizacao_id": 2,
-                "tamanho": {
-                    "id": 1,
-                    "tamanho": "L"
-                },
-                "estado": {
-                    "id": 1,
-                    "estado": "Disponivel"
-                },
-                "localizacao": {
-                    "id": 2,
-                    "nome": "Clemmie Village",
-                    "lat": "-77.233379",
-                    "long": "59.094078",
-                    "codigo_postal": "7185-244",
-                    "cidade": "Feilborough"
-                }
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/16",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/20",
-                "cliente": "http:\/\/localhost\/api\/clientes\/3"
-            }
-        },
-        {
-            "id": 17,
-            "numero_encomenda": 275,
-            "data_estimada": "1983-01-20 09:33:20",
-            "data_de_entrega": "1977-06-25 04:49:42",
-            "data_de_levantamento": "1983-03-12 20:32:57",
-            "data_de_entrada": "1980-01-10 11:26:29",
-            "data_de_entrega_pretendida": "2012-04-15 21:14:24",
-            "tempo_limite_de_levantamento": "1984-04-26 06:11:46",
-            "estado_encomenda": 0,
-            "temperatura": "5.4",
-            "observacoes": "There was exactly three inches high). 'But I'm not the smallest notice of them can explain it,' said Five, 'and I'll tell you his history,' As they walked off together, Alice heard the Rabbit began.",
-            "tamanho": "L",
-            "localizacao": "Dibbert Highway",
-            "cliente": {
-                "id": 9,
-                "nome": "Sophia DuBuque V",
-                "email": "adams.bria@yahoo.com",
-                "telefone": "(587) 916-4443"
-            },
-            "estafeta": [
-                {
-                    "id": 8,
-                    "nome": "Rahul Welch",
-                    "email": "lesch.emiliano@gmail.com",
-                    "telefone": "(315) 237-6911 x338",
-                    "data_nascimento": "2014-07-04",
-                    "local_de_trabalho": "TDIStore",
-                    "tipo_id": 1,
-                    "supervisor_id": 1,
-                    "pivot": {
-                        "encomenda_id": 17,
-                        "user_id": 8
-                    }
-                }
-            ],
-            "cacifo": {
-                "id": 6,
-                "numero": 492,
-                "temperatura": "0.4",
-                "codigo": "yVJZoClUP",
-                "tamanho_id": 4,
-                "estado_id": 1,
-                "localizacao_id": 4,
-                "tamanho": {
-                    "id": 4,
-                    "tamanho": "M"
-                },
-                "estado": {
-                    "id": 1,
-                    "estado": "Disponivel"
-                },
-                "localizacao": {
-                    "id": 4,
-                    "nome": "Jillian Drive",
-                    "lat": "-87.531133",
-                    "long": "-118.261583",
-                    "codigo_postal": "6190-268",
-                    "cidade": "Bartellview"
-                }
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/17",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/6",
-                "cliente": "http:\/\/localhost\/api\/clientes\/9"
-            }
-        },
-        {
-            "id": 18,
-            "numero_encomenda": 544,
-            "data_estimada": "1975-08-31 05:15:16",
-            "data_de_entrega": "2009-07-14 01:31:41",
-            "data_de_levantamento": "1980-05-25 17:47:51",
-            "data_de_entrada": "2000-08-29 19:41:23",
-            "data_de_entrega_pretendida": "1981-04-12 00:40:04",
-            "tempo_limite_de_levantamento": "1980-06-21 22:55:18",
-            "estado_encomenda": 1,
-            "temperatura": "3.2",
-            "observacoes": "Eaglet. 'I don't know one,' said Alice, who felt very lonely and low-spirited. In a little irritated at the window, she suddenly spread out her hand again, and went down to them, and then quietly.",
-            "tamanho": "L",
-            "localizacao": "Jayda Mount",
-            "cliente": {
-                "id": 3,
-                "nome": "Roselyn Feil",
-                "email": "fritsch.estella@hotmail.com",
-                "telefone": "(968) 577-6627 x08509"
-            },
-            "estafeta": [
-                {
-                    "id": 5,
-                    "nome": "Giovanny Pollich Sr.",
-                    "email": "koepp.tobin@hotmail.com",
-                    "telefone": "1-578-581-4024 x51078",
-                    "data_nascimento": "2000-03-27",
-                    "local_de_trabalho": "TDIStore",
-                    "tipo_id": 1,
-                    "supervisor_id": 1,
-                    "pivot": {
-                        "encomenda_id": 18,
-                        "user_id": 5
-                    }
-                }
-            ],
-            "cacifo": {
-                "id": 17,
-                "numero": 268,
-                "temperatura": "9.3",
-                "codigo": "X9XjY5RjG8",
-                "tamanho_id": 3,
-                "estado_id": 2,
-                "localizacao_id": 2,
-                "tamanho": {
-                    "id": 3,
-                    "tamanho": "XL"
-                },
-                "estado": {
-                    "id": 2,
-                    "estado": "Disponivel"
-                },
-                "localizacao": {
-                    "id": 2,
-                    "nome": "Clemmie Village",
-                    "lat": "-77.233379",
-                    "long": "59.094078",
-                    "codigo_postal": "7185-244",
-                    "cidade": "Feilborough"
-                }
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/18",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/17",
-                "cliente": "http:\/\/localhost\/api\/clientes\/3"
-            }
-        },
-        {
-            "id": 19,
-            "numero_encomenda": 636,
-            "data_estimada": "2018-08-27 18:05:35",
-            "data_de_entrega": "2008-07-14 07:16:38",
-            "data_de_levantamento": "2016-06-11 12:30:33",
-            "data_de_entrada": "1989-12-04 05:51:31",
-            "data_de_entrega_pretendida": "1980-04-17 14:26:21",
-            "tempo_limite_de_levantamento": "2000-02-20 03:26:57",
-            "estado_encomenda": 0,
-            "temperatura": "1.8",
-            "observacoes": "Mock Turtle said: 'advance twice, set to work throwing everything within her reach at the March Hare, 'that \"I like what I say,' the Mock Turtle sighed deeply, and began, in rather a complaining.",
-            "tamanho": "XL",
-            "localizacao": "Fritsch Spurs",
-            "cliente": {
-                "id": 1,
-                "nome": "Colten Murazik",
-                "email": "ila.zulauf@yahoo.com",
-                "telefone": "+1 (742) 299-0224"
-            },
-            "estafeta": [
-                {
-                    "id": 2,
-                    "nome": "Alba West",
-                    "email": "jdicki@yahoo.com",
-                    "telefone": "(847) 622-8427",
-                    "data_nascimento": "2011-08-30",
-                    "local_de_trabalho": "TDIStore",
-                    "tipo_id": 2,
-                    "supervisor_id": 1,
-                    "pivot": {
-                        "encomenda_id": 19,
+                        "encomenda_id": 11,
                         "user_id": 2
                     }
                 }
             ],
             "cacifo": {
                 "id": 1,
-                "numero": 185,
-                "temperatura": "5.4",
-                "codigo": "Hnig2",
+                "numero": 7,
+                "temperatura": "9.4",
+                "codigo": "Zbouy",
                 "tamanho_id": 1,
-                "estado_id": 2,
-                "localizacao_id": 4,
-                "tamanho": {
-                    "id": 1,
-                    "tamanho": "L"
-                },
-                "estado": {
-                    "id": 2,
-                    "estado": "Disponivel"
-                },
-                "localizacao": {
-                    "id": 4,
-                    "nome": "Jillian Drive",
-                    "lat": "-87.531133",
-                    "long": "-118.261583",
-                    "codigo_postal": "6190-268",
-                    "cidade": "Bartellview"
-                }
-            },
-            "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/19",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/1",
-                "cliente": "http:\/\/localhost\/api\/clientes\/1"
-            }
-        },
-        {
-            "id": 20,
-            "numero_encomenda": 36,
-            "data_estimada": "2001-04-26 07:48:58",
-            "data_de_entrega": "2009-10-03 22:21:48",
-            "data_de_levantamento": "1977-07-02 07:37:11",
-            "data_de_entrada": "1970-06-14 15:22:38",
-            "data_de_entrega_pretendida": "1972-04-09 17:50:45",
-            "tempo_limite_de_levantamento": "1993-10-20 07:18:09",
-            "estado_encomenda": 0,
-            "temperatura": "3.6",
-            "observacoes": "She felt that she wasn't a really good school,' said the King. 'It began with the Duchess, it had a consultation about this, and after a minute or two, looking for it, you may nurse it a little way.",
-            "tamanho": "M",
-            "localizacao": "Marjorie Lights",
-            "cliente": {
-                "id": 10,
-                "nome": "Cortez Oberbrunner",
-                "email": "beer.izaiah@yahoo.com",
-                "telefone": "(585) 852-7106 x491"
-            },
-            "estafeta": [
-                {
-                    "id": 4,
-                    "nome": "Jackson Russel I",
-                    "email": "hackett.barton@hotmail.com",
-                    "telefone": "468-744-7469",
-                    "data_nascimento": "1998-10-23",
-                    "local_de_trabalho": "TDIStore",
-                    "tipo_id": 2,
-                    "supervisor_id": 1,
-                    "pivot": {
-                        "encomenda_id": 20,
-                        "user_id": 4
-                    }
-                }
-            ],
-            "cacifo": {
-                "id": 17,
-                "numero": 268,
-                "temperatura": "9.3",
-                "codigo": "X9XjY5RjG8",
-                "tamanho_id": 3,
                 "estado_id": 2,
                 "localizacao_id": 2,
                 "tamanho": {
-                    "id": 3,
-                    "tamanho": "XL"
+                    "id": 1,
+                    "tamanho": "M"
                 },
                 "estado": {
                     "id": 2,
@@ -2797,200 +2173,263 @@ fetch(url, {
                 },
                 "localizacao": {
                     "id": 2,
-                    "nome": "Clemmie Village",
-                    "lat": "-77.233379",
-                    "long": "59.094078",
-                    "codigo_postal": "7185-244",
-                    "cidade": "Feilborough"
+                    "nome": "Consuelo Greens",
+                    "lat": "60.28329",
+                    "lng": "88.144685",
+                    "codigo_postal": "6443-878",
+                    "cidade": "Port Janetfurt"
                 }
             },
+            "cliente": {
+                "id": 5,
+                "nome": "Briana Wehner",
+                "email": "wayne.rohan@yahoo.com",
+                "telefone": "204.515.6221 x510"
+            },
             "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/20",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/17",
-                "cliente": "http:\/\/localhost\/api\/clientes\/10"
+                "link": "http:\/\/localhost\/api\/encomendas\/11",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/1",
+                "cliente": "http:\/\/localhost\/api\/clientes\/5"
             }
         },
         {
-            "id": 21,
-            "numero_encomenda": 297,
-            "data_estimada": "1995-07-05 08:45:46",
-            "data_de_entrega": "2003-06-11 18:29:37",
-            "data_de_levantamento": "1989-11-16 12:09:26",
-            "data_de_entrada": "1972-06-08 12:52:56",
-            "data_de_entrega_pretendida": "1994-01-20 01:09:40",
-            "tempo_limite_de_levantamento": "2013-10-02 15:05:07",
+            "id": 12,
+            "data_de_entrega": "1986-11-07 02:16:27",
+            "data_de_levantamento": "1974-11-19 23:19:22",
+            "data_de_entrada_no_sistema": "2011-02-21 22:09:40",
+            "data_de_entrega_pretendida": "1990-03-06 12:04:04",
+            "tempo_limite_de_levantamento": "2008-12-31 03:04:37",
             "estado_encomenda": 1,
-            "temperatura": "2.1",
-            "observacoes": "Alice: '--where's the Duchess?' 'Hush! Hush!' said the Dormouse, who seemed too much overcome to do it! Oh dear! I shall never get to the Cheshire Cat: now I shall have some fun now!' thought Alice.",
-            "tamanho": "XL",
-            "localizacao": "Gutmann Corner",
-            "cliente": {
-                "id": 10,
-                "nome": "Cortez Oberbrunner",
-                "email": "beer.izaiah@yahoo.com",
-                "telefone": "(585) 852-7106 x491"
-            },
+            "temperatura": "3.1",
+            "observacoes": "Dormouse followed him: the March Hare. Alice sighed wearily. 'I think I can remember feeling a little faster?\" said a sleepy voice behind her. 'Collar that Dormouse,' the Queen left off, quite out.",
+            "tamanho": "M",
+            "cliente_id": 6,
             "estafeta": [
                 {
-                    "id": 3,
-                    "nome": "Carey Borer II",
-                    "email": "kolson@gmail.com",
-                    "telefone": "(675) 748-0997 x5822",
-                    "data_nascimento": "1978-03-09",
+                    "id": 1,
+                    "nome": "Gudrun Kris",
+                    "email": "rhett.witting@yahoo.com",
+                    "telefone": "887-667-9111 x942",
+                    "data_nascimento": "2001-06-30",
                     "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?21521",
                     "tipo_id": 2,
                     "supervisor_id": 1,
                     "pivot": {
-                        "encomenda_id": 21,
-                        "user_id": 3
+                        "encomenda_id": 12,
+                        "user_id": 1
                     }
                 }
             ],
             "cacifo": {
-                "id": 13,
-                "numero": 340,
-                "temperatura": "5.9",
-                "codigo": "48P1P",
+                "id": 14,
+                "numero": 80,
+                "temperatura": "4",
+                "codigo": "sR-WGrkc",
                 "tamanho_id": 4,
-                "estado_id": 1,
-                "localizacao_id": 5,
+                "estado_id": 2,
+                "localizacao_id": 1,
                 "tamanho": {
                     "id": 4,
-                    "tamanho": "M"
+                    "tamanho": "S"
                 },
                 "estado": {
-                    "id": 1,
+                    "id": 2,
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 5,
-                    "nome": "Yundt Brooks",
-                    "lat": "16.344016",
-                    "long": "-152.390071",
-                    "codigo_postal": "4875-698",
-                    "cidade": "Port Hettieburgh"
+                    "id": 1,
+                    "nome": "Quigley View",
+                    "lat": "-15.107306",
+                    "lng": "25.399467",
+                    "codigo_postal": "2525-638",
+                    "cidade": "South Justenberg"
                 }
             },
+            "cliente": {
+                "id": 6,
+                "nome": "Dr. Concepcion Kub",
+                "email": "jamir53@yahoo.com",
+                "telefone": "+1-331-546-1911"
+            },
             "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/21",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/13",
-                "cliente": "http:\/\/localhost\/api\/clientes\/10"
+                "link": "http:\/\/localhost\/api\/encomendas\/12",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/14",
+                "cliente": "http:\/\/localhost\/api\/clientes\/6"
             }
         },
         {
-            "id": 22,
-            "numero_encomenda": 725,
-            "data_estimada": "1975-08-29 04:09:37",
-            "data_de_entrega": "2006-03-07 16:30:31",
-            "data_de_levantamento": "2011-11-28 03:09:46",
-            "data_de_entrada": "2003-02-12 21:10:43",
-            "data_de_entrega_pretendida": "1991-10-06 20:19:51",
-            "tempo_limite_de_levantamento": "1979-04-09 05:27:26",
+            "id": 13,
+            "data_de_entrega": "2003-04-26 01:22:52",
+            "data_de_levantamento": "2006-05-18 16:02:54",
+            "data_de_entrada_no_sistema": "1984-05-04 16:52:27",
+            "data_de_entrega_pretendida": "2018-02-26 01:59:03",
+            "tempo_limite_de_levantamento": "1992-04-20 11:40:33",
             "estado_encomenda": 1,
-            "temperatura": "5.2",
-            "observacoes": "Canary called out in a coaxing tone, and added with a growl, And concluded the banquet--] 'What IS the same tone, exactly as if nothing had happened. 'How am I to get an opportunity of adding.",
-            "tamanho": "XL",
-            "localizacao": "Geraldine Vista",
-            "cliente": {
-                "id": 4,
-                "nome": "Mr. Anthony McClure IV",
-                "email": "balistreri.liam@yahoo.com",
-                "telefone": "831-892-9556"
-            },
+            "temperatura": "4.1",
+            "observacoes": "Alice thought to herself. 'Shy, they seem to encourage the witness at all: he kept shifting from one end to the company generally, 'You are not attending!' said the Hatter, 'or you'll be asleep.",
+            "tamanho": "L",
+            "cliente_id": 8,
             "estafeta": [
                 {
-                    "id": 5,
-                    "nome": "Giovanny Pollich Sr.",
-                    "email": "koepp.tobin@hotmail.com",
-                    "telefone": "1-578-581-4024 x51078",
-                    "data_nascimento": "2000-03-27",
+                    "id": 2,
+                    "nome": "Dr. Randal Sipes",
+                    "email": "daren03@yahoo.com",
+                    "telefone": "568.365.0304 x913",
+                    "data_nascimento": "2017-12-01",
                     "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?36511",
                     "tipo_id": 1,
                     "supervisor_id": 1,
                     "pivot": {
-                        "encomenda_id": 22,
+                        "encomenda_id": 13,
+                        "user_id": 2
+                    }
+                }
+            ],
+            "cacifo": {
+                "id": 9,
+                "numero": 22,
+                "temperatura": "0.4",
+                "codigo": "Ku3D3XkM8M",
+                "tamanho_id": 1,
+                "estado_id": 2,
+                "localizacao_id": 2,
+                "tamanho": {
+                    "id": 1,
+                    "tamanho": "M"
+                },
+                "estado": {
+                    "id": 2,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 2,
+                    "nome": "Consuelo Greens",
+                    "lat": "60.28329",
+                    "lng": "88.144685",
+                    "codigo_postal": "6443-878",
+                    "cidade": "Port Janetfurt"
+                }
+            },
+            "cliente": {
+                "id": 8,
+                "nome": "Dr. Hosea Walker",
+                "email": "mcclure.monte@gmail.com",
+                "telefone": "+1-383-580-1383"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/13",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/9",
+                "cliente": "http:\/\/localhost\/api\/clientes\/8"
+            }
+        },
+        {
+            "id": 14,
+            "data_de_entrega": "2000-04-14 20:04:44",
+            "data_de_levantamento": "2017-08-03 19:48:29",
+            "data_de_entrada_no_sistema": "1995-01-06 23:21:32",
+            "data_de_entrega_pretendida": "1978-08-15 19:29:11",
+            "tempo_limite_de_levantamento": "2010-04-02 07:12:42",
+            "estado_encomenda": 1,
+            "temperatura": "10.2",
+            "observacoes": "I get SOMEWHERE,' Alice added as an unusually large saucepan flew close by it, and found quite a commotion in the middle, nursing a baby; the cook was busily stirring the soup, and seemed not to.",
+            "tamanho": "XL",
+            "cliente_id": 4,
+            "estafeta": [
+                {
+                    "id": 5,
+                    "nome": "Terrence Bruen",
+                    "email": "bauch.lucio@gmail.com",
+                    "telefone": "1-824-825-6999",
+                    "data_nascimento": "1989-09-30",
+                    "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?69970",
+                    "tipo_id": 2,
+                    "supervisor_id": 1,
+                    "pivot": {
+                        "encomenda_id": 14,
                         "user_id": 5
                     }
                 }
             ],
             "cacifo": {
-                "id": 20,
-                "numero": 197,
-                "temperatura": "10.7",
-                "codigo": "5lRkyW",
+                "id": 10,
+                "numero": 246,
+                "temperatura": "4.5",
+                "codigo": "nFED5v",
                 "tamanho_id": 1,
-                "estado_id": 1,
-                "localizacao_id": 2,
+                "estado_id": 2,
+                "localizacao_id": 1,
                 "tamanho": {
                     "id": 1,
-                    "tamanho": "L"
+                    "tamanho": "M"
                 },
                 "estado": {
-                    "id": 1,
+                    "id": 2,
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 2,
-                    "nome": "Clemmie Village",
-                    "lat": "-77.233379",
-                    "long": "59.094078",
-                    "codigo_postal": "7185-244",
-                    "cidade": "Feilborough"
+                    "id": 1,
+                    "nome": "Quigley View",
+                    "lat": "-15.107306",
+                    "lng": "25.399467",
+                    "codigo_postal": "2525-638",
+                    "cidade": "South Justenberg"
                 }
             },
+            "cliente": {
+                "id": 4,
+                "nome": "Lon Kunze",
+                "email": "stiedemann.arno@yahoo.com",
+                "telefone": "727-940-7502"
+            },
             "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/22",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/20",
+                "link": "http:\/\/localhost\/api\/encomendas\/14",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/10",
                 "cliente": "http:\/\/localhost\/api\/clientes\/4"
             }
         },
         {
-            "id": 23,
-            "numero_encomenda": 350,
-            "data_estimada": "2018-01-23 06:38:27",
-            "data_de_entrega": "1983-05-13 02:09:21",
-            "data_de_levantamento": "1983-07-17 07:30:13",
-            "data_de_entrada": "2002-11-17 04:38:30",
-            "data_de_entrega_pretendida": "1987-04-25 05:40:48",
-            "tempo_limite_de_levantamento": "1996-08-27 20:03:03",
+            "id": 15,
+            "data_de_entrega": "1997-07-21 19:28:56",
+            "data_de_levantamento": "2009-05-28 21:58:39",
+            "data_de_entrada_no_sistema": "1982-05-17 07:21:16",
+            "data_de_entrega_pretendida": "1994-02-05 17:51:57",
+            "tempo_limite_de_levantamento": "1970-05-06 02:34:42",
             "estado_encomenda": 1,
-            "temperatura": "1.4",
-            "observacoes": "I know!' exclaimed Alice, who had been to her, though, as they would die. 'The trial cannot proceed,' said the Gryphon: and Alice joined the procession, wondering very much of a treacle-well--eh.",
-            "tamanho": "M",
-            "localizacao": "Jakubowski Dale",
-            "cliente": {
-                "id": 3,
-                "nome": "Roselyn Feil",
-                "email": "fritsch.estella@hotmail.com",
-                "telefone": "(968) 577-6627 x08509"
-            },
+            "temperatura": "9",
+            "observacoes": "Alice quite hungry to look down and saying \"Come up again, dear!\" I shall ever see such a nice little dog near our house I should think you can find them.' As she said to herself, as usual. I wonder.",
+            "tamanho": "XL",
+            "cliente_id": 7,
             "estafeta": [
                 {
-                    "id": 6,
-                    "nome": "Tristin Hyatt",
-                    "email": "luigi69@gmail.com",
-                    "telefone": "+1-671-642-7240",
-                    "data_nascimento": "1989-06-20",
+                    "id": 5,
+                    "nome": "Terrence Bruen",
+                    "email": "bauch.lucio@gmail.com",
+                    "telefone": "1-824-825-6999",
+                    "data_nascimento": "1989-09-30",
                     "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?69970",
                     "tipo_id": 2,
                     "supervisor_id": 1,
                     "pivot": {
-                        "encomenda_id": 23,
-                        "user_id": 6
+                        "encomenda_id": 15,
+                        "user_id": 5
                     }
                 }
             ],
             "cacifo": {
-                "id": 3,
-                "numero": 342,
-                "temperatura": "6.3",
-                "codigo": "Oz-hok_xSi",
-                "tamanho_id": 2,
+                "id": 4,
+                "numero": 302,
+                "temperatura": "8.8",
+                "codigo": "ABXRV5f9hf",
+                "tamanho_id": 1,
                 "estado_id": 2,
                 "localizacao_id": 1,
                 "tamanho": {
-                    "id": 2,
-                    "tamanho": "XL"
+                    "id": 1,
+                    "tamanho": "M"
                 },
                 "estado": {
                     "id": 2,
@@ -2998,65 +2437,196 @@ fetch(url, {
                 },
                 "localizacao": {
                     "id": 1,
-                    "nome": "Koepp Mews",
-                    "lat": "63.732159",
-                    "long": "94.351739",
-                    "codigo_postal": "9716-814",
-                    "cidade": "Mayebury"
+                    "nome": "Quigley View",
+                    "lat": "-15.107306",
+                    "lng": "25.399467",
+                    "codigo_postal": "2525-638",
+                    "cidade": "South Justenberg"
                 }
             },
+            "cliente": {
+                "id": 7,
+                "nome": "Kenya Boyle",
+                "email": "aufderhar.dorris@yahoo.com",
+                "telefone": "687-315-1910 x3614"
+            },
             "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/23",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/3",
-                "cliente": "http:\/\/localhost\/api\/clientes\/3"
+                "link": "http:\/\/localhost\/api\/encomendas\/15",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/4",
+                "cliente": "http:\/\/localhost\/api\/clientes\/7"
             }
         },
         {
-            "id": 24,
-            "numero_encomenda": 153,
-            "data_estimada": "2017-12-11 18:00:07",
-            "data_de_entrega": "1999-07-26 03:40:59",
-            "data_de_levantamento": "2007-04-02 00:14:02",
-            "data_de_entrada": "1997-09-25 01:22:20",
-            "data_de_entrega_pretendida": "2005-02-04 10:44:59",
-            "tempo_limite_de_levantamento": "1996-08-13 22:44:52",
+            "id": 16,
+            "data_de_entrega": "1987-09-04 15:01:49",
+            "data_de_levantamento": "2008-10-21 04:34:18",
+            "data_de_entrada_no_sistema": "1995-04-20 13:23:22",
+            "data_de_entrega_pretendida": "2013-02-13 12:23:08",
+            "tempo_limite_de_levantamento": "1987-08-12 09:40:27",
             "estado_encomenda": 1,
-            "temperatura": "10.4",
-            "observacoes": "Alice sharply, for she was quite pleased to have wondered at this, she came up to the dance. Will you, won't you, will you, won't you, will you, won't you, will you join the dance? Will you, won't.",
-            "tamanho": "L",
-            "localizacao": "Cremin Tunnel",
-            "cliente": {
-                "id": 9,
-                "nome": "Sophia DuBuque V",
-                "email": "adams.bria@yahoo.com",
-                "telefone": "(587) 916-4443"
-            },
+            "temperatura": "7.3",
+            "observacoes": "I am to see its meaning. 'And just as the hall was very uncomfortable, and, as the March Hare and the fan, and skurried away into the sea, 'and in that case I can find out the proper way of keeping.",
+            "tamanho": "S",
+            "cliente_id": 10,
             "estafeta": [
                 {
-                    "id": 7,
-                    "nome": "Dr. Mark Parisian",
-                    "email": "herzog.gwendolyn@hotmail.com",
-                    "telefone": "1-586-977-5911 x67461",
-                    "data_nascimento": "1980-03-04",
+                    "id": 4,
+                    "nome": "Moses Wiegand",
+                    "email": "keanu.christiansen@hotmail.com",
+                    "telefone": "230-326-5987 x54763",
+                    "data_nascimento": "1983-04-04",
                     "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?46198",
+                    "tipo_id": 1,
+                    "supervisor_id": 1,
+                    "pivot": {
+                        "encomenda_id": 16,
+                        "user_id": 4
+                    }
+                }
+            ],
+            "cacifo": {
+                "id": 4,
+                "numero": 302,
+                "temperatura": "8.8",
+                "codigo": "ABXRV5f9hf",
+                "tamanho_id": 1,
+                "estado_id": 2,
+                "localizacao_id": 1,
+                "tamanho": {
+                    "id": 1,
+                    "tamanho": "M"
+                },
+                "estado": {
+                    "id": 2,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 1,
+                    "nome": "Quigley View",
+                    "lat": "-15.107306",
+                    "lng": "25.399467",
+                    "codigo_postal": "2525-638",
+                    "cidade": "South Justenberg"
+                }
+            },
+            "cliente": {
+                "id": 10,
+                "nome": "Howard Kessler",
+                "email": "abe83@gmail.com",
+                "telefone": "+1-274-312-4465"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/16",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/4",
+                "cliente": "http:\/\/localhost\/api\/clientes\/10"
+            }
+        },
+        {
+            "id": 17,
+            "data_de_entrega": "2018-12-17 11:04:50",
+            "data_de_levantamento": "1993-01-24 08:20:06",
+            "data_de_entrada_no_sistema": "1973-03-27 14:20:12",
+            "data_de_entrega_pretendida": "2007-09-26 00:41:25",
+            "tempo_limite_de_levantamento": "2005-12-15 11:32:37",
+            "estado_encomenda": 0,
+            "temperatura": "4.6",
+            "observacoes": "Dinah, tell me the list of the accident, all except the Lizard, who seemed ready to sink into the wood. 'It's the first day,' said the Dormouse, after thinking a minute or two, and the m--' But.",
+            "tamanho": "L",
+            "cliente_id": 6,
+            "estafeta": [
+                {
+                    "id": 6,
+                    "nome": "Mrs. Mariane Rogahn",
+                    "email": "libbie.adams@yahoo.com",
+                    "telefone": "393-555-4146",
+                    "data_nascimento": "2007-12-02",
+                    "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?26826",
                     "tipo_id": 2,
                     "supervisor_id": 1,
                     "pivot": {
-                        "encomenda_id": 24,
-                        "user_id": 7
+                        "encomenda_id": 17,
+                        "user_id": 6
                     }
                 }
             ],
             "cacifo": {
                 "id": 17,
-                "numero": 268,
-                "temperatura": "9.3",
-                "codigo": "X9XjY5RjG8",
-                "tamanho_id": 3,
-                "estado_id": 2,
-                "localizacao_id": 2,
+                "numero": 492,
+                "temperatura": "6.6",
+                "codigo": "zr9VQNL9Y",
+                "tamanho_id": 2,
+                "estado_id": 1,
+                "localizacao_id": 3,
                 "tamanho": {
+                    "id": 2,
+                    "tamanho": "XL"
+                },
+                "estado": {
+                    "id": 1,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
                     "id": 3,
+                    "nome": "Schuppe Station",
+                    "lat": "-46.04705",
+                    "lng": "45.218119",
+                    "codigo_postal": "2974-667",
+                    "cidade": "Kunzeland"
+                }
+            },
+            "cliente": {
+                "id": 6,
+                "nome": "Dr. Concepcion Kub",
+                "email": "jamir53@yahoo.com",
+                "telefone": "+1-331-546-1911"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/17",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/17",
+                "cliente": "http:\/\/localhost\/api\/clientes\/6"
+            }
+        },
+        {
+            "id": 18,
+            "data_de_entrega": "1971-05-05 09:37:34",
+            "data_de_levantamento": "2014-09-01 04:12:22",
+            "data_de_entrada_no_sistema": "2011-05-21 23:23:56",
+            "data_de_entrega_pretendida": "2002-05-01 13:30:05",
+            "tempo_limite_de_levantamento": "1991-09-24 12:27:51",
+            "estado_encomenda": 1,
+            "temperatura": "8.7",
+            "observacoes": "Hatter: 'but you could keep it to speak again. In a little girl she'll think me for his housemaid,' she said these words her foot slipped, and in his throat,' said the Hatter. Alice felt a little.",
+            "tamanho": "M",
+            "cliente_id": 4,
+            "estafeta": [
+                {
+                    "id": 8,
+                    "nome": "Neoma Lesch",
+                    "email": "nicklaus12@hotmail.com",
+                    "telefone": "+1 (340) 939-3293",
+                    "data_nascimento": "1997-03-25",
+                    "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?21223",
+                    "tipo_id": 2,
+                    "supervisor_id": 1,
+                    "pivot": {
+                        "encomenda_id": 18,
+                        "user_id": 8
+                    }
+                }
+            ],
+            "cacifo": {
+                "id": 15,
+                "numero": 144,
+                "temperatura": "4.6",
+                "codigo": "DX8ei78R",
+                "tamanho_id": 2,
+                "estado_id": 2,
+                "localizacao_id": 4,
+                "tamanho": {
+                    "id": 2,
                     "tamanho": "XL"
                 },
                 "estado": {
@@ -3064,80 +2634,481 @@ fetch(url, {
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 2,
-                    "nome": "Clemmie Village",
-                    "lat": "-77.233379",
-                    "long": "59.094078",
-                    "codigo_postal": "7185-244",
-                    "cidade": "Feilborough"
+                    "id": 4,
+                    "nome": "Huel Green",
+                    "lat": "64.660128",
+                    "lng": "139.431751",
+                    "codigo_postal": "2501-870",
+                    "cidade": "Marquardtton"
                 }
             },
+            "cliente": {
+                "id": 4,
+                "nome": "Lon Kunze",
+                "email": "stiedemann.arno@yahoo.com",
+                "telefone": "727-940-7502"
+            },
             "href": {
-                "link": "http:\/\/localhost\/api\/encomendas\/24",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/17",
-                "cliente": "http:\/\/localhost\/api\/clientes\/9"
+                "link": "http:\/\/localhost\/api\/encomendas\/18",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/15",
+                "cliente": "http:\/\/localhost\/api\/clientes\/4"
             }
         },
         {
-            "id": 25,
-            "numero_encomenda": 902,
-            "data_estimada": "1978-11-20 10:59:09",
-            "data_de_entrega": "1972-06-14 13:46:31",
-            "data_de_levantamento": "2018-08-06 05:50:57",
-            "data_de_entrada": "1970-01-09 06:13:05",
-            "data_de_entrega_pretendida": "2012-12-17 10:58:48",
-            "tempo_limite_de_levantamento": "1981-01-13 02:12:51",
-            "estado_encomenda": 0,
-            "temperatura": "7.8",
-            "observacoes": "Alice in a natural way. 'I thought it would,' said the King, 'and don't look at a king,' said Alice. 'Well, then,' the Cat said, waving its right paw round, 'lives a Hatter: and in another moment.",
+            "id": 19,
+            "data_de_entrega": "1994-11-20 04:44:02",
+            "data_de_levantamento": "1984-10-30 22:22:30",
+            "data_de_entrada_no_sistema": "2004-03-13 02:28:08",
+            "data_de_entrega_pretendida": "1983-02-10 17:59:32",
+            "tempo_limite_de_levantamento": "1976-06-08 22:30:07",
+            "estado_encomenda": 1,
+            "temperatura": "8.7",
+            "observacoes": "How brave they'll all think me for a long way back, and barking hoarsely all the things get used to it as to bring but one; Bill's got the other--Bill! fetch it here, lad!--Here, put 'em up at the.",
             "tamanho": "M",
-            "localizacao": "Hagenes Glens",
-            "cliente": {
-                "id": 3,
-                "nome": "Roselyn Feil",
-                "email": "fritsch.estella@hotmail.com",
-                "telefone": "(968) 577-6627 x08509"
-            },
+            "cliente_id": 5,
             "estafeta": [
                 {
-                    "id": 6,
-                    "nome": "Tristin Hyatt",
-                    "email": "luigi69@gmail.com",
-                    "telefone": "+1-671-642-7240",
-                    "data_nascimento": "1989-06-20",
+                    "id": 5,
+                    "nome": "Terrence Bruen",
+                    "email": "bauch.lucio@gmail.com",
+                    "telefone": "1-824-825-6999",
+                    "data_nascimento": "1989-09-30",
                     "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?69970",
                     "tipo_id": 2,
                     "supervisor_id": 1,
                     "pivot": {
-                        "encomenda_id": 25,
-                        "user_id": 6
+                        "encomenda_id": 19,
+                        "user_id": 5
+                    }
+                }
+            ],
+            "cacifo": {
+                "id": 12,
+                "numero": 155,
+                "temperatura": "5",
+                "codigo": "DlzYf",
+                "tamanho_id": 4,
+                "estado_id": 2,
+                "localizacao_id": 1,
+                "tamanho": {
+                    "id": 4,
+                    "tamanho": "S"
+                },
+                "estado": {
+                    "id": 2,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 1,
+                    "nome": "Quigley View",
+                    "lat": "-15.107306",
+                    "lng": "25.399467",
+                    "codigo_postal": "2525-638",
+                    "cidade": "South Justenberg"
+                }
+            },
+            "cliente": {
+                "id": 5,
+                "nome": "Briana Wehner",
+                "email": "wayne.rohan@yahoo.com",
+                "telefone": "204.515.6221 x510"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/19",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/12",
+                "cliente": "http:\/\/localhost\/api\/clientes\/5"
+            }
+        },
+        {
+            "id": 20,
+            "data_de_entrega": "1998-09-16 01:38:07",
+            "data_de_levantamento": "1988-03-03 17:03:52",
+            "data_de_entrada_no_sistema": "1982-11-15 01:20:14",
+            "data_de_entrega_pretendida": "2000-07-11 02:01:04",
+            "tempo_limite_de_levantamento": "2003-11-12 04:43:41",
+            "estado_encomenda": 0,
+            "temperatura": "4.7",
+            "observacoes": "Father William replied to his son, 'I feared it might be hungry, in which case it would like the right word) '--but I shall only look up in great fear lest she should meet the real Mary Ann, and be.",
+            "tamanho": "XL",
+            "cliente_id": 1,
+            "estafeta": [
+                {
+                    "id": 3,
+                    "nome": "Dr. Otto Conn",
+                    "email": "khaag@gmail.com",
+                    "telefone": "(736) 618-4189",
+                    "data_nascimento": "1991-10-08",
+                    "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?42179",
+                    "tipo_id": 2,
+                    "supervisor_id": 1,
+                    "pivot": {
+                        "encomenda_id": 20,
+                        "user_id": 3
                     }
                 }
             ],
             "cacifo": {
                 "id": 8,
-                "numero": 76,
-                "temperatura": "11.5",
-                "codigo": "2XzUU",
-                "tamanho_id": 3,
-                "estado_id": 1,
-                "localizacao_id": 1,
+                "numero": 354,
+                "temperatura": "1.7",
+                "codigo": "bem9G",
+                "tamanho_id": 1,
+                "estado_id": 2,
+                "localizacao_id": 5,
                 "tamanho": {
-                    "id": 3,
+                    "id": 1,
+                    "tamanho": "M"
+                },
+                "estado": {
+                    "id": 2,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 5,
+                    "nome": "Bailey Summit",
+                    "lat": "57.856973",
+                    "lng": "-134.133893",
+                    "codigo_postal": "4098-292",
+                    "cidade": "McGlynnfort"
+                }
+            },
+            "cliente": {
+                "id": 1,
+                "nome": "Miss Makayla Armstrong",
+                "email": "emie.lind@gmail.com",
+                "telefone": "1-327-930-5597 x12559"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/20",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/8",
+                "cliente": "http:\/\/localhost\/api\/clientes\/1"
+            }
+        },
+        {
+            "id": 21,
+            "data_de_entrega": "2000-04-04 21:17:48",
+            "data_de_levantamento": "2009-11-06 04:00:04",
+            "data_de_entrada_no_sistema": "2012-02-04 16:05:26",
+            "data_de_entrega_pretendida": "2015-09-29 16:36:38",
+            "tempo_limite_de_levantamento": "1987-08-08 22:06:14",
+            "estado_encomenda": 0,
+            "temperatura": "10.7",
+            "observacoes": "March Hare meekly replied. 'Yes, but I think you'd take a fancy to herself 'That's quite enough--I hope I shan't grow any more--As it is, I can't see you?' She was a body to cut it off from: that he.",
+            "tamanho": "L",
+            "cliente_id": 2,
+            "estafeta": [
+                {
+                    "id": 5,
+                    "nome": "Terrence Bruen",
+                    "email": "bauch.lucio@gmail.com",
+                    "telefone": "1-824-825-6999",
+                    "data_nascimento": "1989-09-30",
+                    "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?69970",
+                    "tipo_id": 2,
+                    "supervisor_id": 1,
+                    "pivot": {
+                        "encomenda_id": 21,
+                        "user_id": 5
+                    }
+                }
+            ],
+            "cacifo": {
+                "id": 19,
+                "numero": 326,
+                "temperatura": "10.7",
+                "codigo": "CM6_xnCc",
+                "tamanho_id": 4,
+                "estado_id": 2,
+                "localizacao_id": 2,
+                "tamanho": {
+                    "id": 4,
+                    "tamanho": "S"
+                },
+                "estado": {
+                    "id": 2,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 2,
+                    "nome": "Consuelo Greens",
+                    "lat": "60.28329",
+                    "lng": "88.144685",
+                    "codigo_postal": "6443-878",
+                    "cidade": "Port Janetfurt"
+                }
+            },
+            "cliente": {
+                "id": 2,
+                "nome": "Dan Schoen",
+                "email": "america31@hotmail.com",
+                "telefone": "932-213-1955"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/21",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/19",
+                "cliente": "http:\/\/localhost\/api\/clientes\/2"
+            }
+        },
+        {
+            "id": 22,
+            "data_de_entrega": "1996-08-20 19:03:29",
+            "data_de_levantamento": "2001-01-22 18:03:50",
+            "data_de_entrada_no_sistema": "1970-09-04 06:58:36",
+            "data_de_entrega_pretendida": "1978-07-08 18:44:22",
+            "tempo_limite_de_levantamento": "1997-06-07 23:08:27",
+            "estado_encomenda": 1,
+            "temperatura": "2.8",
+            "observacoes": "Bill! I wouldn't be so proud as all that.' 'With extras?' asked the Mock Turtle, 'Drive on, old fellow! Don't be all day to day.' This was not an encouraging tone. Alice looked up, and began smoking.",
+            "tamanho": "L",
+            "cliente_id": 8,
+            "estafeta": [
+                {
+                    "id": 4,
+                    "nome": "Moses Wiegand",
+                    "email": "keanu.christiansen@hotmail.com",
+                    "telefone": "230-326-5987 x54763",
+                    "data_nascimento": "1983-04-04",
+                    "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?46198",
+                    "tipo_id": 1,
+                    "supervisor_id": 1,
+                    "pivot": {
+                        "encomenda_id": 22,
+                        "user_id": 4
+                    }
+                }
+            ],
+            "cacifo": {
+                "id": 15,
+                "numero": 144,
+                "temperatura": "4.6",
+                "codigo": "DX8ei78R",
+                "tamanho_id": 2,
+                "estado_id": 2,
+                "localizacao_id": 4,
+                "tamanho": {
+                    "id": 2,
                     "tamanho": "XL"
+                },
+                "estado": {
+                    "id": 2,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 4,
+                    "nome": "Huel Green",
+                    "lat": "64.660128",
+                    "lng": "139.431751",
+                    "codigo_postal": "2501-870",
+                    "cidade": "Marquardtton"
+                }
+            },
+            "cliente": {
+                "id": 8,
+                "nome": "Dr. Hosea Walker",
+                "email": "mcclure.monte@gmail.com",
+                "telefone": "+1-383-580-1383"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/22",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/15",
+                "cliente": "http:\/\/localhost\/api\/clientes\/8"
+            }
+        },
+        {
+            "id": 23,
+            "data_de_entrega": "2014-04-24 06:45:29",
+            "data_de_levantamento": "1974-01-21 10:12:31",
+            "data_de_entrada_no_sistema": "2007-04-21 16:31:33",
+            "data_de_entrega_pretendida": "1989-02-19 10:10:59",
+            "tempo_limite_de_levantamento": "2008-08-13 03:51:15",
+            "estado_encomenda": 0,
+            "temperatura": "7",
+            "observacoes": "Cat. 'I'd nearly forgotten to ask.' 'It turned into a large cat which was a table, with a knife, it usually bleeds; and she heard one of the guinea-pigs cheered, and was delighted to find it out, we.",
+            "tamanho": "M",
+            "cliente_id": 4,
+            "estafeta": [
+                {
+                    "id": 7,
+                    "nome": "Ms. Jaida Monahan DDS",
+                    "email": "okuhic@gmail.com",
+                    "telefone": "475.606.4085 x2150",
+                    "data_nascimento": "1979-03-05",
+                    "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?10136",
+                    "tipo_id": 1,
+                    "supervisor_id": 1,
+                    "pivot": {
+                        "encomenda_id": 23,
+                        "user_id": 7
+                    }
+                }
+            ],
+            "cacifo": {
+                "id": 19,
+                "numero": 326,
+                "temperatura": "10.7",
+                "codigo": "CM6_xnCc",
+                "tamanho_id": 4,
+                "estado_id": 2,
+                "localizacao_id": 2,
+                "tamanho": {
+                    "id": 4,
+                    "tamanho": "S"
+                },
+                "estado": {
+                    "id": 2,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 2,
+                    "nome": "Consuelo Greens",
+                    "lat": "60.28329",
+                    "lng": "88.144685",
+                    "codigo_postal": "6443-878",
+                    "cidade": "Port Janetfurt"
+                }
+            },
+            "cliente": {
+                "id": 4,
+                "nome": "Lon Kunze",
+                "email": "stiedemann.arno@yahoo.com",
+                "telefone": "727-940-7502"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/23",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/19",
+                "cliente": "http:\/\/localhost\/api\/clientes\/4"
+            }
+        },
+        {
+            "id": 24,
+            "data_de_entrega": "1994-01-14 20:50:35",
+            "data_de_levantamento": "1994-10-24 05:41:20",
+            "data_de_entrada_no_sistema": "1988-08-24 11:09:17",
+            "data_de_entrega_pretendida": "1989-02-12 05:52:45",
+            "tempo_limite_de_levantamento": "1996-05-08 04:16:49",
+            "estado_encomenda": 0,
+            "temperatura": "0.1",
+            "observacoes": "So she went on. 'Would you tell me, Pat, what's that in about half no time! Take your choice!' The Duchess took her choice, and was delighted to find that she looked down into its nest. Alice.",
+            "tamanho": "XL",
+            "cliente_id": 5,
+            "estafeta": [
+                {
+                    "id": 4,
+                    "nome": "Moses Wiegand",
+                    "email": "keanu.christiansen@hotmail.com",
+                    "telefone": "230-326-5987 x54763",
+                    "data_nascimento": "1983-04-04",
+                    "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?46198",
+                    "tipo_id": 1,
+                    "supervisor_id": 1,
+                    "pivot": {
+                        "encomenda_id": 24,
+                        "user_id": 4
+                    }
+                }
+            ],
+            "cacifo": {
+                "id": 3,
+                "numero": 74,
+                "temperatura": "1.8",
+                "codigo": "VfEMGynor",
+                "tamanho_id": 4,
+                "estado_id": 1,
+                "localizacao_id": 4,
+                "tamanho": {
+                    "id": 4,
+                    "tamanho": "S"
                 },
                 "estado": {
                     "id": 1,
                     "estado": "Disponivel"
                 },
                 "localizacao": {
-                    "id": 1,
-                    "nome": "Koepp Mews",
-                    "lat": "63.732159",
-                    "long": "94.351739",
-                    "codigo_postal": "9716-814",
-                    "cidade": "Mayebury"
+                    "id": 4,
+                    "nome": "Huel Green",
+                    "lat": "64.660128",
+                    "lng": "139.431751",
+                    "codigo_postal": "2501-870",
+                    "cidade": "Marquardtton"
                 }
+            },
+            "cliente": {
+                "id": 5,
+                "nome": "Briana Wehner",
+                "email": "wayne.rohan@yahoo.com",
+                "telefone": "204.515.6221 x510"
+            },
+            "href": {
+                "link": "http:\/\/localhost\/api\/encomendas\/24",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/3",
+                "cliente": "http:\/\/localhost\/api\/clientes\/5"
+            }
+        },
+        {
+            "id": 25,
+            "data_de_entrega": "2003-01-14 02:02:56",
+            "data_de_levantamento": "1996-08-31 12:07:00",
+            "data_de_entrada_no_sistema": "1976-03-09 07:42:11",
+            "data_de_entrega_pretendida": "2008-11-07 04:43:43",
+            "tempo_limite_de_levantamento": "2009-12-21 17:05:58",
+            "estado_encomenda": 0,
+            "temperatura": "0.8",
+            "observacoes": "Caterpillar. 'Not QUITE right, I'm afraid,' said Alice, feeling very glad she had never left off quarrelling with the Gryphon. '--you advance twice--' 'Each with a sudden burst of tears, until there.",
+            "tamanho": "L",
+            "cliente_id": 3,
+            "estafeta": [
+                {
+                    "id": 1,
+                    "nome": "Gudrun Kris",
+                    "email": "rhett.witting@yahoo.com",
+                    "telefone": "887-667-9111 x942",
+                    "data_nascimento": "2001-06-30",
+                    "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?21521",
+                    "tipo_id": 2,
+                    "supervisor_id": 1,
+                    "pivot": {
+                        "encomenda_id": 25,
+                        "user_id": 1
+                    }
+                }
+            ],
+            "cacifo": {
+                "id": 8,
+                "numero": 354,
+                "temperatura": "1.7",
+                "codigo": "bem9G",
+                "tamanho_id": 1,
+                "estado_id": 2,
+                "localizacao_id": 5,
+                "tamanho": {
+                    "id": 1,
+                    "tamanho": "M"
+                },
+                "estado": {
+                    "id": 2,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 5,
+                    "nome": "Bailey Summit",
+                    "lat": "57.856973",
+                    "lng": "-134.133893",
+                    "codigo_postal": "4098-292",
+                    "cidade": "McGlynnfort"
+                }
+            },
+            "cliente": {
+                "id": 3,
+                "nome": "Ruby Harris",
+                "email": "haley.caitlyn@gmail.com",
+                "telefone": "517-219-2699"
             },
             "href": {
                 "link": "http:\/\/localhost\/api\/encomendas\/25",
@@ -3165,20 +3136,17 @@ Adiciona uma nova encomenda.
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/encomendas"     -d "numero_encomenda"="18" \
-    -d "data_estimada"="ESMv7fv9qzYSUXpI" \
-    -d "data_de_entrega"="uWNCe4vcPxenzayH" \
-    -d "data_de_levantamento"="xc1KmeophbYg8Ik4" \
-    -d "data_de_entrada_no_sistema"="RA6p5xURoVu9sWxB" \
-    -d "data_de_entrega_pretendida"="xBOjD4N9k5iWmmQJ" \
-    -d "tempo_limite_de_levantamento"="WeeYNHzMiwQ43Lco" \
-    -d "estado_encomenda"="false" \
-    -d "temperatura"="2052.3" \
-    -d "observacoes"="zQJfqXh9wdU9Kkdm" \
-    -d "tamanho"="xLCvMQgpAjSNrzqY" \
-    -d "localizacao"="INv7F1L92wXzyD7X" \
-    -d "cliente_id"="FKjfnklmbwU8QK0W" \
-    -d "cacifo_id"="0fJROasZhqMoE5A5" 
+curl -X POST "http://localhost/api/encomendas"     -d "data_de_entrega"="taH6vHdlAz7HjhMn" \
+    -d "data_de_levantamento"="EGEjeIOEwu7PzO1w" \
+    -d "data_de_entrada_no_sistema"="giVTmQuvdDiMQZhj" \
+    -d "data_de_entrega_pretendida"="9EmsfLAIpDdiBbRT" \
+    -d "tempo_limite_de_levantamento"="yHmSHAMnJpBsobjo" \
+    -d "estado_encomenda"="1" \
+    -d "temperatura"="18.563" \
+    -d "observacoes"="Mr602wsqzSkidUrY" \
+    -d "tamanho"="HteRUA5zpBCuJzkH" \
+    -d "cliente_id"="AHkCoTuHWKGFE0No" \
+    -d "cacifo_id"="mqenNDYURW01wjtU" 
 ```
 
 ```javascript
@@ -3190,20 +3158,17 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "numero_encomenda": "18",
-    "data_estimada": "ESMv7fv9qzYSUXpI",
-    "data_de_entrega": "uWNCe4vcPxenzayH",
-    "data_de_levantamento": "xc1KmeophbYg8Ik4",
-    "data_de_entrada_no_sistema": "RA6p5xURoVu9sWxB",
-    "data_de_entrega_pretendida": "xBOjD4N9k5iWmmQJ",
-    "tempo_limite_de_levantamento": "WeeYNHzMiwQ43Lco",
-    "estado_encomenda": "",
-    "temperatura": "2052.3",
-    "observacoes": "zQJfqXh9wdU9Kkdm",
-    "tamanho": "xLCvMQgpAjSNrzqY",
-    "localizacao": "INv7F1L92wXzyD7X",
-    "cliente_id": "FKjfnklmbwU8QK0W",
-    "cacifo_id": "0fJROasZhqMoE5A5",
+    "data_de_entrega": "taH6vHdlAz7HjhMn",
+    "data_de_levantamento": "EGEjeIOEwu7PzO1w",
+    "data_de_entrada_no_sistema": "giVTmQuvdDiMQZhj",
+    "data_de_entrega_pretendida": "9EmsfLAIpDdiBbRT",
+    "tempo_limite_de_levantamento": "yHmSHAMnJpBsobjo",
+    "estado_encomenda": "1",
+    "temperatura": "18.563",
+    "observacoes": "Mr602wsqzSkidUrY",
+    "tamanho": "HteRUA5zpBCuJzkH",
+    "cliente_id": "AHkCoTuHWKGFE0No",
+    "cacifo_id": "mqenNDYURW01wjtU",
 })
 
 fetch(url, {
@@ -3234,8 +3199,6 @@ fetch(url, {
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    numero_encomenda | integer |  optional  | Número duma encomenda
-    data_estimada | date |  required  | Data estimada da entrega da encomenda..
     data_de_entrega | date |  optional  | optional Data de entrega da encomenda.
     data_de_levantamento | date |  optional  | optional Data de levantamento da encomenda.
     data_de_entrada_no_sistema | date |  required  | Data em que a encomenda foi registada no sistema.
@@ -3245,7 +3208,6 @@ Parameter | Type | Status | Description
     temperatura | float |  optional  | optional Temperatura de uma encomenda. Caso seja nulo o valor default será: 20.
     observacoes | string |  optional  | optional Observações de uma encomenda. Caso seja nula o valor default será: "Nenhuma observação.".
     tamanho | string |  required  | Tamanho de uma encomenda.
-    localizacao | string |  required  | Localização de entrega pretendida.
     cliente_id | string |  required  | Id do cliente que possui a encomenda.
     cacifo_id | string |  optional  | optional Id do cacifo de onde a encomenda vai ser colocada.
 
@@ -3284,70 +3246,68 @@ fetch(url, {
 {
     "data": {
         "id": 1,
-        "numero_encomenda": 843,
-        "data_estimada": "2005-09-10 13:32:21",
-        "data_de_entrega": "2017-07-12 12:41:57",
-        "data_de_levantamento": "1976-02-18 20:10:26",
-        "data_de_entrada_no_sistema": "1981-08-20 03:09:05",
-        "data_de_entrega_pretendida": "1999-05-13 13:13:07",
-        "tempo_limite_de_levantamento": "1978-04-17 19:15:52",
-        "estado_encomenda": 0,
-        "temperatura": "9",
-        "observacoes": "I like being that person, I'll come up: if not, I'll stay down here till I'm somebody else\"--but, oh dear!' cried Alice, jumping up in spite of all the first really clever thing the King said to.",
+        "data_de_entrega": "1972-01-15 15:08:37",
+        "data_de_levantamento": "1975-04-25 03:13:05",
+        "data_de_entrada_no_sistema": "1970-10-07 05:06:11",
+        "data_de_entrega_pretendida": "2002-01-26 15:29:01",
+        "tempo_limite_de_levantamento": "1987-01-03 20:25:36",
+        "estado_encomenda": 1,
+        "temperatura": "7.8",
+        "observacoes": "An obstacle that came between Him, and ourselves, and it. Don't let him know she liked them best, For this must be growing small again.' She got up and said, 'It WAS a narrow escape!' said Alice.",
         "tamanho": "S",
-        "localizacao": "Melisa Fort",
-        "cliente_id": 4,
-        "cacifo_id": 12,
-        "cliente": {
-            "id": 4,
-            "nome": "Mr. Anthony McClure IV",
-            "email": "balistreri.liam@yahoo.com",
-            "telefone": "831-892-9556"
-        },
-        "cacifo": {
-            "id": 12,
-            "numero": 175,
-            "temperatura": "0.4",
-            "codigo": "kZxUceP0Vi",
-            "tamanho_id": 3,
-            "estado_id": 1,
-            "localizacao_id": 4,
-            "tamanho": {
-                "id": 3,
-                "tamanho": "XL"
-            },
-            "estado": {
-                "id": 1,
-                "estado": "Disponivel"
-            },
-            "localizacao": {
-                "id": 4,
-                "nome": "Jillian Drive",
-                "lat": "-87.531133",
-                "long": "-118.261583",
-                "codigo_postal": "6190-268",
-                "cidade": "Bartellview"
-            }
-        },
+        "cliente_id": 9,
+        "cacifo_id": 5,
         "estafeta": [
             {
-                "id": 4,
-                "nome": "Jackson Russel I",
-                "email": "hackett.barton@hotmail.com",
-                "telefone": "468-744-7469",
-                "data_nascimento": "1998-10-23",
+                "id": 3,
+                "nome": "Dr. Otto Conn",
+                "email": "khaag@gmail.com",
+                "telefone": "(736) 618-4189",
+                "data_nascimento": "1991-10-08",
                 "local_de_trabalho": "TDIStore",
+                "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?42179",
                 "tipo_id": 2,
                 "supervisor_id": 1,
                 "pivot": {
                     "encomenda_id": 1,
-                    "user_id": 4
+                    "user_id": 3
                 }
             }
         ],
+        "cacifo": {
+            "id": 5,
+            "numero": 219,
+            "temperatura": "4.9",
+            "codigo": "ggNPk_",
+            "tamanho_id": 4,
+            "estado_id": 2,
+            "localizacao_id": 5,
+            "tamanho": {
+                "id": 4,
+                "tamanho": "S"
+            },
+            "estado": {
+                "id": 2,
+                "estado": "Disponivel"
+            },
+            "localizacao": {
+                "id": 5,
+                "nome": "Bailey Summit",
+                "lat": "57.856973",
+                "lng": "-134.133893",
+                "codigo_postal": "4098-292",
+                "cidade": "McGlynnfort"
+            }
+        },
+        "cliente": {
+            "id": 9,
+            "nome": "Mr. Elton Parker",
+            "email": "julius.durgan@gmail.com",
+            "telefone": "(474) 745-8921 x07532"
+        },
         "href": {
-            "cliente": "http:\/\/localhost\/api\/clientes\/4",
-            "cacifo": "http:\/\/localhost\/api\/cacifos\/12"
+            "cliente": "http:\/\/localhost\/api\/clientes\/9",
+            "cacifo": "http:\/\/localhost\/api\/cacifos\/5"
         }
     }
 }
@@ -3367,20 +3327,17 @@ Atualiza uma encomenda.
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/encomendas/{encomenda}"     -d "numero_encomenda"="11" \
-    -d "data_estimada"="BDCkDfoNuuhZ08HP" \
-    -d "data_de_entrega"="iQ2gphfSfpco5pez" \
-    -d "data_de_levantamento"="LKOd6cJPfsuaQgEG" \
-    -d "data_de_entrada_no_sistema"="BWYkAVTVNr7TryNA" \
-    -d "data_de_entrega_pretendida"="HVFx0u4hpjukQ3Zf" \
-    -d "tempo_limite_de_levantamento"="cQ1MsldtbwVKRHdi" \
-    -d "estado_encomenda"="false" \
-    -d "temperatura"="0.8" \
-    -d "observacoes"="Y7vqQ88V5OEuBopX" \
-    -d "tamanho"="qpwaTW5q0oe3ufXz" \
-    -d "localizacao"="6MECd8W711n49qgb" \
-    -d "cliente_id"="2wlCoz4LlPKY1mqz" \
-    -d "cacifo_id"="2uNlgAshsgJ8BACz" 
+curl -X PUT "http://localhost/api/encomendas/{encomenda}"     -d "data_de_entrega"="6YH4wRfNoOEcglfE" \
+    -d "data_de_levantamento"="CtigTi7Vfkm9tzD4" \
+    -d "data_de_entrada_no_sistema"="1HtrCQRJROXpmbtW" \
+    -d "data_de_entrega_pretendida"="WgrCrrOOTvF3or5b" \
+    -d "tempo_limite_de_levantamento"="Voe80pl76n7IS0No" \
+    -d "estado_encomenda"="1" \
+    -d "temperatura"="197500.02" \
+    -d "observacoes"="isgmtjXCOHOhiVrs" \
+    -d "tamanho"="3CeEjv2kvTFHHjUg" \
+    -d "cliente_id"="WJG8yjxYA7AQySRV" \
+    -d "cacifo_id"="iRZu4YBUEGEUSCQz" 
 ```
 
 ```javascript
@@ -3392,20 +3349,17 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "numero_encomenda": "11",
-    "data_estimada": "BDCkDfoNuuhZ08HP",
-    "data_de_entrega": "iQ2gphfSfpco5pez",
-    "data_de_levantamento": "LKOd6cJPfsuaQgEG",
-    "data_de_entrada_no_sistema": "BWYkAVTVNr7TryNA",
-    "data_de_entrega_pretendida": "HVFx0u4hpjukQ3Zf",
-    "tempo_limite_de_levantamento": "cQ1MsldtbwVKRHdi",
-    "estado_encomenda": "",
-    "temperatura": "0.8",
-    "observacoes": "Y7vqQ88V5OEuBopX",
-    "tamanho": "qpwaTW5q0oe3ufXz",
-    "localizacao": "6MECd8W711n49qgb",
-    "cliente_id": "2wlCoz4LlPKY1mqz",
-    "cacifo_id": "2uNlgAshsgJ8BACz",
+    "data_de_entrega": "6YH4wRfNoOEcglfE",
+    "data_de_levantamento": "CtigTi7Vfkm9tzD4",
+    "data_de_entrada_no_sistema": "1HtrCQRJROXpmbtW",
+    "data_de_entrega_pretendida": "WgrCrrOOTvF3or5b",
+    "tempo_limite_de_levantamento": "Voe80pl76n7IS0No",
+    "estado_encomenda": "1",
+    "temperatura": "197500.02",
+    "observacoes": "isgmtjXCOHOhiVrs",
+    "tamanho": "3CeEjv2kvTFHHjUg",
+    "cliente_id": "WJG8yjxYA7AQySRV",
+    "cacifo_id": "iRZu4YBUEGEUSCQz",
 })
 
 fetch(url, {
@@ -3438,8 +3392,6 @@ fetch(url, {
 
 Parameter | Type | Status | Description
 --------- | ------- | ------- | ------- | -----------
-    numero_encomenda | integer |  optional  | Número duma encomenda
-    data_estimada | date |  optional  | optional Data estimada da entrega da encomenda..
     data_de_entrega | date |  optional  | optional Data de entrega da encomenda.
     data_de_levantamento | date |  optional  | optional Data de levantamento da encomenda.
     data_de_entrada_no_sistema | date |  optional  | optional Data em que a encomenda foi registada no sistema.
@@ -3449,7 +3401,6 @@ Parameter | Type | Status | Description
     temperatura | float |  optional  | optional Temperatura de uma encomenda. Caso seja nulo o valor default será: 20.
     observacoes | string |  optional  | optional Observações de uma encomenda. Caso seja nula o valor default será: "Nenhuma observação.".
     tamanho | string |  optional  | optional Tamanho de uma encomenda.
-    localizacao | string |  optional  | optional Localização de entrega pretendida.
     cliente_id | string |  optional  | optional Id do cliente que possui a encomenda.
     cacifo_id | string |  optional  | optional Id do cacifo de onde a encomenda vai ser colocada.
 
@@ -3564,7 +3515,7 @@ Adiciona um novo estado.
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/estados"     -d "estado"="nzQdE1mFp5xkgumV" 
+curl -X POST "http://localhost/api/estados"     -d "estado"="oPdWZplYtZNGQtFG" 
 ```
 
 ```javascript
@@ -3576,7 +3527,7 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "estado": "nzQdE1mFp5xkgumV",
+    "estado": "oPdWZplYtZNGQtFG",
 })
 
 fetch(url, {
@@ -3663,7 +3614,7 @@ Atualiza um estado.
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/estados/{estado}"     -d "estado"="QDkorZ8BjCFQnSZU" 
+curl -X PUT "http://localhost/api/estados/{estado}"     -d "estado"="b8Brsv10VNR56hpm" 
 ```
 
 ```javascript
@@ -3675,7 +3626,7 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "estado": "QDkorZ8BjCFQnSZU",
+    "estado": "b8Brsv10VNR56hpm",
 })
 
 fetch(url, {
@@ -3790,51 +3741,51 @@ fetch(url, {
 {
     "data": [
         {
-            "nome": "Koepp Mews",
-            "lat": "63.732159",
-            "long": "94.351739",
-            "codigo_postal": "9716-814",
-            "cidade": "Mayebury",
+            "nome": "Quigley View",
+            "lat": "-15.107306",
+            "lng": "25.399467",
+            "codigo_postal": "2525-638",
+            "cidade": "South Justenberg",
             "href": {
                 "link": "http:\/\/localhost\/api\/localizacaos\/1"
             }
         },
         {
-            "nome": "Clemmie Village",
-            "lat": "-77.233379",
-            "long": "59.094078",
-            "codigo_postal": "7185-244",
-            "cidade": "Feilborough",
+            "nome": "Consuelo Greens",
+            "lat": "60.28329",
+            "lng": "88.144685",
+            "codigo_postal": "6443-878",
+            "cidade": "Port Janetfurt",
             "href": {
                 "link": "http:\/\/localhost\/api\/localizacaos\/2"
             }
         },
         {
-            "nome": "Spinka Court",
-            "lat": "-27.810836",
-            "long": "167.365849",
-            "codigo_postal": "5151-775",
-            "cidade": "West Kennedystad",
+            "nome": "Schuppe Station",
+            "lat": "-46.04705",
+            "lng": "45.218119",
+            "codigo_postal": "2974-667",
+            "cidade": "Kunzeland",
             "href": {
                 "link": "http:\/\/localhost\/api\/localizacaos\/3"
             }
         },
         {
-            "nome": "Jillian Drive",
-            "lat": "-87.531133",
-            "long": "-118.261583",
-            "codigo_postal": "6190-268",
-            "cidade": "Bartellview",
+            "nome": "Huel Green",
+            "lat": "64.660128",
+            "lng": "139.431751",
+            "codigo_postal": "2501-870",
+            "cidade": "Marquardtton",
             "href": {
                 "link": "http:\/\/localhost\/api\/localizacaos\/4"
             }
         },
         {
-            "nome": "Yundt Brooks",
-            "lat": "16.344016",
-            "long": "-152.390071",
-            "codigo_postal": "4875-698",
-            "cidade": "Port Hettieburgh",
+            "nome": "Bailey Summit",
+            "lat": "57.856973",
+            "lng": "-134.133893",
+            "codigo_postal": "4098-292",
+            "cidade": "McGlynnfort",
             "href": {
                 "link": "http:\/\/localhost\/api\/localizacaos\/5"
             }
@@ -3859,11 +3810,11 @@ Adiciona uma nova localizacao.
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/localizacaos"     -d "nome"="sohYLc9tdNtETSW6" \
-    -d "lat"="24834.505399599" \
-    -d "long"="3089446.419" \
-    -d "codigo_postal"="77GB9ffCOaY2WDoj" \
-    -d "cidade"="6PaO6ZNOF7KXoXy4" 
+curl -X POST "http://localhost/api/localizacaos"     -d "nome"="NlxIfmn1mpBxY3qj" \
+    -d "lat"="4092.105944591" \
+    -d "long"="18483273.01681" \
+    -d "codigo_postal"="Ce5k6JvPdg90rqWo" \
+    -d "cidade"="6ukNsyoGIDp7m0BT" 
 ```
 
 ```javascript
@@ -3875,11 +3826,11 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "nome": "sohYLc9tdNtETSW6",
-    "lat": "24834.505399599",
-    "long": "3089446.419",
-    "codigo_postal": "77GB9ffCOaY2WDoj",
-    "cidade": "6PaO6ZNOF7KXoXy4",
+    "nome": "NlxIfmn1mpBxY3qj",
+    "lat": "4092.105944591",
+    "long": "18483273.01681",
+    "codigo_postal": "Ce5k6JvPdg90rqWo",
+    "cidade": "6ukNsyoGIDp7m0BT",
 })
 
 fetch(url, {
@@ -3951,11 +3902,11 @@ fetch(url, {
 {
     "data": {
         "id": 1,
-        "nome": "Koepp Mews",
-        "lat": "63.732159",
-        "long": "94.351739",
-        "codigo_postal": "9716-814",
-        "cidade": "Mayebury"
+        "nome": "Quigley View",
+        "lat": "-15.107306",
+        "lng": "25.399467",
+        "codigo_postal": "2525-638",
+        "cidade": "South Justenberg"
     }
 }
 ```
@@ -3974,11 +3925,11 @@ Atualiza uma localizacao.
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/localizacaos/{localizacao}"     -d "nome"="jfEq1X1COAvwnnV6" \
-    -d "latitude"="0xaXLUO3SH4N9E1x" \
-    -d "longitude"="sZou6A2Ry60NbVwX" \
-    -d "codigo_postal"="Pt1bQt3dGuytJ2uN" \
-    -d "cidade"="sZ4XoHLKi3xFpRlH" 
+curl -X PUT "http://localhost/api/localizacaos/{localizacao}"     -d "nome"="jnCXqoUv97XlfX7t" \
+    -d "latitude"="VMiM4Q7oVvGNzjUq" \
+    -d "longitude"="j8gSu6lFFTEPFttA" \
+    -d "codigo_postal"="LaG2Er7PTcWJZe9G" \
+    -d "cidade"="DTdzhQVVcIN9E4Lk" 
 ```
 
 ```javascript
@@ -3990,11 +3941,11 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "nome": "jfEq1X1COAvwnnV6",
-    "latitude": "0xaXLUO3SH4N9E1x",
-    "longitude": "sZou6A2Ry60NbVwX",
-    "codigo_postal": "Pt1bQt3dGuytJ2uN",
-    "cidade": "sZ4XoHLKi3xFpRlH",
+    "nome": "jnCXqoUv97XlfX7t",
+    "latitude": "VMiM4Q7oVvGNzjUq",
+    "longitude": "j8gSu6lFFTEPFttA",
+    "codigo_postal": "LaG2Er7PTcWJZe9G",
+    "cidade": "DTdzhQVVcIN9E4Lk",
 })
 
 fetch(url, {
@@ -4110,7 +4061,21 @@ fetch(url, {
 > Example response (200):
 
 ```json
-[]
+[
+    {
+        "id": 4,
+        "data_hora": "1994-02-28 19:42:36",
+        "cacifo_numero": 7,
+        "encomenda_numero": 17,
+        "user_id": 3,
+        "user_name": "Dr. Otto Conn",
+        "user_tipo": "Admin",
+        "cliente_id": 8,
+        "cliente_nome": "Dr. Hosea Walker",
+        "cacifo_id": 1,
+        "updated_at": "2019-02-06 00:32:16"
+    }
+]
 ```
 
 ### HTTP Request
@@ -4127,15 +4092,15 @@ Adiciona uma nova encomenda.
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/cacifo/{cacifo}/log"     -d "data_hora"="TPhStTkN6bIQv6xd" \
-    -d "cacifo_numero"="jfzDAdNFGKQbymTa" \
-    -d "encomenda_numero"="16" \
-    -d "user_id"="DPYmL9030W1r5mAF" \
-    -d "user_name"="KPJem13FUD1BAqLy" \
-    -d "user_tipo"="n6kmmvvjN8NCVsvC" \
-    -d "cliente_id"="8" \
-    -d "cliente_nome"="cMyRtVpCQJ6d4JcA" \
-    -d "cacifo_id"="17" 
+curl -X POST "http://localhost/api/cacifo/{cacifo}/log"     -d "data_hora"="rhvjtSCLDPSqnq8r" \
+    -d "cacifo_numero"="KmjMnKb9Q6sabBqj" \
+    -d "encomenda_numero"="19" \
+    -d "user_id"="6kpjLH5JdytbILkn" \
+    -d "user_name"="6iyn3e0px1qOKTsb" \
+    -d "user_tipo"="Ll9LczWdwtSrbfvV" \
+    -d "cliente_id"="13" \
+    -d "cliente_nome"="u1bRM6GG8x2un57V" \
+    -d "cacifo_id"="15" 
 ```
 
 ```javascript
@@ -4147,15 +4112,15 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "data_hora": "TPhStTkN6bIQv6xd",
-    "cacifo_numero": "jfzDAdNFGKQbymTa",
-    "encomenda_numero": "16",
-    "user_id": "DPYmL9030W1r5mAF",
-    "user_name": "KPJem13FUD1BAqLy",
-    "user_tipo": "n6kmmvvjN8NCVsvC",
-    "cliente_id": "8",
-    "cliente_nome": "cMyRtVpCQJ6d4JcA",
-    "cacifo_id": "17",
+    "data_hora": "rhvjtSCLDPSqnq8r",
+    "cacifo_numero": "KmjMnKb9Q6sabBqj",
+    "encomenda_numero": "19",
+    "user_id": "6kpjLH5JdytbILkn",
+    "user_name": "6iyn3e0px1qOKTsb",
+    "user_tipo": "Ll9LczWdwtSrbfvV",
+    "cliente_id": "13",
+    "cliente_nome": "u1bRM6GG8x2un57V",
+    "cacifo_id": "15",
 })
 
 fetch(url, {
@@ -4730,7 +4695,7 @@ fetch(url, {
 {
     "data": [
         {
-            "tamanho": "L",
+            "tamanho": "M",
             "href": {
                 "link": "http:\/\/localhost\/api\/tamanhos\/1"
             }
@@ -4742,13 +4707,13 @@ fetch(url, {
             }
         },
         {
-            "tamanho": "XL",
+            "tamanho": "M",
             "href": {
                 "link": "http:\/\/localhost\/api\/tamanhos\/3"
             }
         },
         {
-            "tamanho": "M",
+            "tamanho": "S",
             "href": {
                 "link": "http:\/\/localhost\/api\/tamanhos\/4"
             }
@@ -4771,7 +4736,7 @@ Adiciona um novo tamanho.
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/tamanhos"     -d "tamanho"="4etCUC7d41rYe9Kv" 
+curl -X POST "http://localhost/api/tamanhos"     -d "tamanho"="RuoA6TIwtvdUyvVF" 
 ```
 
 ```javascript
@@ -4783,7 +4748,7 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "tamanho": "4etCUC7d41rYe9Kv",
+    "tamanho": "RuoA6TIwtvdUyvVF",
 })
 
 fetch(url, {
@@ -4851,7 +4816,7 @@ fetch(url, {
 {
     "data": {
         "id": 1,
-        "tamanho": "L"
+        "tamanho": "M"
     }
 }
 ```
@@ -4870,7 +4835,7 @@ Atualiza um tamanho.
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/tamanhos/{tamanho}"     -d "tamanho"="2IWV9zCaJNjZp3Fx" 
+curl -X PUT "http://localhost/api/tamanhos/{tamanho}"     -d "tamanho"="gODuSv9E0TJF85MG" 
 ```
 
 ```javascript
@@ -4882,7 +4847,7 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "tamanho": "2IWV9zCaJNjZp3Fx",
+    "tamanho": "gODuSv9E0TJF85MG",
 })
 
 fetch(url, {
@@ -4997,7 +4962,7 @@ fetch(url, {
 {
     "data": [
         {
-            "tipo": "Estafeta",
+            "tipo": "Admin",
             "href": {
                 "link": "http:\/\/localhost\/api\/userTypes\/1"
             }
@@ -5028,7 +4993,7 @@ Adiciona um novo tipo de utilizador.
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/userTypes"     -d "tipo"="cCtlyl7JOcIlGIfY" 
+curl -X POST "http://localhost/api/userTypes"     -d "tipo"="wVgwzSEHVuzSumAw" 
 ```
 
 ```javascript
@@ -5040,7 +5005,7 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "tipo": "cCtlyl7JOcIlGIfY",
+    "tipo": "wVgwzSEHVuzSumAw",
 })
 
 fetch(url, {
@@ -5108,7 +5073,7 @@ fetch(url, {
 {
     "data": {
         "id": 1,
-        "tipo": "Estafeta"
+        "tipo": "Admin"
     }
 }
 ```
@@ -5127,7 +5092,7 @@ Atualiza uma localizacao.
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/userTypes/{userType}"     -d "tipo"="UVR0LDhi3uBzURvy" 
+curl -X PUT "http://localhost/api/userTypes/{userType}"     -d "tipo"="qYZvTqtcWs1WCbd3" 
 ```
 
 ```javascript
@@ -5139,7 +5104,7 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "tipo": "UVR0LDhi3uBzURvy",
+    "tipo": "qYZvTqtcWs1WCbd3",
 })
 
 fetch(url, {
@@ -5255,11 +5220,12 @@ fetch(url, {
     "data": [
         {
             "id": 1,
-            "nome": "Lottie Hahn DDS",
-            "email": "rollin87@yahoo.com",
-            "telefone": "718-521-3209",
-            "data_nascimento": "1977-06-04",
+            "nome": "Gudrun Kris",
+            "email": "rhett.witting@yahoo.com",
+            "telefone": "887-667-9111 x942",
+            "data_nascimento": "2001-06-30",
             "local_de_trabalho": "TDIStore",
+            "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?21521",
             "tipo_id": 2,
             "supervisor_id": 1,
             "tipo": {
@@ -5269,25 +5235,27 @@ fetch(url, {
         },
         {
             "id": 2,
-            "nome": "Alba West",
-            "email": "jdicki@yahoo.com",
-            "telefone": "(847) 622-8427",
-            "data_nascimento": "2011-08-30",
+            "nome": "Dr. Randal Sipes",
+            "email": "daren03@yahoo.com",
+            "telefone": "568.365.0304 x913",
+            "data_nascimento": "2017-12-01",
             "local_de_trabalho": "TDIStore",
-            "tipo_id": 2,
+            "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?36511",
+            "tipo_id": 1,
             "supervisor_id": 1,
             "tipo": {
-                "id": 2,
+                "id": 1,
                 "tipo": "Admin"
             }
         },
         {
             "id": 3,
-            "nome": "Carey Borer II",
-            "email": "kolson@gmail.com",
-            "telefone": "(675) 748-0997 x5822",
-            "data_nascimento": "1978-03-09",
+            "nome": "Dr. Otto Conn",
+            "email": "khaag@gmail.com",
+            "telefone": "(736) 618-4189",
+            "data_nascimento": "1991-10-08",
             "local_de_trabalho": "TDIStore",
+            "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?42179",
             "tipo_id": 2,
             "supervisor_id": 1,
             "tipo": {
@@ -5297,11 +5265,27 @@ fetch(url, {
         },
         {
             "id": 4,
-            "nome": "Jackson Russel I",
-            "email": "hackett.barton@hotmail.com",
-            "telefone": "468-744-7469",
-            "data_nascimento": "1998-10-23",
+            "nome": "Moses Wiegand",
+            "email": "keanu.christiansen@hotmail.com",
+            "telefone": "230-326-5987 x54763",
+            "data_nascimento": "1983-04-04",
             "local_de_trabalho": "TDIStore",
+            "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?46198",
+            "tipo_id": 1,
+            "supervisor_id": 1,
+            "tipo": {
+                "id": 1,
+                "tipo": "Admin"
+            }
+        },
+        {
+            "id": 5,
+            "nome": "Terrence Bruen",
+            "email": "bauch.lucio@gmail.com",
+            "telefone": "1-824-825-6999",
+            "data_nascimento": "1989-09-30",
+            "local_de_trabalho": "TDIStore",
+            "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?69970",
             "tipo_id": 2,
             "supervisor_id": 1,
             "tipo": {
@@ -5310,26 +5294,13 @@ fetch(url, {
             }
         },
         {
-            "id": 5,
-            "nome": "Giovanny Pollich Sr.",
-            "email": "koepp.tobin@hotmail.com",
-            "telefone": "1-578-581-4024 x51078",
-            "data_nascimento": "2000-03-27",
-            "local_de_trabalho": "TDIStore",
-            "tipo_id": 1,
-            "supervisor_id": 1,
-            "tipo": {
-                "id": 1,
-                "tipo": "Estafeta"
-            }
-        },
-        {
             "id": 6,
-            "nome": "Tristin Hyatt",
-            "email": "luigi69@gmail.com",
-            "telefone": "+1-671-642-7240",
-            "data_nascimento": "1989-06-20",
+            "nome": "Mrs. Mariane Rogahn",
+            "email": "libbie.adams@yahoo.com",
+            "telefone": "393-555-4146",
+            "data_nascimento": "2007-12-02",
             "local_de_trabalho": "TDIStore",
+            "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?26826",
             "tipo_id": 2,
             "supervisor_id": 1,
             "tipo": {
@@ -5339,11 +5310,27 @@ fetch(url, {
         },
         {
             "id": 7,
-            "nome": "Dr. Mark Parisian",
-            "email": "herzog.gwendolyn@hotmail.com",
-            "telefone": "1-586-977-5911 x67461",
-            "data_nascimento": "1980-03-04",
+            "nome": "Ms. Jaida Monahan DDS",
+            "email": "okuhic@gmail.com",
+            "telefone": "475.606.4085 x2150",
+            "data_nascimento": "1979-03-05",
             "local_de_trabalho": "TDIStore",
+            "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?10136",
+            "tipo_id": 1,
+            "supervisor_id": 1,
+            "tipo": {
+                "id": 1,
+                "tipo": "Admin"
+            }
+        },
+        {
+            "id": 8,
+            "nome": "Neoma Lesch",
+            "email": "nicklaus12@hotmail.com",
+            "telefone": "+1 (340) 939-3293",
+            "data_nascimento": "1997-03-25",
+            "local_de_trabalho": "TDIStore",
+            "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?21223",
             "tipo_id": 2,
             "supervisor_id": 1,
             "tipo": {
@@ -5352,17 +5339,18 @@ fetch(url, {
             }
         },
         {
-            "id": 8,
-            "nome": "Rahul Welch",
-            "email": "lesch.emiliano@gmail.com",
-            "telefone": "(315) 237-6911 x338",
-            "data_nascimento": "2014-07-04",
+            "id": 9,
+            "nome": "Mr. Potato",
+            "email": "potato@gmail.com",
+            "telefone": "911111111",
+            "data_nascimento": "1993-04-22",
             "local_de_trabalho": "TDIStore",
-            "tipo_id": 1,
+            "img_url": "https:\/\/i.ebayimg.com\/images\/g\/otcAAOxyA4ZRWOnd\/s-l300.jpg",
+            "tipo_id": 2,
             "supervisor_id": 1,
             "tipo": {
-                "id": 1,
-                "tipo": "Estafeta"
+                "id": 2,
+                "tipo": "Admin"
             }
         }
     ]
@@ -5383,14 +5371,15 @@ Adiciona um novo utilizador.
 > Example request:
 
 ```bash
-curl -X POST "http://localhost/api/users"     -d "nome"="XKG3GKd5Jru0IWb5" \
-    -d "email"="4bOgWTp4AwXllyus" \
-    -d "password"="3dV1JKypV2Ewp4eK" \
-    -d "telefone"="uPgGx0HbTfS80beu" \
-    -d "data_nascimento"="yhaaOy3PvimK6wLN" \
-    -d "local_de_trabalho"="cVnVM4ZE2rcYjMQI" \
-    -d "tipo_id"="tJdSBHzRdjN1zRtj" \
-    -d "supervisor_id"="qdR0QqoR9xPKuSUs" 
+curl -X POST "http://localhost/api/users"     -d "nome"="l58kw54g75hyyW11" \
+    -d "email"="ufS2Un0RZTzNiFJb" \
+    -d "password"="PxtM57svBYByA8fQ" \
+    -d "telefone"="DrniOxc16JPpZckQ" \
+    -d "data_nascimento"="vmpcYujPNGC6DJ0W" \
+    -d "img_url"="gXSuR0ADI8EFVDgs" \
+    -d "local_de_trabalho"="QQnxAsQbPvSDVIy9" \
+    -d "tipo_id"="GmpEkZKysa6sfmIM" \
+    -d "supervisor_id"="TUxy4mHQAd4QjZGo" 
 ```
 
 ```javascript
@@ -5402,14 +5391,15 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "nome": "XKG3GKd5Jru0IWb5",
-    "email": "4bOgWTp4AwXllyus",
-    "password": "3dV1JKypV2Ewp4eK",
-    "telefone": "uPgGx0HbTfS80beu",
-    "data_nascimento": "yhaaOy3PvimK6wLN",
-    "local_de_trabalho": "cVnVM4ZE2rcYjMQI",
-    "tipo_id": "tJdSBHzRdjN1zRtj",
-    "supervisor_id": "qdR0QqoR9xPKuSUs",
+    "nome": "l58kw54g75hyyW11",
+    "email": "ufS2Un0RZTzNiFJb",
+    "password": "PxtM57svBYByA8fQ",
+    "telefone": "DrniOxc16JPpZckQ",
+    "data_nascimento": "vmpcYujPNGC6DJ0W",
+    "img_url": "gXSuR0ADI8EFVDgs",
+    "local_de_trabalho": "QQnxAsQbPvSDVIy9",
+    "tipo_id": "GmpEkZKysa6sfmIM",
+    "supervisor_id": "TUxy4mHQAd4QjZGo",
 })
 
 fetch(url, {
@@ -5445,6 +5435,7 @@ Parameter | Type | Status | Description
     password | string |  required  | Password do utilizador.
     telefone | string |  required  | Telefone do utilizador.
     data_nascimento | required |  optional  | Data de nascimento do utilizador.
+    img_url | string |  optional  | Link para a foto do utilizador.
     local_de_trabalho | required |  optional  | Local de trabalho do utilizador
     tipo_id | string |  required  | Tipo do utilizador.
     supervisor_id | string |  required  | Supervisor do utilizador.
@@ -5484,12 +5475,13 @@ fetch(url, {
 {
     "data": {
         "id": 1,
-        "nome": "Lottie Hahn DDS",
-        "email": "rollin87@yahoo.com",
-        "password": "AqGel0S+cdCa",
-        "telefone": "718-521-3209",
-        "data_nascimento": "1977-06-04",
+        "nome": "Gudrun Kris",
+        "email": "rhett.witting@yahoo.com",
+        "password": "8z?gjDZD!x~Yh1ZFqJ",
+        "telefone": "887-667-9111 x942",
+        "data_nascimento": "2001-06-30",
         "local_de_trabalho": "TDIStore",
+        "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?21521",
         "tipo_id": 2,
         "supervisor_id": 1,
         "tipo": {
@@ -5514,13 +5506,14 @@ Atualiza um novo utilizador.
 > Example request:
 
 ```bash
-curl -X PUT "http://localhost/api/users/{user}"     -d "nome"="zV9aoKIMeAkezIlB" \
-    -d "email"="OR0oIQkiixJBT93e" \
-    -d "password"="PHSA01A1AtwVPIux" \
-    -d "telefone"="YR4cBXJxPkyS4sDR" \
-    -d "data_nascimento"="PiFpLp5IG1TAtgtD" \
-    -d "tipo_id"="pRwbmW1rtcwAus6g" \
-    -d "supervisor_id"="9PudEg1m8xMtwn5U" 
+curl -X PUT "http://localhost/api/users/{user}"     -d "nome"="DVdtUlnhPDTo5UIv" \
+    -d "email"="ptx7uTfwM4mwTjoD" \
+    -d "password"="UN7m4dXUYiz3Iyjw" \
+    -d "telefone"="7bJougE0Gvgy0shh" \
+    -d "data_nascimento"="11NUmZxldBPMmX7D" \
+    -d "img_url"="mTFPVayiepOEtkMD" \
+    -d "tipo_id"="cIxlkR0XayrELNxv" \
+    -d "supervisor_id"="nY8e66um6px4Of92" 
 ```
 
 ```javascript
@@ -5532,13 +5525,14 @@ let headers = {
 }
 
 let body = JSON.stringify({
-    "nome": "zV9aoKIMeAkezIlB",
-    "email": "OR0oIQkiixJBT93e",
-    "password": "PHSA01A1AtwVPIux",
-    "telefone": "YR4cBXJxPkyS4sDR",
-    "data_nascimento": "PiFpLp5IG1TAtgtD",
-    "tipo_id": "pRwbmW1rtcwAus6g",
-    "supervisor_id": "9PudEg1m8xMtwn5U",
+    "nome": "DVdtUlnhPDTo5UIv",
+    "email": "ptx7uTfwM4mwTjoD",
+    "password": "UN7m4dXUYiz3Iyjw",
+    "telefone": "7bJougE0Gvgy0shh",
+    "data_nascimento": "11NUmZxldBPMmX7D",
+    "img_url": "mTFPVayiepOEtkMD",
+    "tipo_id": "cIxlkR0XayrELNxv",
+    "supervisor_id": "nY8e66um6px4Of92",
 })
 
 fetch(url, {
@@ -5576,6 +5570,7 @@ Parameter | Type | Status | Description
     password | string |  required  | Password do utilizador.
     telefone | string |  optional  | Telefone do utilizador.
     data_nascimento | Data |  optional  | de nascimento do utilizador.
+    img_url | string |  optional  | Link para a foto do utilizador.
     tipo_id | string |  optional  | Tipo do utilizador.
     supervisor_id | string |  optional  | Supervisor do utilizador.
 
@@ -5656,38 +5651,46 @@ fetch(url, {
 {
     "data": [
         {
-            "id": 9,
-            "numero_encomenda": 801,
-            "data_estimada": "2015-12-14 07:20:38",
-            "data_de_entrega": "2003-04-04 17:24:51",
-            "data_de_levantamento": "2012-07-30 21:44:47",
-            "data_de_entrada_no_sistema": "2008-06-13 16:52:00",
-            "data_de_entrega_pretendida": "1990-04-24 01:24:39",
-            "tempo_limite_de_levantamento": "2012-08-19 14:24:04",
+            "id": 6,
+            "data_de_entrega": "1983-10-17 04:58:34",
+            "data_de_levantamento": "2017-03-27 20:27:30",
+            "data_de_entrada_no_sistema": "2014-05-07 06:05:10",
+            "data_de_entrega_pretendida": "1974-05-01 23:59:07",
+            "tempo_limite_de_levantamento": "1989-03-06 09:09:28",
             "estado_encomenda": 0,
-            "temperatura": "3.6",
-            "observacoes": "Alice could see it quite plainly through the neighbouring pool--she could hear the name 'Alice!' CHAPTER XII. Alice's Evidence 'Here!' cried Alice, with a kind of serpent, that's all the time he was.",
-            "tamanho": "M",
-            "localizacao": "Crona Route",
-            "cliente_id": 9,
-            "cacifo_id": 5,
-            "cliente": {
-                "id": 9,
-                "nome": "Sophia DuBuque V",
-                "email": "adams.bria@yahoo.com",
-                "telefone": "(587) 916-4443"
-            },
+            "temperatura": "0.2",
+            "observacoes": "She had not gone (We know it was certainly too much frightened to say \"HOW DOTH THE LITTLE BUSY BEE,\" but it had finished this short speech, they all spoke at once, and ran the faster, while more.",
+            "tamanho": "L",
+            "cliente_id": 3,
+            "cacifo_id": 15,
+            "estafeta": [
+                {
+                    "id": 1,
+                    "nome": "Gudrun Kris",
+                    "email": "rhett.witting@yahoo.com",
+                    "telefone": "887-667-9111 x942",
+                    "data_nascimento": "2001-06-30",
+                    "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?21521",
+                    "tipo_id": 2,
+                    "supervisor_id": 1,
+                    "pivot": {
+                        "encomenda_id": 6,
+                        "user_id": 1
+                    }
+                }
+            ],
             "cacifo": {
-                "id": 5,
-                "numero": 138,
-                "temperatura": "5.5",
-                "codigo": "iM3nFv0",
-                "tamanho_id": 1,
+                "id": 15,
+                "numero": 144,
+                "temperatura": "4.6",
+                "codigo": "DX8ei78R",
+                "tamanho_id": 2,
                 "estado_id": 2,
                 "localizacao_id": 4,
                 "tamanho": {
-                    "id": 1,
-                    "tamanho": "L"
+                    "id": 2,
+                    "tamanho": "XL"
                 },
                 "estado": {
                     "id": 2,
@@ -5695,100 +5698,220 @@ fetch(url, {
                 },
                 "localizacao": {
                     "id": 4,
-                    "nome": "Jillian Drive",
-                    "lat": "-87.531133",
-                    "long": "-118.261583",
-                    "codigo_postal": "6190-268",
-                    "cidade": "Bartellview"
+                    "nome": "Huel Green",
+                    "lat": "64.660128",
+                    "lng": "139.431751",
+                    "codigo_postal": "2501-870",
+                    "cidade": "Marquardtton"
                 }
             },
-            "estafeta": [
-                {
-                    "id": 1,
-                    "nome": "Lottie Hahn DDS",
-                    "email": "rollin87@yahoo.com",
-                    "telefone": "718-521-3209",
-                    "data_nascimento": "1977-06-04",
-                    "local_de_trabalho": "TDIStore",
-                    "tipo_id": 2,
-                    "supervisor_id": 1,
-                    "pivot": {
-                        "encomenda_id": 9,
-                        "user_id": 1
-                    }
-                }
-            ],
+            "cliente": {
+                "id": 3,
+                "nome": "Ruby Harris",
+                "email": "haley.caitlyn@gmail.com",
+                "telefone": "517-219-2699"
+            },
             "href": {
-                "cliente": "http:\/\/localhost\/api\/clientes\/9",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/5"
+                "cliente": "http:\/\/localhost\/api\/clientes\/3",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/15"
             }
         },
         {
-            "id": 14,
-            "numero_encomenda": 388,
-            "data_estimada": "2012-02-04 11:22:37",
-            "data_de_entrega": "2011-06-30 00:28:14",
-            "data_de_levantamento": "1984-03-14 02:27:27",
-            "data_de_entrada_no_sistema": "1998-01-01 06:16:54",
-            "data_de_entrega_pretendida": "1992-11-15 04:40:00",
-            "tempo_limite_de_levantamento": "2004-10-29 01:39:34",
+            "id": 8,
+            "data_de_entrega": "1979-11-03 01:41:30",
+            "data_de_levantamento": "1974-06-09 02:57:05",
+            "data_de_entrada_no_sistema": "1997-10-01 22:12:15",
+            "data_de_entrega_pretendida": "2011-12-24 07:30:37",
+            "tempo_limite_de_levantamento": "2014-06-04 11:38:32",
             "estado_encomenda": 0,
-            "temperatura": "8.9",
-            "observacoes": "Duchess, digging her sharp little chin into Alice's shoulder as she spoke, but no result seemed to think about stopping herself before she had not got into it), and sometimes shorter, until she made.",
-            "tamanho": "M",
-            "localizacao": "Sigmund Plains",
+            "temperatura": "10.1",
+            "observacoes": "Queen said to the Mock Turtle, capering wildly about. 'Change lobsters again!' yelled the Gryphon said, in a minute, trying to touch her. 'Poor little thing!' said the Cat, as soon as she ran; but.",
+            "tamanho": "XL",
             "cliente_id": 6,
-            "cacifo_id": 20,
-            "cliente": {
-                "id": 6,
-                "nome": "Jarred Grimes",
-                "email": "ashly.funk@hotmail.com",
-                "telefone": "1-270-309-3280 x1950"
-            },
-            "cacifo": {
-                "id": 20,
-                "numero": 197,
-                "temperatura": "10.7",
-                "codigo": "5lRkyW",
-                "tamanho_id": 1,
-                "estado_id": 1,
-                "localizacao_id": 2,
-                "tamanho": {
-                    "id": 1,
-                    "tamanho": "L"
-                },
-                "estado": {
-                    "id": 1,
-                    "estado": "Disponivel"
-                },
-                "localizacao": {
-                    "id": 2,
-                    "nome": "Clemmie Village",
-                    "lat": "-77.233379",
-                    "long": "59.094078",
-                    "codigo_postal": "7185-244",
-                    "cidade": "Feilborough"
-                }
-            },
+            "cacifo_id": 11,
             "estafeta": [
                 {
                     "id": 1,
-                    "nome": "Lottie Hahn DDS",
-                    "email": "rollin87@yahoo.com",
-                    "telefone": "718-521-3209",
-                    "data_nascimento": "1977-06-04",
+                    "nome": "Gudrun Kris",
+                    "email": "rhett.witting@yahoo.com",
+                    "telefone": "887-667-9111 x942",
+                    "data_nascimento": "2001-06-30",
                     "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?21521",
                     "tipo_id": 2,
                     "supervisor_id": 1,
                     "pivot": {
-                        "encomenda_id": 14,
+                        "encomenda_id": 8,
                         "user_id": 1
                     }
                 }
             ],
+            "cacifo": {
+                "id": 11,
+                "numero": 287,
+                "temperatura": "6.9",
+                "codigo": "mp8umRVJp",
+                "tamanho_id": 3,
+                "estado_id": 2,
+                "localizacao_id": 5,
+                "tamanho": {
+                    "id": 3,
+                    "tamanho": "M"
+                },
+                "estado": {
+                    "id": 2,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 5,
+                    "nome": "Bailey Summit",
+                    "lat": "57.856973",
+                    "lng": "-134.133893",
+                    "codigo_postal": "4098-292",
+                    "cidade": "McGlynnfort"
+                }
+            },
+            "cliente": {
+                "id": 6,
+                "nome": "Dr. Concepcion Kub",
+                "email": "jamir53@yahoo.com",
+                "telefone": "+1-331-546-1911"
+            },
             "href": {
                 "cliente": "http:\/\/localhost\/api\/clientes\/6",
-                "cacifo": "http:\/\/localhost\/api\/cacifos\/20"
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/11"
+            }
+        },
+        {
+            "id": 12,
+            "data_de_entrega": "1986-11-07 02:16:27",
+            "data_de_levantamento": "1974-11-19 23:19:22",
+            "data_de_entrada_no_sistema": "2011-02-21 22:09:40",
+            "data_de_entrega_pretendida": "1990-03-06 12:04:04",
+            "tempo_limite_de_levantamento": "2008-12-31 03:04:37",
+            "estado_encomenda": 1,
+            "temperatura": "3.1",
+            "observacoes": "Dormouse followed him: the March Hare. Alice sighed wearily. 'I think I can remember feeling a little faster?\" said a sleepy voice behind her. 'Collar that Dormouse,' the Queen left off, quite out.",
+            "tamanho": "M",
+            "cliente_id": 6,
+            "cacifo_id": 14,
+            "estafeta": [
+                {
+                    "id": 1,
+                    "nome": "Gudrun Kris",
+                    "email": "rhett.witting@yahoo.com",
+                    "telefone": "887-667-9111 x942",
+                    "data_nascimento": "2001-06-30",
+                    "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?21521",
+                    "tipo_id": 2,
+                    "supervisor_id": 1,
+                    "pivot": {
+                        "encomenda_id": 12,
+                        "user_id": 1
+                    }
+                }
+            ],
+            "cacifo": {
+                "id": 14,
+                "numero": 80,
+                "temperatura": "4",
+                "codigo": "sR-WGrkc",
+                "tamanho_id": 4,
+                "estado_id": 2,
+                "localizacao_id": 1,
+                "tamanho": {
+                    "id": 4,
+                    "tamanho": "S"
+                },
+                "estado": {
+                    "id": 2,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 1,
+                    "nome": "Quigley View",
+                    "lat": "-15.107306",
+                    "lng": "25.399467",
+                    "codigo_postal": "2525-638",
+                    "cidade": "South Justenberg"
+                }
+            },
+            "cliente": {
+                "id": 6,
+                "nome": "Dr. Concepcion Kub",
+                "email": "jamir53@yahoo.com",
+                "telefone": "+1-331-546-1911"
+            },
+            "href": {
+                "cliente": "http:\/\/localhost\/api\/clientes\/6",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/14"
+            }
+        },
+        {
+            "id": 25,
+            "data_de_entrega": "2003-01-14 02:02:56",
+            "data_de_levantamento": "1996-08-31 12:07:00",
+            "data_de_entrada_no_sistema": "1976-03-09 07:42:11",
+            "data_de_entrega_pretendida": "2008-11-07 04:43:43",
+            "tempo_limite_de_levantamento": "2009-12-21 17:05:58",
+            "estado_encomenda": 0,
+            "temperatura": "0.8",
+            "observacoes": "Caterpillar. 'Not QUITE right, I'm afraid,' said Alice, feeling very glad she had never left off quarrelling with the Gryphon. '--you advance twice--' 'Each with a sudden burst of tears, until there.",
+            "tamanho": "L",
+            "cliente_id": 3,
+            "cacifo_id": 8,
+            "estafeta": [
+                {
+                    "id": 1,
+                    "nome": "Gudrun Kris",
+                    "email": "rhett.witting@yahoo.com",
+                    "telefone": "887-667-9111 x942",
+                    "data_nascimento": "2001-06-30",
+                    "local_de_trabalho": "TDIStore",
+                    "img_url": "https:\/\/lorempixel.com\/800\/600\/cats\/?21521",
+                    "tipo_id": 2,
+                    "supervisor_id": 1,
+                    "pivot": {
+                        "encomenda_id": 25,
+                        "user_id": 1
+                    }
+                }
+            ],
+            "cacifo": {
+                "id": 8,
+                "numero": 354,
+                "temperatura": "1.7",
+                "codigo": "bem9G",
+                "tamanho_id": 1,
+                "estado_id": 2,
+                "localizacao_id": 5,
+                "tamanho": {
+                    "id": 1,
+                    "tamanho": "M"
+                },
+                "estado": {
+                    "id": 2,
+                    "estado": "Disponivel"
+                },
+                "localizacao": {
+                    "id": 5,
+                    "nome": "Bailey Summit",
+                    "lat": "57.856973",
+                    "lng": "-134.133893",
+                    "codigo_postal": "4098-292",
+                    "cidade": "McGlynnfort"
+                }
+            },
+            "cliente": {
+                "id": 3,
+                "nome": "Ruby Harris",
+                "email": "haley.caitlyn@gmail.com",
+                "telefone": "517-219-2699"
+            },
+            "href": {
+                "cliente": "http:\/\/localhost\/api\/clientes\/3",
+                "cacifo": "http:\/\/localhost\/api\/cacifos\/8"
             }
         }
     ],

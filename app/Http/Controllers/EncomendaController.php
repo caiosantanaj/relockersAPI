@@ -20,8 +20,6 @@ use Symfony\Component\HttpFoundation\Response;
 class EncomendaController extends Controller
 {
 
-    protected $n_encomenda = 0;
-
     /**
      * Get Encomendas
      * 
@@ -58,8 +56,6 @@ class EncomendaController extends Controller
      *
      * Adiciona uma nova encomenda.
      * 
-     * @bodyParam numero_encomenda int Número duma encomenda
-     * @bodyParam data_estimada date required Data estimada da entrega da encomenda..
      * @bodyParam data_de_entrega date optional Data de entrega da encomenda.
      * @bodyParam data_de_levantamento date optional Data de levantamento da encomenda.
      * @bodyParam data_de_entrada_no_sistema date required Data em que a encomenda foi registada no sistema.
@@ -69,7 +65,6 @@ class EncomendaController extends Controller
      * @bodyParam temperatura float optional Temperatura de uma encomenda. Caso seja nulo o valor default será: 20.
      * @bodyParam observacoes string optional Observações de uma encomenda. Caso seja nula o valor default será: "Nenhuma observação.".
      * @bodyParam tamanho string required Tamanho de uma encomenda.
-     * @bodyParam localizacao string required Localização de entrega pretendida.
      * @bodyParam cliente_id string required Id do cliente que possui a encomenda.
      * @bodyParam cacifo_id string optional Id do cacifo de onde a encomenda vai ser colocada.
      * 
@@ -84,7 +79,7 @@ class EncomendaController extends Controller
      */
     public function store(EncomendaRequest $request)
     {
-        return $request;
+
         try {
 
             $observacoes = ($request['observacoes'] === null) ? "Nenhuma observação." : $request['observacoes'];
@@ -94,22 +89,18 @@ class EncomendaController extends Controller
             $cacifo_id = ($request['cacifo_id'] === null) ? null : $request['cacifo_id'];
             $cliente_id = ($request['cliente_id'] === null) ? null : $request['cliente_id'];
 
-            // $request = $request->only([
-            //     'numero_encomenda', 'data_estimada', 'data_de_entrega', 'data_de_levantamento',
-            //     'data_de_entrada_no_sistema', 'data_de_entrega_pretendida', 'tempo_limite_de_levantamento',
-            //     'temperatura', 'estado_encomenda', 'observacoes', 'cacifo_id', 'cliente_id', 'tamanho', 'localizacao'
-            // ]);
+            $request = $request->only([
+                'data_de_entrega', 'data_de_levantamento',
+                'data_de_entrada_no_sistema', 'data_de_entrega_pretendida', 'tempo_limite_de_levantamento',
+                'temperatura', 'estado_encomenda', 'observacoes', 'cacifo_id', 'cliente_id', 'tamanho'
+            ]);
 
             $encomenda = new Encomenda;
-            //$encomenda->numero_encomenda = ++$n_encomenda;
-            $encomenda->numero_encomenda = $request['numero_encomenda'];
-            $encomenda->data_estimada = $request['data_estimada'];
             $encomenda->data_de_entrega = $data_de_entrega;
             $encomenda->data_de_levantamento = $data_de_levantamento;
             $encomenda->data_de_entrada_no_sistema = $request['data_de_entrada_no_sistema'];
             $encomenda->data_de_entrega_pretendida = $request['data_de_entrega_pretendida'];
             $encomenda->tempo_limite_de_levantamento = $request['tempo_limite_de_levantamento'];
-            $encomenda->localizacao = $request['localizacao'];
             $encomenda->tamanho = $request['tamanho'];
             $encomenda->estado_encomenda = $request['estado_encomenda'];
             $encomenda->temperatura = $temperatura;
@@ -152,8 +143,6 @@ class EncomendaController extends Controller
      *
      * Atualiza uma encomenda.
      * 
-     * @bodyParam numero_encomenda int Número duma encomenda
-     * @bodyParam data_estimada date optional Data estimada da entrega da encomenda..
      * @bodyParam data_de_entrega date optional Data de entrega da encomenda.
      * @bodyParam data_de_levantamento date optional Data de levantamento da encomenda.
      * @bodyParam data_de_entrada_no_sistema date optional Data em que a encomenda foi registada no sistema.
@@ -163,7 +152,6 @@ class EncomendaController extends Controller
      * @bodyParam temperatura float optional Temperatura de uma encomenda. Caso seja nulo o valor default será: 20.
      * @bodyParam observacoes string optional Observações de uma encomenda. Caso seja nula o valor default será: "Nenhuma observação.".
      * @bodyParam tamanho string optional Tamanho de uma encomenda.
-     * @bodyParam localizacao string optional Localização de entrega pretendida.
      * @bodyParam cliente_id string optional Id do cliente que possui a encomenda.
      * @bodyParam cacifo_id string optional Id do cacifo de onde a encomenda vai ser colocada.
      * 
@@ -182,9 +170,9 @@ class EncomendaController extends Controller
         try {
 
             $request = $request->only([
-                'numero_encomenda', 'data_estimada', 'data_de_entrega', 'data_de_levantamento',
+                'data_de_entrega', 'data_de_levantamento',
                 'data_de_entrada_no_sistema', 'data_de_entrega_pretendida', 'tempo_limite_de_levantamento',
-                'estado_encomenda', 'estado_encomenda', 'temperatura', 'observacoes', 'cliente_id', 'cacifo_id', 'tamanho', 'localizacao'
+                'estado_encomenda', 'estado_encomenda', 'temperatura', 'observacoes', 'cliente_id', 'cacifo_id', 'tamanho'
             ]);
 
 

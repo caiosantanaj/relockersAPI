@@ -16,9 +16,8 @@ class CreateEncomendasTable extends Migration
     {
         Schema::create('encomendas', function (Blueprint $table) {
             $table->increments('id')->unsigned();
-            $table->integer('numero_encomenda')->unsigned()->unique();
+            //$table->integer('numero_encomenda')->unsigned()->unique();
 
-            $table->dateTime('data_estimada');
             $table->dateTime('data_de_entrada_no_sistema');
             $table->dateTime('data_de_entrega_pretendida');
             $table->dateTime('tempo_limite_de_levantamento');
@@ -30,7 +29,6 @@ class CreateEncomendasTable extends Migration
             $table->float('temperatura', 3, 1);
             $table->string('observacoes');
             $table->string('tamanho');
-            $table->string('localizacao');
 
             //FK
             $table->integer('cliente_id')->unsigned()->index()->nullable();
@@ -42,7 +40,7 @@ class CreateEncomendasTable extends Migration
 
         //FK
         Schema::table('encomendas', function (Blueprint $table) {
-            //$table->foreign('id')->references('encomenda_id')->on('encomenda_user');
+            //$table->foreign('id')->references('encomenda_numero')->on('encomenda_user');
             $table->foreign('cliente_id')->references('id')->on('clientes');
             $table->foreign('cacifo_id')->references('id')->on('cacifos');
         });

@@ -21,8 +21,7 @@ class EncomendaResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'numero_encomenda' => $this->numero_encomenda,
-            'data_estimada' => $this->data_estimada,
+            //'numero_encomenda' => $this->numero_encomenda,
             'data_de_entrega' => $this->data_de_entrega,
             'data_de_levantamento' => $this->data_de_levantamento,
             'data_de_entrada_no_sistema' => $this->data_de_entrada_no_sistema,
@@ -32,22 +31,20 @@ class EncomendaResource extends JsonResource
             'temperatura' => (string)($this->temperatura),
             'observacoes' => $this->observacoes,
             'tamanho' => $this->tamanho,
-            'localizacao' => $this->localizacao,
             'cliente_id' => $this->cliente_id,
             'cacifo_id' => $this->cacifo_id,
-
-            'cliente' => $this->cliente->id,
-            'cacifo' => new CacifoResource($this->cacifo),
-            'cliente' => new ClienteResource($this->cliente),
+            'cliente_id' => $this->cliente == null ? '' : $this->cliente->id,
             'estafeta' => $this->users,
+            'cacifo' => $this->cacifo == null ? '' : new CacifoResource($this->cacifo),
+            'cliente' => $this->cliente == null ? '' : new ClienteResource($this->cliente),
             //toDo
             // 'estafeta' => $this->whenPivotLoaded('encomenda_user', function () {
             //     return $this->users->id;
             // }),
 
             'href' => [
-                'cliente' => route("clientes.show", $this->cliente_id),
-                'cacifo' => route("cacifos.show", $this->cacifo),
+                'cliente' => $this->cliente == null ? '' : route("clientes.show", $this->cliente),
+                'cacifo' => $this->cacifo == null ? '' : route("cacifos.show", $this->cacifo),
             ]
         ];
     }
