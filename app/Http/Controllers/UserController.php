@@ -106,6 +106,8 @@ class UserController extends Controller
     {
         try {
 
+            $img_url = ($request['img_url'] === null) ? null : $request['img_url'];
+
             $request = $request->only([
                 'nome', 'email', 'password', 'telefone', 'data_nascimento',
                 'local_de_trabalho', 'tipo_id', 'supervisor_id', 'img_url'
@@ -118,7 +120,7 @@ class UserController extends Controller
             $user->telefone = $request['telefone'];
             $user->data_nascimento = $request['data_nascimento'];
             $user->local_de_trabalho = $request['local_de_trabalho'];
-            $user->img_url = $request['img_url'];
+            $user->img_url = $img_url;
             $user->tipo_id = $request['tipo_id'];
             $user->supervisor_id = $request['supervisor_id'];
 
