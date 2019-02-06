@@ -18,7 +18,7 @@ class Encomenda extends Model
     protected $hidden = ['deleted_at', 'created_at', 'updated_at'];
 
     protected $fillable = [
-        'numero_encomenda', 'data_de_entrada_no_sistema', 'data_de_entrega_pretendida',
+        'data_de_entrada_no_sistema', 'data_de_entrega_pretendida',
         'tempo_limite_de_levantamento', 'data_de_entrega', 'data_de_levantamento', 'estado_encomenda',
         'temperatura', 'observacoes', 'tamanho', 'cliente_id', 'cacifo_id'
     ];

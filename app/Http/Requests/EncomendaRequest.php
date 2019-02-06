@@ -65,7 +65,7 @@ class EncomendaRequest extends FormRequest
     public function rules()
     {
         return [
-            'numero_encomenda' => 'required|unique:encomendas|integer|min:1',
+            //'numero_encomenda' => 'required|unique:encomendas|integer|min:1',
             'data_de_entrada_no_sistema' => 'required|date_format:Y-m-d H:i:s',
             'data_de_entrega_pretendida' => 'required|date_format:Y-m-d H:i:s',
             'data_de_entrega' => 'date_format:Y-m-d H:i:s',

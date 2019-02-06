@@ -9,7 +9,7 @@ $factory->define(
     function (Faker $faker) {
 
         return [
-            'numero_encomenda' => $faker->unique()->randomNumber($nbDigits = 3, $strict = false),
+            //'numero_encomenda' => $faker->unique()->randomNumber($nbDigits = 3, $strict = false),
             'data_de_entrega' => $faker->dateTime($max = 'now', $timezone = 'Europe/Lisbon'),
             'data_de_levantamento' => $faker->dateTime($max = 'now', $timezone = 'Europe/Lisbon'),
             'data_de_entrada_no_sistema' => $faker->dateTime($max = 'now', $timezone = 'Europe/Lisbon'),

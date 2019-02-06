@@ -56,7 +56,6 @@ class EncomendaController extends Controller
      *
      * Adiciona uma nova encomenda.
      * 
-     * @bodyParam numero_encomenda int Número duma encomenda
      * @bodyParam data_de_entrega date optional Data de entrega da encomenda.
      * @bodyParam data_de_levantamento date optional Data de levantamento da encomenda.
      * @bodyParam data_de_entrada_no_sistema date required Data em que a encomenda foi registada no sistema.
@@ -91,13 +90,12 @@ class EncomendaController extends Controller
             $cliente_id = ($request['cliente_id'] === null) ? null : $request['cliente_id'];
 
             $request = $request->only([
-                'numero_encomenda', 'data_de_entrega', 'data_de_levantamento',
+                'data_de_entrega', 'data_de_levantamento',
                 'data_de_entrada_no_sistema', 'data_de_entrega_pretendida', 'tempo_limite_de_levantamento',
                 'temperatura', 'estado_encomenda', 'observacoes', 'cacifo_id', 'cliente_id', 'tamanho'
             ]);
 
             $encomenda = new Encomenda;
-            $encomenda->numero_encomenda = $request['numero_encomenda'];
             $encomenda->data_de_entrega = $data_de_entrega;
             $encomenda->data_de_levantamento = $data_de_levantamento;
             $encomenda->data_de_entrada_no_sistema = $request['data_de_entrada_no_sistema'];
@@ -145,7 +143,6 @@ class EncomendaController extends Controller
      *
      * Atualiza uma encomenda.
      * 
-     * @bodyParam numero_encomenda int Número duma encomenda
      * @bodyParam data_de_entrega date optional Data de entrega da encomenda.
      * @bodyParam data_de_levantamento date optional Data de levantamento da encomenda.
      * @bodyParam data_de_entrada_no_sistema date optional Data em que a encomenda foi registada no sistema.
@@ -173,7 +170,7 @@ class EncomendaController extends Controller
         try {
 
             $request = $request->only([
-                'numero_encomenda', 'data_de_entrega', 'data_de_levantamento',
+                'data_de_entrega', 'data_de_levantamento',
                 'data_de_entrada_no_sistema', 'data_de_entrega_pretendida', 'tempo_limite_de_levantamento',
                 'estado_encomenda', 'estado_encomenda', 'temperatura', 'observacoes', 'cliente_id', 'cacifo_id', 'tamanho'
             ]);

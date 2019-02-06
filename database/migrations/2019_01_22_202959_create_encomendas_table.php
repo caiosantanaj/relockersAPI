@@ -16,7 +16,7 @@ class CreateEncomendasTable extends Migration
     {
         Schema::create('encomendas', function (Blueprint $table) {
             $table->increments('id')->unsigned();
-            $table->integer('numero_encomenda')->unsigned()->unique();
+            //$table->integer('numero_encomenda')->unsigned()->unique();
 
             $table->dateTime('data_de_entrada_no_sistema');
             $table->dateTime('data_de_entrega_pretendida');
