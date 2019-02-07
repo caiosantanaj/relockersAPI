@@ -5,10 +5,11 @@ namespace App\Model;
 use Illuminate\Database\Eloquent\Model;
 use App\User;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Laravel\Passport\HasApiTokens;
 
 class EncomendaUser extends Model
 {
-    use SoftDeletes;
+    use HasApiTokens, SoftDeletes;
 
     /**
      * The attributes that should be mutated to dates.
