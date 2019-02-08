@@ -23,7 +23,6 @@ $factory->define(App\User::class, function (Faker $faker) {
         'email' => $faker->unique()->freeEmail,
         //'email_verified_at' => now(),
         'local_de_trabalho' => "TDIStore",
-        'img_url' => $faker->imageUrl($width = 800, $height = 600, 'cats'),
 
         'password' => $faker->password, // secret
         'remember_token' => str_random(10),
