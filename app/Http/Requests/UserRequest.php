@@ -45,8 +45,6 @@ class UserRequest extends FormRequest
 
             'telefone.required' => 'O utilizador precisa de um telefone',
 
-            // 'img_url.url' => '"img_url" deve ser um url válido.',
-
             'local_de_trabalho.required' => 'O utilizador precisa de um lugar de trabalho',
             'local_de_trabalho.max' => 'O local de trabalho não pode ter mais de :max caracteres.',
             'local_de_trabalho.min' => 'O local de trabalho não pode menos de :min caracteres.',
@@ -65,7 +63,6 @@ class UserRequest extends FormRequest
             'email' => 'required|unique:clientes|max:150|email',
             'password' => 'required|confirmed|min:6',
             'telefone' => 'required|max:13',
-            // 'img_url' => 'url',
             'data_nascimento' => 'date',
             'local_de_trabalho' => 'required|min:3|max:250',
             'tipo_id' => 'required|exists:usertypes,id',

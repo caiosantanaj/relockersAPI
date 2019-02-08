@@ -15,6 +15,7 @@ class ClienteCollection extends Resource
     public function toArray($request)
     {
         return [
+            'id' => $this->id,
             'nome' => $this->nome,
             'email' => $this->email,
             'telefone' => $this->telefone,

@@ -23,7 +23,6 @@ class CreateUsersTable extends Migration
             $table->string('telefone');
             $table->date('data_nascimento')->nullable();
             $table->string('local_de_trabalho');
-            // $table->string("img_url")->nullable();
 
             //FK
             $table->integer('tipo_id')->unsigned()->index();
