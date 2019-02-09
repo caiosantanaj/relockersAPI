@@ -17,10 +17,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//DUVIDA
-//Pq n pode ser Route::Resource('localizacaoCacifo', 'LocalizacaoController'); ????
-
-//CACIFO
 Route::Resource('cacifos', 'CacifoController')->middleware('auth:api');
 
 Route::Resource('estados', 'EstadoController')->middleware('auth:api');
